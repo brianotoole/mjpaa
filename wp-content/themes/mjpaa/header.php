@@ -14,8 +14,15 @@
 
 <body <?php body_class(); ?>>
 
+  <div class="top-bar">
+  	<div class="links">
+      <?php wp_nav_menu( array( 'theme_location' => 'top-bar' ) ); ?>
+  	</div>
+  </div><!--/.top-bar-->
+
 	<div id="page" class="hfeed site">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'mjpaa' ); ?></a>
+	
 
 	<header id="masthead" class="site-header" role="banner">
     	<div class="grid head-overflow">

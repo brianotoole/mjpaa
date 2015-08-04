@@ -280,6 +280,50 @@ Header & Navigation
 /*--------------------------------------------------------------
 Menus
 --------------------------------------------------------------*/
+/* top bar nav */
+.top-bar {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 45px;
+	top: 0;
+	left: 0;
+	padding: 0 25px;
+	background: $black; 
+	z-index: 4;
+	text-transform: uppercase;
+	
+	.links {
+		width: auto;
+		float: right;
+		margin-right: 45px;
+		
+		ul {
+			list-style: none;
+		
+			li, li a {
+				float: none;
+				display: inline-block;
+				height: 45px; //same as line-height
+				line-height: 45px; //same as height
+				margin-right: auto;
+				padding-right: 25px;
+				vertical-align: middle;
+				font-size: 0.9em;
+				font-weight: 200;
+				color: white;
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+	
+		}
+	}//.links
+	
+}//.top-bar
+
+
+/* main nav */
 .main-navigation {
 	clear: both;
 	display: block;
