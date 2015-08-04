@@ -8,6 +8,7 @@ get_header(); ?>
 	</header><!-- .entry-header -->
 
 	<div class="grid">
+	<?php get_sidebar(); ?>
 		<div id="primary" class="col-9-12">
 			<main id="main" class="site-main" role="main">
 
@@ -20,6 +21,5 @@ get_header(); ?>
 			</main><!-- #main -->
 		</div><!-- #primary -->
 
-	<?php get_sidebar(); ?>
 	</div><!-- grid -->
 	<?php get_footer(); ?>
