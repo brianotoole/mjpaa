@@ -878,64 +878,41 @@ aside {
 		&:hover {
 			color: darken($maroon,7%);
 		}
-		&:before {
-			content: url('img/arrow.png') 0 0 no-repeat;
-			position: absolute;
-			margin-left: 15px;
-		}
     }
 }
+	
 
-.social-share {
-	margin-bottom: 30px;
-    border-bottom: 1px solid $gray;
-    padding-bottom: 25px;
-	
-	a {
-		display: block;
+
+/*--------------------------------------------------------------
+Inteior page template - Classes, Class List
+--------------------------------------------------------------*/
+.class-list {
+	.thumbnail.default {
 		width: 100%;
-		margin: 0 auto 10px;
-		padding: 12px 5px;
-		color: white;
-		font-size: 1.25em;
-		text-align: center;
-		text-decoration: none;
+		height: 200px;
+		padding: 5px;
+		background: $smoke;
+		
+		i {
+			font-size: 5em;
+			text-align: center;
+			width: 100%;
+			margin-top: 55px;
+			color: darken($smoke,10%);
+		}
 	}
-	
-	a:first-of-type {
-		background: $facebook;
-		border: 2px solid white;
-		
-		&:before {
-			content: '\f09a';
-			font-family: fontAwesome;
-			font-size: 1em;
-			color: white;
-			padding-right: 10px;
-		}
-		&:hover {
-			background: darken($facebook,12%);
-		}
-		
+	.class-title {
+		color: $maroon;
+		padding-bottom: 0;
+		margin-bottom: 0;
 	}
-	
-	a:last-of-type {
-		background: $twitter;
-		 border: 2px solid white;
-		
-		&:before {
-			content: '\f099';
-			font-family: fontAwesome;
-			font-size: 1em;
-			color: white;
-			padding-right: 10px;
-		}
-		&:hover {
-			background: darken($twitter,12%);
-		}
-	}	
-	
-}
+	.date {
+		font-weight: 600;
+	}
+	.date,p {
+		padding: 2.5px 0;
+	}
+}//.class-list
 
 /*--------------------------------------------------------------
 Footer
