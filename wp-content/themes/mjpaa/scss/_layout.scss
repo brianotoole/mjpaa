@@ -815,7 +815,6 @@ Interior
 
 .entry-content {
 	background: white;
-	min-height: 800px;
 	margin-top: 250px;
 	padding: 60px 20px 40px;
 	color: $black;
@@ -841,11 +840,16 @@ Interior
 Sidebar
 --------------------------------------------------------------*/
 /*sidebar*/
-#secondary {
-	color: $black;
-}
 .sidebar {
-	margin-top: 350px;
+	margin-top: 310px;
+	min-height: 900px;
+	color: $black;
+	padding: 10px;
+    background: white;
+    border: 1px solid $lightgray;
+    text-align: center;
+    z-index: 100;
+	
 	.widget-title {
 		padding: 10px 15px;
 		background: $smoke;
