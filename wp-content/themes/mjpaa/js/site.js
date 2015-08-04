@@ -218,24 +218,21 @@ jQuery(function($){
 	
 });
 
+/**
+ * .top-bar nav scroll 
+ */
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if ( scroll >= 10 ) { 
+    	$('.top-bar').slideUp(500);
+        $('.top-bar').addClass("push-up");
+        $('.site-header').addClass("fixed");
+   } else {
+   	 	$('.top-bar').slideDown(500);
+	    $('.top-bar').removeClass("push-up");
+	    $('.site-header').removeClass("fixed");
+   }
 
-
-/* scroll events nav 
-var nav = $('#masthead'),
-	NavTopPosition = nav.offset().top + 500;
- 
-$(window).on('scroll', function(){
-	
-	if($(window).scrollTop() > NavTopPosition ) {
-		nav.addClass('is-fixed');	
-		setTimeout(function() {
-            navav.addClass('animate-children');
-        }, 50);
-	} else {
-		nav.removeClass('is-fixed');
-		setTimeout(function() {
-            nav.removeClass('animate-children');
-        }, 50);
-	}
 });
-*/
+
+

@@ -6,7 +6,7 @@ Template Name: Home
 get_header(); ?>
 <!--hero--> 
 <section class="hero">
-  <div class="img" style="background: url('<?php the_field('home_hero_img'); ?>') 50% center no-repeat;background-size:cover;"></div> 
+  <div class="img" style="background: url('http://media.univcomm.cornell.edu/photos/1280x720/91339F2F-C5C4-491E-0C06CDF982842993.jpg') 50% center no-repeat;background-size:cover;"></div> 
     <div class="intro row" id="contain">
      	  <div class="col-sm-12 animate fadeIn">                   
             <h2>fasdfads</h2>

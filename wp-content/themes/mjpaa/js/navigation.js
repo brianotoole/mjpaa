@@ -32,7 +32,3 @@
 			container.className += ' toggled';
 	};
 } )();
-/**
- * for top bar scroll 
- */
-

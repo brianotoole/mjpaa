@@ -15,9 +15,11 @@
 <body <?php body_class(); ?>>
 
   <div class="top-bar">
-  	<div class="links">
-      <?php wp_nav_menu( array( 'theme_location' => 'top-bar' ) ); ?>
-  	</div>
+    <div class="grid head-overflow">
+  	  <div class="links">
+        <?php wp_nav_menu( array( 'theme_location' => 'top-bar' ) ); ?>
+  	  </div>
+    </div>
   </div><!--/.top-bar-->
 
 	<div id="page" class="hfeed site">
