@@ -48,25 +48,38 @@
 /* above .menu-toggle */
 @media screen and (min-width: 768px) {
 	.entry-header {
-		background-color: $maroon;
-	    &:after {
-	    	content: '';
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			margin-left: 250px;
-			background-color: white;
-			-webkit-clip-path: polygon(22% 0, 100% 0, 100% 100%, 16% 100%);
-			clip-path: polygon(22% 0, 100% 0, 100% 100%, 16% 100%);
-	    }
+
 	}
+	
+	.main-navigation li a {
+		display: inline-block;
+		&:after { //left to right sliding underline for entry content links
+			content: '';
+			display: block;
+			height: 3px;
+			width: 0;
+			background-color: transparent;
+			transition: width 0.4s ease, background-color 0.4s ease;
+			-webkit-transition: width 0.4s ease, background-color 0.4s ease;
+			-moz-transition: width 0.4s ease, background-color 0.4s ease;
+			-ms-transition: width 0.4s ease, background-color 0.4s ease;
+		}
+		&:hover,&:focus,&:visited {
+			text-decoration: none;
+			color: darken(white,20%);
+		}
+		&:hover:after {
+			width: 100%;
+			background-color: $maroon;
+		}
+	}
+	
+	
 	.b-right {
-	  	border-right: 1px solid $gray;
+	  	border-right: 1px solid #ccc; //color of hr
 	}
 	.b-left {
-		border-left: 1px solid $gray;
+		border-left: 1px solid #ccc; //color of hr
 	}
 	#secondary {
 		margin-top: 90px;
@@ -90,15 +103,6 @@
     
     .section-title {
 		padding: 60px 0 30px;
-	}
-	
-	.quotes {
-	     p {
-	     	padding: 5px 125px 5px 20px;
-	     }
-	     hr {
-		    margin: 5px 125px 5px 20px;
-	     }
 	}
 }
 

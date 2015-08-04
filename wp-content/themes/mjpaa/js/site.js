@@ -224,11 +224,11 @@ jQuery(function($){
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if ( scroll >= 10 ) { 
-    	$('.top-bar').slideUp(500);
+    	$('.top-bar').slideUp(300);
         $('.top-bar').addClass("push-up");
         $('.site-header').addClass("fixed");
    } else {
-   	 	$('.top-bar').slideDown(500);
+   	 	$('.top-bar').slideDown(300);
 	    $('.top-bar').removeClass("push-up");
 	    $('.site-header').removeClass("fixed");
    }
