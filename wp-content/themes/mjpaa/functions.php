@@ -157,6 +157,8 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
+//require get_template_directory() . '/inc/custom_post_types.php';
+
 
 /**
  * Classes search custom output
@@ -191,6 +193,7 @@ function customize_output($results , $arg, $id, $getdata ){
 			$thumb_url = $thumb_url_array[0];
 			
 			?>
+			  <a href="<?php the_permalink() ?>">
 				<div class="col-sm-4">
 				  <?php if (has_post_thumbnail( $post->ID ) ): //if featured image is uploaded... ?>
 				  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $image = $image[0]; ?>
@@ -204,6 +207,7 @@ function customize_output($results , $arg, $id, $getdata ){
 				  <p class="date"><?php the_field('class_start_date'); ?> - <?php the_field('class_end_date'); ?></p>  
 				  <p><?php the_excerpt() ?></p>
 				</div><!--/.col-->
+			  </a>
 				<div class="clear"></div><hr />
 	<?}
                         echo  $apiclass->ajax_pagination($arg['paged'],$query->max_num_pages, 4, $id, $getdata);

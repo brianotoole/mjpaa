@@ -223,7 +223,7 @@ jQuery(function($){
  */
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if ( scroll >= 45 ) { 
+    if ( scroll >= 150 ) { 
     	$('.top-bar').slideUp(300);
         $('.top-bar').addClass("push-up");
         $('.site-header').addClass("fixed");

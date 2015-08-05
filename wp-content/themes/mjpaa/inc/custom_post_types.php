@@ -6,9 +6,10 @@ Description: Custom post type & taxonomies for MJPAA classes
 Version: 1.0.0
 Author: MJPAA
 */
+?>
 
-
-// Register Custom Taxonomy: "Session" - used within "Class" custom post type
+<?php
+// Register Custom Taxonomy: "Class Session" - used within "Classes" custom post type
 function class_session() {
 
 	$labels = array(
@@ -44,47 +45,12 @@ function class_session() {
 }
 add_action( 'init', 'class_session', 0 );
 
-
-
-// Register Custom Taxonomy: "Grade" - used within "Class" custom post type
-function class_grade_level() {
-
-	$labels = array(
-		'name'                       => _x( 'Class Grade Levels', 'Taxonomy General Name', 'mjpaa' ),
-		'singular_name'              => _x( 'Class Grade Level', 'Taxonomy Singular Name', 'mjpaa' ),
-		'menu_name'                  => __( 'Class Grade Levels', 'mjpaa' ),
-		'all_items'                  => __( 'All Grade Levels', 'mjpaa' ),
-		'parent_item'                => __( 'Grade Level Parent Item', 'mjpaa' ),
-		'parent_item_colon'          => __( 'Grade Level Parent Item:', 'mjpaa' ),
-		'new_item_name'              => __( 'New Grade Level Name', 'mjpaa' ),
-		'add_new_item'               => __( 'Add New Grade Level', 'mjpaa' ),
-		'edit_item'                  => __( 'Edit Grade Level', 'mjpaa' ),
-		'update_item'                => __( 'Update Grade Level', 'mjpaa' ),
-		'view_item'                  => __( 'View Grade Level', 'mjpaa' ),
-		'separate_items_with_commas' => __( 'Separate items with commas', 'mjpaa' ),
-		'add_or_remove_items'        => __( 'Add or remove items', 'mjpaa' ),
-		'choose_from_most_used'      => __( 'Choose from the most used', 'mjpaa' ),
-		'popular_items'              => __( 'Popular Grade Levels', 'mjpaa' ),
-		'search_items'               => __( 'Search Grade Levels', 'mjpaa' ),
-		'not_found'                  => __( 'Not Found', 'mjpaa' ),
-	);
-	$args = array(
-		'labels'                     => $labels,
-		'hierarchical'               => true,
-		'public'                     => true,
-		'show_ui'                    => true,
-		'show_admin_column'          => true,
-		'show_in_nav_menus'          => true,
-		'show_tagcloud'              => false,
-	);
-	register_taxonomy( 'grade', array( 'classes' ), $args );
-
-}
-add_action( 'init', 'class_grade_level', 0 );
+?>
 
 
 
-// Register Custom Post Type: "Class"
+<?php
+// Register Custom Post Type: "Classes"
 function custom_post_type_classes() {
 
 	$labels = array(

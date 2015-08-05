@@ -100,6 +100,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 input[type="checkbox"],
 input[type="radio"] {
 	padding: 0; 
+	margin-right: 10px;
 }
 input[type="search"] {
 	-webkit-appearance: textfield; 
@@ -319,7 +320,7 @@ body.home .site-header.fixed {background: rgba($maroon, 0.85);border-bottom: 2px
 	top: 45px; //height of .top-bar
 	width: 100%;
 	padding: 0 20px;
-	height: 177px;
+	height: 242px;
 	background: rgba($black, 0.5);
 	border-bottom: 2px solid $lightgray;
 	z-index: 9;
@@ -595,6 +596,12 @@ Homepage
 	.section-title {
 		color: $black;
 		line-height: 1.2em;
+		margin-bottom: 0;
+		padding-bottom: 10px;
+	}
+	
+	.program-titles {
+		margin-top: 35px;
 	}
 	
 	p {
@@ -614,8 +621,8 @@ Homepage
 		-ms-border-radius: 50%;
 		&:before {
 			position: absolute;
-			margin-left: 22px;
-			margin-top: 20px;
+			margin-left: 27px;
+			margin-top: 26px;
 			color: $maroon;
 		}
 	}
@@ -805,17 +812,18 @@ Homepage
 Interior
 --------------------------------------------------------------*/
 /* interior page header */
-/*.entry-header {
+.entry-header {
 	position: relative;
-	background-color: $maroon;
+	background: url('http://localhost/mjpaa/wp-content/themes/mjpaa/img/hero_placeholder.jpg') 50% center no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100%;
-    min-height: 190px;
-}*/
+    min-height: 282px;
+}
 
 .entry-content {
 	background: white;
-	margin-top: 250px;
+	margin-top: 0;
 	padding: 60px 20px 40px;
 	color: $black;
 
@@ -841,12 +849,13 @@ Sidebar
 --------------------------------------------------------------*/
 /*sidebar*/
 .sidebar {
-	margin-top: 310px;
+	margin-top: 70px;
 	min-height: 900px;
+	padding: 30px 15px;
 	color: $black;
-	padding: 10px;
-    background: white;
-    text-align: center;
+    background: $smoke;
+    border: 8px solid lighten($gray,20%);
+    text-align: left;
     z-index: 100;
 	
 	.widget-title {
@@ -855,6 +864,10 @@ Sidebar
 		color: $black;
 		font-size: 1.25em;
 		text-transform: uppercase;
+	}
+	
+	p.info {
+		font-size: 0.85em;
 	}
 	
 	select,input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
@@ -927,6 +940,32 @@ Inteior page template - Classes, Class List
 	background: url('img/ajax_loader.gif') no-repeat 50% 50%;
 	
 }
+#uwpqsf_id {
+	border: none;
+}
+.uwpqsf_class > span[class*='taxolabel-'], .uwpqsf_class > span[class*='cmflabel-'] {
+	padding: 0;
+}
+.uwpqsf_class>span[class*='cmflabel-'] {
+    padding: 0;
+    margin: 30px 0 0px;
+    padding-bottom: 0;
+}
+.uwpqsf_class > label {
+	font-weight: 200;
+	font-size: 0.95em;
+}
+input#uwpqsf_id_key {
+	background: white;
+	margin-bottom: 5px;
+	border: 2px solid $lightgray;
+}
+.uwpqsf_submit {
+    text-align: right;
+    margin-bottom: 15px;
+    width: 98%;
+    display: block;
+}
 
 
 /*--------------------------------------------------------------
@@ -961,7 +1000,7 @@ Footer
 
 .site-footer {
 	font-weight: 400;
-	background: $maroon;
+	background: darken($maroon,5%);
 	border-top: 1px solid lighten($maroon,2%);
 	padding: 20px 0 40px;
 	color: white;

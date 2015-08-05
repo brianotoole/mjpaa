@@ -19,7 +19,9 @@ get_header(); ?>
 	<div class="intro row" id="contain">
 		<div class="col-sm-8">
 			<h4 class="section-title">The Academy Offers a Complete Performing Arts Curriculum</h4> 
+			<h6>Our program includes...</h6>
 			
+			<div class="program-titles">
 			  <div class="col-sm-2">
 				<i class="fa fa-ticket"></i>
 			  </div>
@@ -64,13 +66,31 @@ get_header(); ?>
 				<p>fdsafdsafdsaf sdafsdfdsf dfdsfds dsfsdagsdagsdagdsgdsgsd</p>
 			  </div><hr class="visible-xs">
 			  <div class="clear"></div>
+			</div><!--/.program-titles-->
 			  
 			  
 		</div>
 		<div class="col-sm-4 latest-news">
 			<h4>News &amp; Events</h4>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-		</div>
+			<br />
+			<h6>News title goes here</h6>
+			<p class="date">August 3,2015</p>
+			<p>News article excerpt goes here News article excerpt goes here News article excerpt goes here News article excerpt goes here News articl...</p>
+			<hr />
+			
+			<h6>News title goes here</h6>
+			<p class="date">August 3,2015</p>
+			<p>News article excerpt goes here News article excerpt goes here News article excerpt goes here News article excerpt goes here News...</p>
+			<hr />
+			
+			<h6>News title goes here</h6>
+			<p class="date">August 3,2015</p>
+			<p>News article excerpt goes here News article excerpt goes here News article excerpt goes here News article excerpt goes here...</p>
+			<hr />
+		
+			<a href="#">More News &amp; Events</a>
+			
+		</div><!--/.col-->
 	</div><!--/.intro-->
 </section><!--/.about-->
 
@@ -119,7 +139,6 @@ get_header(); ?>
 	<div class="grid grid-pad row">
 	
 		<div class="col-sm-12">
-		    <img src='<?php bloginfo('stylesheet_directory'); ?>/img/logo.png'alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a> 
 			<h3>Ready to Discover the Difference?</h3>
 			<p>Be touched. Be moved. Be inspired.</p>
 			<a class="button green" href="#">Enroll Today</a>

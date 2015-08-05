@@ -10,7 +10,9 @@ get_header(); ?>
 	<div class="grid">
 	
 	<div id="secondary" class="sidebar widget-area col-3-12" role="complementary">
-		<h3>Find Classes</h3>
+		<h3 class="maroon">Find Classes</h3>
+		<p class="info">Select an option below to filter classes by category, session, and/or grade level.</p>
+		<hr />
 		  <?php echo do_shortcode('[ULWPQSF id=49 formtitle="0" button=0]'); ?>
 	</div><!-- .sidebar --> 
 	
@@ -19,7 +21,7 @@ get_header(); ?>
 
 			<div class="class-list">
 			  <div class="results-total">
-				<h3>All classes</h3>
+				<h3>All classes:</h3>
 			  </div><!--/.results-total-->
 			<?php while ( have_posts() ) : the_post(); ?>
 
