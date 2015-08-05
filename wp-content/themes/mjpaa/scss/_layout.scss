@@ -913,7 +913,13 @@ Inteior page template - Classes, Class List
 	}
 }//.class-list
 
-/*the ajax loading icon*/
+.results-total {
+	h3 {
+		margin: 15px 20px;
+		padding-bottom: 5px;
+	}
+}
+/* the loading icon */
 .umloading {
 	width: 65%;
 	height: 44px;

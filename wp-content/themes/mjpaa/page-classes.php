@@ -18,6 +18,9 @@ get_header(); ?>
 			<main id="main" class="site-main entry-content" role="main">
 
 			<div class="class-list">
+			  <div class="results-total">
+				<h3>All classes</h3>
+			  </div><!--/.results-total-->
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'part', 'classes' ); ?>

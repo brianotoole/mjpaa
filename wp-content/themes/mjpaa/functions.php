@@ -166,14 +166,14 @@ function customize_output($results , $arg, $id, $getdata ){
 	 // The Query
             $apiclass = new uwpqsfprocess();
              $query = new WP_Query( $arg ); ?>
-	<div id="results-total">
+	<div class="results-total">
 		<?php  
 			$numberOfQueries = $query->found_posts;
 			
 			if ($numberOfQueries == 1) {?>
 				<h3><?php echo $numberOfQueries; ?> class found:</h3>
 			<?}elseif ($numberOfQueries == 0){?>
-				<h3></h3>
+				<h3>No classes found.</h3>
 			<?}else{?>
 				<h3><?php echo $numberOfQueries; ?> classes found:</h3>
 			<?}
@@ -208,7 +208,7 @@ function customize_output($results , $arg, $id, $getdata ){
 	<?}
                         echo  $apiclass->ajax_pagination($arg['paged'],$query->max_num_pages, 4, $id, $getdata);
 		 } else {
-					 echo  '<h3>No classes found.</h3>';
+					 echo  '<p>There were no classes found with your criteria. Please try selecting different options.</p>';
 				}
 				/* Restore original Post Data */
 				wp_reset_postdata();
