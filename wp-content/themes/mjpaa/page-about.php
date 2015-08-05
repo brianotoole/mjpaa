@@ -7,8 +7,10 @@ get_header(); ?>
 	<header class="entry-header">
 	</header><!-- .entry-header -->
 
+<div class="page-about">
 <section class="history">
 	<div class="intro row" id="contain">
+	 <!-- <h3 class="section-title">Our History</h3> -->
 		<div class="col-sm-3 visit">
 			<p>Visit</p>
 			  <a href="#">Our Company History</a>
@@ -29,58 +31,61 @@ get_header(); ?>
 <section class="about">
 	<div class="intro row" id="contain">
 		<div class="col-sm-8">
-			<h4 class="section-title">The Academy Offers a Complete Performing Arts Curriculum</h4> 
-			<h6>Our program includes...</h6>
-			
+			<h3 class="section-title">Our Faculty &amp; Staff</h3> 
 			<div class="program-titles">
-			  <div class="col-sm-2">
-				<i class="fa fa-ticket"></i>
-			  </div>
-			  <div class="col-sm-10">
-				<h5>Performing Arts</h5>
-				<p>fdsafdsafdsaf sdafsdfdsf dfdsfds dsfsdagsdagsdagdsgdsgsd</p>
-			  </div><hr class="visible-xs">
-			  <div class="clear"></div>
-			  
-			  <div class="col-sm-2">
-				<i class="fa fa-music"></i>
-			  </div>
-			  <div class="col-sm-10">
-				<h5>Dance &amp; Classical Ballet</h5>
-				<p>fdsafdsafdsaf sdafsdfdsf dfdsfds dsfsdagsdagsdagdsgdsgsd</p>
-			  </div><hr class="visible-xs">
-			  <div class="clear"></div>
-			  
-			  <div class="col-sm-2">
-				<i class="fa fa-quote-left"></i>
-			  </div>
-			  <div class="col-sm-10">
-				<h5>Musical Theater</h5>
-				<p>fdsafdsafdsaf sdafsdfdsf dfdsfds dsfsdagsdagsdagdsgdsgsd</p>
-			  </div><hr class="visible-xs">
-			  <div class="clear"></div>
-			  
-			  <div class="col-sm-2">
-				<i class="fa fa-video-camera"></i>
-			  </div>
-			  <div class="col-sm-10">
-				<h5>Acting</h5>
-				<p>fdsafdsafdsaf sdafsdfdsf dfdsfds dsfsdagsdagsdagdsgdsgsd</p>
-			  </div><hr class="visible-xs">
-			  <div class="clear"></div>
-			  
-			  <div class="col-sm-2">
-				<i class="fa fa-volume-up"></i>
-			  </div>
-			  <div class="col-sm-10">
-				<h5>Voice</h5>
-				<p>fdsafdsafdsaf sdafsdfdsf dfdsfds dsfsdagsdagsdagdsgdsgsd</p>
-			  </div><hr class="visible-xs">
-			  <div class="clear"></div>
-			</div><!--/.program-titles-->
-			  
-			  
-		</div>
+				<div class="col-sm-3">
+					<img src="http://placeimg.com/400/480/people">
+					<h6>Mary Jo Scanio</h6>
+					<p>Founder &amp; Artistic Director</p>
+					<a href="#">Read Full Bio</a>
+				</div>
+				<div class="col-sm-3">
+					<img src="http://placeimg.com/400/480/people">
+					<h6>Mary Jo Scanio</h6>
+					<p>Founder &amp; Artistic Director</p>
+					<a href="#">Read Full Bio</a>
+				</div>
+				<div class="col-sm-3">
+					<img src="http://placeimg.com/400/480/people">
+					<h6>Mary Jo Scanio</h6>
+					<p>Founder &amp; Artistic Director</p>
+					<a href="#">Read Full Bio</a>
+				</div>
+				<div class="col-sm-3">
+					<img src="http://placeimg.com/400/480/people">
+					<h6>Mary Jo Scanio</h6>
+					<p>Founder &amp; Artistic Director</p>
+					<a href="#">Read Full Bio</a>
+				</div>
+				<div class="clear"></div><hr />
+				<div class="col-sm-3">
+					<img src="http://placeimg.com/400/480/people">
+					<h6>Mary Jo Scanio</h6>
+					<p>Founder &amp; Artistic Director</p>
+					<a href="#">Read Full Bio</a>
+				</div>
+				<div class="col-sm-3">
+					<img src="http://placeimg.com/400/480/people">
+					<h6>Mary Jo Scanio</h6>
+					<p>Founder &amp; Artistic Director</p>
+					<a href="#">Read Full Bio</a>
+				</div>
+				<div class="col-sm-3">
+					<img src="http://placeimg.com/400/480/people">
+					<h6>Mary Jo Scanio</h6>
+					<p>Founder &amp; Artistic Director</p>
+					<a href="#">Read Full Bio</a>
+				</div>
+				<div class="col-sm-3">
+					<img src="http://placeimg.com/400/480/people">
+					<h6>Mary Jo Scanio</h6>
+					<p>Founder &amp; Artistic Director</p>
+					<a href="#">Read Full Bio</a>
+				</div>
+				<div class="clear"></div>
+			</div><!--/.program-titles-->  
+		</div><!--/.col-->
+		
 		<div class="col-sm-4 latest-news">
 			<h4 class="latest-title">News &amp; Events</h4>
 			<?php get_template_part( 'part', 'latest_news' ); ?>
@@ -89,4 +94,54 @@ get_header(); ?>
 </section><!--/.about-->
 
 
+
+<section class="memories">
+	<div class="intro row" id="contain">
+		<div class="col-sm-12">
+			<h2 class="section-title">Our Facility</h2> 
+			<p></p>
+		</div><!--/.col-->
+	</div><!--/.intro-->
+</section><!--/.memories-->
+
+<section class="memories-images">
+	<div class="intro row" id="contain">
+		<div class="col-sm-12 images">
+		  <img src="http://placeimg.com/290/292/nature">
+	      <img src="http://placeimg.com/290/292/people">
+	      <img src="http://placeimg.com/290/292/any">
+		</div>
+		<p>
+			<ul>
+				<li>7-spacious dance studios with sprung floors for injury prevention.</li>
+				<li>2-acoustical music rooms with pianos.</li>
+				<li>Black Box Theatre to hold small performances.</li>
+				<li>Healthy Snack Bar with food and drinks.</li>
+				<li>Dance Boutique with clothing, shoes and accessories.</li>
+				<li>Student lockers available.</li>
+				<li>Fully equipped tumbling area with aerial spotting apparatus.</li>
+			</ul>
+		</p>
+	</div><!--/.intro-->
+</section><!--/.memories-images-->
+
+<div class="footer-contact">
+	<div class="grid grid-pad row">
+	
+		<div class="col-sm-12">
+			<h3>Interested in Rental Information?</h3>
+			<p>Whatever you need, we have the flexibility to accommodate you!</p>
+			<a class="button green" href="<?php bloginfo('url'); ?>/contact">Contact Us</a>
+		</div>
+		
+	</div><!-- grid -->
+</div><!-- footer-contact -->
+
+
+
+
+
+
+
+</div><!--/.page-about-->
 	<?php get_footer(); ?>
