@@ -71,25 +71,8 @@ get_header(); ?>
 			  
 		</div>
 		<div class="col-sm-4 latest-news">
-			<h4>News &amp; Events</h4>
-			<br />
-			<h6>News title goes here</h6>
-			<p class="date">August 3,2015</p>
-			<p>News article excerpt goes here News article excerpt goes here News article excerpt goes here News article excerpt goes here News articl...</p>
-			<hr />
-			
-			<h6>News title goes here</h6>
-			<p class="date">August 3,2015</p>
-			<p>News article excerpt goes here News article excerpt goes here News article excerpt goes here News article excerpt goes here News...</p>
-			<hr />
-			
-			<h6>News title goes here</h6>
-			<p class="date">August 3,2015</p>
-			<p>News article excerpt goes here News article excerpt goes here News article excerpt goes here News article excerpt goes here...</p>
-			<hr />
-		
-			<a href="#">More News &amp; Events</a>
-			
+			<h4 class="latest-title">News &amp; Events</h4>
+			<?php get_template_part( 'part', 'latest_news' ); ?>
 		</div><!--/.col-->
 	</div><!--/.intro-->
 </section><!--/.about-->

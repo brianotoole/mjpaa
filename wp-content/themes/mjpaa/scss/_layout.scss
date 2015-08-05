@@ -642,7 +642,7 @@ Homepage
 		text-align: center;
 		z-index: 100;
 		
-		&:before {
+		&:before { //border above
 		    -webkit-box-sizing: content-box;
 		    -moz-box-sizing: content-box;
 		    box-sizing: content-box;
@@ -654,6 +654,33 @@ Homepage
 		    width: 100%;
 		    height: 4px;
 		    padding: 0 1px;
+		}
+		
+		.latest-title {
+			margin: 0;
+			padding: 0 0 22px;
+			border-bottom: 1px solid $lightgray;
+		}
+		
+		.news-title {
+			margin-bottom: 0;
+			color: $maroon;
+		}
+		
+		.descrip {
+			 margin: 22px 0 0;
+			 padding: 0 0 22px;
+			 border-bottom: 1px solid $lightgray;
+			 &:last-of-type {
+				 border-bottom: none;
+			 }
+		}
+		p.date {
+			font-weight: 600;
+		}
+		
+		p {
+			font-size: 0.75em;
 		}
 	}
 	

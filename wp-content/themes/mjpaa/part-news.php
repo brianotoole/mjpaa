@@ -1,9 +1,5 @@
-<?php if(is_front_page() ) { ?>	
-  <?php $query = new WP_Query( 'posts_per_page=3' ); //if homepage, only show 3 posts ?>
-<?php } else { ?>
-  <?php $query = new WP_Query( 'posts_per_page=-1' ); //else, show all ?>
-<?php } ?>
-  <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+<?php $query = new WP_Query( 'posts_per_page=-1' ); //show all ?>
+<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
 <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">  
 <div class="article col-sm-12 no-padding">
