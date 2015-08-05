@@ -104,6 +104,10 @@
 	background: $maroon;
 	color: white;
 	z-index: 11;
+	&:before {
+		content: '\f057';
+		color: $smoke;
+	}
 }
 
 .sb-search.sb-search-open .sb-search-submit,
