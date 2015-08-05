@@ -13,7 +13,7 @@ $loop = new WP_Query( $args );
 if ( $loop->have_posts() ) {
 	while ( $loop->have_posts() ) {
 		$loop->the_post(); ?>
-			<div class="class-list">
+			
 				<div class="col-sm-4">
 				  <?php if (has_post_thumbnail( $post->ID ) ): //if featured image is uploaded... ?>
 				  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $image = $image[0]; ?>
@@ -28,7 +28,7 @@ if ( $loop->have_posts() ) {
 				  <p><?php the_excerpt() ?></p>
 				</div><!--/.col-->
 				<div class="clear"></div><hr />
-			</div><!--/.class-list-->
+
 <?php } 
 } else {
 	// no posts found

@@ -846,7 +846,6 @@ Sidebar
 	color: $black;
 	padding: 10px;
     background: white;
-    border: 1px solid $lightgray;
     text-align: center;
     z-index: 100;
 	
@@ -913,6 +912,16 @@ Inteior page template - Classes, Class List
 		padding: 2.5px 0;
 	}
 }//.class-list
+
+/*the ajax loading icon*/
+.umloading {
+	width: 65%;
+	height: 44px;
+	margin-top: 44px;
+	background: url('img/ajax_loader.gif') no-repeat 50% 50%;
+	
+}
+
 
 /*--------------------------------------------------------------
 Footer
