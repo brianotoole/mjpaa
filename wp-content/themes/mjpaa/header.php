@@ -18,7 +18,7 @@
     <div class="grid head-overflow">
       <div id="sb-search" class="sb-search">
 	    <form>
-		  <input class="sb-search-input" placeholder="SEARCH..." type="text" value="" name="s" id="search">
+		  <input class="sb-search-input" placeholder="SEARCH SITE..." type="text" value="" name="s" id="search">
 		  <input class="sb-search-submit" type="submit" value="">
 		  <span class="sb-icon-search"></span>
 		</form>
