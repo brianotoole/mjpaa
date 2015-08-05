@@ -659,6 +659,7 @@ Homepage
 		.latest-title {
 			margin: 0;
 			padding: 0 0 22px;
+			font-weight: 400;
 			border-bottom: 1px solid $lightgray;
 		}
 		
@@ -675,12 +676,49 @@ Homepage
 				 border-bottom: none;
 			 }
 		}
+		span.cat-title {
+			/*&:after {
+				content: '\f111';
+				position: absolute;
+				font-family: fontAwesome;
+				font-size: 0.5em;
+				padding-right: 15px;
+				color: $gray;
+				
+			}*/
+		}
 		p.date {
 			font-weight: 600;
+			color: $gray;
 		}
 		
 		p {
 			font-size: 0.75em;
+		}
+		
+		.view {
+			color: $maroon;
+			font-weight: 200;
+			font-size: 0.75em;
+			padding: 0;
+			margin: 15px 0;
+			font-style: italic;
+			&:after {
+		    	content: '\f101';
+				position: absolute;
+				padding-top: 2px;
+				padding-left: 5px;
+				font-family: fontAwesome;
+				font-size: 1em;
+				color: #555;
+			}
+		}		
+		.more {
+			display: block;
+			font-size: 1em;
+			margin: 0;
+			padding-top: 20px;
+			padding-bottom: 0;
 		}
 	}
 	
@@ -694,7 +732,7 @@ Homepage
 	width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding: 40px;
     text-align: left;
     border-top: 8px solid $maroon;
     

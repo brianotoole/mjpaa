@@ -139,7 +139,7 @@ add_action( 'wp_head', 'mjpaa_html5shiv' );
  */
 function mjpaa_excerpt_length( $length ) {
 	
-	$excerpt = get_theme_mod('exc_length', '25');
+	$excerpt = get_theme_mod('exc_length', '22');
 	return $excerpt; 
 
 }

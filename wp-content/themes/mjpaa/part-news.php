@@ -13,7 +13,7 @@
 	</div>
 	<div class="col-sm-10 descrip">
 	  <h3 class="news-title"><?php the_title(); ?></h3>
-	  <p class="date"><?php echo get_the_date( 'l / F d / Y' ); ?></p>  
+	  <p class="date"><?php echo get_the_date( 'l / F j / Y' ); ?></p>  
 	  <p><?php the_excerpt() ?></p>
 	</div>
 	<div class="clear"></div>
