@@ -365,13 +365,12 @@ body.home .site-header.fixed {background: rgba($maroon, 0.85);border-bottom: 2px
 .head-overflow {
 	overflow: visible;
 }
+@import "search";
 
 
 /*--------------------------------------------------------------
 Menus
 --------------------------------------------------------------*/
-
-
 /* main nav */
 .main-navigation {
 	clear: both;
@@ -484,7 +483,6 @@ Menus
 /*--------------------------------------------------------------
 Content
 --------------------------------------------------------------*/
-
 /* color classes */
 .bg-maroon {background: $maroon;color: white; }
 .maroon {color: $maroon; }

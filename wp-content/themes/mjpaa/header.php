@@ -16,15 +16,22 @@
 
   <div class="top-bar">
     <div class="grid head-overflow">
+      <div id="sb-search" class="sb-search">
+	    <form>
+		  <input class="sb-search-input" placeholder="SEARCH..." type="text" value="" name="search" id="search">
+		  <input class="sb-search-submit" type="submit" value="">
+		  <span class="sb-icon-search"></span>
+		</form>
+	  </div><!--.sb-search-->
   	  <div class="links">
         <?php wp_nav_menu( array( 'theme_location' => 'top-bar' ) ); ?>
-  	  </div>
-    </div>
+  	  </div><!--/.links-->
+    </div><!--/.grid-->
   </div><!--/.top-bar-->
-
+ 
+ 
 	<div id="page" class="hfeed site">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'mjpaa' ); ?></a>
-	
 
 	<header id="masthead" class="site-header" role="banner">
     	<div class="grid head-overflow">
