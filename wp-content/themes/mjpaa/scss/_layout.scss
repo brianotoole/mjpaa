@@ -314,15 +314,15 @@ Top-Bar, Header, & Navigation
 //homepage only before scroll
 body.home .site-header {background: transparent;border-bottom:none;}
 //homepage only after scroll
-body.home .site-header.fixed {background: rgba($maroon, 0.85);border-bottom: 2px solid $lightgray;}
+body.home .site-header.fixed {background: rgba($maroon, 0.85);border-bottom: 2px solid rgba($lightgray,0.05);}
 .site-header {
 	position: absolute;
 	top: 45px; //height of .top-bar
 	width: 100%;
 	padding: 0 20px;
-	height: 242px;
-	background: rgba($black, 0.5);
-	border-bottom: 2px solid $lightgray;
+	height: 237px;
+	background: rgba($black, 0.5); //overlay
+	border-bottom: 2px solid rgba($lightgray,0.05);
 	z-index: 9;
 	transform: translateY(0px);
 	transition: transform 0.3s;
@@ -359,11 +359,13 @@ body.home .site-header.fixed {background: rgba($maroon, 0.85);border-bottom: 2px
 	margin-top: 0;
 	li a {
 		font-size: 1.1em;
+		color: white;
 	}
 }
 .head-overflow {
 	overflow: visible;
 }
+
 
 /*--------------------------------------------------------------
 Menus
@@ -407,6 +409,7 @@ Menus
 	}
 		
 }//.main-navigation
+
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
@@ -475,7 +478,9 @@ Menus
 	color: white;
 }
 
-
+.main-navigation li a:visited {
+	color: white!important; //override is needed
+}
 /*--------------------------------------------------------------
 Content
 --------------------------------------------------------------*/
@@ -853,8 +858,8 @@ Sidebar
 	min-height: 900px;
 	padding: 30px 15px;
 	color: $black;
-    background: $smoke;
-    border: 8px solid lighten($gray,20%);
+    background: white;
+    border: 8px solid $gray;
     text-align: left;
     z-index: 100;
 	
@@ -868,6 +873,7 @@ Sidebar
 	
 	p.info {
 		font-size: 0.85em;
+		margin-bottom: 2px;
 	}
 	
 	select,input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
@@ -896,7 +902,7 @@ aside {
 
 
 /*--------------------------------------------------------------
-Inteior page template - Classes, Class List
+Interior page template - Classes, Class List
 --------------------------------------------------------------*/
 .class-list {
 	.thumbnail.default {
@@ -940,9 +946,12 @@ Inteior page template - Classes, Class List
 	background: url('img/ajax_loader.gif') no-repeat 50% 50%;
 	
 }
+/* the find classes form id */
 #uwpqsf_id {
+	margin-top: 5px;
 	border: none;
 }
+/* main labels... */
 .uwpqsf_class > span[class*='taxolabel-'], .uwpqsf_class > span[class*='cmflabel-'] {
 	padding: 0;
 }
@@ -952,25 +961,37 @@ Inteior page template - Classes, Class List
     padding-bottom: 0;
 }
 .uwpqsf_class>span[class*='taxolabel-'], .uwpqsf_class>span[class*='cmflabel-'] {
-	padding: 10px 0 0 0;
-    margin: 15px 0 0 0;
+	padding: 10px 12px;
+    margin: 15px 0 0 -15px;
+    font-size: 1.1em;
+    width: 112%;
+    background: $gray;
+    color: white;
 }
+/* the choices... */
 .uwpqsf_class > label {
 	font-weight: 200;
 	font-size: 0.95em;
+	margin: 10px 0 0;
+    padding: 0 0 10px;
+	border-bottom: 2px solid $lightgray;
+	&:last-of-type {
+		border-bottom: none;
+	}
 }
+/* the search form, if needed */
 input#uwpqsf_id_key {
 	background: white;
 	margin-bottom: 5px;
 	border: 2px solid $lightgray;
 }
+/* the submit btn */
 .uwpqsf_submit {
     text-align: right;
     margin-bottom: 15px;
     width: 98%;
     display: block;
 }
-
 
 /*--------------------------------------------------------------
 Footer
@@ -1004,8 +1025,8 @@ Footer
 
 .site-footer {
 	font-weight: 400;
-	background: darken($maroon,5%);
-	border-top: 1px solid lighten($maroon,2%);
+	background: $gray;
+	border-top: 1px solid rgba($lightgray,0.25);
 	padding: 20px 0 40px;
 	color: white;
 	text-align: center;
