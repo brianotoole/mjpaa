@@ -10,7 +10,7 @@ get_header(); ?>
 	<div class="grid">
 	
 	<div id="secondary" class="sidebar widget-area col-3-12" role="complementary">
-		<h3 class="maroon">Search the Site</h3>
+		<h3 class="page-title animate fadeIn">Search the Site</h3>
 		<p class="info">Select an option below to filter content within the website. Content searched includes news, events &amp; classes.</p>
 		  <?php echo do_shortcode('[ULWPQSF id=66 formtitle="0" button=0]'); ?>
 	</div><!-- .sidebar --> 

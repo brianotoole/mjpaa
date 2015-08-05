@@ -321,7 +321,7 @@ body.home .site-header.fixed {background: rgba($maroon, 0.85);border-bottom: 2px
 	width: 100%;
 	padding: 0 20px;
 	height: 237px;
-	background: rgba($black, 0.5); //overlay
+	background: rgba($black, 0.6); //overlay
 	border-bottom: 2px solid rgba($lightgray,0.05);
 	z-index: 9;
 	transform: translateY(0px);
@@ -732,7 +732,7 @@ Homepage
     margin: 0 auto;
     padding: 40px;
     text-align: left;
-    border-top: 8px solid $maroon;
+    border-top: 8px solid $gray;
     
     .intro {
 	    background: transparent;
@@ -925,13 +925,29 @@ Sidebar
     border: 8px solid $gray;
     text-align: left;
     z-index: 100;
+    
+    .page-title {
+	    color: $maroon;
+    }
 	
 	.widget-title {
-		padding: 10px 15px;
-		background: $smoke;
-		color: $black;
-		font-size: 1.25em;
-		text-transform: uppercase;
+		padding: 10px 12px;
+		margin: 15px 0 0 -15px;
+		font-size: 1.3em;
+		width: 112%;
+		background: $gray;
+		color: white;
+	}
+	
+	li, li a {
+		font-weight: 200;
+		font-size: 1em;
+		margin: 10px 0 0;
+	    padding: 0 0 10px;
+		border-bottom: 2px solid $lightgray;
+		&:last-of-type {
+			border-bottom: none;
+		}
 	}
 	
 	p.info {
@@ -1027,6 +1043,7 @@ Interior page template - Classes, Class List
 	padding: 10px 12px;
     margin: 15px 0 0 -15px;
     font-size: 1.1em;
+    font-weight: 200!important;
     width: 112%;
     background: $gray;
     color: white;
@@ -1089,7 +1106,7 @@ Footer
 .site-footer {
 	font-weight: 400;
 	background: $gray;
-	border-top: 1px solid rgba($lightgray,0.25);
+	border-top: 2px solid rgba($lightgray,0.02);
 	padding: 20px 0 40px;
 	color: white;
 	text-align: center;

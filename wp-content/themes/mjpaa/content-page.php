@@ -4,10 +4,7 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 	<div class="entry-content">
-		<h2 class="page-title animate fadeIn"><?php the_title(); ?></h2>
-		
 		<?php the_content('<p>'); ?>
 		<?php
 			wp_link_pages( array(
@@ -20,5 +17,4 @@
 		<?php } else { ?>
 		<?php } ?>
 	</div><!-- .entry-content -->
-
 </article><!-- #post-## -->
