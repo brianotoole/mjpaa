@@ -940,7 +940,7 @@ Interior Default / Sidebar
 /* interior page header */
 .entry-header {
 	position: relative;
-	background: url('http://localhost/mjpaa/wp-content/themes/mjpaa/img/hero_placeholder.jpg') 50% center no-repeat;
+	background: url('img/hero_placeholder.jpg') 50% center no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -1080,6 +1080,8 @@ Interior page template - Classes, Class List
 	}
 }
 /* the loading icon */
+@import "filter";
+
 .umloading {
 	width: 65%;
 	height: 44px;

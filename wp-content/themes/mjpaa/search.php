@@ -20,7 +20,7 @@ get_header(); ?>
 
 			<div class="class-list">
 			  <div class="results-total">
-				<h3 class="page-title"><?php printf( __( 'Search results for: %s', 'mjpaa' ), '<span>' . get_search_query() . '</span>' ); ?></h3>
+				<h3 class="page-title"><?php printf( __( 'Search results for: "%s"', 'mjpaa' ), '<span>' . get_search_query() . '</span>' ); ?></h3>
 			  </div><!--/.results-total-->
 			<?php while ( have_posts() ) : the_post(); ?>
 

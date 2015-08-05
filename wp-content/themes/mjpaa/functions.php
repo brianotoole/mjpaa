@@ -229,6 +229,15 @@ function customize_output($results , $arg, $id, $getdata ){
 
 //* Remove header junk
 /*Removes RSD, XMLRPC, WLW, WP Generator, ShortLink and Comment Feed links*/
+add_filter( 'wp_default_scripts', 'dequeue_jquery_migrate' );
+
+function dequeue_jquery_migrate( &$scripts){
+	if(!is_admin()){
+		$scripts->remove( 'jquery');
+		$scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
+	}
+}
+
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wlwmanifest_link');
 remove_action('wp_head', 'wp_generator');
