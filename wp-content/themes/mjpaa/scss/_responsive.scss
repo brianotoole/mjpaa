@@ -64,13 +64,13 @@
 			-moz-transition: width 0.4s ease, background-color 0.4s ease;
 			-ms-transition: width 0.4s ease, background-color 0.4s ease;
 		}
-		&:hover,&:focus,&:visited {
+		&:hover,&:focus {
 			text-decoration: none;
 			color: darken(white,20%);
 		}
 		&:hover:after {
 			width: 100%;
-			background-color: $maroon;
+			background-color: white;
 		}
 	}
 	

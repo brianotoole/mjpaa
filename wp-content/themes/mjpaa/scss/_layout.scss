@@ -403,6 +403,9 @@ Menus
 			&:hover,&:focus {
 				color: $maroon;
 			}
+			&:visted {
+				color: white;
+			}
 	
 		}	
 	}
@@ -477,9 +480,6 @@ Menus
 	color: white;
 }
 
-.main-navigation li a:visited {
-	color: white!important; //override is needed
-}
 /*--------------------------------------------------------------
 Content
 --------------------------------------------------------------*/
