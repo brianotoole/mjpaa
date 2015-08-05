@@ -8,7 +8,45 @@ Author: MJPAA
 */
 
 
-// Register Custom Taxonomy: "Session" - used within "Class" custom post type
+// Register Custom Taxonomy: "Program" - used within the "Class" custom post type
+function class_program() {
+
+	$labels = array(
+		'name'                       => _x( 'Class Programs', 'Taxonomy General Name', 'mjpaa' ),
+		'singular_name'              => _x( 'Class Program', 'Taxonomy Singular Name', 'mjpaa' ),
+		'menu_name'                  => __( 'Class Programs', 'mjpaa' ),
+		'all_items'                  => __( 'All Programs', 'mjpaa' ),
+		'parent_item'                => __( 'Parent Program', 'mjpaa' ),
+		'parent_item_colon'          => __( 'Parent Program:', 'mjpaa' ),
+		'new_item_name'              => __( 'New Program Name', 'mjpaa' ),
+		'add_new_item'               => __( 'Add Program Item', 'mjpaa' ),
+		'edit_item'                  => __( 'Edit Program', 'mjpaa' ),
+		'update_item'                => __( 'Update Program', 'mjpaa' ),
+		'view_item'                  => __( 'View Program', 'mjpaa' ),
+		'separate_items_with_commas' => __( 'Separate programs with commas', 'mjpaa' ),
+		'add_or_remove_items'        => __( 'Add or remove programs', 'mjpaa' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'mjpaa' ),
+		'popular_items'              => __( 'Popular Programs', 'mjpaa' ),
+		'search_items'               => __( 'Search Programs', 'mjpaa' ),
+		'not_found'                  => __( 'Program Not Found', 'mjpaa' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => false,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => false,
+	);
+	register_taxonomy( 'program', array( 'classes' ), $args );
+
+}
+add_action( 'init', 'class_program', 0 );
+
+
+
+// Register Custom Taxonomy: "Session" - used within the "Class" custom post type
 function class_session() {
 
 	$labels = array(
@@ -46,7 +84,7 @@ add_action( 'init', 'class_session', 0 );
 
 
 
-// Register Custom Taxonomy: "Grade" - used within "Class" custom post type
+// Register Custom Taxonomy: "Grade" - used within the "Class" custom post type
 function class_grade_level() {
 
 	$labels = array(
@@ -109,7 +147,7 @@ function custom_post_type_classes() {
 		'description'         => __( 'Class lists for MJPAA', 'mjpaa' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'revisions', 'thumbnail', 'post-formats', ),
-		'taxonomies'          => array( 'category', 'session', 'grade' ),
+		'taxonomies'          => array( 'program', 'session', 'grade' ),
 		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,

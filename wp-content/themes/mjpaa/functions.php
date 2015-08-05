@@ -166,18 +166,22 @@ add_filter('uwpqsf_result_tempt', 'customize_output', '', 4);
 function customize_output($results , $arg, $id, $getdata ){
 	 // The Query
             $apiclass = new uwpqsfprocess();
-             $query = new WP_Query( $arg ); ?>
+            $query = new WP_Query( $arg ); ?>
 	<div class="results-total">
 		<?php  
 			$numberOfQueries = $query->found_posts;
 			
 			if ($numberOfQueries == 1) {?>
-				<h3><?php echo $numberOfQueries; ?> class found:</h3>
+				<h3><?php echo $numberOfQueries; ?> result found:</h3>
+				
 			<?}elseif ($numberOfQueries == 0){?>
-				<h3>No classes found.</h3>
+				<h3>No results found.</h3>
+				
 			<?}else{?>
-				<h3><?php echo $numberOfQueries; ?> classes found:</h3>
+				<h3><?php echo $numberOfQueries; ?> results found:</h3>
 			<?}
+			
+
 			
 		?> 
 	</div>
@@ -203,7 +207,11 @@ function customize_output($results , $arg, $id, $getdata ){
 				</div><!--/.col-->
 				<div class="col-sm-8 descrip">
 				  <h3 class="class-title"><?php the_title(); ?></h3>
+				  <?php if( get_field('class_start_date') ): ?>
 				  <p class="date"><?php the_field('class_start_date'); ?> - <?php the_field('class_end_date'); ?></p>  
+				  <?php else: //is "post" not "class" ?>
+				  <p class="date"><span class="cat-title"><?php global $post; $category = get_the_category($post->ID); echo $category[0]->name; ?></span> <?php echo get_the_date( '/ l, F j' ); ?>
+				  <?php endif; ?>
 				  <p><?php the_excerpt() ?></p>
 				</div><!--/.col-->
 			  </a>
@@ -211,7 +219,7 @@ function customize_output($results , $arg, $id, $getdata ){
 	<?}
                         echo  $apiclass->ajax_pagination($arg['paged'],$query->max_num_pages, 4, $id, $getdata);
 		 } else {
-					 echo  '<p>There were no classes found with your criteria. Please try selecting different options.</p>';
+					 echo  '<p style="padding: 0 20px;">There were no results found with your criteria. Please try selecting different options.</p>';
 				}
 				/* Restore original Post Data */
 				wp_reset_postdata();

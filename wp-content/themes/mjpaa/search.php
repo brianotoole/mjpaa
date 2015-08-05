@@ -1,44 +1,36 @@
 <?php
 /**
- * The template for displaying search results pages.
- *
+Template for displaying search results.
  */
+get_header(); ?> 
+            
+	<header class="entry-header">
+	</header><!-- .entry-header -->
 
-get_header(); ?>
+	<div class="grid">
+	
+	<div id="secondary" class="sidebar widget-area col-3-12" role="complementary">
+		<h3 class="maroon">Search the Site</h3>
+		<p class="info">Select an option below to filter content within the website. Content searched includes news, events &amp; classes.</p>
+		  <?php echo do_shortcode('[ULWPQSF id=66 formtitle="0" button=0]'); ?>
+	</div><!-- .sidebar --> 
+	
+		<div id="primary" class="col-9-12">
+			<main id="main" class="site-main entry-content" role="main">
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'mjpaa' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
-
-			<?php /* Start the Loop */ ?>
+			<div class="class-list">
+			  <div class="results-total">
+				<h3 class="page-title"><?php printf( __( 'Search results for: %s', 'mjpaa' ), '<span>' . get_search_query() . '</span>' ); ?></h3>
+			  </div><!--/.results-total-->
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'content', 'search' );
-				?>
+				<?php get_template_part( 'content', 'search' ); ?>
 
-			<?php endwhile; ?>
+			<?php endwhile; // end of the loop. ?>
+			</div><!--/.class-list-->
 
-			<?php mjpaa_paging_nav(); ?>
+			</main><!-- #main -->
+		</div><!-- #primary -->
 
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+	</div><!-- grid -->
+	<?php get_footer(); ?>
