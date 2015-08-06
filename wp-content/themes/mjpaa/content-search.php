@@ -1,17 +1,19 @@
 <?php
 
 // WP_Query arguments for custom post type...
-$args = array (
-	'post_type'	     => array( 'class', 'post', 'page' ),
-	'posts_per_page' => -1
-);
+//$args = array (
+//	'post_type'	     => array( 'class', 'post', 'page' ),
+//	'posts_per_page' => -1
+//);
 // The Query
-$loop = new WP_Query( $args );
+//$loop = new WP_Query( $args );
 
 // The Loop
-if ( $loop->have_posts() ) {
-	while ( $loop->have_posts() ) {
-		$loop->the_post(); ?>
+//if ( $loop->have_posts() ) {
+//	while ( $loop->have_posts() ) {
+//		$loop->the_post(); 
+
+?>
 			<a href="<?php the_permalink() ?>">
 				<div class="col-sm-4">
 				  <?php if (has_post_thumbnail( $post->ID ) ): //if featured image is uploaded... ?>
@@ -36,12 +38,3 @@ if ( $loop->have_posts() ) {
 			</a>
 				<div class="clear"></div><hr />
 
-<?php } 
-} else {
-	// no posts found
-}
-
-// Restore original Post Data
-wp_reset_postdata();
-
-?>
