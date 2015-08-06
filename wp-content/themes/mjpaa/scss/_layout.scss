@@ -976,10 +976,52 @@ Interior Default / Sidebar
 }
 #primary {padding: 0;}
 /*--------------------------------------------------------------
-Sidebar
+Default Sidebar
 --------------------------------------------------------------*/
-/*sidebar*/
 .sidebar {
+	width: 100%;
+	margin: 0;
+	
+	.widget-title {
+		margin: 0;
+		padding: 0 0 22px;
+		font-weight: 400;
+		border-bottom: 1px solid $lightgray;
+		font-size: 26px;
+		line-height: 28px;
+	}
+	
+	.text-widget, li, li a, p, div {
+		margin: 22px 0 0;
+		padding: 0 0 22px;
+		border-bottom: 1px solid $lightgray;
+	}
+	
+}
+aside {
+	li.cat-item {
+	    a {
+	    	display: block;
+	        width: 100%;
+	        padding: 1px 30px;
+	        font-size: 1em;
+	        text-align: left;
+	        text-decoration: none;
+		    color: $maroon;
+	    }
+		&:hover {
+			color: darken($maroon,7%);
+		}
+    }
+}
+	
+
+
+/*--------------------------------------------------------------
+Interior page template - Classes, Class List
+--------------------------------------------------------------*/
+/*class search sidebar*/
+.classes-sidebar {
 	margin-top: 70px;
 	min-height: 900px;
 	padding: 30px 15px;
@@ -992,7 +1034,7 @@ Sidebar
     .page-title {
 	    color: $maroon;
     }
-	
+
 	.widget-title {
 		padding: 10px 12px;
 		margin: 15px 0 0 -15px;
@@ -1026,29 +1068,6 @@ Sidebar
     	width: 92%;
 	}	
 }
-
-aside {
-	li.cat-item {
-	    a {
-	    	display: block;
-	        width: 100%;
-	        padding: 1px 30px;
-	        font-size: 1em;
-	        text-align: left;
-	        text-decoration: none;
-		    color: $maroon;
-	    }
-		&:hover {
-			color: darken($maroon,7%);
-		}
-    }
-}
-	
-
-
-/*--------------------------------------------------------------
-Interior page template - Classes, Class List
---------------------------------------------------------------*/
 .class-list {
 	.thumbnail.default {
 		width: 100%;

@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div class="grid">
 	
-	<div id="secondary" class="sidebar widget-area col-3-12" role="complementary">
+	<div id="secondary" class="classes-sidebar widget-area col-3-12" role="complementary">
 		<h3 class="page-title animate fadeIn">Find Classes</h3>
 		<p class="info">Select an option below to filter classes by program, session, and/or grade level.</p>
 		  <?php echo do_shortcode('[ULWPQSF id=49 formtitle="0" button=0]'); ?>
