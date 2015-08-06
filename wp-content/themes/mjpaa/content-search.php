@@ -2,8 +2,7 @@
 
 // WP_Query arguments for custom post type...
 $args = array (
-	'post_type'	     => array( 'class', 'post' ),
-	'order'			 => 'DESC',
+	'post_type'	     => array( 'class', 'post', 'page' ),
 	'posts_per_page' => -1
 );
 // The Query

@@ -141,62 +141,6 @@ get_header(); ?>
 <?php } ?>
 	
 
-	
-	<section class="about">
-		<div class="intro row" id="contain">
-			<div class="col-sm-8">
-				<div id="primary">
-					<main id="main" class="site-main" role="main">
-					  <div class="entry-content">
-					  	<?php if ( is_singular( 'faculty' ) ) :  ?>
-					  		<div class="col-sm-5">
-							  <img class="faculty" src="<?php the_field('faculty_img'); ?>" />
-					  		</div>
-						<?php endif ; //close if is single post_type 'facutly' ?>
-					    <?php the_content(); ?> 
-					  </div>
-					</main><!-- #main -->
-				</div><!-- #primary -->
-			</div><!--/.col-->
-			<div class="col-sm-4 latest-news">
-				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category() ) :?>
-					<h4 class="latest-title">News &amp; Events</h4>
-					<?php get_template_part( 'part', 'latest_news' ); ?>
-				<?php endif ; ?>
-				<?php get_sidebar(); ?>
-				<?php if ( is_singular( 'faculty' ) ) :  //if "faculty" post_type single ?>
-					<h4 class="latest-title">Our Faculty</h4>
-					<?php
-						// WP_Query arguments for custom post type...
-						$args = array (
-							'post_type'	     => array( 'faculty' ),
-							'orderby' 		 => 'menu_order',
-							'order'			 => 'ASC',
-							'posts_per_page' => -1
-						);
-						// The Query
-						$loop = new WP_Query( $args );
-						
-						// The Loop
-						if ( $loop->have_posts() ) {
-							while ( $loop->have_posts() ) {
-								$loop->the_post(); ?>
-									<a href="<?php the_permalink() ?>">
-								    	<h5 class="news-title"><?php the_title(); ?></h5>
-									</a>						
-						<?php } 
-						} else {
-							// no posts found
-						}
-						// Restore original Post Data
-						wp_reset_postdata();
-						
-						?>
-				<? endif ; ?>
-			</div><!--/.col-->
-		</div><!--/.intro-->
-	</section><!--/.about-->
-	
 	<?php if ( is_singular( 'class' ) && get_field('class_registration_link') ): //registration link ?>
 	<div class="footer-contact">
 		<div class="grid grid-pad row">
