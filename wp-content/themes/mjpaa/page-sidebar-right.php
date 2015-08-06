@@ -10,9 +10,11 @@ get_header(); ?>
 <div class="page-about sidebar-right">
 <section class="history">
 	<div class="intro row" id="contain">
-	 <!-- <h3 class="section-title">Our History</h3> -->
 		<div class="col-sm-12">
-			<h3 class="section-title"><?php the_title(); ?></h3> 
+			<h3 class="section-title"><?php the_title(); ?></h3>
+			<?php if( get_field('interior_callout') ): ?> 
+			  <p><?php the_field('interior_callout'); ?></p>
+			<?php endif ; ?>
 		</div><!--/.col-->
 	</div><!--/.intro-->
 </section><!--/.history-->
