@@ -1005,7 +1005,7 @@ Default Sidebar
 		border-bottom: 1px solid $lightgray;
 	}
 	
-	a {
+	li a {
 		color: $maroon;
 		font-weight: 200;
 		font-style: italic;
@@ -1038,8 +1038,35 @@ aside {
     }
 }
 	
+/*--------------------------------------------------------------
+Interior Page Template: Faculty single
+--------------------------------------------------------------*/
+img.faculty {
+	border: 5px solid $lightgray;
+    padding: 5px;
+    background: white;
+}
+.latest-news {
 
-
+	a li, li a {
+		margin: 10px 0 0;
+		padding: 0 0 10px;
+		border-bottom: 1px solid $lightgray;
+		color: $maroon;
+		font-weight: 200;
+		font-style: italic;
+		list-style: none;
+		&:after {
+		    content: '\f101';
+		    position: absolute;
+		    padding-top: 2px;
+		    padding-left: 10px;
+		    font-family: fontAwesome;
+		    font-size: 1em;
+		    color: #555;
+		}
+	}
+}
 /*--------------------------------------------------------------
 Interior Page Template: Classes / Class Search
 --------------------------------------------------------------*/
@@ -1124,6 +1151,9 @@ Interior Page Template: Classes / Class Search
 	h3 {
 		margin: 50px 20px;
 		padding-bottom: 5px;
+	}
+	span {
+		text-transform: uppercase;
 	}
 }
 /* sidebar filtering */

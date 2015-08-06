@@ -66,10 +66,10 @@ get_header(); ?>
 				
 				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category() ) :?>
 				  <p>Posted on</p>
-				    <span>published date</span>
+				    <span><?php echo get_the_date( 'l, F j' ); ?></span>
 				  <hr />
 				  <p>Posted by</p>
-				    <span>author username</span>
+				    <span><?php the_author(); ?></span>
 				<?php endif ; //close if is sinlge post in category news or no category is checked ?>
 			</div><!--/.col-->
 			<div class="col-sm-9 quotes b-left">
@@ -125,7 +125,7 @@ get_header(); ?>
 							while ( $loop->have_posts() ) {
 								$loop->the_post(); ?>
 									<a href="<?php the_permalink() ?>">
-								    	<h5 class="news-title"><?php the_title(); ?></h5>
+								    	<li><?php the_title(); ?></li>
 									</a>						
 						<?php } 
 						} else {
@@ -142,13 +142,18 @@ get_header(); ?>
 
 	
 
-	<?php if ( is_singular( 'class' ) && get_field('class_registration_link') ): //registration link ?>
+	<?php if ( is_singular( 'class' ) && get_field('class_registration_link') || is_singular('post') && in_category('event') && get_field('event_registration_link') ): //registration link ?>
 	<div class="footer-contact">
 		<div class="grid grid-pad row">
 			<div class="col-sm-12">
 				<h3>Sign up for: <strong><?php the_title(); ?></strong></h3>
 				<p>To register for this class, click the button below.</p>
-				<a class="button green" href="<?php the_field('class_registration_link'); ?>" target="_blank">Register Now</a>
+				<?php if ( is_singular( 'class' ) && get_field('class_registration_link') ) {  ?>	
+				  <a class="button green" href="<?php the_field('class_registration_link'); ?>" target="_blank">Register Now</a>
+				<?php } else if ( is_singular( 'post' ) && in_category('event') && get_field('event_registration_link') ) {   ?>	
+				  <a class="button green" href="<?php the_field('event_registration_link'); ?>" target="_blank">Register Now</a>
+				<?php } else {  ?>
+				<?php } ?>
 			</div>
 		</div><!-- grid -->
 	</div><!-- footer-contact -->
