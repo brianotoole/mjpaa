@@ -120,7 +120,10 @@ get_header(); ?>
 				<li>Dance Boutique with clothing, shoes and accessories.</li>
 				<li>Student lockers available.</li>
 				<li>Fully equipped tumbling area with aerial spotting apparatus.</li>
-			</ul>
+			</ul><hr />
+			<h3>Interested in Renting for Your Private Event?</h3>
+			<p>Whatever you need, we have the flexibility to accommodate you!</p>
+			<a class="underline" href="<?php bloginfo('url'); ?>/contact">Contact us for rental information</a>
 		</p>
 	</div><!--/.intro-->
 </section><!--/.memories-images-->
@@ -129,9 +132,9 @@ get_header(); ?>
 	<div class="grid grid-pad row">
 	
 		<div class="col-sm-12">
-			<h3>Interested in Rental Information?</h3>
-			<p>Whatever you need, we have the flexibility to accommodate you!</p>
-			<a class="button green" href="<?php bloginfo('url'); ?>/contact">Contact Us</a>
+			<h3>Ready to Discover the Difference?</h3>
+			<p>Be touched. Be moved. Be inspired.</p>
+			<a class="button green" href="<?php bloginfo('url'); ?>/classes">Find Classes</a>
 		</div>
 		
 	</div><!-- grid -->

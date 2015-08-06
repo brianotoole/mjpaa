@@ -518,6 +518,9 @@ Content
 .text-center {
 	text-align: center;
 }
+.underline {
+	text-decoration: underline;
+}
 
 
 /*--------------------------------------------------------------
@@ -904,12 +907,12 @@ Interior / About page template
 	
 	section.memories {
 		
-		background: url('img/g-map.png') top center no-repeat;
-		background-size: cover;
-		//generated with: www.mapseasy.com/google-maps-to-image-generator.php
+		//background: url('img/g-map.png') top center no-repeat;
+		//background: url('img/brickwall.png');
+		background: $gray;
 		
 		.intro {
-			background: rgba($gray, 0.9); //overlay on google map static image
+			background: rgba($black, 0.4); //overlay on google map static image
 		}
 		
 		.section-title {
@@ -918,6 +921,7 @@ Interior / About page template
 	}
 	
 	section.memories-images {
+		text-align: left;
 		ul {
 			list-style: none;
 			li {
