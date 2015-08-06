@@ -2,7 +2,7 @@
 
 // WP_Query arguments for custom post type...
 $args = array (
-	'post_type'	     => array( 'post', 'class' ),
+	'post_type'	     => array( 'class', 'post' ),
 	'order'			 => 'DESC',
 	'posts_per_page' => -1
 );
@@ -24,12 +24,14 @@ if ( $loop->have_posts() ) {
 				</div><!--/.col-->
 				<div class="col-sm-8 descrip">
 				  <h3 class="class-title"><?php the_title(); ?></h3>
-				    <p class="date">
-				      <span class="cat-title">
-				        <?php global $post; $category = get_the_category($post->ID); echo $category[0]->name; ?>
-				      </span> 
-				        <?php echo get_the_date( '/ l, F j' ); ?>
-				    </p>  
+				  
+				  <?php if($post->post_type == 'class') {  // if class... ?>	
+				  <p class="date"><?php the_field('class_start_date'); ?> - <?php the_field('class_end_date'); ?></p>  
+				  <?php } elseif($post->post_type == 'post') {  //if post... ?>	
+				  <strong><span class="cat-title"><?php global $post; $category = get_the_category($post->ID); echo $category[0]->name; ?></span> <?php echo get_the_date( '/ l, F j' ); ?></strong>
+				  <?php } else {  ?>
+				  
+				  <?php } ?>
 				  <p><?php the_excerpt() ?></p>
 				</div><!--/.col-->
 			</a>
@@ -37,8 +39,7 @@ if ( $loop->have_posts() ) {
 
 <?php } 
 } else {
-	//no results show interior sidebar filter form with search button
-	get_template_part( 'content', 'none' );
+	// no posts found
 }
 
 // Restore original Post Data

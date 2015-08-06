@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div class="grid">
 	
-	<div id="secondary" class="sidebar widget-area col-3-12" role="complementary">
+	<div id="secondary" class="classes-sidebar widget-area col-3-12" role="complementary">
 		<h3 class="page-title animate fadeIn">Search the Site</h3>
 		<p class="info">Select an option below to filter content within the website. Content searched includes news, events &amp; classes.</p>
 		  <?php echo do_shortcode('[ULWPQSF id=66 formtitle="0" button=0]'); ?>
@@ -20,7 +20,7 @@ get_header(); ?>
 
 			<div class="class-list">
 			  <div class="results-total">
-				<h3 class="page-title"><?php printf( __( 'Search results for: "%s"', 'mjpaa' ), '<span>' . get_search_query() . '</span>' ); ?></h3>
+				<h3><?php printf( __( 'Search results for: "%s"', 'mjpaa' ), '<span>' . get_search_query() . '</span>' ); ?></h3>
 			  </div><!--/.results-total-->
 			<?php while ( have_posts() ) : the_post(); ?>
 
