@@ -21,7 +21,7 @@ get_header(); ?>
 		</div><!--/.intro-->
 	</section><!--/.history-->
 	
-<?php } elseif( is_singular( 'class' ) ) {  //if is 'class' post_type single... ?>	
+<?php } elseif( is_singular() ) {  //all others ?>	
 <div class="page-about">
 	<section class="history">
 		<div class="intro row" id="contain">
@@ -82,6 +82,8 @@ get_header(); ?>
 			</div><!--/.col-->
 		</div><!--/.intro-->
 	</section><!--/.history-->
+<?php } else {  ?>
+<?php } ?>
 	
 	<section class="about">
 		<div class="intro row" id="contain">
@@ -137,8 +139,7 @@ get_header(); ?>
 			</div><!--/.col-->
 		</div><!--/.intro-->
 	</section><!--/.about-->	
-<?php } else {  ?>
-<?php } ?>
+
 	
 
 	<?php if ( is_singular( 'class' ) && get_field('class_registration_link') ): //registration link ?>
