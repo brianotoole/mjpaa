@@ -1,27 +1,41 @@
-<?php $query = new WP_Query( 'posts_per_page=-1' ); //show all ?>
-<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+<?php
 
-<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">  
-<div class="article col-sm-12 no-padding">
-	<div class="col-sm-2 no-padding img">
-	  <?php if (has_post_thumbnail( $post->ID ) ): //if featured image is uploaded... ?>
-	  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $image = $image[0]; ?>
-	  <img class="thumbnail" src="<?php echo $image; ?>">
-	  <?php else: //if no featured image is uploaded, show default icon img ?>
-	  <div class="thumbnail default"></div>
-	  <?php endif; ?>
-	</div>
-	<div class="col-sm-10 descrip">
-	  <h3 class="news-title"><?php the_title(); ?></h3>
-	  <p class="date"><?php echo get_the_date( 'l / F j / Y' ); ?></p>  
-	  <p><?php the_excerpt() ?></p>
-	</div>
-	<div class="clear"></div>
-</div>
-</a>
+// WP_Query arguments for custom post type...
+$args = array (
+	'post_type'	     => array( 'post' ),
+	'order'			 => 'DESC',
+	'posts_per_page' => -1
+);
+// The Query
+$loop = new WP_Query( $args );
 
-<?php endwhile; 
- wp_reset_postdata();
- else : ?>
-<p><?php _e( 'There are no news articles at this time.' ); ?></p>
-<?php endif; ?>
+// The Loop
+if ( $loop->have_posts() ) {
+	while ( $loop->have_posts() ) {
+		$loop->the_post(); ?>
+			<a href="<?php the_permalink() ?>">
+				<div class="col-sm-4">
+				  <?php if (has_post_thumbnail( $post->ID ) ): //if featured image is uploaded... ?>
+				  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $image = $image[0]; ?>
+				  <img class="thumbnail" src="<?php echo $image; ?>">
+				  <?php else: //if no featured image is uploaded, show default icon img ?>
+				  <div class="thumbnail default"><i class="fa fa-music"></i></div>
+				  <?php endif; ?>
+				</div><!--/.col-->
+				<div class="col-sm-8 descrip">
+				  <h3 class="class-title"><?php the_title(); ?></h3>
+				  <p class="date"><span class="cat-title"><?php global $post; $category = get_the_category($post->ID); echo $category[0]->name; ?></span> <?php echo get_the_date( '/ l, F j' ); ?></p>  
+				  <p><?php the_excerpt() ?></p>
+				</div><!--/.col-->
+			</a>
+				<div class="clear"></div><hr />
+
+<?php } 
+} else {
+	// no posts found
+}
+
+// Restore original Post Data
+wp_reset_postdata();
+
+?>
