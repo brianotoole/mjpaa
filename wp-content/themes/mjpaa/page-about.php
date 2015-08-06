@@ -33,6 +33,7 @@ get_header(); ?>
 	<div class="intro row" id="contain">
 		<div class="col-sm-8">
 			<h3 class="section-title">Our Faculty &amp; Staff</h3> 
+				<div class="program-titles">
 					<?php
 						// WP_Query arguments for faculty custom post type...
 						$args = array (
@@ -65,6 +66,7 @@ get_header(); ?>
 						wp_reset_postdata();
 						
 						?>
+				</div>
 		</div><!--/.col-->
 		
 		<div class="col-sm-4 latest-news">
