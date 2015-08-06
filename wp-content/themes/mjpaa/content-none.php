@@ -4,26 +4,12 @@
  */
 ?>
 
-<section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php _e( 'Nothing Found', 'mjpaa' ); ?></h1>
-	</header><!-- .page-header -->
 
-	<div class="page-content">
-		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
+				<p>The content you are looking for can not be found. Try using different keywords, or use the filter in the sidebar to help you search the site.</p>
+				<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+			    <div><label class="screen-reader-text" for="s">Search:</label>
+			        <input type="text" value="" name="s" id="s" />
+			        <input type="submit" id="searchsubmit" value="Search" />
+			    </div>
+			</form>
 
-			<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'mjpaa' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
-
-		<?php elseif ( is_search() ) : ?>
-
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'mjpaa' ); ?></p>
-			<?php get_search_form(); ?>
-
-		<?php else : ?>
-
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'mjpaa' ); ?></p>
-			<?php get_search_form(); ?>
-
-		<?php endif; ?>
-	</div><!-- .page-content -->
-</section><!-- .no-results -->

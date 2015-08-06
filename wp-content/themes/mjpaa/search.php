@@ -22,11 +22,17 @@ get_header(); ?>
 			  <div class="results-total">
 				<h3><?php printf( __( 'Search results for: "%s"', 'mjpaa' ), '<span>' . get_search_query() . '</span>' ); ?></h3>
 			  </div><!--/.results-total-->
-			<?php while ( have_posts() ) : the_post(); ?>
+			  <?php if ( have_posts() ) : ?>
+			  <?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'search' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
+			<?php else : ?>
+
+				<?php get_template_part( 'content', 'none' ); ?>
+
+			<?php endif; ?>
 			</div><!--/.class-list-->
 
 			</main><!-- #main -->
