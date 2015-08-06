@@ -152,7 +152,7 @@ function custom_post_type_classes() {
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
-		'menu_position'       => 5,
+		'menu_position'       => 2,
 		'menu_icon'           => 'dashicons-playlist-audio',
 		'show_in_admin_bar'   => true,
 		'show_in_nav_menus'   => true,
@@ -166,5 +166,63 @@ function custom_post_type_classes() {
 
 }
 add_action( 'init', 'custom_post_type_classes', 1 );
+
+
+
+// Register Custom Post Type: "Faculty"
+function custom_post_type_faculty() {
+
+	$labels = array(
+		'name'                => _x( 'Faculty', 'Post Type General Name', 'mjpaa' ),
+		'singular_name'       => _x( 'Faculty Member', 'Post Type Singular Name', 'mjpaa' ),
+		'menu_name'           => __( 'Faculty Members', 'mjpaa' ),
+		'name_admin_bar'      => __( 'Faculty Members', 'mjpaa' ),
+		'parent_item_colon'   => __( 'Parent Item:', 'mjpaa' ),
+		'all_items'           => __( 'All Faculty Members', 'mjpaa' ),
+		'add_new_item'        => __( 'Add New Faculty Member', 'mjpaa' ),
+		'add_new'             => __( 'Add New', 'mjpaa' ),
+		'new_item'            => __( 'New Faculty Member', 'mjpaa' ),
+		'edit_item'           => __( 'Edit Faculty Member', 'mjpaa' ),
+		'update_item'         => __( 'Update Faculty Member', 'mjpaa' ),
+		'view_item'           => __( 'View Faculty Member', 'mjpaa' ),
+		'search_items'        => __( 'Search Faculty Members', 'mjpaa' ),
+		'not_found'           => __( 'Faculty Member not found', 'mjpaa' ),
+		'not_found_in_trash'  => __( 'Faculty Member not found in Trash', 'mjpaa' ),
+	);
+	$args = array(
+		'label'               => __( 'Faculty Member', 'mjpaa' ),
+		'description'         => __( 'Faculty member list for MJPAA', 'mjpaa' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'revisions', 'thumbnail', 'post-formats', ),
+		'taxonomies'          => array( 'category' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'menu_position'       => 3,
+		'menu_icon'           => 'dashicons-businessman',
+		'show_in_admin_bar'   => true,
+		'show_in_nav_menus'   => true,
+		'can_export'          => true,
+		'has_archive'         => true,		
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'page',
+	);
+	register_post_type( 'faculty', $args );
+
+}
+add_action( 'init', 'custom_post_type_faculty', 2 );
+
+
+
+
+
+
+
+
+
+
+
 
 ?>
