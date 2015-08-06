@@ -1,7 +1,4 @@
 <?php
-/**
-Template Name: Page - Sidebar Left
- */
 get_header(); ?> 
             
 	<header class="entry-header">

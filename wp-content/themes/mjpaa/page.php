@@ -1,25 +1,39 @@
 <?php
 /**
-Default interior page (with sidebar)
+Default
  */
 get_header(); ?> 
             
 	<header class="entry-header">
 	</header><!-- .entry-header -->
 
-	<div class="grid">
-	<?php get_sidebar(); ?>
-		<div id="primary" class="col-9-12">
-			<main id="main" class="site-main" role="main">
+<div class="page-about sidebar-right">
+<section class="history">
+	<div class="intro row" id="contain">
+	 <!-- <h3 class="section-title">Our History</h3> -->
+		<div class="col-sm-12">
+			<h3 class="section-title"><?php the_title(); ?></h3> 
+		</div><!--/.col-->
+	</div><!--/.intro-->
+</section><!--/.history-->
 
+<section class="about">
+	<div class="intro row" id="contain">
+		<div class="col-sm-8">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
+				<article>
+					<?php the_content('<p>'); ?>
+				</article>
 
 			<?php endwhile; // end of the loop. ?>
+		</div><!--/.col-->
+		
+		<div class="col-sm-4 latest-news">
+			<?php get_sidebar(); ?>
+		</div><!--/.col-->
+	</div><!--/.intro-->
+</section><!--/.about-->
+</div><!--/.page-about-->
 
-			</main><!-- #main -->
-		</div><!-- #primary -->
-
-	</div><!-- grid -->
 	<?php get_footer(); ?>
