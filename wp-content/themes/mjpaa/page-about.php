@@ -6,6 +6,7 @@ get_header(); ?>
             
 	<header class="entry-header">
 	</header><!-- .entry-header -->
+	<?php while ( have_posts() ) : the_post(); ?>
 
 <div class="page-about">
 <section class="history">
@@ -13,7 +14,7 @@ get_header(); ?>
 	 <!-- <h3 class="section-title">Our History</h3> -->
 		<div class="col-sm-3 visit">
 			<p>Visit</p>
-			  <a href="#">Our Company History</a>
+			  <a href="#">Our Achievements</a>
 			<hr />
 			<p>Visit</p>
 			  <a href="#">Our Alumni Spotlight</a>
@@ -32,58 +33,38 @@ get_header(); ?>
 	<div class="intro row" id="contain">
 		<div class="col-sm-8">
 			<h3 class="section-title">Our Faculty &amp; Staff</h3> 
-			<div class="program-titles">
-				<div class="col-sm-3">
-					<img src="http://placeimg.com/400/480/people">
-					<h6>Mary Jo Scanio</h6>
-					<p>Founder &amp; Artistic Director</p>
-					<a href="#">Read Full Bio</a>
-				</div>
-				<div class="col-sm-3">
-					<img src="http://placeimg.com/400/480/people">
-					<h6>Mary Jo Scanio</h6>
-					<p>Founder &amp; Artistic Director</p>
-					<a href="#">Read Full Bio</a>
-				</div>
-				<div class="col-sm-3">
-					<img src="http://placeimg.com/400/480/people">
-					<h6>Mary Jo Scanio</h6>
-					<p>Founder &amp; Artistic Director</p>
-					<a href="#">Read Full Bio</a>
-				</div>
-				<div class="col-sm-3">
-					<img src="http://placeimg.com/400/480/people">
-					<h6>Mary Jo Scanio</h6>
-					<p>Founder &amp; Artistic Director</p>
-					<a href="#">Read Full Bio</a>
-				</div>
-				<div class="clear"></div><hr />
-				<div class="col-sm-3">
-					<img src="http://placeimg.com/400/480/people">
-					<h6>Mary Jo Scanio</h6>
-					<p>Founder &amp; Artistic Director</p>
-					<a href="#">Read Full Bio</a>
-				</div>
-				<div class="col-sm-3">
-					<img src="http://placeimg.com/400/480/people">
-					<h6>Mary Jo Scanio</h6>
-					<p>Founder &amp; Artistic Director</p>
-					<a href="#">Read Full Bio</a>
-				</div>
-				<div class="col-sm-3">
-					<img src="http://placeimg.com/400/480/people">
-					<h6>Mary Jo Scanio</h6>
-					<p>Founder &amp; Artistic Director</p>
-					<a href="#">Read Full Bio</a>
-				</div>
-				<div class="col-sm-3">
-					<img src="http://placeimg.com/400/480/people">
-					<h6>Mary Jo Scanio</h6>
-					<p>Founder &amp; Artistic Director</p>
-					<a href="#">Read Full Bio</a>
-				</div>
-				<div class="clear"></div>
-			</div><!--/.program-titles-->  
+					<?php
+						// WP_Query arguments for faculty custom post type...
+						$args = array (
+							'post_type'	     => array( 'faculty' ),
+							'orderby' 		 => 'menu_order',
+							'order'			 => 'ASC',
+							'posts_per_page' => -1
+						);
+						// The Query
+						$loop = new WP_Query( $args );
+						
+						// The Loop
+						if ( $loop->have_posts() ) {
+							while ( $loop->have_posts() ) {
+								$loop->the_post(); ?>
+									<div class="col-sm-3">
+									  <a href="<?php the_permalink() ?>">
+									    <img class="faculty" src="<?php the_field('faculty_img'); ?>" />
+									    <h6><?php the_title(); ?></h6>
+									    <p><?php the_field('faculty_position'); ?></p>
+									    <p>Read Full Bio</p>
+									  </a>
+									</div>
+					
+						<?php } 
+						} else {
+							// no posts found
+						}
+						// Restore original Post Data
+						wp_reset_postdata();
+						
+						?>
 		</div><!--/.col-->
 		
 		<div class="col-sm-4 latest-news">
@@ -140,9 +121,6 @@ get_header(); ?>
 
 
 
-
-
-
-
 </div><!--/.page-about-->
+	<?php endwhile; // end of the loop. ?>
 	<?php get_footer(); ?>

@@ -110,7 +110,7 @@ get_header(); ?>
 						// WP_Query arguments for custom post type...
 						$args = array (
 							'post_type'	     => array( 'faculty' ),
-							 'orderby' 		 => 'menu_order',
+							'orderby' 		 => 'menu_order',
 							'order'			 => 'ASC',
 							'posts_per_page' => -1
 						);
