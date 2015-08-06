@@ -74,9 +74,9 @@ get_header(); ?>
 			<div class="col-sm-8">
 				<div id="primary">
 					<main id="main" class="site-main" role="main">
-					  
-					    <?php the_content('<p>'); ?> 
-					  
+					  <div class="entry-content">
+					    <?php the_content(); ?> 
+					  </div>
 					</main><!-- #main -->
 				</div><!-- #primary -->
 			</div><!--/.col-->
@@ -89,6 +89,18 @@ get_header(); ?>
 			</div><!--/.col-->
 		</div><!--/.intro-->
 	</section><!--/.about-->
+	
+	<?php if ( is_singular( 'class' ) && get_field('class_registration_link') ): //registration link ?>
+	<div class="footer-contact">
+		<div class="grid grid-pad row">
+			<div class="col-sm-12">
+				<h3>Sign up for: <strong><?php the_title(); ?></strong></h3>
+				<p>To register for this class, click the button below.</p>
+				<a class="button green" href="<?php the_field('class_registration_link'); ?>" target="_blank">Register Now</a>
+			</div>
+		</div><!-- grid -->
+	</div><!-- footer-contact -->
+	<?php endif ; ?>
 
 	<?php endwhile; // end of the loop. ?>
 	<?php get_footer(); ?>

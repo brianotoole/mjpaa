@@ -774,6 +774,7 @@ Homepage
 	}
 	.quotes {
 		padding-left: 40px;
+		min-height: 250px;
 	}
 	.breakout {
 		font-weight: 600;
@@ -953,9 +954,9 @@ Interior Default / Sidebar
 }
 
 .entry-content {
-	background: white;
+	background: transparent;
 	margin-top: 0;
-	padding: 60px 20px 40px;
+	padding: 20px;
 	color: $black;
 
 	.page-title {
@@ -1113,7 +1114,7 @@ Interior page template - Classes, Class List
 
 .results-total {
 	h3 {
-		margin: 15px 20px;
+		margin: 50px 20px;
 		padding-bottom: 5px;
 	}
 }
