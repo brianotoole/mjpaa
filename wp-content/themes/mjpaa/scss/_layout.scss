@@ -991,10 +991,25 @@ Default Sidebar
 		line-height: 28px;
 	}
 	
-	.text-widget, li, li a, p, div {
+	.text-widget {
 		margin: 22px 0 0;
 		padding: 0 0 22px;
 		border-bottom: 1px solid $lightgray;
+	}
+	
+	a {
+		color: $maroon;
+		font-weight: 200;
+		font-style: italic;
+		&:after {
+		    content: '\f101';
+		    position: absolute;
+		    padding-top: 2px;
+		    padding-left: 10px;
+		    font-family: fontAwesome;
+		    font-size: 1em;
+		    color: #555;
+		}
 	}
 	
 }

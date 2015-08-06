@@ -31,21 +31,36 @@ get_header(); ?>
 						echo $grade->name; }
 					?>
 				    </span>
-				<?php endif ; ?>
+				<?php endif ; //close if is sinlge post_type 'class' ?>
+				
+				
 				<?php if ( is_singular( 'post' ) && in_category( 'event' ) ) :?>
 				  <p>Date</p>
-				    <span>event date</span>
+				    <span><?php the_field('event_start_date'); ?>
+				    <?php if( get_field('event_end_date') ): //if end date is entered... ?>
+				    - <?php the_field('event_end_date'); ?>
+				    <?php endif; ?>
+				    </span>
 				  <hr />
-				  <p>Location</p>
-				    <a href="#">location link</a>
-				<?php endif ; ?>
+				  <?php if( get_field('event_location_link') != get_field('event_location_link') ): //if location is entered, but no link is entered... ?>
+				    <p>Location</p>
+				    <span><?php the_field('event_location_name'); ?></span>
+				  <?php endif ; ?>		
+				  <?php if( get_field('event_location_link') && get_field('event_location_link') ): //if both location fields are entered... ?>
+				  	<p>Location</p>
+				  	<a href="<?php the_field('event_location_link'); ?>"><?php the_field('event_location_name'); ?></a>
+				  <?php endif ; ?>			    
+				    
+				<?php endif ; //close if is sinlge post in category event ?>
+				
+				
 				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category() ) :?>
 				  <p>Posted on</p>
 				    <span>published date</span>
 				  <hr />
 				  <p>Posted by</p>
 				    <span>author username</span>
-				<?php endif ; ?>
+				<?php endif ; //close if is sinlge post in category news or no category is checked ?>
 			</div><!--/.col-->
 			<div class="col-sm-9 quotes b-left">
 				<h2 class="page-title animate fadeIn"><?php the_title(); ?></h2>
