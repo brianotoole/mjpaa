@@ -191,10 +191,10 @@ function custom_post_type_faculty() {
 	);
 	$args = array(
 		'label'               => __( 'Faculty Member', 'mjpaa' ),
-		'description'         => __( 'Faculty member list for MJPAA', 'mjpaa' ),
+		'description'         => __( 'Faculty Member list for MJPAA', 'mjpaa' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'revisions', 'thumbnail', 'post-formats', ),
-		'taxonomies'          => array( 'category' ),
+		'supports'            => array( 'title', 'editor', 'revisions', 'post-formats', ),
+		'taxonomies'          => array( '' ),
 		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,
@@ -207,7 +207,7 @@ function custom_post_type_faculty() {
 		'has_archive'         => true,		
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
-		'capability_type'     => 'page',
+		'capability_type'     => 'post',
 	);
 	register_post_type( 'faculty', $args );
 

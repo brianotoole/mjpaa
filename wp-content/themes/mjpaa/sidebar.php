@@ -16,7 +16,7 @@
 	    <a href="<?php the_field('event_registration_link'); ?>" target="_blank">Click to Register</a>
 	  <?php endif ; ?>
 	  
-	   <!-- Class Single Sidebar -->
+	  <!-- Class Single Sidebar -->
 	  <?php if ( is_singular( 'class' ) && get_field('class_registration_link') ): //registration link ?>
 	    <a href="<?php the_field('class_registration_link'); ?>" target="_blank">Click to Register</a>
 	  <?php endif ; ?>
@@ -33,6 +33,6 @@
 	  <?php if ( is_singular( 'class' ) && get_field('class_cost') ): //class cost ?>		
 	  	 <h5>Cost</h5>
 	  	 <p><?php the_field('class_cost'); ?></p>
-	  <?php endif ; ?>	
+	  <?php endif ; ?>
 	  
 	</div><!--/#secondary .sidebar--> 

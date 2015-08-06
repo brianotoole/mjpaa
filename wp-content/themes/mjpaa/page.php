@@ -23,7 +23,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article>
-					<?php the_content('<p>'); ?>
+					<?php the_content(); ?>
 				</article>
 
 			<?php endwhile; // end of the loop. ?>

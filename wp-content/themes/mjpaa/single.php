@@ -34,6 +34,12 @@ get_header(); ?>
 				<?php endif ; //close if is sinlge post_type 'class' ?>
 				
 				
+				<?php if ( is_singular( 'faculty' ) ) :  ?>
+					<img class="faculty" src="<?php the_field('faculty_img'); ?>" />
+				<?php endif ; //close if is single post_type 'facutly' ?>
+				
+				
+				
 				<?php if ( is_singular( 'post' ) && in_category( 'event' ) ) :?>
 				  <p>Date</p>
 				    <span><?php the_field('event_start_date'); ?>
@@ -64,7 +70,19 @@ get_header(); ?>
 			</div><!--/.col-->
 			<div class="col-sm-9 quotes b-left">
 				<h2 class="page-title animate fadeIn"><?php the_title(); ?></h2>
-				<p>CLASS TAGLINE / SHORT DESCRIPTION Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
+				<?php if ( is_singular( 'faculty' ) ) :  //if "faculty" post_type single ?>
+				  <h5>Position:</h5>
+				  <p><?php the_field('faculty_position'); ?></p>
+				  <h5>Years at MJPAA:</h5>
+				  <p><?php the_field('faculty_years'); ?></sp>
+				  <h5>Favorite XYZ:</h5>
+				  <p><?php the_field('faculty_favorite'); ?></sp>
+				<?php endif ; ?>
+				
+				<?php if ( is_singular( 'post' ) || is_singular('class')) :?>
+				<p><?php the_field('interior_callout'); ?></p>
+				<?php endif ; ?>
+				
 			</div><!--/.col-->
 		</div><!--/.intro-->
 	</section><!--/.history-->
@@ -86,6 +104,35 @@ get_header(); ?>
 					<?php get_template_part( 'part', 'latest_news' ); ?>
 				<?php endif ; ?>
 				<?php get_sidebar(); ?>
+				<?php if ( is_singular( 'faculty' ) ) :  //if "faculty" post_type single ?>
+					<h4 class="latest-title">Our Faculty</h4>
+					<?php
+						// WP_Query arguments for custom post type...
+						$args = array (
+							'post_type'	     => array( 'faculty' ),
+							 'orderby' 		 => 'menu_order',
+							'order'			 => 'ASC',
+							'posts_per_page' => -1
+						);
+						// The Query
+						$loop = new WP_Query( $args );
+						
+						// The Loop
+						if ( $loop->have_posts() ) {
+							while ( $loop->have_posts() ) {
+								$loop->the_post(); ?>
+									<a href="<?php the_permalink() ?>">
+								    	<h5 class="news-title"><?php the_title(); ?></h5>
+									</a>						
+						<?php } 
+						} else {
+							// no posts found
+						}
+						// Restore original Post Data
+						wp_reset_postdata();
+						
+						?>
+				<? endif ; ?>
 			</div><!--/.col-->
 		</div><!--/.intro-->
 	</section><!--/.about-->

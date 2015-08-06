@@ -21,11 +21,9 @@ get_header(); ?>
 	<div class="intro row" id="contain">
 		<div class="col-sm-8">
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<article>
-					<?php the_content('<p>'); ?>
-				</article>
-
+				<div class="entry-content">
+					<?php the_content(); ?>
+				</div>
 			<?php endwhile; // end of the loop. ?>
 		</div><!--/.col-->
 		
