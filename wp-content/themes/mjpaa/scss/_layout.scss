@@ -1041,9 +1041,16 @@ aside {
 /*--------------------------------------------------------------
 Interior Page Template: Faculty single
 --------------------------------------------------------------*/
+.faculty {
+	.position {
+		color: $maroon;
+		font-style: italic;
+	}
+}
+
 img.faculty {
-	border: 5px solid $lightgray;
-    padding: 5px;
+	border: 1px solid $lightgray;
+    padding: 2px;
     background: white;
 }
 .latest-news {
@@ -1065,6 +1072,14 @@ img.faculty {
 		    font-size: 1em;
 		    color: #555;
 		}
+	}
+}
+.class-single {
+	h5 {
+		font-weight: 600;
+		margin: 20px 0 20px;
+	    padding: 15px 0 20px;
+	    border-bottom: 1px solid $lightgray;
 	}
 }
 /*--------------------------------------------------------------
@@ -1156,6 +1171,7 @@ Interior Page Template: Classes / Class Search
 		text-transform: uppercase;
 	}
 }
+
 /* sidebar filtering */
 @import "filter";
 

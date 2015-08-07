@@ -16,7 +16,7 @@ get_header(); ?>
 		<div class="intro row" id="contain">
 			<div class="col-sm-12">
 				<h3 class="section-title"><?php the_title(); ?></h3> 
-				<span><?php the_field('faculty_position'); ?></span>
+				<span class="position"><?php the_field('faculty_position'); ?></span>
 			</div><!--/.col-->
 		</div><!--/.intro-->
 	</section><!--/.history-->
