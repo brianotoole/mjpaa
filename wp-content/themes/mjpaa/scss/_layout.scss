@@ -611,13 +611,10 @@ Homepage
 	background: transparent;
     max-width: 88%;
 	margin: 0 auto;
-	padding: 10px 0 40px 0;
+	padding: 40px 0;
 	font-size: 1.2em;
 	line-height: 1.5em;	
 } 
-body.page-template-page-about .intro {
-	padding: 40px 0;
-}
 
 //section.about
 .about { 
@@ -790,7 +787,8 @@ body.home .latest-news p {
 		color: $black;
 		text-align: left;
 		line-height: 1.2em;
-		padding: 5px 0 0 0;
+		margin: 0;
+		padding: 0 0 12px 0;
 	}
 	h1,h2,h3,h4, h5, p, a {
 		color: $black;

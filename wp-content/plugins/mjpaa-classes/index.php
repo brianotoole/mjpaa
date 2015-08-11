@@ -216,6 +216,54 @@ add_action( 'init', 'custom_post_type_faculty', 2 );
 
 
 
+// Register Custom Post Type: "Faculty"
+function custom_post_type_alumni() {
+
+	$labels = array(
+		'name'                => _x( 'Alumni', 'Post Type General Name', 'mjpaa' ),
+		'singular_name'       => _x( 'Alumni', 'Post Type Singular Name', 'mjpaa' ),
+		'menu_name'           => __( 'Alumni Members', 'mjpaa' ),
+		'name_admin_bar'      => __( 'Alumni Members', 'mjpaa' ),
+		'parent_item_colon'   => __( 'Parent Item:', 'mjpaa' ),
+		'all_items'           => __( 'All Alumni Members', 'mjpaa' ),
+		'add_new_item'        => __( 'Add New Alumni Member', 'mjpaa' ),
+		'add_new'             => __( 'Add New', 'mjpaa' ),
+		'new_item'            => __( 'New Alumni Member', 'mjpaa' ),
+		'edit_item'           => __( 'Edit Alumni Member', 'mjpaa' ),
+		'update_item'         => __( 'Update Alumni Member', 'mjpaa' ),
+		'view_item'           => __( 'View Alumni Member', 'mjpaa' ),
+		'search_items'        => __( 'Search Alumni Members', 'mjpaa' ),
+		'not_found'           => __( 'Alumni Member not found', 'mjpaa' ),
+		'not_found_in_trash'  => __( 'Alumni Member not found in Trash', 'mjpaa' ),
+	);
+	$args = array(
+		'label'               => __( 'Alumni Members', 'mjpaa' ),
+		'description'         => __( 'Alumni list for MJPAA', 'mjpaa' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'revisions' ),
+		'taxonomies'          => array( '' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'menu_position'       => 6,
+		'menu_icon'           => 'dashicons-welcome-learn-more',
+		'show_in_admin_bar'   => true,
+		'show_in_nav_menus'   => true,
+		'can_export'          => true,
+		'has_archive'         => true,		
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+	);
+	register_post_type( 'alumni', $args );
+
+}
+add_action( 'init', 'custom_post_type_alumni', 3 );
+
+
+
+
 
 
 
