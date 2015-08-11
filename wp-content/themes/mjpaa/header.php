@@ -61,7 +61,7 @@
 						<input class="sb-search-submit" type="submit" value="">
 				    </form>
 				</div><!--.sb-search-->
-		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		<?php wp_nav_menu( array( 'theme_location' => 'mobile' ) ); ?>
 		<button class="close menu-toggle toggle-menu menu-right push-body"><?php _e( '<i class="fa fa-times"></i> Close Menu', 'mjpaa' ); ?></button>
 	</nav>
 

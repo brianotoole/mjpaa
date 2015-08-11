@@ -45,7 +45,8 @@ function mjpaa_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'mjpaa' ),
-		'top-bar' => __( 'Top Bar', 'mjpaa' )
+		'top-bar' => __( 'Top Bar', 'mjpaa' ),
+		'mobile' => __( 'Mobile Menu', 'mjpaa' )
 	) );
 	
 	/*
