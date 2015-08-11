@@ -13,12 +13,12 @@
 	  
 	  <!-- Event Single Sidebar -->
 	  <?php if ( is_singular( 'post' ) && in_category( 'event' ) && get_field('event_registration_link') ) :?>
-	    <a href="<?php the_field('event_registration_link'); ?>" class="button register" target="_blank"><li>Click to Register</li></a>
+	    <a href="<?php the_field('event_registration_link'); ?>" class="button register" target="_blank"><li>Register</li></a>
 	  <?php endif ; ?>
 	  
 	  <!-- Class Single Sidebar -->
 	  <?php if ( is_singular( 'class' ) && get_field('class_registration_link') ): //registration link ?>
-	    <a href="<?php the_field('class_registration_link'); ?>" class="button register" target="_blank"><li>Click to Register</li></a>
+	    <a href="<?php the_field('class_registration_link'); ?>" class="button register" target="_blank"><li>Register</li></a>
 	  <?php endif ; ?>
 	  <?php if ( is_singular( 'class' ) && get_field('class_start_date') ): //class dates ?>
 	    <div class="class-single">
@@ -28,14 +28,15 @@
 			 - <?php the_field('class_end_date'); ?>
 			<?php endif; ?>
 		</span>
-	  <?php endif ; ?>	
-			<h5 class="program">Program</h5>
-			  <p>
+		<h5 class="program">Program</h5>
+		  <p>
 				<?php $programs = get_the_terms( $post->ID , 'program' );
 					foreach ( $programs as $program ) {		
-					echo "&nbsp; &bull; $program->name"; }
+					echo "&nbsp;$program->name"; }
 				?>
-			  <p>
+		<p>
+	  <?php endif ; ?>	
+			
 	  <?php if ( is_singular( 'class' ) && get_field('class_cost') ): //class cost ?>		
 	  	 <h5 class="cost">Cost</h5>
 	  	 <p><?php the_field('class_cost'); ?></p>

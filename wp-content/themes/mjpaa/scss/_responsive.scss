@@ -17,6 +17,9 @@
 			font-size: 1.1em;
 		}
 	}
+	.button {
+		width: 155px;
+	}
 }
 
 
@@ -145,16 +148,31 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		border: none;
 		color: white;
 		padding: 30px 20px;
+		text-transform: capitalize;
 		&:hover, &:focus {
 			color: white;
 			border: 0;
 		}
 	}
 	.close {
+		margin-top: 0;
 		width: 100%;
-		background: $gray;
+		background: lighten($black,2%);
 		color: white;
 		padding-left: 0;
+	}
+	.cbp-spmenu-push-toleft .site-content  {
+		opacity: 0.2;
+		background: $black;
+		transition: opacity 0.5s;
+	}
+	.site-content {
+		opacity: 1;
+	}
+	.cbp-spmenu-push-toleft .fa-bars  {
+		&:before {
+			content: "\f00d";
+		}
 	}
 	.main-navigation ul {
 		display: none;
@@ -250,8 +268,16 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		.more {
 			margin-bottom: -30px;
 		}
+		a li, li a {
+			display: block;
+			margin: 25px 0 0;
+			padding: 0 0 15px;
+		}
+		.register li {
+			margin: 0;
+		}	
+
 	}
-	
 	
 }
 
