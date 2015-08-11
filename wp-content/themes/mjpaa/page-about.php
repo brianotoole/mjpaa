@@ -56,7 +56,7 @@ get_header(); ?>
 									    <p class="title"><?php the_field('faculty_position'); ?></p>
 									    <p class="view">Read Full Bio</p>
 									  </a>
-									</div>
+									</div><hr class="visible-xs" />
 					
 						<?php } 
 						} else {

@@ -856,12 +856,16 @@ body.home .latest-news p {
 	.section-title {
 		padding-bottom: 0;
 	}
+	.section-title.alumni {
+		padding-bottom: 30px;
+	}
 	
 	p {
 		color: white;
 		padding: 5px;
 		margin-bottom: 100px;
 	}
+	
 	
 	
 }//.memories
@@ -889,7 +893,13 @@ body.home .latest-news p {
 			margin: 0 -7px;
 		}
 	}
+//alumni template
+.alumni-images {
 	
+	.intro {
+		max-width: 88%;
+	}
+}	
 	
 	
 }//.memories-images
@@ -1119,16 +1129,26 @@ aside {
 }
 	
 /*--------------------------------------------------------------
-Interior Page Template: Faculty single
+Interior Page Template: Faculty & Alumni single
 --------------------------------------------------------------*/
-.faculty {
+.faculty,
+.alumni {
 	.position {
 		color: $maroon;
 		font-style: italic;
 	}
 }
+.alumni {
+	h6 {
+		margin-bottom: 0;
+		padding-top: 20px;
+		color: $maroon;
+		font-weight: 600;
+	}
+}
 
-img.faculty {
+img.faculty,
+img.alumni {
 	border: 2px solid $lightgray;
     padding: 2px;
     background: white;
