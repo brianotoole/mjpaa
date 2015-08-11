@@ -762,13 +762,12 @@ Homepage
 		}
 	}
 	
-
-p.view {
+}//.about
+.view {
 	color: $maroon;
 	font-weight: 200;
-	font-size: 0.75em;
 	padding: 0;
-	margin: 15px 0;
+	margin: 2px 0;
 	font-style: italic;
 	&:after {
 		content: '\f101';
@@ -779,9 +778,12 @@ p.view {
 		font-size: 1em;
 		color: #555;
 	}
+	&:hover {
+		text-decoration: underline;
+		opacity: 0.9;
+	}
 
 }	
-}//.about
 
 body.home .latest-news p {
 	font-size: 0.8em;
