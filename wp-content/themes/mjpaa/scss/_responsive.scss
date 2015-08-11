@@ -1,9 +1,5 @@
 /* Media Queries ----------------------------------------------------------- */
 
-/* above 1600 (xl screens) */
-@media screen and (min-width: 1600px) {}
-
-
 
 /* container size & below */
 @media screen and (max-width: 1170px) {
@@ -47,9 +43,7 @@
 
 /* above .menu-toggle */
 @media screen and (min-width: 768px) {
-	.entry-header {
 
-	}
 	
 	.main-navigation li a {
 		display: inline-block;
@@ -114,6 +108,25 @@ h4 { font-size: 18px; line-height: 28px; }
 h5 { font-size: 18px; line-height: 24px; }
 h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: uppercase; }
 .button { display: block; width: 100%; }
+	
+	
+	.sb-search {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 20px;
+		height: 50px;
+		line-height: 50px;
+		padding-right: 0;
+		input[type="text"] {
+			padding-left: 20px;
+		}
+	}
+	.site-logo { 
+		img {
+			max-width: 80%;
+		}
+	}
+	
 	//nav
 	.menu-toggle {
 		display: block;
@@ -132,10 +145,10 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		display: none;
 	}
 	.site-header {
-		top: 20px;
+		top: 0;
+	    height: 200px;
 	}
 	
-	.site-logo img { max-width: 80%; }
 	
 	.hero {
 		.img {
@@ -145,10 +158,14 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		h2 {
 			margin-top: 110px;
 		}
+		&:before {
+			top: 110px; //height of .img
+		}
 		
 	}
 	.entry-header {
 		min-height: 200px;
+		border-bottom: 1px solid $gray;
 	}
 	
 	.sec1 {
