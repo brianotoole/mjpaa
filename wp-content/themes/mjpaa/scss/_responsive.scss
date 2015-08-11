@@ -253,9 +253,12 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		}
 	}
 	
-	.entry-content,
+	
 	.page-about section.history {
-		padding: 0 10px 30px;
+		padding: 0 20px 30px;
+	}
+	.entry-content {
+		padding: 0 10px;
 	}
 	.intro {
 		max-width: 100%;
