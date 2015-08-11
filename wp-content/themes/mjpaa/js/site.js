@@ -54,55 +54,18 @@
 	}
 })();
 
-/* parralax */
-jQuery( function( $ ){
+
+
+/* scroll to top */
 $(document).ready(function(){
-	// Cache the Window object
-	$window = $(window);
-                
-   $('section[data-type="background"]').each(function(){
-     var $bgobj = $(this); // assigning the object
-                    
-      $(window).scroll(function() {
-                    
-		// Scroll the background at var speed
-		// the yPos is a negative value because we're scrolling it UP!								
-		var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-		
-		// Put together our final background position
-		var coords = '50% '+ yPos + 'px';
-
-		// Move the background
-		$bgobj.css({ backgroundPosition: coords }); 
-		
-	}); // window scroll Ends
-
- });	
- 
-   $('header[data-type="background"]').each(function(){
-     var $bgobj = $(this); // assigning the object
-                    
-      $(window).scroll(function() {
-                    
-		// Scroll the background at var speed
-		// the yPos is a negative value because we're scrolling it UP!								
-		var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-		
-		// Put together our final background position
-		var coords = '50% '+ yPos + 'px';
-
-		// Move the background
-		$bgobj.css({ backgroundPosition: coords }); 
-		
-	}); // window scroll Ends
-
- });
-
-}); 
+	
+	//Click event to scroll to top
+	$('#top').click(function(){
+		$('html,body').animate({scrollTop : 0},400);
+		return false;
+	});
+	
 });
-document.createElement("article");
-document.createElement("section");
-
 
 /*
  * jPushMenu.js, 1.1.1
