@@ -48,7 +48,6 @@ function mjpaa_setup() {
 		'top-bar' => __( 'Top Bar', 'mjpaa' )
 	) );
 	
-
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.

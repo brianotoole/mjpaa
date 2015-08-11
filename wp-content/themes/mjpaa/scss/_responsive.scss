@@ -131,6 +131,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	.menu-toggle {
 		display: block;
 	}
+	
 	.menu-toggle {
 		background: none;
 		border: none;
@@ -140,6 +141,12 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 			color: white;
 			border: 0;
 		}
+	}
+	.close {
+		width: 100%;
+		background: $gray;
+		color: white;
+		padding-left: 0;
 	}
 	.main-navigation ul {
 		display: none;

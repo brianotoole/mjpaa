@@ -39,16 +39,18 @@
     	        
 				
 			    <div class="site-branding">
-    			<div class="site-logo"> 
+    			  <div class="site-logo"> 
        				<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php bloginfo('stylesheet_directory'); ?>/img/logo.png'alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="logo"></a> 
-    			</div><!-- site-logo -->
+    			  </div><!-- site-logo -->
             </div><!-- site-branding -->
+            
 			<div class="navigation-container">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle toggle-menu menu-right push-body"><?php _e( '<i class="fa fa-bars"></i> Menu', 'mjpaa' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				</nav><!-- #site-navigation -->
         	</div><!-- navigation-container -->
+        	
         </div>
 	</div><!--/grid-->        
     </header><!-- #masthead -->
@@ -62,6 +64,7 @@
 				    </form>
 				</div><!--.sb-search-->
 		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		<button class="close menu-toggle toggle-menu menu-right push-body"><?php _e( '<i class="fa fa-times"></i> Close Menu', 'mjpaa' ); ?></button>
 	</nav>
 
 	<section id="content" class="site-content">
