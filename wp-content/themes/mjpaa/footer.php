@@ -21,16 +21,5 @@
 //init top-bar search
 new UISearch( document.getElementById( 'sb-search' ) );
 </script>
-<script>
-$(document).ready(function(){
-	
-	//Click event to scroll to top
-	$('#top').click(function(){
-		$('html,body').animate({scrollTop : 0},400);
-		return false;
-	});
-	
-});
-</script>
 </body>
 </html>

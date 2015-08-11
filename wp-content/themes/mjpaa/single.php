@@ -14,8 +14,8 @@ get_header(); ?>
 	<div class="page-about faculty">
 	<section class="history">
 		<div class="intro row" id="contain">
-			<div class="col-sm-12">
-				<h3 class="section-title"><?php the_title(); ?></h3> 
+			<div class="col-sm-12 no-padding">
+				<h1 class="section-title"><?php the_title(); ?></h1> 
 				<span class="position"><?php the_field('faculty_position'); ?></span>
 								
 				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category() ) :?>
@@ -30,7 +30,17 @@ get_header(); ?>
 <div class="page-about">
 	<section class="history">
 		<div class="intro row" id="contain">
-			<div class="col-sm-3 visit">
+		
+			<div class="col-sm-9 quotes b-left pull-right">
+				<h2 class="page-title animate fadeIn"><?php the_title(); ?></h2>
+				
+				<?php if ( is_singular( 'post' ) || is_singular('class')) :?>
+				<p><?php the_field('interior_callout'); ?></p>
+				<?php endif ; ?>
+				
+			</div><!--/.col-->		
+		
+			<div class="col-sm-3 visit no-padding pull-left">
 				<?php if ( is_singular( 'class' ) ) :  ?>
 				  <p>Session</p>
 				    <?php $sessions = get_the_terms( $post->ID , 'session' );
@@ -67,14 +77,7 @@ get_header(); ?>
 				<?php endif ; //close if is sinlge post in category event ?>
 				
 			</div><!--/.col-->
-			<div class="col-sm-9 quotes b-left">
-				<h2 class="page-title animate fadeIn"><?php the_title(); ?></h2>
-				
-				<?php if ( is_singular( 'post' ) || is_singular('class')) :?>
-				<p><?php the_field('interior_callout'); ?></p>
-				<?php endif ; ?>
-				
-			</div><!--/.col-->
+			
 		</div><!--/.intro-->
 	</section><!--/.history-->
 <?php } else {  ?>

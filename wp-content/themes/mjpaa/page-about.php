@@ -12,7 +12,7 @@ get_header(); ?>
 <section class="history">
 	<div class="intro row" id="contain">
 	 <!-- <h3 class="section-title">Our History</h3> -->
-		<div class="col-sm-3 visit">
+		<div class="col-sm-3 visit no-padding">
 			<p>Visit</p>
 			  <a href="#">Our Achievements</a>
 			<hr />

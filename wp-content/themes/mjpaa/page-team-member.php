@@ -10,7 +10,7 @@ get_header(); ?>
 	<div class="grid">
 	
 	<div id="secondary" class="classes-sidebar widget-area col-3-12" role="complementary">
-		<h3 class="page-title animate fadeIn">Our Faculty</h3>
+		<h1 class="page-title animate fadeIn">Our Faculty</h1>
 		<p class="info">Click a staff member's name to view their biography.</p>
 		  <?php echo do_shortcode('[ULWPQSF id=100 formtitle="0" button=0]'); ?>
 	</div><!-- .sidebar --> 
