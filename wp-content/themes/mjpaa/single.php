@@ -32,13 +32,11 @@ get_header(); ?>
 		<div class="intro row" id="contain">
 			<div class="col-sm-3 visit">
 				<?php if ( is_singular( 'class' ) ) :  ?>
-				  <p>Program</p>
-				    <span>
-				    <?php $programs = get_the_terms( $post->ID , 'program' );
-						foreach ( $programs as $program ) {		
-						echo $program->name; }
+				  <p>Session</p>
+				    <?php $sessions = get_the_terms( $post->ID , 'session' );
+						foreach ( $sessions as $session ) {		
+						echo "<li>$session->name"; }
 					?>
-					<span>
 				  <hr />
 				  <p>Grade Level</p>
 				    <span>

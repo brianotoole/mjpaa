@@ -640,6 +640,12 @@ Homepage
 		margin-top: 35px;
 	}
 	
+	a {
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+	
 	p {
 		color: $black;
 	}
@@ -685,6 +691,12 @@ Homepage
 		    width: 100%;
 		    height: 4px;
 		    padding: 0 1px;
+		}
+		
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 		
 		.latest-title {
@@ -966,6 +978,40 @@ Interior / About page template
 		}
 	}
 	
+.team {
+	h6 {
+		margin-bottom: 0;
+		padding-top: 20px;
+		color: $maroon;
+		font-weight: 600;
+	}
+	p.title {
+		line-height: 1.2em;
+		padding-bottom: 7px
+	}
+	p.view {
+		color: $maroon;
+		font-weight: 200;
+		font-size: 0.75em;
+		padding: 0;
+		margin: 0;
+		font-style: italic;
+		border-top: 1px solid $lightgray;
+		&:after {
+			content: '\f101';
+			position: absolute;
+			padding-top: 2px;
+			padding-left: 5px;
+			font-family: fontAwesome;
+			font-size: 1em;
+			color: #555;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}//.team
+
 }//.page-about
 
 /*--------------------------------------------------------------
@@ -1089,7 +1135,6 @@ img.faculty {
     background: white;
 }
 .latest-news {
-
 	a li, li a {
 		margin: 10px 0 0;
 		padding: 0 0 10px;
@@ -1132,6 +1177,18 @@ img.faculty {
 	.cost {
 		 &:before {
 		 	content: '\f155';
+			font-family: fontAwesome;
+			font-size: 0.85em;
+			vertical-align: middle;
+			top: -3px;
+			padding-right: 5px;
+			position: relative;
+			color: $maroon;
+		 }
+	}
+	.program {
+		 &:before {
+		 	content: '\f044';
 			font-family: fontAwesome;
 			font-size: 0.85em;
 			vertical-align: middle;

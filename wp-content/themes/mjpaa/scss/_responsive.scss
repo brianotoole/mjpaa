@@ -10,6 +10,15 @@
 
 }//end
 
+/* special considerations */
+@media screen and (max-width: 1070px) {
+	.main-navigation li {
+		a {
+			font-size: 1.1em;
+		}
+	}
+}
+
 
 /* special considerations */
 @media screen and (max-width: 999px) {
@@ -95,6 +104,7 @@
     .section-title {
 		padding: 60px 0 30px;
 	}
+	
 }
 
 
@@ -209,6 +219,36 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 				top: 9px;
 				left: -2px;
 			}
+		}
+	}
+	
+	.entry-content,
+	.page-about section.history {
+		padding: 0 20px;
+	}
+	.intro {
+		max-width: 100%;
+		padding: 40px 0 30px;
+	}
+	.history .quotes {
+		padding-left: 0;
+	}
+	
+	/* sidebars */
+	.about .latest-news {
+		min-height: auto;
+		margin: 20px auto;
+		padding: 30px 20px;
+		text-align: left;
+		background: transparent;
+		border: none;
+		
+		.latest-title,
+		.descrip {
+			border-width: 2px;
+		}
+		.more {
+			margin-bottom: -30px;
 		}
 	}
 	

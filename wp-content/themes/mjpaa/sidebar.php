@@ -29,6 +29,13 @@
 			<?php endif; ?>
 		</span>
 	  <?php endif ; ?>	
+			<h5 class="program">Program</h5>
+			  <p>
+				<?php $programs = get_the_terms( $post->ID , 'program' );
+					foreach ( $programs as $program ) {		
+					echo "&nbsp; &bull; $program->name"; }
+				?>
+			  <p>
 	  <?php if ( is_singular( 'class' ) && get_field('class_cost') ): //class cost ?>		
 	  	 <h5 class="cost">Cost</h5>
 	  	 <p><?php the_field('class_cost'); ?></p>

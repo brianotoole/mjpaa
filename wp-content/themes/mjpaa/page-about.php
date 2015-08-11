@@ -29,7 +29,7 @@ get_header(); ?>
 	</div><!--/.intro-->
 </section><!--/.history-->
 
-<section class="about">
+<section class="about team">
 	<div class="intro row" id="contain">
 		<div class="col-sm-8">
 			<h3 class="section-title">Our Faculty &amp; Staff</h3> 
@@ -53,8 +53,8 @@ get_header(); ?>
 									  <a href="<?php the_permalink() ?>">
 									    <img class="faculty" src="<?php the_field('faculty_img'); ?>" />
 									    <h6><?php the_title(); ?></h6>
-									    <p><?php the_field('faculty_position'); ?></p>
-									    <p>Read Full Bio</p>
+									    <p class="title"><?php the_field('faculty_position'); ?></p>
+									    <p class="view">Read Full Bio</p>
 									  </a>
 									</div>
 					
