@@ -147,6 +147,35 @@ function mjpaa_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'mjpaa_excerpt_length', 75 ); 
 
 
+
+// Create Custom Excerpt callback
+function mjpaa_excerpt($length_callback = '', $more_callback = '')
+{
+    global $post;
+    if (function_exists($length_callback)) {
+        add_filter('excerpt_length', $length_callback);
+    }
+    if (function_exists($more_callback)) {
+        add_filter('excerpt_more', $more_callback);
+    }
+    $output = get_the_excerpt();
+    $output = apply_filters('wptexturize', $output);
+    $output = apply_filters('convert_chars', $output);
+    $output = '<p>' . $output . '</p>';
+    echo $output;
+}
+
+function mjpaa_view_more_class($more){
+global $post;
+return '... <p class="view" href="' . get_permalink($post->ID) . '">' . __('View Class', 'mjpaa') . '</a>';
+}
+function mjpaa_view_more_news($more){
+global $post;
+return '... <p class="view" href="' . get_permalink($post->ID) . '">' . __('View News', 'mjpaa') . '</a>';
+}
+
+
+
 /**
  * Custom template tags for this theme.
  */

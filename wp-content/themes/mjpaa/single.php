@@ -148,6 +148,7 @@ get_header(); ?>
 				<p>To register for this class, click the button below.</p>
 				<?php if ( is_singular( 'class' ) && get_field('class_registration_link') ) {  ?>	
 				  <a class="button green" href="<?php the_field('class_registration_link'); ?>" target="_blank">Register Now</a>
+				  <p><i class="fa fa-arrow-left"></i> <a href="<?php bloginfo('url'); ?>/classes">Go back to class list</a>.</p>
 				<?php } else if ( is_singular( 'post' ) && in_category('event') && get_field('event_registration_link') ) {   ?>	
 				  <a class="button green" href="<?php the_field('event_registration_link'); ?>" target="_blank">Register Now</a>
 				<?php } else {  ?>
