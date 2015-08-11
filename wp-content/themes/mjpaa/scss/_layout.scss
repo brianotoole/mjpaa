@@ -1078,9 +1078,6 @@ Default Sidebar
 	}
 	
 	li {
-		margin: 10px 0 0;
-		padding: 0 0 10px;
-		border-bottom: 1px solid $lightgray;
 		color: $maroon;
 		font-weight: 200;
 		font-style: italic;
@@ -1137,12 +1134,14 @@ img.faculty {
 }
 .latest-news {
 	a li, li a {
+		display: block;
 		margin: 10px 0 0;
 		padding: 0 0 10px;
 		color: $maroon;
 		font-weight: 200;
 		font-style: italic;
 		list-style: none;
+		    border-bottom: 1px solid #E0E0E0;
 		&:after {
 		    content: '\f101';
 		    position: absolute;
@@ -1252,6 +1251,13 @@ Interior Page Template: Classes / Class Search
 	}	
 }
 .class-list {
+	
+	a {
+		text-decoration: none;
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
 	.thumbnail.default {
 		width: 100%;
 		height: 200px;
@@ -1259,13 +1265,18 @@ Interior Page Template: Classes / Class Search
 		background: white;
 		border: 1px solid rgba($lightgray, 0.5);
 		
-		i {
+		i.fa {
+		
+		&:before {
+			position: absolute;
+			margin-top: 35px;
+		    margin-left: -25px;
 			font-size: 5em;
 			text-align: center;
 			width: 100%;
-			margin-top: 55px;
 			color: darken($smoke,10%);
 		}
+	  }
 	}
 	.class-title {
 		color: $maroon;

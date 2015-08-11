@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<div class="class-list">
 			  <div class="results-total">
-				<h3>News &amp; Events:</h3>
+				<h3>Latest News &amp; Events:</h3>
 			  </div><!--/.results-total-->
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -28,7 +28,7 @@ get_header(); ?>
 		
 	<div id="secondary" class="classes-sidebar widget-area col-3-12 pull-left" role="complementary">
 		<h3 class="page-title animate fadeIn">Search News</h3>
-		<p class="info">Select an option below to filter by News &amp; Events articles.</p>
+		<p class="info">Select an option below to filter by News or Events.</p>
 		  <?php echo do_shortcode('[ULWPQSF id=88 formtitle="0" button=0]'); ?>
 	</div><!-- .sidebar --> 
 

@@ -44,6 +44,10 @@
 	.help-you .button {
 		font-size: 0.9em;
 	}
+	.about .latest-news {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 }//end
 /* special considerations */
 @media screen and (max-width: 899px) {
@@ -120,7 +124,7 @@ h3 { font-size: 22px; line-height: 32px; }
 h4 { font-size: 18px; line-height: 28px; }
 h5 { font-size: 18px; line-height: 24px; }
 h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: uppercase; }
-.button { display: block; width: 100%; }
+.button, button, input[type="button"], input[type="reset"], input[type="submit"] { display: block; width: 100%; }
 	
 	
 	.sb-search {
@@ -229,20 +233,29 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		.view {
 			text-align: center;
 		}
-		.thumbnail {
-			display: block;
-			margin: 0 auto;
-			&:after {
-				position: relative;
-				top: 9px;
-				left: -2px;
-			}
+	}
+	
+	.class-list .thumbnail.default {
+		display: block;
+		margin: 0 auto;
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		min-height: 200px;
+
+		&:after {
+			position: relative;
+			top: 9px;
+			left: -2px;
+		}
+		fa.i::before {
+			font-size: 3em;
 		}
 	}
 	
 	.entry-content,
 	.page-about section.history {
-		padding: 0 20px;
+		padding: 0 10px 30px;
 	}
 	.intro {
 		max-width: 100%;
@@ -261,22 +274,49 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		background: transparent;
 		border: none;
 		
+		.latest-title {
+			font-size: 1.3em;
+		}
+		
 		.latest-title,
-		.descrip {
+		.descrip,
+		a li, li a {
 			border-width: 2px;
 		}
 		.more {
 			margin-bottom: -30px;
 		}
 		a li, li a {
-			display: block;
 			margin: 25px 0 0;
-			padding: 0 0 15px;
+			padding: 0 0 25px;
 		}
 		.register li {
 			margin: 0;
 		}	
 
+	}
+	.sidebar {
+		.widget-title {
+			border-width: 2px;
+			font-size: 1.3em;
+		}
+	}
+	.classes-sidebar {
+		margin-top: auto;
+		min-height: auto;
+		padding: 30px 25px;
+		border: none;
+		border-top: 8px solid $gray;
+		background: transparent;
+		.uwpqsf_class>span[class*='taxolabel-'], 
+		.uwpqsf_class>span[class*='cmflabel-'] {
+			width: 100%;
+			margin: 15px auto;
+		}
+		.uwpqsf_class>label {
+			margin: 25px 0 0;
+			padding: 0 0 25px;
+		}
 	}
 	
 }
