@@ -219,7 +219,7 @@ textarea {
 		text-decoration: none;
 	}
 }
-/*lightgreen, lightgreen bg, blue text, no border*/
+/*lightgreen, lightgreen bg, maroon text, no border*/
 .button.lightgreen {
 	background: $lightgreen;
 	color: $maroon;
@@ -242,7 +242,7 @@ textarea {
 		text-decoration: none;
 	}
 }
-/*white, white bg, blue text, no border*/
+/*white, white bg, maroon text, no border*/
 .button.white {
 	background: white;
 	color: $maroon;
@@ -253,6 +253,29 @@ textarea {
 		text-decoration: none;
 	}
 }
+/*register button sidbar, transparent bg, blue text, border*/
+.button.register {
+	background: $maroon;
+	color: white;
+	border: 1px solid $lightgray;
+	margin: 0;
+	&:hover {
+		background: darken($maroon,7%);
+		color: darken($maroon,7%);
+		text-decoration: none;
+	}
+	li {
+		color: white;
+		margin: 0;
+		padding: 0;
+		font-size: 0.85em;
+		border-bottom: none;
+		&:after {
+			content: '';
+		}
+	}
+}
+
 
 .button.full {
 	margin: 15px 0;
@@ -525,6 +548,9 @@ Content
 .underline {
 	text-decoration: underline;
 }
+.small {
+	font-size: 0.8em;
+}
 
 
 /*--------------------------------------------------------------
@@ -697,10 +723,6 @@ Homepage
 			color: $gray;
 		}
 		
-		p {
-			font-size: 0.75em;
-		}
-		
 		.view {
 			color: $maroon;
 			font-weight: 200;
@@ -730,6 +752,9 @@ Homepage
 	
 }//.about
 
+body.home .latest-news p {
+	font-size: 0.8em;
+}
 
 //section.history
 .history { 
@@ -899,7 +924,7 @@ Interior / About page template
 	.program-titles {
 		
 		p, a {
-			font-size: 0.7em;
+			font-size: 0.85em;
 		}
 	}
 	
@@ -1005,6 +1030,16 @@ Default Sidebar
 		border-bottom: 1px solid $lightgray;
 	}
 	
+	li {
+		margin: 10px 0 0;
+		padding: 0 0 10px;
+		border-bottom: 1px solid $lightgray;
+		color: $maroon;
+		font-weight: 200;
+		font-style: italic;
+		list-style: none;
+	}
+	
 	li a {
 		color: $maroon;
 		font-weight: 200;
@@ -1049,7 +1084,7 @@ Interior Page Template: Faculty single
 }
 
 img.faculty {
-	border: 1px solid $lightgray;
+	border: 2px solid $lightgray;
     padding: 2px;
     background: white;
 }
@@ -1058,7 +1093,6 @@ img.faculty {
 	a li, li a {
 		margin: 10px 0 0;
 		padding: 0 0 10px;
-		border-bottom: 1px solid $lightgray;
 		color: $maroon;
 		font-weight: 200;
 		font-style: italic;
@@ -1076,10 +1110,36 @@ img.faculty {
 }
 .class-single {
 	h5 {
+		margin: 25px 0 20px;
+	    padding: 15px 0 15px;
 		font-weight: 600;
-		margin: 20px 0 20px;
-	    padding: 15px 0 20px;
-	    border-bottom: 1px solid $lightgray;
+		text-transform: uppercase;
+	    border-top: 2px solid $lightgray;
+	    border-bottom: 2px solid $lightgray;
+	}
+	.date {
+		 &:before {
+		 	content: '\f073';
+			font-family: fontAwesome;
+			font-size: 0.85em;
+			vertical-align: middle;
+			top: -3px;
+			padding-right: 5px;
+			position: relative;
+			color: $maroon;
+		 }
+	}
+	.cost {
+		 &:before {
+		 	content: '\f155';
+			font-family: fontAwesome;
+			font-size: 0.85em;
+			vertical-align: middle;
+			top: -3px;
+			padding-right: 5px;
+			position: relative;
+			color: $maroon;
+		 }
 	}
 }
 /*--------------------------------------------------------------

@@ -19,7 +19,7 @@ get_header(); ?>
 				<span class="position"><?php the_field('faculty_position'); ?></span>
 								
 				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category() ) :?>
-				  <span>Posted on: <em><?php echo get_the_date( 'l, F j' ); ?></em></span>
+				  <span>Published on: <em><?php echo get_the_date( 'l, F j' ); ?></em></span>
 				<?php endif ; //close if is sinlge post in category news or no category is checked ?>
 				
 			</div><!--/.col-->

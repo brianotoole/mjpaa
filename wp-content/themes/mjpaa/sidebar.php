@@ -13,16 +13,16 @@
 	  
 	  <!-- Event Single Sidebar -->
 	  <?php if ( is_singular( 'post' ) && in_category( 'event' ) && get_field('event_registration_link') ) :?>
-	    <a href="<?php the_field('event_registration_link'); ?>" target="_blank"><li>Click to Register</li></a>
+	    <a href="<?php the_field('event_registration_link'); ?>" class="button register" target="_blank"><li>Click to Register</li></a>
 	  <?php endif ; ?>
 	  
 	  <!-- Class Single Sidebar -->
 	  <?php if ( is_singular( 'class' ) && get_field('class_registration_link') ): //registration link ?>
-	    <a href="<?php the_field('class_registration_link'); ?>" target="_blank"><li>Click to Register</li></a>
+	    <a href="<?php the_field('class_registration_link'); ?>" class="button register" target="_blank"><li>Click to Register</li></a>
 	  <?php endif ; ?>
 	  <?php if ( is_singular( 'class' ) && get_field('class_start_date') ): //class dates ?>
 	    <div class="class-single">
-	    <h5>Date</h5>
+	    <h5 class="date">Date</h5>
 		<span><?php the_field('class_start_date'); ?>
 			<?php if( get_field('class_end_date') ): //if end date is entered... ?>
 			 - <?php the_field('class_end_date'); ?>
@@ -30,7 +30,7 @@
 		</span>
 	  <?php endif ; ?>	
 	  <?php if ( is_singular( 'class' ) && get_field('class_cost') ): //class cost ?>		
-	  	 <h5>Cost</h5>
+	  	 <h5 class="cost">Cost</h5>
 	  	 <p><?php the_field('class_cost'); ?></p>
 	    </div>
 	  <?php endif ; ?>
