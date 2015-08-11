@@ -10,13 +10,18 @@ get_header(); ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 	
 
-<?php if ( is_singular( 'faculty' ) ) {  // ifis 'faculty' post_type single... ?>	
+<?php if ( is_singular( 'faculty' ) || in_category( 'news' ) || in_category()  ) { ?>	
 	<div class="page-about faculty">
 	<section class="history">
 		<div class="intro row" id="contain">
 			<div class="col-sm-12">
 				<h3 class="section-title"><?php the_title(); ?></h3> 
 				<span class="position"><?php the_field('faculty_position'); ?></span>
+								
+				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category() ) :?>
+				  <span>Posted on: <em><?php echo get_the_date( 'l, F j' ); ?></em></span>
+				<?php endif ; //close if is sinlge post in category news or no category is checked ?>
+				
 			</div><!--/.col-->
 		</div><!--/.intro-->
 	</section><!--/.history-->
@@ -63,14 +68,6 @@ get_header(); ?>
 				    
 				<?php endif ; //close if is sinlge post in category event ?>
 				
-				
-				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category() ) :?>
-				  <p>Posted on</p>
-				    <span><?php echo get_the_date( 'l, F j' ); ?></span>
-				  <hr />
-				  <p>Posted by</p>
-				    <span><?php the_author(); ?></span>
-				<?php endif ; //close if is sinlge post in category news or no category is checked ?>
 			</div><!--/.col-->
 			<div class="col-sm-9 quotes b-left">
 				<h2 class="page-title animate fadeIn"><?php the_title(); ?></h2>
