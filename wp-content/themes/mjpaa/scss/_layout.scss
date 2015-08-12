@@ -763,27 +763,6 @@ Homepage
 	}
 	
 }//.about
-.view {
-	color: $maroon;
-	font-weight: 200;
-	padding: 0;
-	margin: 2px 0;
-	font-style: italic;
-	&:after {
-		content: '\f101';
-		position: absolute;
-		padding-top: 2px;
-		padding-left: 5px;
-		font-family: fontAwesome;
-		font-size: 1em;
-		color: #555;
-	}
-	&:hover {
-		text-decoration: underline;
-		opacity: 0.9;
-	}
-
-}	
 
 body.home .latest-news p {
 	font-size: 0.8em;
@@ -1341,6 +1320,29 @@ Interior Page Template: Classes / Class Search
 		text-transform: uppercase;
 	}
 }
+
+//classes view more button custom excerpt
+.view a {
+	color: $maroon;
+	font-weight: 200;
+	padding: 0;
+	margin: 2px 0;
+	font-style: italic;
+	&:after {
+		content: '\f101';
+		position: absolute;
+		padding-top: 2px;
+		padding-left: 5px;
+		font-family: fontAwesome;
+		font-size: 1em;
+		color: #555;
+	}
+	&:hover {
+		text-decoration: underline;
+		color: darken($maroon,7%);
+	}
+
+}	
 
 /* sidebar filtering */
 @import "filter";

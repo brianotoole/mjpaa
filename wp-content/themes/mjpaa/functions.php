@@ -171,7 +171,11 @@ return '... <p class="view" href="' . get_permalink($post->ID) . '">' . __('View
 }
 function mjpaa_view_more_news($more){
 global $post;
-return '... <p class="view" href="' . get_permalink($post->ID) . '">' . __('View News', 'mjpaa') . '</a>';
+return '... <p class="view" href="' . get_permalink($post->ID) . '">' . __('Read More', 'mjpaa') . '</a>';
+}
+function mjpaa_view_more_latest_news($more){
+global $post;
+return '...';
 }
 
 

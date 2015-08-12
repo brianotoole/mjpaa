@@ -5,8 +5,8 @@
   <h5 class="news-title"><?php the_title(); ?></h5>
     <p class="date"><span class="cat-title"><?php global $post; $category = get_the_category($post->ID); echo $category[0]->name; ?></span> <?php echo get_the_date( '/ l, F j' ); ?>
     </p>  
-	<?php the_excerpt() ?>
-	  <a class="view" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">View full article</a>
+	<?php mjpaa_excerpt('mjpaa_excerpt_length','mjpaa_view_more_latest_news'); ?>
+	  <a class="view" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a>
 	</p>
 </div>
 <div class="clear"></div>

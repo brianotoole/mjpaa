@@ -25,7 +25,7 @@ if ( $loop->have_posts() ) {
 				<div class="col-sm-8 descrip">
 				  <h3 class="class-title"><?php the_title(); ?></h3>
 				  <p class="date"><span class="cat-title"><?php global $post; $category = get_the_category($post->ID); echo $category[0]->name; ?></span> <?php echo get_the_date( '/ l, F j' ); ?></p>  
-				  <p><?php the_excerpt() ?></p>
+				  <p><?php mjpaa_excerpt('mjpaa_excerpt_length','mjpaa_view_more_news'); ?></p>
 				</div><!--/.col-->
 			</a>
 				<div class="clear"></div><hr />
