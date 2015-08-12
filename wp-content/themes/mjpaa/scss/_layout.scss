@@ -1224,7 +1224,7 @@ Interior Page Template: Classes / Class Search
 --------------------------------------------------------------*/
 /*class search sidebar*/
 .classes-sidebar {
-	margin-top: 70px;
+	margin-top: 32px;
 	min-height: 900px;
 	padding: 30px 15px;
 	color: $black;
@@ -1315,8 +1315,11 @@ Interior Page Template: Classes / Class Search
 .results-total {
 	margin: 50px 0;
 	
-	h3 {
-		margin: 0 20px 0;
+	p, h3, h5 {
+		margin: 0 20px 5px;
+	}
+	h5 {
+		font-weight: 600;
 	}
 	span {
 		text-transform: uppercase;

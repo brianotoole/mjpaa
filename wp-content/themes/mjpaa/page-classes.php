@@ -13,7 +13,8 @@ get_header(); ?>
 			<main id="main" class="site-main entry-content" role="main">
 
 			<div class="results-total">
-				<h3>Search for Classes<p>Find classes at Mary Jo's that fit your schedule. Use the filter on the left to search by program, session, and/or grade level. The classes that match your criteria will be listed below.</p></h3>
+				<h3>Search for Classes</h3>
+				<p>Find classes at Mary Jo's that fit your schedule. Use the filter on the left to search by program, session, and/or grade level. The classes that match your criteria will be listed below.</p>
 			</div>
 
 			<div class="class-list">

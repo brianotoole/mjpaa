@@ -205,13 +205,13 @@ function customize_output($results , $arg, $id, $getdata ){
 			$numberOfQueries = $query->found_posts;
 			
 			if ($numberOfQueries == 1) {?>
-				<h3><?php echo $numberOfQueries; ?> result found:</h3>
+				<h5><?php echo $numberOfQueries; ?> result found:</h5>
 				
 			<?}elseif ($numberOfQueries == 0){?>
-				<h3>No results found.</h3>
+				<h5>No results found.</h5>
 				
 			<?}else{?>
-				<h3><?php echo $numberOfQueries; ?> results found:</h3>
+				<h5><?php echo $numberOfQueries; ?> results found:</h5>
 			<?}
 			
 
