@@ -277,7 +277,7 @@ if(!class_exists('uwpqsfprocess')){
 		echo $result;
 					
 							
-		}else{ echo 'There is error here';}
+		}else{ echo '<p style="padding: 0 20px;">There were no results found with your criteria. Please try selecting or different options or searching with different keywords.</p>';}
 	    	die;	
 
   }//end ajax	
