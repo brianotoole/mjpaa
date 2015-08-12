@@ -81,10 +81,10 @@ get_header(); ?>
 	<div class="intro row" id="contain">
 		<div class="col-sm-3 visit">
 			<p>Visit</p>
-			  <a href="#">Our Company History</a>
+			  <a href="<?php bloginfo('url'); ?>/about/achievements">Our Achievements</a>
 			<hr />
 			<p>Visit</p>
-			  <a href="#">Our Alumni Spotlight</a>
+			  <a href="<?php bloginfo('url'); ?>/about/achievements/#alumni">Our Alumni Spotlight</a>
 		</div><!--/.col-->
 		<div class="col-sm-9 quotes b-left">
 			<h2 class="section-title">Celebrating 35 Years as the Most Reputable<br />

@@ -665,10 +665,10 @@ Homepage
 		-webkit-border-radius: 50%;
 		-moz-border-radius: 50%;
 		-ms-border-radius: 50%;
-		transition: all 0.2s ease-in-out;
-		-webkit-transition: all 0.2s ease-in-out;
-		-moz-transition: all 0.2s ease-in-out;
-		-ms-transition: all 0.2s ease-in-out;
+		transition: transform 0.2s ease;
+		-webkit-transition: transform 0.2s ease;
+		-moz-transition: transform 0.2s ease;
+		-ms-transition: transform 0.2s ease;
 		&:before { //the icon
 			position: absolute;
 			margin-left: 27px;
@@ -681,6 +681,7 @@ Homepage
 			-moz-transform: scale(1.05);
 			-ms-transform: scale(1.05);
 			border-color: darken($smoke,6%);
+			color: darken($maroon,5%);
 		}
 	}
 	

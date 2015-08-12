@@ -198,6 +198,17 @@ $(window).scroll(function() {
 
 });
 
+/**
+ * scroll back up when label is clicked
+ */
+$('label').click(function (e) {
+	$('html, body').stop(true, true).animate({ scrollTop: '-=500' }, 300);
+	$('label').click(function (e) {
+    e.stopPropagation();
+   });
+});
+
+
 /*!
  * classie - class helper functions
  * from bonzo https://github.com/ded/bonzo
