@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<div class="results-total">
 				<h3>Search for Classes</h3>
-				<p>Find classes at Mary Jo's that fit your schedule. Use the filter on the left to search by program, session, and/or grade level. The classes that match your criteria will be listed below.</p>
+				<p>Find classes at Mary Jo's that fit your schedule. Use the filter on the left to list classes by program, session, and/or grade level. The classes that match your criteria will be listed below.</p>
 			</div>
 
 			<div class="class-list">
