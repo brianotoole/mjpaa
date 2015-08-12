@@ -12,10 +12,12 @@ get_header(); ?>
 		<div id="primary" class="col-9-12 pull-right">
 			<main id="main" class="site-main entry-content" role="main">
 
-			<div class="class-list">
+	
 			  <div class="results-total">
 				<h3><?php printf( __( 'Search results for: "%s"', 'mjpaa' ), '<span>' . get_search_query() . '</span>' ); ?></h3>
 			  </div><!--/.results-total-->
+			  
+			  <div class="class-list">
 			  <?php if ( have_posts() ) : ?>
 			  <?php while ( have_posts() ) : the_post(); ?>
 

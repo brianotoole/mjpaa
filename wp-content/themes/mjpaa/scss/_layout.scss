@@ -543,6 +543,9 @@ Content
 	width: 100%;
 	margin: 0;
 }
+.left-20 {
+	margin-left: 20px;
+}
 .text-center {
 	text-align: center;
 }
@@ -1369,9 +1372,9 @@ Interior Page Template: Classes / Class Search
 
 /* the loading icon */
 .umloading {
-	width: 25%;
-	height: 44px;
-	margin-top: 44px;
+	width: 20%;
+	height: 22px;
+	margin-top: 4px;
 	background: url('img/ajax_loader.gif') no-repeat 50% 50%;
 }
 /* the find classes form id */
