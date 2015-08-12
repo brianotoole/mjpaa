@@ -13,14 +13,11 @@ get_header(); ?>
 			<main id="main" class="site-main entry-content" role="main">
 
 			<div class="results-total">
-				<h3>Search for Classes<p>Find classes at Mary Jo's that fit your schedule. Use the filter on the left to search by program, session, and/or grade level. Or, search for a class by keyword. The classes that match your criteria will be listed below.</p></h3>
-				<?php echo do_shortcode('[ULWPQSF id=175 formtitle="0" button="0" text_position="top"]'); ?>
+				<h3>Search for Classes<p>Find classes at Mary Jo's that fit your schedule. Use the filter on the left to search by program, session, and/or grade level. The classes that match your criteria will be listed below.</p></h3>
 			</div>
 
 			<div class="class-list">
-				
-			  <div class="results-total">
-			  </div><!--/.results-total-->
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'part', 'classes' ); ?>
