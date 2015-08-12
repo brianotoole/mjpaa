@@ -167,7 +167,7 @@ function mjpaa_excerpt($length_callback = '', $more_callback = '')
 
 function mjpaa_view_more_class($more){
 global $post;
-return '... <p class="view" href="' . get_permalink($post->ID) . '">' . __('View Class', 'mjpaa') . '</a>';
+return '... <p class="view" href="' . get_permalink($post->ID) . '">' . __('Read More', 'mjpaa') . '</a>';
 }
 function mjpaa_view_more_news($more){
 global $post;
@@ -245,7 +245,7 @@ function customize_output($results , $arg, $id, $getdata ){
 				  <?php else: //is "post" not "class" ?>
 				  <p class="date"><span class="cat-title"><?php global $post; $category = get_the_category($post->ID); echo $category[0]->name; ?></span> <?php echo get_the_date( '/ l, F j' ); ?>
 				  <?php endif; ?>
-				  <p><?php the_excerpt() ?></p>
+				  <p><?php mjpaa_excerpt('mjpaa_excerpt_length','mjpaa_view_more_class'); ?></p>
 				</div><!--/.col-->
 			  </a>
 				<div class="clear"></div><hr />
