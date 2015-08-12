@@ -9,8 +9,6 @@ get_header(); ?>
 	</header><!-- .entry-header -->
 	<?php while ( have_posts() ) : the_post(); ?>
 	
-
-<?php if ( is_singular( 'faculty' ) || in_category( 'news' ) || in_category()  ) { ?>	
 	<div class="page-about faculty">
 	<section class="history">
 		<div class="intro row" id="contain">
@@ -22,67 +20,41 @@ get_header(); ?>
 				  <span>Published on: <em><?php echo get_the_date( 'l, F j' ); ?></em></span>
 				<?php endif ; //close if is sinlge post in category news or no category is checked ?>
 				
-			</div><!--/.col-->
-		</div><!--/.intro-->
-	</section><!--/.history-->
-	
-<?php } elseif( is_singular() ) {  //all others ?>	
-<div class="page-about">
-	<section class="history">
-		<div class="intro row" id="contain">
-		
-			<div class="col-sm-9 quotes b-left pull-right">
-				<h2 class="page-title animate fadeIn"><?php the_title(); ?></h2>
-				
-				<?php if ( is_singular( 'post' ) || is_singular('class')) :?>
-				<p><?php the_field('interior_callout'); ?></p>
-				<?php endif ; ?>
-				
-			</div><!--/.col-->		
-		
-			<div class="col-sm-3 visit no-padding pull-left">
 				<?php if ( is_singular( 'class' ) ) :  ?>
-				  <p>Session</p>
-				    <?php $sessions = get_the_terms( $post->ID , 'session' );
+				<div class="">
+				  <p><strong>Session: </strong>
+				    <em><?php $sessions = get_the_terms( $post->ID , 'session' );
 						foreach ( $sessions as $session ) {		
-						echo "<li>$session->name"; }
-					?>
-				  <hr />
-				  <p>Grade Level</p>
-				    <span>
-				    <?php $grades = get_the_terms( $post->ID , 'grade' );
+							if(count($sessions) > 1) {
+							    echo "$session->name, ";
+							}
+							else {
+								echo $session->name;
+							}
+						 }
+					?></em>
+				  </p>
+				</div>
+				<div class="">
+				  <p><strong>Grade Level: </strong>
+				    <em><?php $grades = get_the_terms( $post->ID , 'grade' );
 						foreach ( $grades as $grade ) {		
-						echo $grade->name; }
-					?>
-				    </span>
+							if(count($grades) > 1) {
+							    echo "$grade->name, ";
+							}
+							else {
+								echo $grade->name;
+							}
+						 }
+					?></em>
+				  </p>
+				</div>
 				<?php endif ; //close if is sinlge post_type 'class' ?>
 				
-				<?php if ( is_singular( 'post' ) && in_category( 'event' ) ) :?>
-				  <p>Date</p>
-				    <span><?php the_field('event_start_date'); ?>
-				    <?php if( get_field('event_end_date') ): //if end date is entered... ?>
-				    - <?php the_field('event_end_date'); ?>
-				    <?php endif; ?>
-				    </span>
-				  <hr />
-				  <?php if( get_field('event_location_link') != get_field('event_location_link') ): //if location is entered, but no link is entered... ?>
-				    <p>Location</p>
-				    <span><?php the_field('event_location_name'); ?></span>
-				  <?php endif ; ?>		
-				  <?php if( get_field('event_location_link') && get_field('event_location_link') ): //if both location fields are entered... ?>
-				  	<p>Location</p>
-				  	<a href="<?php the_field('event_location_link'); ?>"><?php the_field('event_location_name'); ?></a>
-				  <?php endif ; ?>			    
-				    
-				<?php endif ; //close if is sinlge post in category event ?>
-				
 			</div><!--/.col-->
-			
 		</div><!--/.intro-->
 	</section><!--/.history-->
-<?php } else {  ?>
-<?php } ?>
-	
+
 	<section class="about">
 		<div class="intro row" id="contain">
 			<div class="col-sm-8">
