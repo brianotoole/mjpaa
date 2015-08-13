@@ -49,7 +49,11 @@ get_header(); ?>
 					?></em>
 				  </p>
 				</div>
-				<?php endif ; //close if is sinlge post_type 'class' ?>
+				<?php endif ; ?>
+				<?php if ( is_singular( 'post' ) && in_category( 'event' ) ) :?>
+				 <p><strong>Event Date:</strong> <?php the_field('event_start_date'); ?></p>
+				 <p><strong>Event Location:</strong> <?php the_field('event_location_name'); ?></p>
+				<?php endif ; ?>
 				
 			</div><!--/.col-->
 		</div><!--/.intro-->
@@ -119,10 +123,9 @@ get_header(); ?>
 				<h3>Sign up for: <strong><?php the_title(); ?></strong></h3>
 				<p>To register for this class, click the button below.</p>
 				<?php if ( is_singular( 'class' ) && get_field('class_registration_link') ) {  ?>	
-				  <a class="button green" href="<?php the_field('class_registration_link'); ?>" target="_blank">Register Now</a>
-				  <p><i class="fa fa-arrow-left"></i> <a href="<?php bloginfo('url'); ?>/classes">Or, go back to class search</a>.</p>
+				  <a class="button smoke" href="<?php the_field('class_registration_link'); ?>" target="_blank">Register Now</a>
 				<?php } else if ( is_singular( 'post' ) && in_category('event') && get_field('event_registration_link') ) {   ?>	
-				  <a class="button green" href="<?php the_field('event_registration_link'); ?>" target="_blank">Register Now</a>
+				  <a class="button smoke" href="<?php the_field('event_registration_link'); ?>" target="_blank">Register Now</a>
 				<?php } else {  ?>
 				<?php } ?>
 			</div>

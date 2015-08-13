@@ -125,7 +125,7 @@ get_header(); ?>
 		<div class="col-sm-12">
 			<h3>Ready to Discover the Difference?</h3>
 			<p>Be touched. Be moved. Be inspired.</p>
-			<a class="button green" href="<?php bloginfo('url'); ?>/classes">Enroll Today</a>
+			<a class="button smoke" href="<?php bloginfo('url'); ?>/classes">Enroll Today</a>
 		</div>
 		
 	</div><!-- grid -->
