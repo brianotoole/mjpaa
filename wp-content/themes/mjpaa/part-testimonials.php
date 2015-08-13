@@ -1,2 +1,26 @@
+<?php
+//testimonials, display 1 random from "testimonial" post_type
+$args = array( 
+  'post_type' => 'testimonial', 
+  'posts_per_page' => 1,
+  'orderby' => 'rand'
+);
 
-<h4>"Testimonial quote goes here." <span> - Client Name</span></h4>
+// The Query
+$loop = new WP_Query( $args );
+// The Loop
+if ( $loop->have_posts() ) {
+	while ( $loop->have_posts() ) {
+		$loop->the_post(); ?>
+		
+		<h4><?php the_field('testimonial_content'); ?></h4>
+
+<?php } 
+} else {
+	// no testimonials found
+}
+
+// Restore original Post Data
+wp_reset_postdata();
+
+?>
