@@ -51,9 +51,18 @@ get_header(); ?>
 				</div>
 				<?php endif ; ?>
 				<?php if ( is_singular( 'post' ) && in_category( 'event' ) ) :?>
-				 <p><strong>Event Date:</strong> <?php the_field('event_start_date'); ?></p>
-				 <p><strong>Event Location:</strong> <?php the_field('event_location_name'); ?></p>
-				<?php endif ; ?>
+				  <p><strong>Event Date:</strong> <?php the_field('event_start_date'); ?>
+				    <?php if( get_field('event_end_date') ): //if end date is entered... ?>
+				    - <?php the_field('event_end_date'); ?>
+				    <?php endif; ?></p>
+				  <?php if( get_field('event_location_link') != get_field('event_location_link') ): ?>
+				    <p><strong>Event Location: <strong> <?php the_field('event_location_name'); ?></p>
+				  <?php endif ; ?>		
+				  <?php if( get_field('event_location_link') && get_field('event_location_link') ): ?>
+				  	<p><strong>Event Location: </strong> <a href="<?php the_field('event_location_link'); ?>"><?php the_field('event_location_name'); ?></a></p>
+				  <?php endif ; ?>			    
+				    
+				  <?php endif ; ?>
 				
 			</div><!--/.col-->
 		</div><!--/.intro-->
