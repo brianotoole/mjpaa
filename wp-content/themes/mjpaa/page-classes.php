@@ -13,7 +13,7 @@ get_header(); ?>
 			<main id="main" class="site-main entry-content" role="main">
 
 			<div class="results-total">
-				<h3>Search for Classes</h3>
+				<h3 class="animate fadeIn">Search for Classes</h3>
 				<p>Find classes at Mary Jo's that fit your schedule. Use the filter on the left to list classes by program, session, and/or grade level. The classes that match your criteria will be listed below.</p>
 			</div>
 

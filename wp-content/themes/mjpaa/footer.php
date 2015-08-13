@@ -3,7 +3,17 @@
  * The template for displaying the footer.
  */
 ?>
-	</section><!-- #content --> 
+	<div class="testimonials">
+	  <div class="footer-contact">
+		<div class="grid row">
+			<div class="col-sm-12 no-padding">
+				<?php get_template_part( 'part', 'testimonials' ); ?>
+			</div>
+		</div><!--/.grid -->
+	  </div><!--/.footer-contact -->
+	</div><!--/.testimonials -->
+
+	</section><!--/#content --> 
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
     	<div class="grid grid-pad">

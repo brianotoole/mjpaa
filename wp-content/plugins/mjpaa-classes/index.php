@@ -216,7 +216,7 @@ add_action( 'init', 'custom_post_type_faculty', 2 );
 
 
 
-// Register Custom Post Type: "Faculty"
+// Register Custom Post Type: "Alumni"
 function custom_post_type_alumni() {
 
 	$labels = array(
@@ -262,6 +262,53 @@ function custom_post_type_alumni() {
 add_action( 'init', 'custom_post_type_alumni', 3 );
 
 
+
+
+
+// Register Custom Post Type: "Testimonials"
+function custom_post_type_testimonial() {
+
+	$labels = array(
+		'name'                => _x( 'Testimonials', 'Post Type General Name', 'mjpaa' ),
+		'singular_name'       => _x( 'Testimonial', 'Post Type Singular Name', 'mjpaa' ),
+		'menu_name'           => __( 'Testimonials', 'mjpaa' ),
+		'name_admin_bar'      => __( 'Testimonials', 'mjpaa' ),
+		'parent_item_colon'   => __( 'Parent Item:', 'mjpaa' ),
+		'all_items'           => __( 'All Testimonials', 'mjpaa' ),
+		'add_new_item'        => __( 'Add New Testimonial', 'mjpaa' ),
+		'add_new'             => __( 'Add New', 'mjpaa' ),
+		'new_item'            => __( 'New Testimonial', 'mjpaa' ),
+		'edit_item'           => __( 'Edit Testimonials', 'mjpaa' ),
+		'update_item'         => __( 'Update Testimonials', 'mjpaa' ),
+		'view_item'           => __( 'View Testimonials', 'mjpaa' ),
+		'search_items'        => __( 'Search Testimonialss', 'mjpaa' ),
+		'not_found'           => __( 'Testimonial not found', 'mjpaa' ),
+		'not_found_in_trash'  => __( 'Testimonial not found in Trash', 'mjpaa' ),
+	);
+	$args = array(
+		'label'               => __( 'Testimonials', 'mjpaa' ),
+		'description'         => __( 'Testimonials for MJPAA', 'mjpaa' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'revisions' ),
+		'taxonomies'          => array( '' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'menu_position'       => 7,
+		'menu_icon'           => 'dashicons-format-quote',
+		'show_in_admin_bar'   => true,
+		'show_in_nav_menus'   => true,
+		'can_export'          => true,
+		'has_archive'         => true,		
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+	);
+	register_post_type( 'testimonial', $args );
+
+}
+add_action( 'init', 'custom_post_type_testimonial', 4 );
 
 
 

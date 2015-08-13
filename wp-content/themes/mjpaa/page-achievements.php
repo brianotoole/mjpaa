@@ -80,7 +80,7 @@ get_header(); ?>
 <div class="footer-contact">
 	<div class="grid grid-pad row">
 		<div class="col-sm-12">
-			<h3>Attention Alumni</h3>
+			<h3>Calling All Alumni!</h3>
 			<p>Please keep us posted of your latest accomplishments and ventures.</p> 
 			<p><a href="mailto:amanda@mjpaa.com">Email us</a> with any updates and performance photos you may have.</p>
 			<a class="button green" href="mailto:amanda@mjpaa.com">Keep in Touch</a>

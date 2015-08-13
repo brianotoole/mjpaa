@@ -20,18 +20,14 @@ get_header(); ?>
 	
 		<div id="primary" class="col-9-12">
 			<main id="main" class="site-main entry-content" role="main">
-
-			<div class="class-list">
+			
 			  <div class="results-total">
 				<h3>Page Not Found - 404. </h3>
-				<p>The page you are looking for can not be found. Perhaps try searching, or use the filter in the sidebar to help you search the site.</p>
-				<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-			    <div><label class="screen-reader-text" for="s">Search:</label>
-			        <input type="text" value="" name="s" id="s" />
-			        <input type="submit" id="searchsubmit" value="Search" />
-			    </div>
-			</form>
+				<p>The page you are looking for can not be found. Perhaps try using the filter on the left to help you find what you are looking for.</p>
 			  </div><!--/.results-total-->
+			  
+			  <div class="class-list">
+			 
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'search' ); ?>

@@ -219,18 +219,7 @@ textarea {
 		text-decoration: none;
 	}
 }
-/*lightgreen, lightgreen bg, maroon text, no border*/
-.button.lightgreen {
-	background: $lightgreen;
-	color: $maroon;
-	border: none;
-	&:hover {
-		background: darken($lightgreen,7%);
-		color: darken($maroon,7%);
-		border: none;
-		text-decoration: none;
-	}
-}
+
 /*transparent, transparent bg, blue text, blue border*/
 .button.transparent {
 	background: transparent;
@@ -514,8 +503,6 @@ Content
 /* color classes */
 .bg-maroon {background: $maroon;color: white; }
 .maroon {color: $maroon; }
-.bg-lightgreen {background: $lightgreen;color: white; }
-.lightgreen {color: $lightgreen; }
 .bg-darkgreen {background: $smoke;color: white; }
 .darkgreen {color: $smoke; }
 .bg-white { background: white; }
@@ -642,6 +629,10 @@ Homepage
 	
 	.program-titles {
 		margin-top: 35px;
+		
+		h5 {
+			color: $maroon;
+		}
 	}
 	
 	a {
@@ -658,9 +649,9 @@ Homepage
 		width: 100px;
         height: 100px;
         margin-bottom: 20px;
-        background: $smoke;
-        font-size: 2.5em;
-        border: 2px solid darken($smoke,3%);
+        background: #F1F1F1;
+        font-size: 2.2em;
+        border: 3px solid darken($smoke,6%);
 		border-radius: 50%;
 		-webkit-border-radius: 50%;
 		-moz-border-radius: 50%;
@@ -673,15 +664,15 @@ Homepage
 			position: absolute;
 			margin-left: 27px;
 			margin-top: 26px;
-			color: $maroon;
+			color: $gray;
 		}
 		&:hover { //animation
 			transform: scale(1.05);
 			-webkit-transform: scale(1.05);
 			-moz-transform: scale(1.05);
 			-ms-transform: scale(1.05);
-			border-color: darken($smoke,6%);
-			color: darken($maroon,5%);
+			border-color: darken($smoke,12%);
+			color: darken($gray,10%);
 		}
 	}
 	
@@ -719,7 +710,7 @@ Homepage
 			margin: 0;
 			padding: 0 0 22px;
 			font-weight: 400;
-			border-bottom: 1px solid $lightgray;
+			border-bottom: 2px solid $lightgray;
 		}
 		
 		.news-title {
@@ -730,7 +721,7 @@ Homepage
 		.descrip {
 			 margin: 22px 0 0;
 			 padding: 0 0 22px;
-			 border-bottom: 1px solid $lightgray;
+			 border-bottom: 2px solid $lightgray;
 			 &:last-of-type {
 				 border-bottom: none;
 			 }
@@ -1091,7 +1082,7 @@ Default Sidebar
 		margin: 0;
 		padding: 0 0 22px;
 		font-weight: 400;
-		border-bottom: 1px solid $lightgray;
+		border-bottom: 2px solid $lightgray;
 		font-size: 26px;
 		line-height: 28px;
 	}
@@ -1099,7 +1090,7 @@ Default Sidebar
 	.text-widget {
 		margin: 22px 0 0;
 		padding: 0 0 22px;
-		border-bottom: 1px solid $lightgray;
+		border-bottom: 2px solid $lightgray;
 	}
 	
 	li {
@@ -1176,7 +1167,7 @@ img.alumni {
 		font-weight: 200;
 		font-style: italic;
 		list-style: none;
-		    border-bottom: 1px solid #E0E0E0;
+		border-bottom: 2px solid #E0E0E0;
 		&:after {
 		    content: '\f101';
 		    position: absolute;
@@ -1451,14 +1442,36 @@ Footer
 	 .button {
 		margin: 20px auto;
 	}
-
-	
+		
 }
+/*.contact-pg {
+	.footer-contact {
+		background: url('img/g-map.png');
+		background-size: cover;
+	}
+}*/
 
+
+.testimonials {
+	.footer-contact {
+		background: black;
+		text-align: center;
+	    padding: 40px 0 20px;
+	    color: white;
+		
+		h4 {
+			color: $smoke;
+			span {
+				font-weight: 600;
+				font-size: 0.65em;
+			}
+		}
+	}
+}//.testimonials
 
 .site-footer {
 	font-weight: 400;
-	background: $gray;
+	background: $black;
 	border-top: 2px solid rgba($lightgray,0.02);
 	padding: 20px 0 40px;
 	color: white;

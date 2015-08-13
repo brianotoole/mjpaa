@@ -13,8 +13,8 @@ get_header(); ?>
 			<main id="main" class="site-main entry-content" role="main">
 
 			<div class="results-total">
-				<h3>Latest News &amp; Events</h3>
-				<p>Find the latest news &amp; events at Mary Jo's. Use the filter on the left to show by news or event articles only.</p>
+				<h3 class="animate fadeIn">Latest News &amp; Events</h3>
+				<p>Find news &amp; events at Mary Jo's. Use the filter on the left to list news or event articles.</p>
 			</div>
 
 			<div class="class-list">

@@ -20,7 +20,7 @@ get_header(); ?>
 			  <a href="<?php bloginfo('url'); ?>/about/achievements/#alumni">Our Alumni Spotlight</a>
 		</div><!--/.col-->
 		<div class="col-sm-9 quotes b-left">
-			<h2 class="section-title">Celebrating 35 Years as the Most Reputable<br />
+			<h2 class="section-title animate fadeIn">Celebrating 35 Years as the Most Reputable<br />
 			Performing Arts Academy in Tampa Bay
 			</h2> 
 			<h5 class="breakout">Voted one of the top 50 dance schools in the country.</h5>
