@@ -130,13 +130,10 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	.sb-search {
 		width: 100%;
 		margin: 0;
-		margin-bottom: 20px;
+		margin-bottom: 5px;
 		height: 50px;
 		line-height: 50px;
 		padding-right: 0;
-		input[type="text"] {
-			padding-left: 20px;
-		}
 	}
 	.site-logo { 
 		img {
@@ -160,10 +157,25 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	}
 	.close {
 		margin-top: 0;
+		padding: 12px 20px;
 		width: 100%;
-		background: lighten($black,2%);
-		color: white;
-		padding-left: 0;
+		background: $maroon;
+		color: $smoke;
+		font-size: 0.9em;
+		text-align: left;
+		&:after {
+			content: '\f00d';
+			font-family: fontAwesome;
+			font-size: 0.85em;
+			position: absolute;
+			right: 20px;
+			margin-top: 3px;
+			color: $smoke;
+		}
+		&:hover, &:focus {
+			background: darken($maroon,5%);
+			color: white;
+		}
 	}
 	.cbp-spmenu-push-toleft .site-content  {
 		opacity: 0.2;
