@@ -651,7 +651,7 @@ Homepage
         margin-bottom: 20px;
         background: #F1F1F1;
         font-size: 2.2em;
-        border: 3px solid darken($smoke,6%);
+        border: 10px solid darken($smoke,6%);
 		border-radius: 50%;
 		-webkit-border-radius: 50%;
 		-moz-border-radius: 50%;
@@ -662,8 +662,8 @@ Homepage
 		-ms-transition: transform 0.2s ease;
 		&:before { //the icon
 			position: absolute;
-			margin-left: 27px;
-			margin-top: 26px;
+			margin-left: 20px;
+			margin-top: 20px;
 			color: $gray;
 		}
 		&:hover { //animation
