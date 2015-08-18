@@ -773,7 +773,7 @@ Homepage
 //header video on about template v2
 body.page-template-page-about-video {
 	.site-header {
-    	height: 463px;
+    	height: 562px;
     	background: transparent;
 	}
 	.site-header.fixed {
@@ -787,7 +787,7 @@ body.page-template-page-about-video {
     top: 0;
     left: 0;
     width: 100%;
-    height: 510px;
+    height: 608px;
     background: rgba($black, 0.5); //overlay
     border-bottom: 2px solid rgba($lightgray,0.05);
     z-index: 2;
@@ -798,7 +798,7 @@ video, .ie8-poster {
     bottom: 0;
     min-width: 100%; 
     width: auto; 
-    height: 502px;
+    height: 600px;
     object-fit: fill;
     z-index: 1;
 }

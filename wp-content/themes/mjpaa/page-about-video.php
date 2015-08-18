@@ -6,11 +6,11 @@ get_header(); ?>
             
 <div class="video-overlay"></div>
 
-<video class="sqs-html5-video" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/sp-poster.jpg" autoplay loop>
-  <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/developer-loop-1920x1080.webm" type="video/webm">
-  <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/developer-loop-1920x1080.mp4" type="video/mp4">
+<video class="sqs-html5-video" poster="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaa_screenshot.jpg" autoplay muted loop>
+  <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaa.webm" type="video/webm">
+  <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaa.mp4" type="video/mp4">
   <!--[if lt IE 9]>
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/sp-poster-old-ie.jpg" class="ie8-poster">
+    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaa_screenshot.jpg" class="ie8-poster">
   <![endif]-->
 </video>
 
