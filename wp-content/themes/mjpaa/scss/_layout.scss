@@ -559,7 +559,6 @@ Homepage
     width: 100%;
     height: 100%;
     min-height: 62vh;
-    border-bottom: 2px solid $lightgray;
     
     .img {
          position: absolute;
@@ -648,10 +647,10 @@ Homepage
 	i {
 		width: 100px;
         height: 100px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         background: #F1F1F1;
         font-size: 2.2em;
-        border: 10px solid darken($smoke,6%);
+        border: 2px solid darken($smoke,6%);
 		border-radius: 50%;
 		-webkit-border-radius: 50%;
 		-moz-border-radius: 50%;
@@ -662,8 +661,8 @@ Homepage
 		-ms-transition: transform 0.2s ease;
 		&:before { //the icon
 			position: absolute;
-			margin-left: 20px;
-			margin-top: 20px;
+			margin-left: 28px;
+			margin-top: 28px;
 			color: $gray;
 		}
 		&:hover { //animation
@@ -770,8 +769,8 @@ Homepage
 	
 }//.about
 
-//header video on about template v2
-body.page-template-page-about-video {
+//header video on UM template-page
+body.page-template-page-um-video {
 	.site-header {
     	height: 562px;
     	background: transparent;
@@ -816,7 +815,7 @@ body.home .latest-news p {
     margin: 0 auto;
     padding: 40px;
     text-align: left;
-    border-top: 8px solid $gray;
+    border-top: 8px solid $maroon;
     
     .intro {
 	    background: transparent;
