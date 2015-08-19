@@ -73,18 +73,29 @@ input[type="submit"] {
 	border-radius: 0;
 	background: white;
 	box-shadow: none;
-	color: $gray;
+	color: $black;
 	cursor: pointer;
 	-webkit-appearance: button; 
-	font-size: 1.2em;
+	font-size: 1.1em;
 	line-height: 1;
 	font-weight: inherit;
 	margin: 20px 0;
-	padding: 1em;
+	padding: 12px 25px;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
 	text-shadow: none;
 	text-transform: uppercase;
 	float: right;
-	width: 200px;
+	min-width: 160px;
 	
 	&:hover, &:focus, &:active {
 		border-color: darken($gray,20%);
@@ -175,17 +186,17 @@ textarea {
 /* buttons */
 .button {
 	position: relative;
-    z-index: 9999999;
+    z-index: 9999;
     display: inline-block;
     margin: 20px 0;
-    width: 220px;
-    height: 60px;
-    line-height: 60px;
+    padding: 9px 25px;
+    min-width: 160px;
     text-align: center;
     font-size: 1.1em;
     font-weight: normal;
     font-style: normal;
     color: white;
+    text-align: center;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -193,6 +204,10 @@ textarea {
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
     text-decoration: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
 }
 /*primary, blue bg, white text, no border*/
 .button.primary,
@@ -210,11 +225,11 @@ textarea {
 /*smoke, smoke bg, maroon text, no border, looks nice on colored bg*/
 .button.smoke {
 	background: $smoke;
-	color: $maroon;
+	color: $black;
 	border: none;
 	&:hover {
 		background: darken($smoke,7%);
-		color: darken($maroon,7%);
+		color: darken($black,7%);
 		border: none;
 		text-decoration: none;
 	}
@@ -1462,7 +1477,9 @@ Footer
 .footer-contact {
 	padding: 50px 0 80px;
 	text-align: center;
-	background: $maroon;
+	background: url('https://4rsmokehouse.com/wp-content/themes/4rivers/library/images/bg-next-page.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
 	color: white;
 	
 	p, a {

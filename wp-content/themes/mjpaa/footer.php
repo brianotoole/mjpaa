@@ -19,16 +19,16 @@
 	
 		<div class="footer-top grid grid-pad">
 			<div class="award col-3-12">
-				award
+				[award image goes here]
 			</div><!-- .site-info -->
 			<div class="links col-3-12">
 				<h6>Links</h6>
 				<ul>
-					<li><i class="fa fa-chevron-right"></i><a href="">Press</a></li>
-					<li><i class="fa fa-chevron-right"></i><a href="">Careers</a></li>
-					<li><i class="fa fa-chevron-right"></i><a href="">Donation Requests</a></li>
-					<li><i class="fa fa-chevron-right"></i><a href="">FAQ</a></li>
-					<li><i class="fa fa-chevron-right"></i><a href="">Gift Cards</a></li>
+					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/contact">Link</a></li>
+					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/contact">Careers</a></li>
+					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/contact">Donation Requests</a></li>
+					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/contact">FAQ</a></li>
+					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/contact">Press</a></li>
 				</ul>
 			</div><!-- .site-info -->
 			<div class="family col-3-12">
