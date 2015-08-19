@@ -64,6 +64,11 @@ $(document).ready(function(){
 		$('html,body').animate({scrollTop : 0},400);
 		return false;
 	});
+	//Click event to scroll down
+	$('#learn').click(function(){
+		$('html,body').animate({scrollTop : 516},400);
+		return false;
+	});
 	
 });
 

@@ -215,7 +215,7 @@ textarea {
 	background: $maroon;
 	color: white;
 	border: none;
-	&:hover {
+	&:hover, &:focus {
 		background: darken($maroon,7%);
 		color: darken(white,7%);
 		border: none;
@@ -227,7 +227,7 @@ textarea {
 	background: $smoke;
 	color: $black;
 	border: none;
-	&:hover {
+	&:hover, &:focus {
 		background: darken($smoke,7%);
 		color: darken($black,7%);
 		border: none;
@@ -239,7 +239,7 @@ textarea {
 	background: $gold;
 	color: white;
 	border: none;
-	&:hover {
+	&:hover, &:focus {
 		background: darken($maroon,7%);
 		color: darken(white,7%);
 		border: none;
@@ -252,7 +252,7 @@ textarea {
 	background: transparent;
 	color: $maroon;
 	border: 2px solid $maroon;
-	&:hover {
+	&:hover, &:focus {
 		color: darken($maroon,7%);
 		border: 2px solid darken($maroon,7%);
 		text-decoration: none;
@@ -263,7 +263,7 @@ textarea {
 	background: white;
 	color: $maroon;
 	border: none;
-	&:hover {
+	&:hover, &:focus {
 		background: darken($maroon,7%);
 		color: darken($maroon,7%);
 		text-decoration: none;
@@ -275,7 +275,7 @@ textarea {
 	color: white;
 	margin: 0;
 	text-decoration: none;
-	&:hover {
+	&:hover, &:focus {
 		background: darken($maroon,7%);
 		color: darken($maroon,7%);
 		text-decoration: none;
@@ -803,7 +803,7 @@ Homepage
 //header video on UM template-page
 body.page-template-page-um-video {
 	.site-header {
-    	height: 562px;
+    	height: 0;
     	background: transparent;
 	}
 	.site-header.fixed {
@@ -811,16 +811,43 @@ body.page-template-page-um-video {
 		background: rgba($maroon, 0.85);
 		border-bottom: 2px solid rgba($lightgray,0.05);
 	}
+	.page-about section.history {
+		margin: -8px auto;
+	}
 }
 .video-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 608px;
+    height: 600px;
     background: rgba($black, 0.5); //overlay
-    border-bottom: 2px solid rgba($lightgray,0.05);
     z-index: 2;
+    
+    article {
+	    position: relative;
+	    top: 90%;
+	    -webkit-transform: translateY(-90%);
+	    -moz-transform: translateY(-90%);
+	    -ms-transform: translateY(-90%);
+	    transform: translateY(-90%);
+	    color: white;
+	    text-align: center;
+	    width: 100%;
+	    z-index: 5;
+	    
+	    p {
+		    font-family: $font-body;
+		    color: white;
+		    font-style: normal;
+		    font-size: 1.1em;
+		    line-height: 1.4em;
+		}
+		.button {
+			position: relative;
+			z-index: 9999;
+		}
+	}
 }
 video, .ie8-poster {
     position: relative;
@@ -831,6 +858,12 @@ video, .ie8-poster {
     height: 600px;
     object-fit: fill;
     z-index: 1;
+}
+
+blockquote {
+	h2 {
+		line-height: 1.4em;
+	}
 }
 
 
@@ -1106,7 +1139,6 @@ Interior Page Defaults
     width: 100%;
     height: 100%;
     min-height: 282px;
-    border-bottom: 8px solid $gray;
 }
 
 .entry-content {

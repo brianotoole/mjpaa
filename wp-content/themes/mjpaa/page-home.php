@@ -9,7 +9,7 @@ get_header(); ?>
   <div class="img animate fadeIn" style="background: url('<?php bloginfo('stylesheet_directory'); ?>/img/hero_placeholder.jpg') 50% center no-repeat;background-size:cover;"></div> 
     <div class="intro row" id="contain">
      	  <div class="col-sm-12">                   
-            <h4>"When the arts enter a child's world magic happens.</h5>
+            <h4>"When the arts enter a child's world magic happens.</h4>
             <p>- Mary Jo Scanio, Founder &amp; Artistic Director</p>
           </div><!--/.col-->
      </div><!--/.row-->
