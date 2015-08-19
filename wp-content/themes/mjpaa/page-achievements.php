@@ -77,13 +77,13 @@ get_header(); ?>
 	</div><!--/.intro-->
 </section><!--/.memories-images-->
 
-<div class="footer-contact">
+<div class="footer-contact overlay">
 	<div class="grid grid-pad row">
 		<div class="col-sm-12">
 			<h3>Calling All Alumni!</h3>
 			<p>Please keep us posted of your latest accomplishments and ventures.</p> 
 			<p><a href="mailto:amanda@mjpaa.com">Email us</a> with any updates and performance photos you may have.</p>
-			<a class="button smoke" href="mailto:amanda@mjpaa.com">Keep in Touch</a>
+			<a class="button gold" href="mailto:amanda@mjpaa.com">Keep in Touch</a>
 		</div>
 	</div><!-- grid -->
 </div><!-- footer-contact -->

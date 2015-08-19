@@ -234,6 +234,18 @@ textarea {
 		text-decoration: none;
 	}
 }
+/*gold, gold bg, white text, no border, looks nice on colored bg*/
+.button.gold {
+	background: $gold;
+	color: white;
+	border: none;
+	&:hover {
+		background: darken($maroon,7%);
+		color: darken(white,7%);
+		border: none;
+		text-decoration: none;
+	}
+}
 
 /*transparent, transparent bg, blue text, blue border*/
 .button.transparent {
@@ -257,11 +269,10 @@ textarea {
 		text-decoration: none;
 	}
 }
-/*register button sidbar, transparent bg, blue text, border*/
+/*register button sidbar*/
 .button.register {
-	background: $maroon;
+	background: $gold;
 	color: white;
-	border: 1px solid $lightgray;
 	margin: 0;
 	text-decoration: none;
 	&:hover {
@@ -646,6 +657,7 @@ Homepage
 		
 		h5 {
 			color: $maroon;
+			font-weight: 400;
 		}
 	}
 	
@@ -658,37 +670,41 @@ Homepage
 	p {
 		color: $black;
 	}
-	
-	i {
-		width: 100px;
-        height: 100px;
-        margin-bottom: 25px;
-        background: #F1F1F1;
-        font-size: 2.2em;
-        border: 2px solid darken($smoke,6%);
-		border-radius: 50%;
-		-webkit-border-radius: 50%;
-		-moz-border-radius: 50%;
-		-ms-border-radius: 50%;
-		transition: transform 0.2s ease;
-		-webkit-transition: transform 0.2s ease;
-		-moz-transition: transform 0.2s ease;
-		-ms-transition: transform 0.2s ease;
-		&:before { //the icon
-			position: absolute;
-			margin-left: 28px;
-			margin-top: 28px;
-			color: $gray;
-		}
-		&:hover { //animation
-			transform: scale(1.05);
-			-webkit-transform: scale(1.05);
-			-moz-transform: scale(1.05);
-			-ms-transform: scale(1.05);
-			border-color: darken($smoke,12%);
-			color: darken($gray,10%);
-		}
+	.col-sm-10 {
+		margin-bottom: 30px;
 	}
+	
+	.service {
+		margin: 10px 0;
+	    i {
+			width: 100px;
+	        height: 100px;
+	        margin-bottom: 25px;
+	        background: rgba($maroon,0.05);
+	        font-size: 2.2em;
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			transition: transform 0.2s ease;
+			-webkit-transition: transform 0.2s ease;
+			-moz-transition: transform 0.2s ease;
+			-ms-transition: transform 0.2s ease;
+			&:before { //the icon
+				position: absolute;
+				margin-left: 30px;
+				margin-top: 2px;
+				color: $maroon;
+			}
+			&:hover { //animation
+				transform: scale(1.02);
+				-webkit-transform: scale(1.02);
+				-moz-transform: scale(1.02);
+				-ms-transform: scale(1.02);
+				background: rgba($maroon,0.1);
+			}
+		}
+	}//.service
 	
 	.latest-news {
 		min-height: 875px;
@@ -1468,20 +1484,6 @@ input#uwpqsf_id_key {
 /*--------------------------------------------------------------
 Footer
 --------------------------------------------------------------*/
-.overlay, .overlay .grid {
-	position: relative;
-	z-index: 2;
-	
-	&:after {
-    	content: '';
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background: rgba($gold,0.8);
-    }
-}
 .footer-block {
 	width: 100%;
 	background: white;
@@ -1509,12 +1511,20 @@ Footer
 	}
 		
 }
-/*.contact-pg {
-	.footer-contact {
-		background: url('img/g-map.png');
-		background-size: cover;
-	}
-}*/
+.overlay, .overlay .grid {
+	position: relative;
+	z-index: 2;
+	
+	&:after {
+    	content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(84, 66, 38, 0.8);
+    }
+}
 
 
 .testimonials {
@@ -1527,7 +1537,7 @@ Footer
 		h4 {
 			color: $smoke;
 			span {
-				font-weight: 600;
+				font-weight: 200;
 				font-size: 0.7em;
 			}
 		}

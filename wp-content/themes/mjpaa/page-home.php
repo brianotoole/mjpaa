@@ -19,53 +19,65 @@ get_header(); ?>
 	<div class="intro row" id="contain">
 		<div class="col-sm-8">
 			<h4 class="section-title">The Academy Offers a Complete Performing Arts Curriculum</h4> 
-			<h6>Our program includes...</h6>
+			<h6>Our program includes:</h6>
 			
 			<div class="program-titles">
-			  <div class="col-sm-2">
-				<i class="fa fa-ticket"></i>
-			  </div>
-			  <div class="col-sm-10">
-				<h5>Performing Arts</h5>
-				<p>fdsafdsafdsaf sdafsdfdsf dfdsfds dsfsdagsdagsdagdsgdsgsd</p>
-			  </div><hr class="visible-xs">
-			  <div class="clear"></div>
+			
+			<div class="service">
+				<div class="col-sm-2">
+					<i class="fa fa-ticket"></i>
+				</div>
+				<div class="col-sm-10">
+					<h5>Performing Arts</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				</div>
+			</div>
+			<div class="clearfix"></div><hr class="visible-xs">
 			  
-			  <div class="col-sm-2">
-				<i class="fa fa-music"></i>
+			  <div class="service">
+				  <div class="col-sm-2">
+					<i class="fa fa-music"></i>
+				  </div>
+				  <div class="col-sm-10">
+					<h5>Dance &amp; Classical Ballet</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				  </div>
 			  </div>
-			  <div class="col-sm-10">
-				<h5>Dance &amp; Classical Ballet</h5>
-				<p>fdsafdsafdsaf sdafsdfdsf dfdsfds dsfsdagsdagsdagdsgdsgsd</p>
-			  </div><hr class="visible-xs">
-			  <div class="clear"></div>
+			  <div class="clearfix"></div><hr class="visible-xs">
+			 
+			  <div class="service">
+				  <div class="col-sm-2">
+					<i class="fa fa-quote-left"></i>
+				  </div>
+				  <div class="col-sm-10">
+					<h5>Musical Theater</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				  </div>
+			  </div>
+			  <div class="clearfix"></div><hr class="visible-xs">
 			  
-			  <div class="col-sm-2">
-				<i class="fa fa-quote-left"></i>
+			  <div class="service">
+			  	<div class="col-sm-2">
+					<i class="fa fa-video-camera"></i>
+				</div>
+				<div class="col-sm-10">
+					<h5>Acting</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				</div>
 			  </div>
-			  <div class="col-sm-10">
-				<h5>Musical Theater</h5>
-				<p>fdsafdsafdsaf sdafsdfdsf dfdsfds dsfsdagsdagsdagdsgdsgsd</p>
-			  </div><hr class="visible-xs">
-			  <div class="clear"></div>
+			  <div class="clearfix"></div><hr class="visible-xs">
+			 
+			  <div class="service">
+			  	<div class="col-sm-2">
+					<i class="fa fa-volume-up"></i>
+				</div>
+				<div class="col-sm-10">
+					<h5>Voice</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				</div>
+			  </div>
+			  <div class="clearfix"></div><hr class="visible-xs">
 			  
-			  <div class="col-sm-2">
-				<i class="fa fa-video-camera"></i>
-			  </div>
-			  <div class="col-sm-10">
-				<h5>Acting</h5>
-				<p>fdsafdsafdsaf sdafsdfdsf dfdsfds dsfsdagsdagsdagdsgdsgsd</p>
-			  </div><hr class="visible-xs">
-			  <div class="clear"></div>
-			  
-			  <div class="col-sm-2">
-				<i class="fa fa-volume-up"></i>
-			  </div>
-			  <div class="col-sm-10">
-				<h5>Voice</h5>
-				<p>fdsafdsafdsaf sdafsdfdsf dfdsfds dsfsdagsdagsdagdsgdsgsd</p>
-			  </div><hr class="visible-xs">
-			  <div class="clear"></div>
 			</div><!--/.program-titles-->
 			  
 			  
@@ -125,7 +137,7 @@ get_header(); ?>
 		<div class="col-sm-12">
 			<h3>Ready to Discover the Difference?</h3>
 			<p>Be touched. Be moved. Be inspired.</p>
-			<a class="button smoke" href="<?php bloginfo('url'); ?>/classes">Enroll Today</a>
+			<a class="button gold" href="<?php bloginfo('url'); ?>/classes">Enroll Today</a>
 		</div>
 		
 	</div><!-- grid -->

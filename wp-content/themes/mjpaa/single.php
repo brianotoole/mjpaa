@@ -126,15 +126,15 @@ get_header(); ?>
 	
 
 	<?php if ( is_singular( 'class' ) && get_field('class_registration_link') || is_singular('post') && in_category('event') && get_field('event_registration_link') ): //registration link ?>
-	<div class="footer-contact">
+	<div class="footer-contact overlay">
 		<div class="grid grid-pad row">
 			<div class="col-sm-12">
 				<h3>Sign up for: <strong><?php the_title(); ?></strong></h3>
 				<p>To register for this class, click the button below.</p>
 				<?php if ( is_singular( 'class' ) && get_field('class_registration_link') ) {  ?>	
-				  <a class="button smoke" href="<?php the_field('class_registration_link'); ?>" target="_blank">Register Now</a>
+				  <a class="button gold" href="<?php the_field('class_registration_link'); ?>" target="_blank">Register Now</a>
 				<?php } else if ( is_singular( 'post' ) && in_category('event') && get_field('event_registration_link') ) {   ?>	
-				  <a class="button smoke" href="<?php the_field('event_registration_link'); ?>" target="_blank">Register Now</a>
+				  <a class="button gold" href="<?php the_field('event_registration_link'); ?>" target="_blank">Register Now</a>
 				<?php } else {  ?>
 				<?php } ?>
 			</div>
