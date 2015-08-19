@@ -119,7 +119,7 @@ get_header(); ?>
 
 
    
-<div class="footer-contact">
+<div class="footer-contact overlay">
 	<div class="grid grid-pad row">
 	
 		<div class="col-sm-12">

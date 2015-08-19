@@ -1468,6 +1468,20 @@ input#uwpqsf_id_key {
 /*--------------------------------------------------------------
 Footer
 --------------------------------------------------------------*/
+.overlay, .overlay .grid {
+	position: relative;
+	z-index: 2;
+	
+	&:after {
+    	content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba($gold,0.8);
+    }
+}
 .footer-block {
 	width: 100%;
 	background: white;
@@ -1477,7 +1491,8 @@ Footer
 .footer-contact {
 	padding: 50px 0 80px;
 	text-align: center;
-	background: url('https://4rsmokehouse.com/wp-content/themes/4rivers/library/images/bg-next-page.jpg') no-repeat center center;
+	background: url('http://www.mjpaa.com/assets/sites/mjpaa.com/images/MJPAA%20Building.jpg') no-repeat center center;
+	/*background: url('https://4rsmokehouse.com/wp-content/themes/4rivers/library/images/bg-next-page.jpg') no-repeat center center;*/
     background-size: cover;
     background-attachment: fixed;
 	color: white;
