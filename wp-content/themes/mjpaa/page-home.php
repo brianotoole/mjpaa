@@ -24,59 +24,94 @@ get_header(); ?>
 			<div class="program-titles">
 			
 			<div class="service">
-				<div class="col-sm-2">
-					<i class="fa fa-ticket"></i>
-				</div>
+			  	<div class="col-sm-2">
+					 <div class="ih-item circle colored effect1"><a href="#">
+				        <div class="spinner"></div>
+						   <div class="img"><img src="http://placeimg.com/100/100/nature" alt="img"></div>
+				        <div class="info">
+				          <div class="info-back">
+				             <p>-View Class-</p>
+				          </div>
+				      </div></a></div><!--/.ih-item-->
+				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Performing Arts</h5>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				</div>
-			</div>
-			<div class="clearfix"></div><hr class="visible-xs">
-			  
-			  <div class="service">
-				  <div class="col-sm-2">
-					<i class="fa fa-music"></i>
-				  </div>
-				  <div class="col-sm-10">
-					<h5>Dance &amp; Classical Ballet</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				  </div>
-			  </div>
-			  <div class="clearfix"></div><hr class="visible-xs">
-			 
-			  <div class="service">
-				  <div class="col-sm-2">
-					<i class="fa fa-quote-left"></i>
-				  </div>
-				  <div class="col-sm-10">
-					<h5>Musical Theater</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				  </div>
-			  </div>
-			  <div class="clearfix"></div><hr class="visible-xs">
+				</div><!--/.col-->
+			  </div><!--/.service-->
 			  
 			  <div class="service">
 			  	<div class="col-sm-2">
-					<i class="fa fa-video-camera"></i>
-				</div>
+					 <div class="ih-item circle colored effect1"><a href="#">
+				        <div class="spinner"></div>
+						  <div class="img"><img src="http://placeimg.com/100/100/people" alt="img"></div>
+				        <div class="info">
+				          <div class="info-back">
+				             <p>-View Class-</p>
+				          </div>
+				      </div></a></div><!--/.ih-item-->
+				</div><!--/.col-->
+				<div class="col-sm-10">
+					<h5>Dance &amp; Classical Ballet</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				</div><!--/.col-->
+			  </div><!--/.service-->
+			  
+			  <div class="service">
+			  	<div class="col-sm-2">
+					 <div class="ih-item circle colored effect1"><a href="#">
+				        <div class="spinner"></div>
+						  <div class="img"><img src="http://placeimg.com/100/100/tech" alt="img"></div>
+				        <div class="info">
+				          <div class="info-back">
+				             <p>-View Class-</p>
+				          </div>
+				      </div></a></div><!--/.ih-item-->
+				</div><!--/.col-->
+				<div class="col-sm-10">
+					<h5>Musical Theater</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				</div><!--/.col-->
+			  </div><!--/.service-->
+			  
+			  <div class="service">
+			  	<div class="col-sm-2">
+					 <div class="ih-item circle colored effect1"><a href="#">
+				        <div class="spinner"></div>
+						  <div class="img"><img src="http://placeimg.com/100/100/animals" alt="img"></div>
+				        <div class="info">
+				          <div class="info-back">
+				            <p>-View Class-</p>
+				          </div>
+				      </div></a></div><!--/.ih-item-->
+				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Acting</h5>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				</div>
-			  </div>
-			  <div class="clearfix"></div><hr class="visible-xs">
-			 
+				</div><!--/.col-->
+			  </div><!--/.service-->
+			  
 			  <div class="service">
 			  	<div class="col-sm-2">
-					<i class="fa fa-volume-up"></i>
-				</div>
+					 <div class="ih-item circle colored effect1"><a href="#">
+				        <div class="spinner"></div>
+						  <div class="img"><img src="http://placeimg.com/100/100/tech" alt="img"></div>
+				        <div class="info">
+				          <div class="info-back">
+				            <p>-View Class-</p>
+				          </div>
+				      </div></a></div><!--/.ih-item-->
+				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Voice</h5>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				</div>
-			  </div>
-			  <div class="clearfix"></div><hr class="visible-xs">
+				</div><!--/.col-->
+			  </div><!--/.service-->
+			
+		 
+		    
+		    
+		    
 			  
 			</div><!--/.program-titles-->
 			  
