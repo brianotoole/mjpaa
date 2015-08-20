@@ -6,7 +6,7 @@ Template Name: Home
 get_header(); ?>
 <!--hero--> 
 <section class="hero">
-  <div class="img animate fadeIn" style="background: url('<?php bloginfo('stylesheet_directory'); ?>/img/hero_placeholder.jpg') 50% center no-repeat;background-size:cover;"></div> 
+  <div class="img" style="background: url('<?php bloginfo('stylesheet_directory'); ?>/img/hero_placeholder.jpg') 50% center no-repeat;background-size:cover;"></div> 
     <div class="intro row" id="contain">
      	  <div class="col-sm-12">                   
             <h4>"When the arts enter a child's world magic happens.</h4>
@@ -25,12 +25,12 @@ get_header(); ?>
 			
 			<div class="service">
 			  	<div class="col-sm-2">
-					 <div class="ih-item circle colored effect1"><a href="#">
+					 <div class="ih-item circle"><a href="#">
 				        <div class="spinner"></div>
 						   <div class="img"><img src="http://placeimg.com/100/100/nature" alt="img"></div>
 				        <div class="info">
 				          <div class="info-back">
-				             <p>-View Class-</p>
+				             <p>-View Classes-</p>
 				          </div>
 				      </div></a></div><!--/.ih-item-->
 				</div><!--/.col-->
@@ -42,12 +42,12 @@ get_header(); ?>
 			  
 			  <div class="service">
 			  	<div class="col-sm-2">
-					 <div class="ih-item circle colored effect1"><a href="#">
+					 <div class="ih-item circle"><a href="#">
 				        <div class="spinner"></div>
 						  <div class="img"><img src="http://placeimg.com/100/100/people" alt="img"></div>
 				        <div class="info">
 				          <div class="info-back">
-				             <p>-View Class-</p>
+				             <p>-View Classes-</p>
 				          </div>
 				      </div></a></div><!--/.ih-item-->
 				</div><!--/.col-->
@@ -59,12 +59,12 @@ get_header(); ?>
 			  
 			  <div class="service">
 			  	<div class="col-sm-2">
-					 <div class="ih-item circle colored effect1"><a href="#">
+					 <div class="ih-item circle"><a href="#">
 				        <div class="spinner"></div>
 						  <div class="img"><img src="http://placeimg.com/100/100/tech" alt="img"></div>
 				        <div class="info">
 				          <div class="info-back">
-				             <p>-View Class-</p>
+				             <p>-View Classes-</p>
 				          </div>
 				      </div></a></div><!--/.ih-item-->
 				</div><!--/.col-->
@@ -76,12 +76,12 @@ get_header(); ?>
 			  
 			  <div class="service">
 			  	<div class="col-sm-2">
-					 <div class="ih-item circle colored effect1"><a href="#">
+					 <div class="ih-item circle"><a href="#">
 				        <div class="spinner"></div>
 						  <div class="img"><img src="http://placeimg.com/100/100/animals" alt="img"></div>
 				        <div class="info">
 				          <div class="info-back">
-				            <p>-View Class-</p>
+				            <p>-View Classes-</p>
 				          </div>
 				      </div></a></div><!--/.ih-item-->
 				</div><!--/.col-->
@@ -93,12 +93,12 @@ get_header(); ?>
 			  
 			  <div class="service">
 			  	<div class="col-sm-2">
-					 <div class="ih-item circle colored effect1"><a href="#">
+					 <div class="ih-item circle"><a href="#">
 				        <div class="spinner"></div>
 						  <div class="img"><img src="http://placeimg.com/100/100/tech" alt="img"></div>
 				        <div class="info">
 				          <div class="info-back">
-				            <p>-View Class-</p>
+				            <p>-View Classes-</p>
 				          </div>
 				      </div></a></div><!--/.ih-item-->
 				</div><!--/.col-->

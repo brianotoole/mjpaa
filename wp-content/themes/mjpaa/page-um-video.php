@@ -8,7 +8,7 @@ get_header(); ?>
   <article>
   		<h4>Universal Movement Performing Arts Company</h4>
        <p>Universal Movement holds auditions for the company on an annual basis.</p>
-       <a href="#" class="button gold" id="learn">Learn about us</a>
+       <a href="#" class="button transparent" id="learn">Click to Learn More</a>
   </article>
 </div>
 <video class="sqs-html5-video" poster="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaa_screenshot.jpg" autoplay muted loop>

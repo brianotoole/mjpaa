@@ -54,7 +54,7 @@
         
     	<div class="footer-bottom grid grid-pad">
 			<div class="site-info col-12-6">
-				&copy; <?php echo date('Y'); ?> MJPAA.com<em> | <a id="top" href="#"> Back To Top</a>
+				&copy; <?php echo date('Y'); ?> MJPAA.com | <a id="top" href="#"> Back To Top</a>
 			</div><!-- .site-info -->
 			<div class="social-media col-6-12">
 				<ul>

@@ -30,9 +30,9 @@ input,
 select,
 textarea {
 	color: $black;
-	font-weight: 300;
+	font-weight: 400;
 	font-family: $font-body;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.8;
 }
 textarea { height: 200px; }
@@ -235,14 +235,14 @@ textarea {
 		text-decoration: none;
 	}
 }
-/*gold, gold bg, white text, no border, looks nice on colored bg*/
+/*gold, white bg, gold text, no border, looks nice on colored bg or bg with image overlay*/
 .button.gold {
-	background: $gold;
-	color: white;
+	background: white;
+	color: $gold;
 	border: none;
 	&:hover, &:focus {
-		background: darken($maroon,7%);
-		color: darken(white,7%);
+		background: $maroon;
+		color: white;
 		border: none;
 		text-decoration: none;
 	}
@@ -251,11 +251,11 @@ textarea {
 /*transparent, transparent bg, blue text, blue border*/
 .button.transparent {
 	background: transparent;
-	color: $maroon;
-	border: 2px solid $maroon;
+	color: white;
+	border: 2px solid $gold;
 	&:hover, &:focus {
-		color: darken($maroon,7%);
-		border: 2px solid darken($maroon,7%);
+		color: $gold;
+		border: 2px solid white;
 		text-decoration: none;
 	}
 }
@@ -277,8 +277,8 @@ textarea {
 	margin: 0;
 	text-decoration: none;
 	&:hover, &:focus {
-		background: darken($maroon,7%);
-		color: darken($maroon,7%);
+		background: $maroon;
+		color: white;
 		text-decoration: none;
 	}
 	li {
@@ -437,10 +437,10 @@ Menus
 		a {
 			display: block;
 			text-decoration: none;
-			padding: 5px 25px;
+			padding: 5px 20px;
 			color: white;
 			font-weight: 300;
-			font-size: 1.3em;
+			font-size: 1.2em;
 			transition: all 0.4s ease-in-out;
 			-moz-transition: all 0.4s ease-in-out;
 			-webkit-transition: all 0.4s ease-in-out;
@@ -602,7 +602,7 @@ Homepage
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%,rgba($gold, 0.9) 100%);
+		background-image: linear-gradient(to bottom, rgba(black, 0.80) 0%,rgba($gold, 0.3) 100%);
 		opacity: 0.5; //lesser opacity = lesser gradient overlay
 		z-index: 2;
     }
@@ -633,10 +633,8 @@ Homepage
 	line-height: 1.5em;	
 } 
 
-// 
-// --------------------------------------------------
-.ih-item.circle.effect1 {
-
+// spinner "icons" for homepage services
+.ih-item.circle {
     .spinner {
         width: 100px;
         height: 100px;
@@ -646,7 +644,6 @@ Homepage
         border-radius: 50%;
         transition: all 0.8s ease-in-out;
     }
-
     .img {
         position: absolute;
         top: 5px;
@@ -662,7 +659,6 @@ Homepage
 	        }
         }
     }
-
     .info {
     	position: absolute;
     	width: 90px;
@@ -674,27 +670,26 @@ Homepage
         opacity: 0;
         border-radius: 50%;
         transition: all 0.8s ease-in-out;
-
         p {
             color: white;
-            margin: 30.5px 15px;
+            margin: 34px auto;
 			padding: 0;
+			text-align: center;
 			font-style: italic;
-			font-size: 0.58em;
+			font-size: 0.5em;
         }
     }
-
     a:hover {
         .spinner {
-            transform: (rotate(180deg) );
+            transform: (rotate(180deg));
         }
-
         .info {
             opacity: 1;
         }
     }
 }
 
+   
 //section.about
 .about { 
 	width: 100%;
@@ -720,8 +715,7 @@ Homepage
 		margin-top: 35px;
 		
 		h5 {
-			color: $black;
-			font-weight: 400;
+			color: $maroon;
 		}
 	}
 	
@@ -1003,7 +997,7 @@ body.home .latest-news p {
 		color: white;
 		font-size: 1.3em;
 		padding: 5px;
-		margin-bottom: 110px;
+		margin-bottom: 120px;
 	}
 	
 	
@@ -1047,6 +1041,7 @@ body.home .latest-news p {
 .stack { 
 	float: left; 
 	position: relative; 
+	margin: 0 7px;
 	z-index: 10; 
 	img {
 		max-width: 100%; 
@@ -1248,7 +1243,6 @@ Interior / About page template
 	}
 	p.view {
 		color: $maroon;
-		font-weight: 200;
 		font-size: 0.75em;
 		padding: 0;
 		margin: 0;
@@ -1334,14 +1328,12 @@ Default Sidebar
 	
 	li {
 		color: $maroon;
-		font-weight: 200;
 		font-style: italic;
 		list-style: none;
 	}
 	
 	li a {
 		color: $maroon;
-		font-weight: 200;
 		font-style: italic;
 		&:after {
 		    content: '\f101';
@@ -1403,6 +1395,8 @@ img.alumni {
 		margin: 10px 0 0;
 		padding: 0 0 10px;
 		color: $maroon;
+		font-weight: 400;
+		font-style: normal;
 		list-style: none;
 		border-bottom: 2px solid #E0E0E0;
 		&:after {
@@ -1425,8 +1419,13 @@ img.alumni {
 	    border-top: 2px solid $lightgray;
 	    border-bottom: 2px solid $lightgray;
 	}
+	span {
+		font-weight: 400;
+		font-size: 0.9em;	
+	}
 	.date {
-		 &:before {
+	
+		&:before {
 		 	content: '\f073';
 			font-family: fontAwesome;
 			font-size: 0.85em;
@@ -1435,7 +1434,7 @@ img.alumni {
 			padding-right: 5px;
 			position: relative;
 			color: $maroon;
-		 }
+		}
 	}
 	.cost {
 		 &:before {
@@ -1490,7 +1489,6 @@ Interior Page Template: Classes / Class Search
 	}
 	
 	li, li a {
-		font-weight: 200;
 		font-size: 1em;
 		margin: 10px 0 0;
 	    padding: 0 0 10px;
@@ -1538,7 +1536,7 @@ Interior Page Template: Classes / Class Search
 			font-size: 5em;
 			text-align: center;
 			width: 100%;
-			color: darken($smoke,10%);
+			color: rgba($gold,0.5);
 		}
 	  }
 	}
@@ -1576,7 +1574,6 @@ Interior Page Template: Classes / Class Search
 //classes view more button custom excerpt
 .view a {
 	color: $maroon;
-	font-weight: 200;
 	padding: 0;
 	margin: 2px 0;
 	font-style: italic;
@@ -1624,15 +1621,14 @@ Interior Page Template: Classes / Class Search
 	padding: 10px 12px;
     margin: 15px 0 0 -15px;
     font-size: 1.1em;
-    font-weight: 200!important;
     width: 112%;
     background: $gray;
     color: white;
 }
 /* the choices... */
 .uwpqsf_class > label {
-	font-weight: 200;
 	font-size: 0.95em;
+	font-weight: 400;
 	margin: 10px 0 0;
     padding: 0 0 10px;
 	border-bottom: 2px solid $lightgray;
@@ -1709,7 +1705,7 @@ Footer
 		h4 {
 			color: $lightgray;
 			span {
-				font-weight: 200;
+				font-weight: 400;
 				font-size: 0.7em;
 			}
 		}
@@ -1746,7 +1742,6 @@ Footer
 		ul {
 			text-align: left;
 		    margin: 20px 0;
-			font-weight: 200;
 			li {
 				font-size: 0.8em;
 				line-height: 1.5em;
@@ -1778,7 +1773,7 @@ Footer
 	.footer-bottom {
 		border-top: 2px solid rgba($gray,0.2);
 		padding: 30px 0 0;
-		margin: 20px auto -30px;
+		margin: 30px auto 0;
 		
 		.site-info {
 			color: #717171;
