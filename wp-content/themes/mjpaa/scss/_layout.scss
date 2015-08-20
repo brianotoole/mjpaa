@@ -856,7 +856,8 @@ body.page-template-page-um-video {
 		margin: -8px auto;
 	}
 }
-.video-overlay {
+.video-overlay,
+.cover-top {
     position: absolute;
     top: 0;
     left: 0;
@@ -890,7 +891,9 @@ body.page-template-page-um-video {
 		}
 	}
 }
-video, .ie8-poster {
+video, 
+.ie8-poster,
+.cover-bottom  {
     position: relative;
     left: 0; 
     bottom: 0;
