@@ -155,9 +155,15 @@ get_header(); ?>
 <section class="memories-images">
 	<div class="intro row" id="contain">
 		<div class="col-sm-12 images">
-		  <img src="http://placeimg.com/290/292/nature">
-	      <img src="http://placeimg.com/290/292/people">
-	      <img src="http://placeimg.com/290/292/any">
+		  <div class="stack rotated-left">
+	        	<img src="http://placeimg.com/290/292/nature">
+	      </div>
+	      <div class="stack rotated-middle">
+	        	<img src="http://placeimg.com/290/292/people">
+	      </div>
+	      <div class="stack rotated-right">
+	        	<img src="http://placeimg.com/290/292/art">
+	      </div>
 		</div>
 		<p>Currently one of the Federation of Dance Competition's Top 25 schools in the Southeast Region, FDC People's Choice Award Winner, power ranked with the World Dance Championship Series, Victory Cup Winner and FDC Studio of Excellence.</p>
 		<p>Our distinctive combination of performing arts disciplines offered here at Mary Jo's Performing Arts Academy provides students a unique training program for a complete well-rounded performance education. The program and its instructors have trained a number of students who are currently working on Broadway, with professional dance companies, and in television and film. Many of our past students are successful business leaders in our community.</p>
