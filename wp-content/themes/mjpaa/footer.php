@@ -19,7 +19,11 @@
 	
 		<div class="footer-top grid grid-pad">
 			<div class="award col-3-12">
-				[award image goes here]
+				<h6>Awards</h6>
+				<p>- Victory Cup Winner </p>
+				<p>- Best of N. Tampa, 2014</p>
+				<p>- FDC Studio of Excellence</p>
+				<p></p>
 			</div><!-- .site-info -->
 			<div class="links col-3-12">
 				<h6>Links</h6>
