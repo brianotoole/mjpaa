@@ -54,14 +54,16 @@
     </header><!-- #masthead -->
     
     <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
-				<div id="sb-search" class="sb-search visible-xs">
-					<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
-						<input class="sb-search-input" placeholder="SEARCH SITE..." type="text" value="" name="s" id="search">
-						<input class="sb-search-submit" type="submit" value="">
-				    </form>
-				</div><!--.sb-search-->
-		<?php wp_nav_menu( array( 'theme_location' => 'mobile' ) ); ?>
-		<button class="close menu-toggle toggle-menu menu-right push-body"><?php _e( 'Close', 'mjpaa' ); ?></button> 
+	  <button class="close menu-toggle toggle-menu menu-right push-body">
+	    <?php _e( 'Close Menu', 'mjpaa' ); ?>
+	  </button>
+	  <div id="sb-search" class="sb-search visible-xs">
+	    <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+		  <input class="sb-search-input" placeholder="SEARCH SITE..." type="text" value="" name="s" id="search">
+		  <input class="sb-search-submit" type="submit" value="">
+		</form>
+	  </div><!--.sb-search-->
+		<?php wp_nav_menu( array( 'theme_location' => 'mobile' ) ); ?> 
 	</nav>
 
 	<section id="content" class="site-content">
