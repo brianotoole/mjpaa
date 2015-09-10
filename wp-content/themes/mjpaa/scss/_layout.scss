@@ -266,15 +266,15 @@ textarea {
 	border: none;
 	&:hover, &:focus {
 		background: darken($maroon,7%);
-		color: darken($maroon,7%);
+		color: darken(white,7%);
 		text-decoration: none;
 	}
 }
 /*register button sidbar*/
-.button.register {
+.button.register,
+.button.gold {
 	background: $gold;
 	color: white;
-	margin: 0;
 	text-decoration: none;
 	&:hover, &:focus {
 		background: $maroon;
@@ -292,6 +292,7 @@ textarea {
 		}
 	}
 }
+.button.register {margin: 0;}
 
 
 .button.full {
@@ -1051,7 +1052,7 @@ body.home .latest-news p {
 	margin: 0 7px;
 	z-index: 10; 
 	img {
-		max-width: 100%; 
+		max-width: 200px; 
 		height: auto; 
 		vertical-align: bottom;
 		border: 8px solid white; 

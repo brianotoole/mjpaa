@@ -43,12 +43,13 @@
 			</div><!-- .site-info -->
 			<div class="ph col-3-12">
 				<h6>Contact</h6>
-					<p>
+					<p class="hidden-xs">
 						<a href="tel:#">813-555-5555</a>
 					</p>
 					<p>
 						1234 Elm St. Tampa, FL
 					</p>
+					<a class="visible-xs button gold" href="#">Tap to Call Us</a>
 			</div><!-- .site-info -->
         </div><!-- grid --> 
         

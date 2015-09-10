@@ -1,5 +1,14 @@
 /* Media Queries ----------------------------------------------------------- */
 
+@media screen and (min-width: 1275px) {
+
+	.stack img {
+		max-width: 250px;
+	}
+
+}//end
+
+
 /* container size & below */
 @media screen and (max-width: 1170px) {
 
@@ -13,7 +22,7 @@
 @media screen and (max-width: 1070px) {
 	.main-navigation li {
 		a {
-			font-size: 1.1em;
+			font-size: 1em;
 		}
 	}
 	.button {
@@ -28,7 +37,7 @@
 		max-width: 95%;
 	}
 	.main-navigation li a {
-		font-size: 1em;
+		font-size: 0.9em;
 		padding: 5px 10px;
 	}
 	.news img .thumbnail, .news .thumbnail {
@@ -51,7 +60,10 @@
 /* special considerations */
 @media screen and (max-width: 899px) {
 	.main-navigation li a {
-		font-size: 0.9em;
+		font-size: 0.85em;
+	}
+	.rotated-right {
+		display: none;
 	}
 
 }//end
@@ -59,7 +71,6 @@
 /* above .menu-toggle */
 @media screen and (min-width: 768px) {
 
-	
 	.main-navigation li a {
 		display: inline-block;
 		&:after { //left to right sliding underline for entry content links
@@ -162,6 +173,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		color: $smoke;
 		font-size: 0.9em;
 		text-align: left;
+		border-radius: 0;
 		&:after {
 			content: '\f00d';
 			font-family: fontAwesome;
@@ -192,27 +204,35 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	.main-navigation ul {
 		display: none;
 	}
+	body.home .site-header,
 	.site-header {
 		top: 0;
-	    height: 200px;
+	    height: 110px;
+	    background: $maroon;
 	}
 	
 	
 	.hero {
+		min-height: 100%;
+		height: 250px;
 		.img {
-			height: 110px;
-			background: $maroon!important;
+			margin-top: 110px;
 		}
 		h2 {
 			margin-top: 110px;
 		}
+		h4 {
+			margin-top: 210px;
+		}
 		&:before {
 			top: 110px; //height of .img
 		}
-		
+	}
+	body.page-template-page-home .about {
+		margin-top: 110px;
 	}
 	.entry-header {
-		min-height: 200px;
+		margin-top: 110px;
 		border-bottom: 1px solid $gray;
 	}
 	
@@ -265,7 +285,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	
 	
 	.page-about section.history {
-		padding: 0 20px 30px;
+		padding: 0 20px;
 	}
 	.entry-content {
 		padding: 0 10px;
@@ -273,6 +293,9 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	.intro {
 		max-width: 100%;
 		padding: 40px 0 30px;
+	}
+	.history {
+		padding: 20px;
 	}
 	.history .quotes {
 		padding-left: 0;
@@ -287,8 +310,10 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		background: transparent;
 		border: none;
 		
-		.latest-title {
+		.latest-title,
+		.section-title {
 			font-size: 1.3em;
+			text-align: center;
 		}
 		
 		.more {
@@ -297,6 +322,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		a li, li a {
 			margin: 25px 0 0;
 			padding: 0 0 25px;
+			text-align: center;
 		}
 		.register li {
 			margin: 0;
@@ -325,6 +351,36 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		.uwpqsf_class>label {
 			margin: 25px 0 0;
 			padding: 0 0 25px;
+		}
+	}
+	
+	/* full-width buttons on sm */
+	.about .latest-news .view {
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+		padding: 5px 0;
+		background: $gray;
+		border-radius: 4px;
+		color: white;
+		text-align: center;
+		&:after {
+			padding-top: 1px;
+		}
+	}
+	.site-footer {
+		ul {
+			margin: 40px 0 0;
+		}
+		.footer-bottom {
+			.social-media {
+				float: none;
+				text-align: center;
+				margin-bottom: 40px;
+			}
+			.site-info {
+				text-align: center;
+			}
 		}
 	}
 	

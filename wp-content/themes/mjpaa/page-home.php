@@ -9,8 +9,8 @@ get_header(); ?>
   <div class="img" style="background: url('<?php bloginfo('stylesheet_directory'); ?>/img/hero_placeholder.jpg') 50% center no-repeat;background-size:cover;"></div> 
     <div class="intro row" id="contain">
      	  <div class="col-sm-12">                   
-            <h4>"When the arts enter a child's world magic happens.</h4>
-            <p>- Mary Jo Scanio, Founder &amp; Artistic Director</p>
+            <h4 class="hidden-xs">"When the arts enter a child's world magic happens.</h4>
+            <p class="hidden-xs">- Mary Jo Scanio, Founder &amp; Artistic Director</p>
           </div><!--/.col-->
      </div><!--/.row-->
 </section><!--/section.hero-->
@@ -18,14 +18,29 @@ get_header(); ?>
 <section class="about">
 	<div class="intro row" id="contain">
 		<div class="col-sm-8">
-			<h4 class="section-title">The Academy Offers a Complete Performing Arts Curriculum</h4> 
-			<h6>Our program includes:</h6>
+			<h4 class="hidden-xs section-title">The Academy Offers a Complete Performing Arts Curriculum</h4>
+			<h6 class="hidden-xs">Our program includes:</h6>
+			
+			<!--mobile only-->
+			<h4 class="visible-xs latest-title text-center">How can we help you?</h4> 
+			<div class="service visbile-xs hidden-sm hidden-md hidden-lg">
+			  <a class="button primary" href="#">I need general information</a>
+			  <a class="button primary" href="#">What is MJPAA?</a>
+			  <a class="button primary" href="#">I need class information</a>
+			  <a class="button primary" href="#">I need contact information</a>
+			  <a class="button primary" href="#">I need directions</a>
+			  <a class="button primary" href="#content">I'm not sure. Let me browse.</a>
+			</div>
+			<hr class="visible-xs" />
+			
+			<h4 class="visible-xs section-title">MJPAA Offers a Complete Performing Arts Curriculum</h4>
+			<h6 class="visible-xs">Our program includes the following:</h6>
 			
 			<div class="program-titles">
-			
-			<div class="service">
+				
+			<div class="service hidden-xs">
 			  	<div class="col-sm-2">
-					 <div class="ih-item circle"><a href="#">
+					 <div class="hidden-xs ih-item circle"><a href="#">
 				        <div class="spinner"></div>
 						   <div class="img"><img src="http://placeimg.com/100/100/nature" alt="img"></div>
 				        <div class="info">
@@ -39,10 +54,11 @@ get_header(); ?>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
 			  </div><!--/.service-->
+			  <hr class="visible-xs" />
 			  
 			  <div class="service">
 			  	<div class="col-sm-2">
-					 <div class="ih-item circle"><a href="#">
+					 <div class="hidden-xs ih-item circle"><a href="#">
 				        <div class="spinner"></div>
 						  <div class="img"><img src="http://placeimg.com/100/100/people" alt="img"></div>
 				        <div class="info">
@@ -56,10 +72,11 @@ get_header(); ?>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
 			  </div><!--/.service-->
+			  <hr class="visible-xs" />
 			  
 			  <div class="service">
 			  	<div class="col-sm-2">
-					 <div class="ih-item circle"><a href="#">
+					 <div class="hidden-xs ih-item circle"><a href="#">
 				        <div class="spinner"></div>
 						  <div class="img"><img src="http://placeimg.com/100/100/tech" alt="img"></div>
 				        <div class="info">
@@ -73,10 +90,11 @@ get_header(); ?>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
 			  </div><!--/.service-->
+			  <hr class="visible-xs" />
 			  
 			  <div class="service">
 			  	<div class="col-sm-2">
-					 <div class="ih-item circle"><a href="#">
+					 <div class="hidden-xs ih-item circle"><a href="#">
 				        <div class="spinner"></div>
 						  <div class="img"><img src="http://placeimg.com/100/100/animals" alt="img"></div>
 				        <div class="info">
@@ -90,10 +108,11 @@ get_header(); ?>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
 			  </div><!--/.service-->
+			  <hr class="visible-xs" />
 			  
 			  <div class="service">
 			  	<div class="col-sm-2">
-					 <div class="ih-item circle"><a href="#">
+					 <div class="hidden-xs ih-item circle"><a href="#">
 				        <div class="spinner"></div>
 						  <div class="img"><img src="http://placeimg.com/100/100/tech" alt="img"></div>
 				        <div class="info">
@@ -165,10 +184,10 @@ get_header(); ?>
 	        	<img src="http://placeimg.com/290/292/art">
 	      </div>
 		</div>
-		<p>Currently one of the Federation of Dance Competition's Top 25 schools in the Southeast Region, FDC People's Choice Award Winner, power ranked with the World Dance Championship Series, Victory Cup Winner and FDC Studio of Excellence.</p>
-		<p>Our distinctive combination of performing arts disciplines offered here at Mary Jo's Performing Arts Academy provides students a unique training program for a complete well-rounded performance education. The program and its instructors have trained a number of students who are currently working on Broadway, with professional dance companies, and in television and film. Many of our past students are successful business leaders in our community.</p>
 	</div><!--/.intro-->
 </section><!--/.memories-images-->
+
+
 
 
    
