@@ -49,7 +49,7 @@ get_header(); ?>
 						if ( $loop->have_posts() ) {
 							while ( $loop->have_posts() ) {
 								$loop->the_post(); ?>
-									<div class="col-sm-3">
+									<div class="col-sm-4">
 									  <a href="<?php the_permalink() ?>">
 									    <img class="faculty" src="<?php the_field('faculty_img'); ?>" />
 									    <h6><?php the_title(); ?></h6>
@@ -66,7 +66,7 @@ get_header(); ?>
 						wp_reset_postdata();
 						
 						?>
-				</div>
+				</div><!--/.program-titles-->
 		</div><!--/.col-->
 		
 		<div class="col-sm-4 latest-news">

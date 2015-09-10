@@ -1268,6 +1268,16 @@ Interior / About page template
 			text-decoration: underline;
 		}
 	}
+	/* clearfix bugfix */
+	.col-sm-4 {
+		&:nth-child(3n+1) {
+			clear: left;
+		}	
+	}
+	
+	
+	
+	
 }//.team
 
 }//.page-about
@@ -1395,6 +1405,7 @@ img.alumni {
 	border: 2px solid $lightgray;
     padding: 2px;
     background: white;
+    margin: 10px 0 0;
 }
 .latest-news {
 	a li, li a {
