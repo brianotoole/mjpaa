@@ -19,7 +19,7 @@ get_header(); ?>
 	<div class="intro row" id="contain">
 		<div class="col-sm-8">
 			<h4 class="hidden-xs section-title">The Academy Offers a Complete Performing Arts Curriculum</h4>
-			<h6 class="hidden-xs">Our program includes:</h6>
+			<h6 class="hidden-xs">Our programs include - </h6>
 			
 			<!--mobile only-->
 			<h4 class="visible-xs latest-title text-center">How can we help you?</h4> 
@@ -50,7 +50,7 @@ get_header(); ?>
 				      </div></a></div><!--/.ih-item-->
 				</div><!--/.col-->
 				<div class="col-sm-10">
-					<h5>Performing Arts</h5>
+					<h5>Dance &amp; Classical Ballet of Tampa</h5>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
 			  </div><!--/.service-->
@@ -68,7 +68,7 @@ get_header(); ?>
 				      </div></a></div><!--/.ih-item-->
 				</div><!--/.col-->
 				<div class="col-sm-10">
-					<h5>Dance &amp; Classical Ballet</h5>
+					<h5>Acting &amp; Theater</h5>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
 			  </div><!--/.service-->
@@ -86,7 +86,7 @@ get_header(); ?>
 				      </div></a></div><!--/.ih-item-->
 				</div><!--/.col-->
 				<div class="col-sm-10">
-					<h5>Musical Theater</h5>
+					<h5>Music, Instruments &amp; Voice</h5>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
 			  </div><!--/.service-->
@@ -104,33 +104,10 @@ get_header(); ?>
 				      </div></a></div><!--/.ih-item-->
 				</div><!--/.col-->
 				<div class="col-sm-10">
-					<h5>Acting</h5>
+					<h5>Acrobatics</h5>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
 			  </div><!--/.service-->
-			  <hr class="visible-xs" />
-			  
-			  <div class="service">
-			  	<div class="col-sm-2">
-					 <div class="hidden-xs ih-item circle"><a href="#">
-				        <div class="spinner"></div>
-						  <div class="img"><img src="http://placeimg.com/100/100/tech" alt="img"></div>
-				        <div class="info">
-				          <div class="info-back">
-				            <p>-View Classes-</p>
-				          </div>
-				      </div></a></div><!--/.ih-item-->
-				</div><!--/.col-->
-				<div class="col-sm-10">
-					<h5>Voice</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				</div><!--/.col-->
-			  </div><!--/.service-->
-			
-		 
-		    
-		    
-		    
 			  
 			</div><!--/.program-titles-->
 			  
