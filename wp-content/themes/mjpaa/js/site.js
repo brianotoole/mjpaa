@@ -72,6 +72,34 @@ $(document).ready(function(){
 	
 });
 
+/**
+ * .top-bar nav scroll 
+ */
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if ( scroll >= 10 && $(window).width() > 768) { 
+    	$('.top-bar').slideUp(300);
+        $('.top-bar').addClass("push-up");
+        $('.site-header').addClass("fixed");
+   } else {
+   	 	$('.top-bar').slideDown(300);
+	    $('.top-bar').removeClass("push-up");
+	    $('.site-header').removeClass("fixed");
+   }
+
+});
+
+/**
+ * scroll back up when label is clicked
+ */
+$('label').click(function (e) {
+	$('html, body').stop(true, true).animate({ scrollTop: 0 }, 400);
+	$('label').click(function (e) {
+    e.stopPropagation();
+   });
+});
+
+
 /*
  * jPushMenu.js, 1.1.1
  */
@@ -185,34 +213,6 @@ jQuery(function($){
 	});
 	
 });
-
-/**
- * .top-bar nav scroll 
- */
-$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if ( scroll >= 10 && $(window).width() > 768) { 
-    	$('.top-bar').slideUp(300);
-        $('.top-bar').addClass("push-up");
-        $('.site-header').addClass("fixed");
-   } else {
-   	 	$('.top-bar').slideDown(300);
-	    $('.top-bar').removeClass("push-up");
-	    $('.site-header').removeClass("fixed");
-   }
-
-});
-
-/**
- * scroll back up when label is clicked
- */
-$('label').click(function (e) {
-	$('html, body').stop(true, true).animate({ scrollTop: '-=500' }, 300);
-	$('label').click(function (e) {
-    e.stopPropagation();
-   });
-});
-
 
 /*!
  * classie - class helper functions
