@@ -213,10 +213,8 @@ function customize_output($results , $arg, $id, $getdata ){
 			<?}else{?>
 				<h5><?php echo $numberOfQueries; ?> results found:</h5>
 			<?}
-			
-
-			
 		?> 
+		
 	</div>
 
 <?php	ob_start();	$result = '';

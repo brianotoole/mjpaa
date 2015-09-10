@@ -13,8 +13,8 @@ get_header(); ?>
 			<main id="main" class="site-main entry-content" role="main">
 
 			<div class="results-total">
-				<h3 class="animate fadeIn">Search for Classes</h3>
-				<p>Select an option below to filter classes by Program, Class, Session, and age or grade level. Dance Program-Children's Division ages-1-7 years. Upper Division Grades 3-Adult (based on ability first then grade).</p>
+			    <h3 class="animate fadeIn">Search for Classes</h3>
+			    <p>Select an option below to filter classes by Program, Class, Session, and age or grade level. Dance Program-Children's Division ages-1-7 years. Upper Division Grades 3-Adult (based on ability first then grade).</p>
 			</div>
 
 			<div class="class-list">

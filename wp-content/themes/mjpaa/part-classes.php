@@ -1,11 +1,99 @@
 <?php
+// WP_Query arguments for linking from homepage to taxonomy archives for all classes: Dance & Classical Ballet
+if (is_page ('236') ) {
+// get all terms in the taxonomy
+$terms = get_terms( 'program-dance' ); 
+// convert array of term objects to array of term IDs
+$term_ids = wp_list_pluck( $terms, 'term_id' );
 
+	$args = array (
+		'post_type'	     => array( 'class' ),
+		'order'			 => 'DESC',
+		'posts_per_page' => -1,
+		'tax_query'     => array(
+	                    array(
+	                        'taxonomy'  => 'program-dance',
+							'field' => 'term_id',
+							'terms' => $term_ids,
+	                    )
+	                )
+	);	
+	
+	
+// WP_Query arguments for linking from homepage to taxonomy archives for all classes: Acting & Theater
+} else if (is_page ('238') ) {
+// get all terms in the taxonomy
+$terms = get_terms( 'program-acting' ); 
+// convert array of term objects to array of term IDs
+$term_ids = wp_list_pluck( $terms, 'term_id' );
+
+	$args = array (
+		'post_type'	     => array( 'class' ),
+		'order'			 => 'DESC',
+		'posts_per_page' => -1,
+		'tax_query'     => array(
+	                    array(
+	                        'taxonomy'  => 'program-acting',
+							'field' => 'term_id',
+							'terms' => $term_ids,
+	                    )
+	                )
+	);	
+
+
+// WP_Query arguments for linking from homepage to taxonomy archives for all classes: Music, Instruments, Voice
+} else if (is_page ('240') ) {
+// get all terms in the taxonomy
+$terms = get_terms( 'program-music' ); 
+// convert array of term objects to array of term IDs
+$term_ids = wp_list_pluck( $terms, 'term_id' );
+
+	$args = array (
+		'post_type'	     => array( 'class' ),
+		'order'			 => 'DESC',
+		'posts_per_page' => -1,
+		'tax_query'     => array(
+	                    array(
+	                        'taxonomy'  => 'program-music',
+							'field' => 'term_id',
+							'terms' => $term_ids,
+	                    )
+	                )
+	);	
+	
+	
+	
+// WP_Query arguments for linking from homepage to taxonomy archives for all classes: Acrobatics
+} else if (is_page ('242') ) {
+// get all terms in the taxonomy
+$terms = get_terms( 'program-acrobatics' ); 
+// convert array of term objects to array of term IDs
+$term_ids = wp_list_pluck( $terms, 'term_id' );
+
+	$args = array (
+		'post_type'	     => array( 'class' ),
+		'order'			 => 'DESC',
+		'posts_per_page' => -1,
+		'tax_query'     => array(
+	                    array(
+	                        'taxonomy'  => 'program-acrobatics',
+							'field' => 'term_id',
+							'terms' => $term_ids,
+	                    )
+	                )
+	);	
+	
+	
+
+} else {
+	
 // WP_Query arguments for custom post type...
-$args = array (
-	'post_type'	     => array( 'class' ),
-	'order'			 => 'DESC',
-	'posts_per_page' => -1
-);
+	$args = array (
+		'post_type'	     => array( 'class' ),
+		'order'			 => 'DESC',
+		'posts_per_page' => -1
+	);
+}
 // The Query
 $loop = new WP_Query( $args );
 
