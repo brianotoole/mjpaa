@@ -39,7 +39,7 @@ get_header(); ?>
 						while ( $loop->have_posts() ) {
 							$loop->the_post(); ?>
 							
-					        <h4>"<?php the_field('testimonial_quote'); ?>" - <span><?php the_field('testimonial_client'); ?></span></h4>
+					        <h4><i class="fa fa-quote-left"></i> <?php the_field('testimonial_quote'); ?> - <span> <?php the_field('testimonial_client'); ?></span></h4><hr />
 					
 					<?php } 
 					} else {
@@ -67,7 +67,12 @@ get_header(); ?>
 <section class="alumni-images">
 	<div class="intro row" id="contain">
 		<div class="col-sm-12">
-			<?php the_content(); ?>
+			<h4><i class="fa fa-trophy"></i> Currently one of the Federation of Dance Competition's Top 25 schools in the Southeast Region</h4><hr />
+			
+			<h4><i class="fa fa-trophy"></i> FDC People's Choice Award Winner, power ranked with the World Dance Championship Series</h4><hr />
+			<h4><i class="fa fa-trophy"></i> Victory Cup Winner and FDC Studio of Excellence</h4><hr />
+			<h4><i class="fa fa-trophy"></i> Voted one of the Top 50 Dance Schools in the country by Dance Spirit Magazine</h4><hr />
+			<h4><i class="fa fa-trophy"></i> GOLD Winner of Best of North Tampa</h4>
 		</div>
 	</div><!--/.intro-->
 </section><!--/.memories-images-->

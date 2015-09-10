@@ -1,6 +1,6 @@
 <?php
 /**
-Template Name: Page - UM, full-width video
+Template Name: Page - UM, Fullwidth, Large video
  */
 get_header(); ?> 
             

@@ -841,8 +841,12 @@ Homepage
 	
 }//.about
 
-//header video on UM template-page
-body.page-template-page-um-video {
+//header video on UM page template
+//header for fullwidth large hero template
+//header for testimonials page template
+body.page-template-page-um-video,
+body.page-template-page-fullwidth-largehero,
+body.page-template-page-testimonials {
 	.site-header {
     	height: 0;
     	background: transparent;
