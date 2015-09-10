@@ -30,7 +30,19 @@
 		</span>
 		<h5 class="program">Program</h5>
 		  <p>
-				<?php $programs = get_the_terms( $post->ID , 'program' );
+				<?php $programs = get_the_terms( $post->ID , 'program-dance' );
+					foreach ( $programs as $program ) {		
+					echo "&nbsp;$program->name"; }
+				?>
+				<?php $programs = get_the_terms( $post->ID , 'program-acting' );
+					foreach ( $programs as $program ) {		
+					echo "&nbsp;$program->name"; }
+				?>
+				<?php $programs = get_the_terms( $post->ID , 'program-music' );
+					foreach ( $programs as $program ) {		
+					echo "&nbsp;$program->name"; }
+				?>
+				<?php $programs = get_the_terms( $post->ID , 'program-acrobatics' );
 					foreach ( $programs as $program ) {		
 					echo "&nbsp;$program->name"; }
 				?>

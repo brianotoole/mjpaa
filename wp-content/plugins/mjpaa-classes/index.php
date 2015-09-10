@@ -39,7 +39,7 @@ function program_dance_classical_ballet() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => false,
 	);
-	register_taxonomy( 'program1', array( 'classes' ), $args );
+	register_taxonomy( 'program-dance', array( 'classes' ), $args );
 
 }
 add_action( 'init', 'program_dance_classical_ballet', 0 );
@@ -77,7 +77,7 @@ function program_acting_theater() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => false,
 	);
-	register_taxonomy( 'program2', array( 'classes' ), $args );
+	register_taxonomy( 'program-acting', array( 'classes' ), $args );
 
 }
 add_action( 'init', 'program_acting_theater', 0 );
@@ -115,7 +115,7 @@ function program_music_voice() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => false,
 	);
-	register_taxonomy( 'program3', array( 'classes' ), $args );
+	register_taxonomy( 'program-music', array( 'classes' ), $args );
 
 }
 add_action( 'init', 'program_music_voice', 0 );
@@ -153,7 +153,7 @@ function program_acrobatics() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => false,
 	);
-	register_taxonomy( 'program4', array( 'classes' ), $args );
+	register_taxonomy( 'program-acrobatics', array( 'classes' ), $args );
 
 }
 add_action( 'init', 'program_acrobatics', 0 );
@@ -261,7 +261,7 @@ function custom_post_type_classes() {
 		'description'         => __( 'Class lists for MJPAA', 'mjpaa' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'revisions', 'thumbnail', 'post-formats', ),
-		'taxonomies'          => array( 'program1', 'program2', 'program3', 'program4', 'session', 'grade' ),
+		'taxonomies'          => array( 'program-dance', 'program-acting', 'program-music', 'program-voice', 'program-acrobatics', 'session', 'grade' ),
 		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,
