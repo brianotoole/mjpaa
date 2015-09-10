@@ -47,13 +47,13 @@ get_header(); ?>
 				          <div class="info-back">
 				             <p>-View Classes-</p>
 				          </div>
-				      </div></a></div><!--/.ih-item-->
+				      </div></div><!--/.ih-item-->
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Dance &amp; Classical Ballet of Tampa</h5>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
-			  </div><!--/.service-->
+			  </div></a><!--/.service-->
 			  <hr class="visible-xs" />
 			  
 			  <div class="service">
@@ -65,13 +65,13 @@ get_header(); ?>
 				          <div class="info-back">
 				             <p>-View Classes-</p>
 				          </div>
-				      </div></a></div><!--/.ih-item-->
+				      </div></div><!--/.ih-item-->
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Acting &amp; Theater</h5>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
-			  </div><!--/.service-->
+			  </div></a><!--/.service-->
 			  <hr class="visible-xs" />
 			  
 			  <div class="service">
@@ -83,13 +83,13 @@ get_header(); ?>
 				          <div class="info-back">
 				             <p>-View Classes-</p>
 				          </div>
-				      </div></a></div><!--/.ih-item-->
+				      </div></div><!--/.ih-item-->
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Music, Instruments &amp; Voice</h5>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
-			  </div><!--/.service-->
+			  </div></a><!--/.service-->
 			  <hr class="visible-xs" />
 			  
 			  <div class="service">
@@ -101,13 +101,13 @@ get_header(); ?>
 				          <div class="info-back">
 				            <p>-View Classes-</p>
 				          </div>
-				      </div></a></div><!--/.ih-item-->
+				      </div></div><!--/.ih-item-->
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Acrobatics</h5>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
-			  </div><!--/.service-->
+			  </div></a><!--/.service-->
 			  
 			</div><!--/.program-titles-->
 			  
