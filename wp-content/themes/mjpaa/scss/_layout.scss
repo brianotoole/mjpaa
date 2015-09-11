@@ -1659,7 +1659,7 @@ Interior Page Template: Classes / Class Search
 
 /* the loading icon */
 .umloading {
-	width: 20%;
+	width: 22%;
 	height: 22px;
 	margin-top: 4px;
 	background: url('img/ajax_loader.gif') no-repeat 50% 50%;
@@ -1679,23 +1679,37 @@ Interior Page Template: Classes / Class Search
     padding-bottom: 0;
 }
 .uwpqsf_class>span[class*='taxolabel-'], .uwpqsf_class>span[class*='cmflabel-'] {
-	padding: 10px 12px;
-    margin: 15px 0 0 -15px;
+	padding: 7px 12px;
+    margin: 0 0 0 -15px;
     font-size: 1.1em;
     width: 110%;
     background: $gray;
     color: white;
 }
+.uwpqsf_class {
+	input[type="checkbox"], 
+	input[type="radio"] {
+		float: right;
+		margin: 7px 0px;
+		cursor: pointer;
+	}
+}
+
 /* the choices... */
 .uwpqsf_class > label {
 	font-size: 0.95em;
 	font-weight: 400;
-	margin: 10px 0 0;
-    padding: 0 0 10px;
+	margin: 2px 0 0;
+    padding: 0 0 2px;
 	border-bottom: 2px solid $lightgray;
+	cursor: pointer;
 	&:last-of-type {
 		border-bottom: none;
 	}
+}
+.uwpqsf_class select {
+	width: 100%;
+	background: white;
 }
 /* the search form, if needed */
 input#uwpqsf_id_key {
