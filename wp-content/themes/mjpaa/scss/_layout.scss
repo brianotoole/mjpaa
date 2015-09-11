@@ -1681,8 +1681,8 @@ Interior Page Template: Classes / Class Search
 .uwpqsf_class>span[class*='taxolabel-'], .uwpqsf_class>span[class*='cmflabel-'] {
 	padding: 7px 12px;
     margin: 0 0 0 -15px;
-    font-size: 1.1em;
-    width: 110%;
+    font-size: 1em;
+    width: 112%;
     background: $gray;
     color: white;
 }
@@ -1710,6 +1710,7 @@ Interior Page Template: Classes / Class Search
 .uwpqsf_class select {
 	width: 100%;
 	background: white;
+	border: none;
 }
 /* the search form, if needed */
 input#uwpqsf_id_key {

@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div class="grid">
 	
-		<div id="primary" class="col-8-12 pull-right">
+		<div id="primary" class="col-9-12 pull-right">
 			<main id="main" class="site-main entry-content" role="main">
 
 			<div class="results-total">
@@ -28,7 +28,7 @@ get_header(); ?>
 			</main><!-- #main -->
 		</div><!-- #primary -->
 		
-	<div id="secondary" class="classes-sidebar widget-area col-4-12 pull-left" role="complementary">
+	<div id="secondary" class="classes-sidebar widget-area col-3-12 pull-left" role="complementary">
 		<h3 class="page-title animate fadeIn">All News</h3>
 		<!--<p class="info">Select an option below to filter by News or Events.</p>-->
 		  <?php echo do_shortcode('[ULWPQSF id=88 formtitle="0" button=0]'); ?>
