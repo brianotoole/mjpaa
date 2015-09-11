@@ -24,6 +24,7 @@ get_header(); ?>
 				<?php get_template_part( 'part', 'classes' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
+			
 			</div><!--/.class-list-->
 
 			</main><!-- #main -->

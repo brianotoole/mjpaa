@@ -258,6 +258,18 @@ textarea {
 		text-decoration: none;
 	}
 }
+/*transparent, transparent bg w/ border*/
+.button.transparent.border {
+	background: transparent;
+	color: $gray;
+	border: 2px solid $gray;
+	text-decoration: none;
+	&:hover, &:focus {
+		color: $gold;
+		border: 2px solid $black;
+		text-decoration: none;
+	}
+}
 /*white, white bg, maroon text, no border*/
 .button.white {
 	background: white;

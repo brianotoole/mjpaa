@@ -209,6 +209,7 @@ function customize_output($results , $arg, $id, $getdata ){
 				
 			<?}elseif ($numberOfQueries == 0){?>
 				<h5>No results found.</h5>
+			    <a class="button transparent border" href="<?php bloginfo('url'); ?>/classes/help">Need Help Finding a Class?</a>
 				
 			<?}else{?>
 				<h5><?php echo $numberOfQueries; ?> results found:</h5>
@@ -250,7 +251,7 @@ function customize_output($results , $arg, $id, $getdata ){
 	<?}
                         echo  $apiclass->ajax_pagination($arg['paged'],$query->max_num_pages, 4, $id, $getdata);
 		 } else {
-					 echo  '<p style="padding: 0 20px;">There were no results found with your criteria. Please try selecting different options.</p>';
+					 echo  '';
 				}
 				/* Restore original Post Data */
 				wp_reset_postdata();
