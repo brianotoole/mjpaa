@@ -1544,12 +1544,12 @@ Interior Page Template: Classes / Class Search
 	padding: 30px 15px;
 	color: $black;
     background: white;
-    border: 8px solid $gray;
+    border: 4px solid $gray;
     text-align: left;
     z-index: 100;
     
     .page-title {
-	    color: $maroon;
+	    color: $black;
     }
 
 	.widget-title {
@@ -1557,7 +1557,7 @@ Interior Page Template: Classes / Class Search
 		margin: 15px 0 0 -15px;
 		font-size: 1.3em;
 		width: 112%;
-		background: $gray;
+		background: $lightgray;
 		color: white;
 	}
 	
@@ -1627,7 +1627,7 @@ Interior Page Template: Classes / Class Search
 }//.class-list
 
 .results-total {
-	margin: 50px 0;
+	margin: 46px 0;
 	
 	p, h3, h5 {
 		margin: 0 20px 5px;

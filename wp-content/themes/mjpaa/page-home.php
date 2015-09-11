@@ -6,7 +6,7 @@ Template Name: Home
 get_header(); ?>
 <!--hero--> 
 <section class="hero">
-  <div class="img" style="background: url('<?php bloginfo('stylesheet_directory'); ?>/img/hero_placeholder.jpg') 50% center no-repeat;background-size:cover;"></div> 
+  <div class="img" style="background: url('<?php bloginfo('stylesheet_directory'); ?>/img/hero_home.jpg') 50% center no-repeat;background-size:cover;"></div> 
     <div class="intro row" id="contain">
      	  <div class="col-sm-12">                   
             <h4 class="hidden-xs">"When the arts enter a child's world magic happens.</h4>
