@@ -18,8 +18,8 @@ get_header(); ?>
 				<div class="entry-content">
 					<?php the_content(); ?>
 					<div class="results-total">
-					    <h3 class="animate fadeIn">Search for Classes by Keyword</h3>
-					    <p>Enter keywords in the search form below. Then click "Search" to find classes based on your keyword. The class results will appear below.</p>
+					    <h3 class="animate fadeIn">Search for Classes by Title</h3>
+					    <p>Enter the class title in the search form below. Then click "Search" to find classes based on your title. The class results will appear below.</p>
 					    <div style="margin-top:80px;"><?php echo do_shortcode('[ULWPQSF id=175 formtitle="0" button="1" text_position="bottom"]'); ?></div>
 					</div>
 					<div class="class-list">
