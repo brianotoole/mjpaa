@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<div class="results-total">
 				<h3 class="animate fadeIn">Latest News &amp; Events</h3>
-				<p>Find news &amp; events at Mary Jo's. Use the filter on the left to list news or event articles.</p>
+				<p>Find news &amp; events at Mary Jo's. Use the filter on the left to list news OR event articles.</p>
 			</div>
 
 			<div class="class-list">
@@ -29,7 +29,7 @@ get_header(); ?>
 		</div><!-- #primary -->
 		
 	<div id="secondary" class="classes-sidebar widget-area col-3-12 pull-left" role="complementary">
-		<h3 class="page-title animate fadeIn">All News</h3>
+		<h3 class="page-title animate fadeIn">Find News</h3>
 		<!--<p class="info">Select an option below to filter by News or Events.</p>-->
 		  <?php echo do_shortcode('[ULWPQSF id=88 formtitle="0" button=0]'); ?>
 	</div><!-- .sidebar --> 
