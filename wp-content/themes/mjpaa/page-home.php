@@ -9,8 +9,8 @@ get_header(); ?>
   <div class="img" style="background: url('<?php bloginfo('stylesheet_directory'); ?>/img/hero_home.jpg') 50% center no-repeat;background-size:cover;"></div> 
     <div class="intro row" id="contain">
      	  <div class="col-sm-12">                   
-            <h4 class="hidden-xs">"When the arts enter a child's world magic happens.</h4>
-            <p class="hidden-xs">- Mary Jo Scanio, Founder &amp; Artistic Director</p>
+            <h4 class="hidden-xs">"When the arts enter a child's world, magic happens."</h4>
+            <p class="hidden-xs">- Mary Jo Scanio, Owner &amp; Artistic Director</p>
           </div><!--/.col-->
      </div><!--/.row-->
 </section><!--/section.hero-->
