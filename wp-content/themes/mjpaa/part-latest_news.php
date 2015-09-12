@@ -6,7 +6,8 @@
     <p class="date"><span class="cat-title"><?php global $post; $category = get_the_category($post->ID); echo $category[0]->name; ?></span> <?php echo get_the_date( '/ l, F j' ); ?>
     </p>  
 	<?php mjpaa_excerpt('mjpaa_excerpt_length','mjpaa_view_more_latest_news'); ?>
-	  <a class="view" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a>
+	  <a class="hidden-xs view" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a>
+	  <a class="visible-xs button mobile" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a>
 	</p>
 </div>
 <div class="clear"></div>
@@ -22,7 +23,8 @@
   $published_posts = $count_posts->publish;
     if( $published_posts >= 3 ) { //if there are 3 or more published posts, show view more link
         echo '<div class="col-sm-12 text-center no-padding">';
-        echo '<a href="' . get_option('home') . '/news" class="view more">' . 'View More News &amp; Events' . '</a>';
+        echo '<a href="' . get_option('home') . '/news" class="hidden-xs view more">' . 'View More News &amp; Events' . '</a>';
+        echo '<a href="' . get_option('home') . '/news" class="visible-xs button mobile">' . 'View More News &amp; Events' . '</a>';
         echo '</div>'; 
     }
 ?>

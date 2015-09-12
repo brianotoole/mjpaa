@@ -282,17 +282,17 @@ textarea {
 	}
 }
 /*button for mobile with arrow*/
-.button.arrow {
-	background: $lightgray;
+.button.mobile {
+	background: darken($smoke,5%);
 	color: $black;
 	border: 1px solid rgba($gray,0.25);
 	text-align: left;
 	font-size: 0.9em;
 	text-transform: capitalize;
 	&:hover, &:focus {
-		background: darken($lightgray,5%);
-		color: darken($black,5%);
-		border: 1px solid rgba($gray,0.25);
+		background: darken($smoke,5%);
+		color: $black;
+		border-color: rgba($gray,0.25);
 		text-decoration: none;
 	}
 	&:after {
@@ -302,7 +302,7 @@ textarea {
 	    position: absolute;
 	    right: 20px;
 	    margin-top: 2px;
-	    color: rgba($gray,0.25);
+	    color: $maroon;
 	}
 }
 /*register button sidbar*/

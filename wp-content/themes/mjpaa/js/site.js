@@ -77,7 +77,7 @@ $(document).ready(function(){
  */
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if ( scroll >= 10 && $(window).width() > 768) { 
+    if ( scroll >= 545 && $(window).width() > 768) { 
     	$('.top-bar').slideUp(300);
         $('.top-bar').addClass("push-up");
         $('.site-header').addClass("fixed");

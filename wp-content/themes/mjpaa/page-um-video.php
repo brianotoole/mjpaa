@@ -12,8 +12,8 @@ get_header(); ?>
   </article>
 </div>
 <video class="sqs-html5-video" poster="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaa_screenshot.jpg" autoplay muted loop>
-  <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaa.webm" type="video/webm">
-  <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaa.mp4" type="video/mp4">
+  <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/um.webm" type="video/webm">
+  <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/um.mp4" type="video/mp4">
   <!--[if lt IE 9]>
     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaa_screenshot.jpg" class="ie8-poster">
   <![endif]-->
