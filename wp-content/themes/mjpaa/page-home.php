@@ -22,19 +22,20 @@ get_header(); ?>
 			<h6 class="hidden-xs">Our programs include - </h6>
 			
 			<!--mobile only-->
-			<h4 class="visible-xs latest-title text-center">How can we help you?</h4> 
-			<div class="service visbile-xs hidden-sm hidden-md hidden-lg">
-			  <a class="button mobile" href="#">I need general information</a>
-			  <a class="button mobile" href="#">What is MJPAA?</a>
-			  <a class="button mobile" href="#">I need class information</a>
-			  <a class="button mobile" href="#">I need contact information</a>
-			  <a class="button mobile" href="#">I need directions</a>
-			  <a class="button mobile" href="#content">I'm not sure. Let me browse.</a>
-			</div>
-			<hr class="visible-xs" />
+			<div class="mobile-pad">
+			  <h4 class="visible-xs latest-title text-center">How can we help you?</h4> 
+			  <div class="service visbile-xs hidden-sm hidden-md hidden-lg">
+			    <a class="button mobile" href="#">I need general information</a>
+			   <a class="button mobile" href="#">What is MJPAA?</a>
+			    <a class="button mobile" href="#">I need class information</a>
+			    <a class="button mobile" href="#">I need contact information</a>
+			    <a class="button mobile" href="#">I need directions</a>
+			    <a class="button mobile" href="#content">I'm not sure. Let me browse.</a>
+			  </div>
 			
 			<h4 class="visible-xs section-title">MJPAA Offers a Complete Performing Arts Curriculum</h4>
-			<h6 class="visible-xs">Our program includes the following:</h6>
+			<h6 class="visible-xs section-title">Our program includes the following:</h6>
+			</div><!--/.mobile-pad-->
 			
 			<div class="program-titles">
 				

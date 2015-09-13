@@ -283,7 +283,20 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 			font-size: 3em;
 		}
 	}
-	
+	.about {
+		.section-title {
+			padding: inherit;
+			text-align: center;
+			line-height: 1.6em;
+		}
+		.service {
+			margin: 0;
+		}
+
+	}
+	.mobile-pad {
+		padding: 0 10px;
+	}
 	
 	.page-about section.history {
 		padding: 0 20px;
@@ -293,7 +306,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	}
 	.intro {
 		max-width: 100%;
-		padding: 40px 0 30px;
+		padding: 30px 0;
 	}
 	.history {
 		padding: 20px;
@@ -310,6 +323,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		text-align: left;
 		background: transparent;
 		border: none;
+
 		
 		.latest-title,
 		.section-title {
@@ -321,9 +335,27 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 			margin-bottom: -30px;
 		}
 		a li, li a {
-			margin: 25px 0 0;
-			padding: 0 0 25px;
-			text-align: center;
+			background: darken($smoke,5%);
+			color: $black;
+			border: 1px solid rgba($gray,0.25);
+			text-align: left;
+			font-size: 0.9em;
+			text-transform: capitalize;
+			margin: 20px 0;
+			padding: 10px 25px;
+			border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			-ms-border-radius: 3px;
+			&:after {
+				content: '\f101';
+			    font-family: fontAwesome;
+			    font-size: 0.9em;
+			    position: absolute;
+			    right: 40px;
+			    margin-top: 0;
+			    color: $maroon;
+			}
 		}
 		.register li {
 			margin: 0;
