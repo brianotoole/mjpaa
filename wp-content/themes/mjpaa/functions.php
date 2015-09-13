@@ -109,6 +109,10 @@ function mjpaa_scripts() {
      	 wpcf7_enqueue_scripts();
 	 	 wpcf7_enqueue_styles();
     }
+    
+    if (is_page(7) ) {
+     	 wp_enqueue_script( 'bootstrap-modal', get_template_directory_uri() . '/js/bootstrap-modal', array(), '1.0.0', true );
+    }
    
 	
 	//wp_enqueue_script('jquery');
