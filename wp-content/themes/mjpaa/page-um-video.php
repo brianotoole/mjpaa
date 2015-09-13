@@ -8,7 +8,7 @@ get_header(); ?>
   <article>
   		<h4>Universal Movement Performing Arts Company</h4>
        <p>Universal Movement holds auditions for the company on an annual basis.</p>
-       <a href="#" class="button transparent" id="learn">Click to Learn More</a>
+       <a class="button transparent" id="modal-btn" data-toggle="modal" href="#full-width">Click to Watch Full Video</a>
   </article>
 </div>
 <video class="sqs-html5-video" poster="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaa_screenshot.jpg" autoplay muted loop>
@@ -18,6 +18,22 @@ get_header(); ?>
     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaa_screenshot.jpg" class="ie8-poster">
   <![endif]-->
 </video>
+
+<div id="umVideo" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h6 class="modal-title">UM Performing Arts Company: Dance Reel</h6>
+          <a class="pull-right close" data-dismiss="modal">&times;</a>
+      </div>
+      <!-- dialog body -->
+      <div class="modal-body">
+		<iframe width="100%" height="415" src="https://www.youtube.com/embed/bm87HS4K7jM?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- dialog buttons -->
+    </div>
+  </div>
+</div>
 
 	<div class="page-about default">
 	<section class="history">

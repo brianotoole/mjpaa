@@ -83,6 +83,10 @@
 <script>
 //init top-bar search
 new UISearch( document.getElementById( 'sb-search' ) );
+//video modal
+jQuery("#modal-btn").click(function(){
+  $("#umVideo").modal('show');
+});
 </script>
 </body>
 </html>
