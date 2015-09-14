@@ -18,7 +18,8 @@
 	  
 	  <!-- Class Single Sidebar -->
 	  <?php if ( is_singular( 'class' ) && get_field('class_registration_link') ): //registration link ?>
-	    <a href="<?php the_field('class_registration_link'); ?>" class="button register" target="_blank"><li>Register</li></a>
+	    <a href="<?php the_field('class_registration_link'); ?>" class="hidden-xs button register" target="_blank"><li>Register</li></a>
+	    <a href="<?php the_field('class_registration_link'); ?>" class="visible-xs mobile" target="_blank"><li>Register</li></a>
 	  <?php endif ; ?>
 	  <?php if ( is_singular( 'class' ) && get_field('class_start_date') ): //class dates ?>
 	    <div class="class-single">

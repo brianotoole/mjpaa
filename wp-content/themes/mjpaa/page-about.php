@@ -13,11 +13,15 @@ get_header(); ?>
 	<div class="intro row" id="contain">
 	 <!-- <h3 class="section-title">Our History</h3> -->
 		<div class="col-sm-3 visit no-padding">
-			<p>Visit</p>
-			  <a href="<?php bloginfo('url'); ?>/about/achievements">Our Achievements</a>
+			<p class="hidden-xs">Visit</p>
+			<p class="visible-xs">Our Achievements</p>
+			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/about/achievements">Our Achievements</a>
+			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/achievements">View</a>
 			<hr />
-			<p>Visit</p>
-			  <a href="<?php bloginfo('url'); ?>/about/testimonials">Our Testimonials</a>
+			<p class="hidden-xs">Visit</p>
+			<p class="visible-xs">Our Testimonials</p>
+			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/about/testimonials">Our Testimonials</a>
+			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/testimonials">View</a>
 		</div><!--/.col-->
 		<div class="col-sm-9 quotes b-left">
 			<h2 class="section-title animate fadeIn">Celebrating 35 Years as the Most Reputable<br />
@@ -54,7 +58,8 @@ get_header(); ?>
 									    <img class="faculty" src="<?php the_field('faculty_img'); ?>" />
 									    <h6><?php the_title(); ?></h6>
 									    <p class="title"><?php the_field('faculty_position'); ?></p>
-									    <p class="view">Read Full Bio</p>
+									    <p class="hidden-xs view">Read Full Bio</p>
+									    <a class="visible-xs button mobile">Read Full Bio</p>
 									  </a>
 									</div><hr class="visible-xs" />
 					

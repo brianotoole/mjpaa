@@ -124,11 +124,15 @@ get_header(); ?>
 <section class="history">
 	<div class="intro row" id="contain">
 		<div class="col-sm-3 visit">
-			<p>Visit</p>
-			  <a href="<?php bloginfo('url'); ?>/about/achievements">Our Achievements</a>
+			<p class="hidden-xs">Visit</p>
+			<p class="visible-xs">Our Achievements</p>
+			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/about/achievements">Our Achievements</a>
+			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/achievements">View</a>
 			<hr />
-			<p>Visit</p>
-			  <a href="<?php bloginfo('url'); ?>/about/achievements/#alumni">Our Alumni Spotlight</a>
+			<p class="hidden-xs">Visit</p>
+			<p class="visible-xs">Our Alumni Spotlight</p>
+			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/about/achievements/#alumni">Our Alumni Spotlight</a>
+			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/achievements/#alumni">View</a>
 		</div><!--/.col-->
 		<div class="col-sm-9 quotes b-left">
 			<h2 class="section-title">Celebrating 35 Years as the Most Reputable<br />

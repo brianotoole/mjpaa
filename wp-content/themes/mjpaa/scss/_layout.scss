@@ -298,10 +298,10 @@ textarea {
 	&:after {
 		content: '\f101';
 	    font-family: fontAwesome;
-	    font-size: 0.9em;
+	    font-size: 1em;
 	    position: absolute;
+	    top: 12px;
 	    right: 20px;
-	    margin-top: 2px;
 	    color: $maroon;
 	}
 }

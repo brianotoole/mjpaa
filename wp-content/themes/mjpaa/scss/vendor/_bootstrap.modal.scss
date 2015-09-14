@@ -97,6 +97,17 @@
 .modal-footer .btn-block + .btn-block {
   margin-left: 0;
 }
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  font-size: 1.5em;
+  cursor: pointer;
+  &:hover {
+	  text-decoration: none;
+	  cursor: pointer;
+  }
+}
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;

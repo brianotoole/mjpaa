@@ -301,6 +301,11 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	.page-about section.history {
 		padding: 0 20px;
 	}
+	.program-titles {
+		a {
+			font-size: 0.9em;
+		}
+	}
 	.entry-content {
 		padding: 0 10px;
 	}
@@ -310,6 +315,16 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	}
 	.history {
 		padding: 20px;
+		.visit {
+			padding: 0;
+			a {
+				color: inherit;
+				&:after {
+					color: $maroon;
+					padding: 0;
+				}
+			}
+		}
 	}
 	.history .quotes {
 		padding-left: 0;
