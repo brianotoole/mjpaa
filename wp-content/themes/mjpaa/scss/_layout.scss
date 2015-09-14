@@ -647,7 +647,35 @@ Homepage
          position: absolute;
          width: 100%;
          height: 100%;
-         z-index: 1;    
+         z-index: 1;
+         visibility: hidden;
+         animation: fadeShow 15s infinite; 
+         -webkit-animation: fadeShow 15s infinite; 
+         -moz-animation: fadeShow 15s infinite; 
+         -o-animation: fadeShow 15s infinite; 
+         animation-timing-function: ease-out;
+         -webkit-animation-timing-function: ease-out;
+         -moz-animation-timing-function: ease-out;
+         -o-animation-timing-function: ease-out;
+         
+         &:nth-child(1) {
+	    	 animation-delay: 0s;
+	    	 -webkit-animation-delay: 0s;
+	    	 -moz-animation-delay: 0s;
+	    	 -o-animation-delay: 0s;
+	    }
+	    &:nth-child(2) {
+	         animation-delay: 5s;
+	    	 -webkit-animation-delay: 5s;
+	    	 -moz-animation-delay: 5s;
+	    	 -o-animation-delay: 5s;  
+	    }
+	    &:nth-child(3) {
+	         animation-delay: 10s;
+	    	 -webkit-animation-delay: 10s;
+	    	 -moz-animation-delay: 10s;
+	    	 -o-animation-delay: 10s; 
+	    }   
 	}
     
     &:before {
@@ -1910,6 +1938,7 @@ Footer
 /*--------------------------------------------------------------
 Animations
 --------------------------------------------------------------*/
+//fadeIn
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1938,12 +1967,46 @@ Animations
   }
 }
 
+//fadeShow (for homepage hero images)
+@-webkit-keyframes fadeShow {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+    z-index: 0;
+  }
+}
+@-moz-keyframes fadeShow {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+    z-index: 0;
+  }
+}
+@keyframes fadeShow {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+    z-index: 0;
+  }
+}
+
+//animation classes
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+.fadeshow {
+  -webkit-animation-name: fadeShow;
+  animation-name: fadeShow;
+}
 
-/* durations */
+//durations
 .animate {
   	-webkit-animation-duration: 0.50s;
   	animation-duration: 0.50s;
