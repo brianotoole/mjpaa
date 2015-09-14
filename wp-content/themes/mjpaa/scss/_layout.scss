@@ -354,6 +354,11 @@ Top-Bar, Header, & Navigation
 	z-index: 4;
 	text-transform: uppercase;
 	
+	.intro {
+		padding: 0;
+		font-size: inherit;
+	}
+	
 	.links {
 		width: auto;
 		float: right;
@@ -395,15 +400,26 @@ Top-Bar, Header, & Navigation
 	}
 	
 }//.top-bar
-//homepage only before scroll
-body.home .site-header {background: transparent;border-bottom:none;}
-//homepage only after scroll
-body.home .site-header.fixed {background: rgba($maroon, 0.85);border-bottom: 2px solid rgba($lightgray,0.05);}
+
+body.home {
+	//homepage before scroll
+	.site-header {
+		background: transparent;
+		border-bottom:none;
+	}
+	//homepage after scroll
+	.site-header.fixed {
+		background: rgba($maroon, 0.85);
+		border-bottom: 2px solid rgba($lightgray,0.05);	
+	}
+
+}
+
 .site-header {
 	position: absolute;
 	top: 45px; //height of .top-bar
 	width: 100%;
-	padding: 0 20px;
+	padding: 0;
 	height: 237px;
 	background: rgba($black, 0.8); //overlay
 	border-bottom: 2px solid rgba($lightgray,0.05);
@@ -416,6 +432,11 @@ body.home .site-header.fixed {background: rgba($maroon, 0.85);border-bottom: 2px
 	-webkit-transition: transform 0.3s;
 	-moz-transition: transform 0.3s;
 	-ms-transition: transform 0.3s;
+	
+	.intro {
+		padding: 0;
+		font-size: inherit;
+	}
 
 	.site-branding {
 		float: left;
@@ -458,7 +479,7 @@ body.home .site-header.fixed {background: rgba($maroon, 0.85);border-bottom: 2px
 .site-header.fixed .main-navigation ul {
 	margin-top: 0;
 	li a {
-		font-size: 1.1em;
+		font-size: 0.9em;
 		color: white;
 	}
 }
@@ -488,11 +509,15 @@ Menus
 	li {
 		float: left;
 		position: relative;
+		padding: 5px 15px;
+		
+		&:last-child {
+			padding-right: 0;
+		}
 		
 		a {
 			display: block;
 			text-decoration: none;
-			padding: 5px 20px;
 			color: white;
 			font-weight: 300;
 			font-size: 1.2em;
@@ -796,7 +821,7 @@ Homepage
 	}
 	
 	.program-titles {
-		margin-top: 35px;
+		margin-top: 75px;
 		
 		h5 {
 			color: $maroon;

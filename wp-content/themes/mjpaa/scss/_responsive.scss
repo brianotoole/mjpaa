@@ -1,19 +1,37 @@
 /* Media Queries ----------------------------------------------------------- */
 
 @media screen and (min-width: 1275px) {
-
 	.stack img {
 		max-width: 250px;
 	}
+}//end
 
+@media screen and (max-width: 1275px) {
+	.site-logo {
+		img {
+			max-width: 250px;
+		}
+	}
 }//end
 
 
 /* container size & below */
 @media screen and (max-width: 1170px) {
-
 	.h-title span {
 		line-height: 1.2em;
+	}
+	.main-navigation li {
+		a {
+			font-size: 1em;
+		}
+	}
+	.top-bar .links ul li {
+		font-size: 0.85em;
+	}
+	.site-logo {
+		img {
+			max-width: 235px;
+		}
 	}
 
 }//end
@@ -21,8 +39,11 @@
 /* special considerations */
 @media screen and (max-width: 1070px) {
 	.main-navigation li {
-		a {
-			font-size: 1em;
+		padding: 5px 7px;
+	}
+	.site-logo {
+		img {
+			max-width: 225px;
 		}
 	}
 	.button {
@@ -33,12 +54,16 @@
 
 /* special considerations */
 @media screen and (max-width: 999px) {
-	.site-logo img {
-		max-width: 95%;
+	.main-navigation li {
+		a {
+			font-size: 0.85em;
+		}
 	}
-	.main-navigation li a {
-		font-size: 0.9em;
-		padding: 5px 10px;
+	.top-bar .links ul li {
+		font-size: 0.7em;
+	}
+	.site-logo img {
+		max-width: 215px;
 	}
 	.news img .thumbnail, .news .thumbnail {
 		width: 100px;
@@ -59,8 +84,8 @@
 }//end
 /* special considerations */
 @media screen and (max-width: 899px) {
-	.main-navigation li a {
-		font-size: 0.85em;
+	.site-logo img {
+		max-width: 175px;
 	}
 	.rotated-right {
 		display: none;
@@ -145,12 +170,6 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		line-height: 50px;
 		padding-right: 0;
 	}
-	.site-logo { 
-		img {
-			max-width: 80%;
-		}
-	}
-	
 	//nav
 	.menu-toggle {
 		display: block;
@@ -158,7 +177,8 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		background: none;
 		border: none;
 		color: white;
-		padding: 30px 20px;
+		padding: 25px 20px;
+		text-align: right;
 		text-transform: capitalize;
 		&:hover, &:focus {
 			color: white;
@@ -172,7 +192,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		height: 110px;
 		background: $maroon;
 		color: $smoke;
-		font-size: 1.1em;
+		font-size: 1.3em;
 		text-align: left;
 		border-radius: 0;
 		&:after {
@@ -207,6 +227,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	}
 	body.home .site-header,
 	.site-header {
+		padding: 0 20px;
 		top: 0;
 	    height: 110px;
 	    background: $maroon;
@@ -378,6 +399,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 
 	}
 	.sidebar {
+		padding: 0;
 		.widget-title {
 			border-width: 2px;
 			font-size: 1.3em;
@@ -432,6 +454,17 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	.news img .thumbnail, .news .thumbnail {display: none;}
 	.footer-contact {
 		  padding: 30px 0;
+	}
+}//end
+
+/* .menu-toggle */
+@media  screen and (max-width: 320px) { 
+	.site-logo img {
+		max-width: 140px;
+	}
+	button {
+		min-width: auto;
+		font-size: 0.9em;
 	}
 }//end
 

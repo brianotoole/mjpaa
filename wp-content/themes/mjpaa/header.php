@@ -15,7 +15,7 @@
 <body <?php body_class(); ?>>
 
   <div class="top-bar hidden-xs">
-    <div class="grid head-overflow">
+    <div class="intro head-overflow">
       <div id="sb-search" class="sb-search">
 	    <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
 		  <input class="sb-search-input" placeholder="SEARCH SITE..." type="text" value="" name="s" id="search">
@@ -34,7 +34,7 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'mjpaa' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-    	<div class="grid head-overflow">
+    	<div class="intro head-overflow">
     
 			<div class="site-branding">
 			    <div class="site-logo"> 

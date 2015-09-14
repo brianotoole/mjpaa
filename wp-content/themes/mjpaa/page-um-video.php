@@ -11,7 +11,7 @@ get_header(); ?>
        <a class="button transparent" id="modal-btn" data-toggle="modal" href="#full-width">Click to Watch Full Video</a>
   </article>
 </div>
-<video class="sqs-html5-video" poster="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaa_screenshot.jpg" autoplay muted loop>
+<video class="sqs-html5-video" poster="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaa_screenshot.jpg" id="heroVideo" autoplay muted loop>
   <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/um.webm" type="video/webm">
   <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/um.mp4" type="video/mp4">
   <!--[if lt IE 9]>
