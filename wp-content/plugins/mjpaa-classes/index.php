@@ -8,18 +8,19 @@ Author: MJPAA
 */
 
 
-// Register Custom Taxonomy: "Program: Dance & Classical Ballet" - used within the "Class" custom post type
-function program_dance_classical_ballet() {
+
+// Register Custom Taxonomy: "Program: Dance & Classical Ballet Upper" - used within the "Class" custom post type
+function program_dance_classical_ballet_upper() {
 
 	$labels = array(
-		'name'                       => _x( 'Program: Dance & Classical Ballet', 'Taxonomy General Name', 'mjpaa' ),
-		'singular_name'              => _x( 'Program: Dance & Classical Ballet', 'Taxonomy Singular Name', 'mjpaa' ),
-		'menu_name'                  => __( 'Program: Dance & Classical Ballet', 'mjpaa' ),
-		'all_items'                  => __( 'All Dance & Classical Ballet Classes', 'mjpaa' ),
+		'name'                       => _x( 'Program: Dance & Classical Ballet: Upper Division', 'Taxonomy General Name', 'mjpaa' ),
+		'singular_name'              => _x( 'Program: Dance & Classical Ballet: Upper Division', 'Taxonomy Singular Name', 'mjpaa' ),
+		'menu_name'                  => __( 'Program: Dance & Classical Ballet: Upper Division', 'mjpaa' ),
+		'all_items'                  => __( 'All Dance & Classical Ballet Upper Div. Classes', 'mjpaa' ),
 		'parent_item'                => __( 'Parent Program', 'mjpaa' ),
 		'parent_item_colon'          => __( 'Parent Program:', 'mjpaa' ),
-		'new_item_name'              => __( 'New Dance & Classical Ballet Class Name', 'mjpaa' ),
-		'add_new_item'               => __( 'Add Dance & Classical Ballet Class Item', 'mjpaa' ),
+		'new_item_name'              => __( 'New Dance & Classical Ballet Upper Div. Class Name', 'mjpaa' ),
+		'add_new_item'               => __( 'Add Dance & Classical Ballet Upper Div. Class Item', 'mjpaa' ),
 		'edit_item'                  => __( 'Edit Program', 'mjpaa' ),
 		'update_item'                => __( 'Update Program', 'mjpaa' ),
 		'view_item'                  => __( 'View Program', 'mjpaa' ),
@@ -39,10 +40,48 @@ function program_dance_classical_ballet() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => false,
 	);
-	register_taxonomy( 'program-dance', array( 'classes' ), $args );
+	register_taxonomy( 'program-dance-upper', array( 'classes' ), $args );
 
 }
-add_action( 'init', 'program_dance_classical_ballet', 0 );
+add_action( 'init', 'program_dance_classical_ballet_upper', 0 );
+
+
+
+// Register Custom Taxonomy: "Program: Dance & Classical Ballet Childrens" - used within the "Class" custom post type
+function program_dance_classical_ballet_childrens() {
+
+	$labels = array(
+		'name'                       => _x( 'Program: Dance & Classical Ballet: Childrens Division', 'Taxonomy General Name', 'mjpaa' ),
+		'singular_name'              => _x( 'Program: Dance & Classical Ballet: Childrens Division', 'Taxonomy Singular Name', 'mjpaa' ),
+		'menu_name'                  => __( 'Program: Dance & Classical Ballet: Childrens Division', 'mjpaa' ),
+		'all_items'                  => __( 'All Dance & Classical Ballet Childrens Div. Classes', 'mjpaa' ),
+		'parent_item'                => __( 'Parent Program', 'mjpaa' ),
+		'parent_item_colon'          => __( 'Parent Program:', 'mjpaa' ),
+		'new_item_name'              => __( 'New Dance & Classical Ballet Childrens Div. Class Name', 'mjpaa' ),
+		'add_new_item'               => __( 'Add Dance & Classical Ballet Childrens Div. Class Item', 'mjpaa' ),
+		'edit_item'                  => __( 'Edit Program', 'mjpaa' ),
+		'update_item'                => __( 'Update Program', 'mjpaa' ),
+		'view_item'                  => __( 'View Program', 'mjpaa' ),
+		'separate_items_with_commas' => __( 'Separate programs with commas', 'mjpaa' ),
+		'add_or_remove_items'        => __( 'Add or remove programs', 'mjpaa' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'mjpaa' ),
+		'popular_items'              => __( 'Popular Programs', 'mjpaa' ),
+		'search_items'               => __( 'Search Programs', 'mjpaa' ),
+		'not_found'                  => __( 'Program Not Found', 'mjpaa' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => false,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => false,
+	);
+	register_taxonomy( 'program-dance-childrens', array( 'classes' ), $args );
+
+}
+add_action( 'init', 'program_dance_classical_ballet_childrens', 0 );
 
 
 
@@ -261,7 +300,7 @@ function custom_post_type_classes() {
 		'description'         => __( 'Class lists for MJPAA', 'mjpaa' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'revisions', 'thumbnail', 'post-formats', ),
-		'taxonomies'          => array( 'program-dance', 'program-acting', 'program-music', 'program-voice', 'program-acrobatics', 'session', 'grade' ),
+		'taxonomies'          => array( 'program-dance-upper', 'program-dance-childrens', 'program-acting', 'program-music', 'program-voice', 'program-acrobatics', 'session', 'grade' ),
 		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,
