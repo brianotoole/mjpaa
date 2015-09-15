@@ -879,7 +879,8 @@ Homepage
 		z-index: 100;
 		
 		&.sidebar-higher { //move sidebar up higher on about page
-			margin: -150px 0 0 0;
+			margin: -150px 0 -40px 0;
+			min-height: auto;
 		}
 		
 		&:before { //border above
@@ -964,7 +965,25 @@ Homepage
 		}
 	}
 	
+	.mission {
+		ul {
+			margin: 0;
+			list-style: none;
+			font-size: 0.9em;
+			li {
+				&:before {
+					content: '\f00c';
+					font-family: fontAwesome;
+					color: $maroon;
+					font-size: 0.85em;
+					padding-right: 7px;
+				}
+			}
+		}
+	}
+	
 }//.about
+
 
 //header video on UM page template
 //header for fullwidth large hero template
@@ -1303,7 +1322,7 @@ body.home .latest-news p {
 	
 }
 /*--------------------------------------------------------------
-Interior / About page template
+About page template
 --------------------------------------------------------------*/
 //section.history
 .page-about {
@@ -1317,8 +1336,17 @@ Interior / About page template
 		border-top: none; 
 	}	
 	
+	.admin {
+		h5 {
+			color: $maroon;
+			padding-top: 25px;
+		}
+	}
+	
 	.program-titles {
-		
+		h5{
+			padding-top: 25px;
+		}
 		p, a {
 			font-size: 0.85em;
 		}
@@ -1327,29 +1355,27 @@ Interior / About page template
 	section.about {
 		
 		.section-title {
-			padding: 5px 15px;
+			padding: 5px 0;
 		}
 	}
 	
-	section.memories {
-		
-		//background: url('img/g-map.png') top center no-repeat;
-		//background: url('img/brickwall.png');
+	//facility section
+	section.facility {
 		background: $gray;
-		
-		.intro {
-			background: rgba($black, 0.4); //overlay on google map static image
-		}
-		
+
 		.section-title {
 			color: white;
+			 text-align: center;
+			 padding-bottom: 30px;
 		}
 	}
 	
-	section.memories-images {
+	section.facility-two {
 		text-align: left;
+		padding-bottom: 40px;
 		ul {
 			list-style: none;
+			margin: 0;
 			li {
 				text-align: left;
 				&:before {
@@ -1393,19 +1419,13 @@ Interior / About page template
 			text-decoration: underline;
 		}
 	}
-	/* clearfix bugfix */
-	.col-sm-4 {
-		&:nth-child(3n+1) {
-			clear: left;
-		}	
-	}
-	
-	
-	
-	
+
 }//.team
 
 }//.page-about
+#faculty {
+	padding-bottom: 40px;
+}
 
 /*--------------------------------------------------------------
 Interior Page Defaults
@@ -1530,7 +1550,7 @@ img.alumni {
 	border: 2px solid $lightgray;
     padding: 2px;
     background: white;
-    margin: 10px 0 0;
+    margin: 20px 0 0;
 }
 .latest-news {
 	a li, li a {
