@@ -878,6 +878,10 @@ Homepage
 		text-align: center;
 		z-index: 100;
 		
+		&.sidebar-higher { //move sidebar up higher on about page
+			margin: -150px 0 0 0;
+		}
+		
 		&:before { //border above
 		    -webkit-box-sizing: content-box;
 		    -moz-box-sizing: content-box;

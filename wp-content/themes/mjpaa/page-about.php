@@ -8,27 +8,42 @@ get_header(); ?>
 	</header><!-- .entry-header -->
 	<?php while ( have_posts() ) : the_post(); ?>
 
-<div class="page-about">
+<div class="page-about about">
 <section class="history">
 	<div class="intro row" id="contain">
-	 <!-- <h3 class="section-title">Our History</h3> -->
-		<div class="col-sm-3 visit no-padding">
-			<p class="hidden-xs">Visit</p>
-			<p class="visible-xs">Our Achievements</p>
-			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/about/achievements">Our Achievements</a>
-			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/achievements">View</a>
+		<div class="col-sm-8 no-padding quotes">
+			<h2 class="section-title animate fadeIn">Our Mission</h2> 
+			<div class="mission" id="mission">
+			  <p>
+				<ul>
+				  <li>To provide the highest quality teaching staff and academy environment.</li>
+				  <li>To provide proper technical instruction in all curriculum offerings.</li>
+				  <li>To provide the technical instruction necessary for anyone desiring a professional career.</li>
+				  <li>To provide a variety of performing opportunities for students to utilize their artistic achievements.</li>
+				  <li>To promote lifelong learning skills, fitness awareness, and positive self-attitude and self-image.</li>
+				  <li>To promote a professional and disciplined attitude in class, rehearsal and performance.</li>
+				  <li>To teach the value of all aspects of the arts, incorporating a fun experience.</li>
+				</ul>
+			  </p>
+			</div><!--/.mission-->
 			<hr />
-			<p class="hidden-xs">Visit</p>
-			<p class="visible-xs">Our Testimonials</p>
-			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/about/testimonials">Our Testimonials</a>
-			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/testimonials">View</a>
+			<div class="vision" id="vision">
+			  <h2 class="section-title">Our Vision</h2> 
+			  <p>**** NEED content</p>
+			</div><!--/.vision-->
+			<hr />
+			<div class="our-history" id="history">
+			  <h2 class="section-title">Our History</h2> 
+<p>For over 35 years, Mary Jo's Performing Arts Academy (MJPAA) has been a leader in the bay area specializing in Dance, Acting, Voice and Musical Theater education. Our students not only receive an education of excellence, but develop friendships and a lifetime appreciation of the arts. The Academy began in 1978 as Mary Jo's Dance Studio and has grown to include all the performing arts disciplines. Under the tutelage of Artistic Director, Mary Jo Scanio, it is noted on a national level for superior training in the performing arts, and was named one of the top 50 dance schools in the United States in 2004 by Dance Spirit Magazine. Since then, it has continued to remain on the honor roll of Outstanding Dance Schools from 2005 to the present. Currently, the Academy is one of the Federations of Dance Competition's Top 25 schools in the Southeast Region, 2011 FDC People's Choice Award Winner and power ranked with the World Dance Championship Series!</p>
+
+<p>The Academy is the home of <a href="http://tbttt.org" target="_blank">The Tampa Bay Triple Threat Theatre</a>, <a href="<?php bloginfo('url'); ?>/universal-movement">The Universal Movement Performing Arts Company</a> and the Classical Ballet of Tampa. There are a variety of disciplines and levels provided for all ages from recreational to those wanting to pursue the arts as a career. In addition, we have a Competitive Team, Performance Team and Youth Theatre. The faculty is comprised of caring highly trained instructors who hold professional degrees and certification to teach in their specific disciplines. They represent years of professional performing careers that enhances and develops our programs and curriculum. All have had extensive teaching experience and are continually increasing their knowledge through training workshops, clinics and conventions.</p>
+
+<p>MJPAA is dedicated to providing the tools and life lessons necessary for students to effectively perform and compete in the national marketplace. It is our goal to provide excellence in performing arts education while instilling in each individual the confidence and self-esteem necessary to succeed in any field they choose. The physical, mental and emotional discipline and enjoyment derived by studying the arts are unmatched by any other athletic endeavor!</p>
+			</div><!--/.our-history-->
+			
 		</div><!--/.col-->
-		<div class="col-sm-9 quotes b-left">
-			<h2 class="section-title animate fadeIn">Celebrating 35 Years as the Most Reputable<br />
-			Performing Arts Academy in Tampa Bay
-			</h2> 
-			<h5 class="breakout">Voted one of the top 50 dance schools in the country.</h5>
-			<p>Currently one of the Federation of Dance Competition's Top 25 schools in the Southeast Region, FDC People's Choice Award Winner, power ranked with the World Dance Championship Series, Victory Cup Winner and FDC Studio of Excellence.</p>
+		<div class="col-sm-4 latest-news sidebar-higher">
+			<?php get_sidebar(); ?>
 		</div><!--/.col-->
 	</div><!--/.intro-->
 </section><!--/.history-->
@@ -74,10 +89,7 @@ get_header(); ?>
 				</div><!--/.program-titles-->
 		</div><!--/.col-->
 		
-		<div class="col-sm-4 latest-news">
-			<h4 class="latest-title">About Us</h4>
-			<?php get_sidebar(); ?>
-		</div><!--/.col-->
+
 	</div><!--/.intro-->
 </section><!--/.about-->
 
