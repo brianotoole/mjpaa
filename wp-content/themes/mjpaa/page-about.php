@@ -75,8 +75,8 @@ get_header(); ?>
 		</div><!--/.col-->
 		
 		<div class="col-sm-4 latest-news">
-			<h4 class="latest-title">News &amp; Events</h4>
-			<?php get_template_part( 'part', 'latest_news' ); ?>
+			<h4 class="latest-title">About Us</h4>
+			<?php get_sidebar(); ?>
 		</div><!--/.col-->
 	</div><!--/.intro-->
 </section><!--/.about-->
