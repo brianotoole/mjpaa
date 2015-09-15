@@ -78,11 +78,10 @@ $(document).ready(function(){
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if ( scroll >= 542 && $(window).width() > 768) { //not on mobile
-    	//$('.top-bar').slideUp(300);
+    	$('.top-bar').slideDown(300);
         //$('.top-bar').addClass("push-up");
         $('.top-bar, .site-header').addClass("fixed");
    } else {
-   	 	//$('.top-bar').slideDown(300);
 	    //$('.top-bar').removeClass("push-up");
 	    $('.top-bar, .site-header').removeClass("fixed");
    }

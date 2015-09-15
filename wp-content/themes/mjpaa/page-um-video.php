@@ -23,7 +23,7 @@ get_header(); ?>
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-          <h6 class="modal-title">UM Performing Arts Company: Dance Reel</h6>
+          <h6 class="modal-title">UM Dance Reel</h6>
           <a class="pull-right modal-close" data-dismiss="modal">&times;</a>
       </div>
       <!-- dialog body -->

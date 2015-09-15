@@ -69,10 +69,13 @@
 .modal-header {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
+  background: $maroon;
+  color: white;
   min-height: 16.42857143px;
 }
 .modal-header .close {
   margin-top: -2px;
+  color: white;
 }
 .modal-title {
   margin: 0;
@@ -103,6 +106,7 @@
   top: 5px;
   font-size: 1.5em;
   cursor: pointer;
+  color: white;
   &:hover {
 	  text-decoration: none;
 	  cursor: pointer;
@@ -127,7 +131,7 @@
 }
 @media (max-width: 768px) {
   .modal-dialog {
-  	width: 100%;
-    margin: 50px auto;
+  	width: 92%;
+    margin: 150px auto;
   }
 }
