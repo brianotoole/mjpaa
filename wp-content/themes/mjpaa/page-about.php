@@ -179,9 +179,8 @@ get_header(); ?>
 <div class="footer-contact overlay">
 	<div class="grid grid-pad row">
 		<div class="col-sm-12">
-			<h3>Ready to Discover the Difference?</h3>
-			<p>Be touched. Be moved. Be inspired.</p>
-			<a class="button gold" href="<?php bloginfo('url'); ?>/classes">Find Classes</a>
+			<h3>Why Choose Us?</h3>
+			<a class="button gold" href="<?php bloginfo('url'); ?>/about/why-mjpaa">Discover the Difference</a>
 		</div>
 	</div><!-- grid -->
 </div><!-- footer-contact -->

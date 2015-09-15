@@ -1373,15 +1373,22 @@ About page template
 	section.facility-two {
 		text-align: left;
 		padding-bottom: 40px;
+		img {
+			&:first-of-type {
+				margin-top: 5px;
+			}
+		}
 		ul {
 			list-style: none;
 			margin: 0;
 			li {
 				text-align: left;
+				 font-size: 0.9em;
 				&:before {
 					content: '\f00c';
 					font-family: fontAwesome;
-					padding-right: 15px;
+					font-size: 0.85em;
+					padding-right: 7px;
 					color: $maroon;
 				}
 			}
