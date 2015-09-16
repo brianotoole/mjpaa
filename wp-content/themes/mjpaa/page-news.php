@@ -13,8 +13,7 @@ get_header(); ?>
 			<main id="main" class="site-main entry-content" role="main">
 
 			<div class="results-total">
-				<h3 class="animate fadeIn">Latest News &amp; Events</h3>
-				<p>Find news &amp; events at Mary Jo's. Use the filter on the left to list news OR event articles.</p>
+				<h3 class="animate fadeIn">Search for Events</h3>
 			</div>
 
 			<div class="class-list">
@@ -30,7 +29,7 @@ get_header(); ?>
 		
 	<div id="secondary" class="classes-sidebar widget-area col-3-12 pull-left" role="complementary">
 		<h3 class="page-title animate fadeIn">Find News</h3>
-		<!--<p class="info">Select an option below to filter by News or Events.</p>-->
+		<p class="info">Select an option below to filter events.</p>
 		  <?php echo do_shortcode('[ULWPQSF id=88 formtitle="0" button=0]'); ?>
 	</div><!-- .sidebar --> 
 

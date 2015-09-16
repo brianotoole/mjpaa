@@ -18,38 +18,8 @@ get_header(); ?>
 								
 				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category() ) :?>
 				  <span>Published on: <em><?php echo get_the_date( 'l, F j' ); ?></em></span>
-				<?php endif ; //close if is sinlge post in category news or no category is checked ?>
+				<?php endif; ?>
 				
-				<?php if ( is_singular( 'class' ) ) :  ?>
-				<div class="">
-				  <p><strong>Session: </strong>
-				    <em><?php $sessions = get_the_terms( $post->ID , 'session' );
-						foreach ( $sessions as $session ) {		
-							if(count($sessions) > 1) {
-							    echo "$session->name, ";
-							}
-							else {
-								echo $session->name;
-							}
-						 }
-					?></em>
-				  </p>
-				</div>
-				<div class="">
-				  <p><strong>Grade Level: </strong>
-				    <em><?php $grades = get_the_terms( $post->ID , 'grade' );
-						foreach ( $grades as $grade ) {		
-							if(count($grades) > 1) {
-							    echo "$grade->name, ";
-							}
-							else {
-								echo $grade->name;
-							}
-						 }
-					?></em>
-				  </p>
-				</div>
-				<?php endif ; ?>
 				<?php if ( is_singular( 'post' ) && in_category( 'event' ) ) :?>
 				  <p><strong>Event Date:</strong> <?php the_field('event_start_date'); ?>
 				    <?php if( get_field('event_end_date') ): //if end date is entered... ?>

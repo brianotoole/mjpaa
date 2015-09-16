@@ -14,7 +14,6 @@ get_header(); ?>
 
 			<div class="results-total">
 			    <h3 class="animate fadeIn">Search for Classes</h3>
-			    <p>Select an option below to filter classes by Program, Class, Session, and age or grade level. Dance Program-Children's Division ages-1-7 years. Upper Division Grades 3-Adult (based on ability first then grade).</p>
 			</div>
 
 			<div class="class-list">
@@ -32,7 +31,7 @@ get_header(); ?>
 		
 	<div id="secondary" class="classes-sidebar widget-area col-3-12 pull-left" role="complementary">
 		<h3 class="page-title animate fadeIn">Find Classes</h3>
-		<!--<p class="info">Select an option below to filter classes by program, session, and/or grade level.</p>-->
+		<p class="info">Select an option below to filter classes.</p>
 		  <?php echo do_shortcode('[ULWPQSF id=49 formtitle="0" button="0" text_position="bottom"]'); ?>
 	</div><!-- .sidebar --> 
 
