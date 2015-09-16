@@ -1,5 +1,11 @@
 /* Media Queries ----------------------------------------------------------- */
+@media screen and (min-width: 1600px) {
+	.memories-images .intro {max-width: 50%;}
+}
 
+@media screen and (min-width: 1350px) {
+	.memories-images .intro {max-width: 63%;}
+}
 @media screen and (min-width: 1275px) {
 	.stack img {
 		max-width: 250px;
@@ -12,11 +18,13 @@
 			max-width: 250px;
 		}
 	}
+	.memories-images .intro {max-width: 60%;}
+	
 }//end
 
 
 /* container size & below */
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1210px) {
 	.h-title span {
 		line-height: 1.2em;
 	}
@@ -33,11 +41,12 @@
 			max-width: 235px;
 		}
 	}
+	.memories-images .intro {max-width: 58%;}
 
 }//end
 
 /* special considerations */
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1080px) {
 	.main-navigation li {
 		padding: 5px 7px;
 	}
@@ -57,9 +66,12 @@
 
 /* special considerations */
 @media screen and (max-width: 999px) {
-	.main-navigation li {
+	.main-navigation {
+		li {
+			padding: 0 5px;
+		}
 		a {
-			font-size: 0.85em;
+			font-size: 0.9em;
 		}
 	}
 	.top-bar .links ul li {
@@ -85,8 +97,28 @@
 		padding-right: 5px;
 	}
 }//end
-/* special considerations */
-@media screen and (max-width: 899px) {
+
+
+@media screen and (min-width: 899px) and (max-width: 930px) {
+	.main-navigation {
+		li {
+			padding: 0 4px!important;;
+		}
+		a {
+			font-size: 0.85em!important;
+		}
+	}
+}
+
+@media screen and (min-width: 825px) and (max-width: 899px) {
+	.main-navigation {
+		li {
+			padding: 0 4px;
+		}
+		a {
+			font-size: 0.85em!important;
+		}
+	}
 	.site-logo img {
 		max-width: 175px;
 	}
@@ -97,7 +129,7 @@
 }//end
 
 /* above .menu-toggle */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 825px) {
 
 	.main-navigation li a {
 		display: inline-block;
@@ -177,7 +209,7 @@
 
 
 /* below .menu-toggle */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 824px) {
 h1 { font-size: 32px; line-height: 40px; }
 h2 { font-size: 28px; line-height: 36px; }
 h3 { font-size: 22px; line-height: 32px; }
@@ -369,6 +401,8 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		.visit {
 			padding: 0;
 			a {
+				margin: 10px 0 30px;
+				padding: 9px 25px;
 				color: inherit;
 				&:after {
 					color: $maroon;
