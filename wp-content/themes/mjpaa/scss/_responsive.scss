@@ -55,6 +55,14 @@
 			max-width: 225px;
 		}
 	}
+	.site-header.fixed  {
+		.main-navigation ul li a {
+			font-size: 0.9em;
+		}
+		.site-logo img {
+			max-width: 100%;
+		}
+	}
 	.button {
 		width: 155px;
 	}
@@ -78,7 +86,17 @@
 		font-size: 0.7em;
 	}
 	.site-logo img {
-		max-width: 215px;
+		max-width: 185px;
+	}
+	.site-header.fixed  {
+		.main-navigation ul li a {
+			font-size: 0.75em;
+		}
+		.site-logo {
+			img {
+				max-width: 100%;
+			}
+		}
 	}
 	.news img .thumbnail, .news .thumbnail {
 		width: 100px;
@@ -99,7 +117,7 @@
 }//end
 
 
-@media screen and (min-width: 899px) and (max-width: 930px) {
+@media screen and (min-width: 900px) and (max-width: 930px) {
 	.main-navigation {
 		li {
 			padding: 0 4px!important;;
@@ -110,26 +128,9 @@
 	}
 }
 
-@media screen and (min-width: 825px) and (max-width: 899px) {
-	.main-navigation {
-		li {
-			padding: 0 4px;
-		}
-		a {
-			font-size: 0.85em!important;
-		}
-	}
-	.site-logo img {
-		max-width: 175px;
-	}
-	.rotated-right {
-		display: none;
-	}
-
-}//end
 
 /* above .menu-toggle */
-@media screen and (min-width: 825px) {
+@media screen and (min-width: 900px) {
 
 	.main-navigation li a {
 		display: inline-block;
@@ -209,7 +210,7 @@
 
 
 /* below .menu-toggle */
-@media screen and (max-width: 824px) {
+@media screen and (max-width: 900px) {
 h1 { font-size: 32px; line-height: 40px; }
 h2 { font-size: 28px; line-height: 36px; }
 h3 { font-size: 22px; line-height: 32px; }
@@ -379,7 +380,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	}
 	
 	.page-about section.history {
-		padding: 0 20px;
+		padding: 0;
 	}
 	.program-titles {
 		a {
@@ -396,7 +397,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	.history {
 		padding: 20px;
 		.section-title {
-			margin: 80px 0 0;
+			margin: 0;
 		}
 		.visit {
 			padding: 0;
@@ -417,12 +418,20 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	
 	/* sidebars */
 	.about .latest-news {
+		width: 100%;
 		min-height: auto;
 		margin: 20px auto;
 		padding: 40px 20px;
 		text-align: left;
 		background: transparent;
 		border: none;
+		
+		&.sidebar-higher {
+			margin: 0 auto;
+			&:before {
+				background-color: transparent;
+			}
+		}
 
 		
 		.latest-title,
