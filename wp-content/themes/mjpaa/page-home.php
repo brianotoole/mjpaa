@@ -127,14 +127,19 @@ get_header(); ?>
 	<div class="intro row" id="contain">
 		<div class="col-sm-3 visit">
 			<p class="hidden-xs">Visit</p>
-			<p class="visible-xs">Our Achievements</p>
-			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/about/achievements">Our Achievements</a>
-			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/achievements">View</a>
-			<hr />
+			<p class="visible-xs">Our Latest News</p>
+			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/events">Recent News</a>
+			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/events">View</a>
+
 			<p class="hidden-xs">Visit</p>
-			<p class="visible-xs">Our Alumni Spotlight</p>
-			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/about/achievements/#alumni">Our Alumni Spotlight</a>
-			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/achievements/#alumni">View</a>
+			<p class="visible-xs">Our Latest News</p>
+			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/events">Recent News</a>
+			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/events">View</a>
+			  
+			<p class="hidden-xs">Visit</p>
+			<p class="visible-xs">Our Birthday Parties</p>
+			  <a class="hidden-xs no-border" href="<?php bloginfo('url'); ?>/birthday-parties">Our Birthday Parties</a>
+			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/birthday-parties">View</a>
 		</div><!--/.col-->
 		<div class="col-sm-9 quotes b-left">
 			<h2 class="section-title">Celebrating 35 Years as the Most Reputable<br />
@@ -168,6 +173,9 @@ get_header(); ?>
 	        	<img src="http://placeimg.com/290/292/art">
 	      </div>
 		</div>
+		<h3>Why Choose Us?</h3>
+		<h5 class="breakout">First line of text goes here</h5>
+		<p>And so on and so forth. Blah blah blah choose us.</p>
 	</div><!--/.intro-->
 </section><!--/.memories-images-->
 
@@ -180,8 +188,7 @@ get_header(); ?>
 	
 		<div class="col-sm-12">
 			<h3>Ready to Discover the Difference?</h3>
-			<p>Be touched. Be moved. Be inspired.</p>
-			<a class="button gold" href="<?php bloginfo('url'); ?>/classes">Enroll Today</a>
+			<a class="button gold" href="<?php bloginfo('url'); ?>/classes">Try a Free Class Now</a>
 		</div>
 		
 	</div><!-- grid -->
