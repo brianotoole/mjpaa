@@ -55,7 +55,7 @@ get_header(); ?>
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Dance &amp; Classical Ballet of Tampa</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p>Classes are offered in a wide variety of styles and disciplines. The dance program consists of children's division, recreational dance, upper division, intensive training program and adult classes. Placement and advancement in the program is based on each individual student. The Classical Ballet of Tampa is our upper division ballet training program. Students of the Classical Ballet of Tampa have been recognized with awards and scholarships at numerous competitions, workshops, and universities throughout the United States. </p>
 				</div><!--/.col-->
 			  </div></a><!--/.service-->
 			  <hr class="visible-xs" />
@@ -73,7 +73,7 @@ get_header(); ?>
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Acting &amp; Theater</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p>Classes are offered in Acting, Drama, Musical Theater, Improvisation, and On-Camera Technique. Adult classes are available. This program is devoted to training students for theatrical and/or commercial productions. Theatrical productions are available by audition throughout the year.</p>
 				</div><!--/.col-->
 			  </div></a><!--/.service-->
 			  <hr class="visible-xs" />
@@ -91,7 +91,7 @@ get_header(); ?>
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Music, Instruments &amp; Voice</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p>Classes are offered in voice and music. Private instrumental instruction are available in Piano, Guitar and Saxophone. Private and semi-private lessons are available in voice.</p>
 				</div><!--/.col-->
 			  </div></a><!--/.service-->
 			  <hr class="visible-xs" />
@@ -109,7 +109,7 @@ get_header(); ?>
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Acrobatics</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p>Acrobatic Classes are offered for students at the beginner, intermediate, and advanced level. Classes are individualized to allow each student to progress at their own pace.</p>
 				</div><!--/.col-->
 			  </div></a><!--/.service-->
 			  
@@ -189,7 +189,7 @@ get_header(); ?>
 	
 		<div class="col-sm-12">
 			<h3>Ready to Discover the Difference?</h3>
-			<a class="button gold" href="<?php bloginfo('url'); ?>/classes">Try a Free Class Now</a>
+			<a class="button gold" href="<?php bloginfo('url'); ?>/wp-content/uploads/2015/09/Class-Withdrawl-Form_2015-2016.pdf" target="_blank">Try a Free Trial Class Now</a>
 		</div>
 		
 	</div><!-- grid -->

@@ -19,7 +19,7 @@
 	
 		<div class="footer-top grid grid-pad">
 			<div class="award col-3-12">
-				<h6>Awards</h6>
+				<h6>Academy Hours</h6>
 				<p>- Victory Cup Winner </p>
 				<p>- Best of N. Tampa, 2014</p>
 				<p>- FDC Studio of Excellence</p>
@@ -28,28 +28,30 @@
 			<div class="links col-3-12">
 				<h6>Links</h6>
 				<ul>
-					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/contact">Link</a></li>
-					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/contact">Careers</a></li>
-					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/contact">Donation Requests</a></li>
-					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/contact">FAQ</a></li>
-					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/contact">Press</a></li>
+					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/events">News</a></li>
+					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/https://www.google.com/maps/dir//15906+Mapledale+Blvd,+Tampa,+FL+33624/@28.098403,-82.505447,14z/data=!4m13!1m4!3m3!1s0x88c2bf63a0c73e1f:0x316ea2b6a463d054!2s15906+Mapledale+Blvd,+Tampa,+FL+33624!3b1!4m7!1m0!1m5!1m1!1s0x88c2bf63a0c73e1f:0x316ea2b6a463d054!2m2!1d-82.504962!2d28.098768?hl=en" target="_blank">Directions</a></li>
+					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/contact">Contact US Requests</a></li>
+					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/events">Events</a></li>
+					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/about">About Us</a></li>
+					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/about">Birthday Parties</a></li>
 				</ul>
 			</div><!-- .site-info -->
 			<div class="family col-3-12">
-				<h6>MJPAA Family</h6>
+				<h6>Stay in Touch</h6>
 				<ul>
-					<li><i class="fa fa-chevron-right"></i><a href="http://tbttt.org" target="_blank">Tampa Bay Triple Threat Theatre</a></li>
-					<li><i class="fa fa-chevron-right"></i></i><a href="#">Classical Ballet of Tampa</a></li>
-			</div><!-- .site-info -->
-			<div class="ph col-3-12">
-				<h6>Contact</h6>
+					<li><i class="fa fa-chevron-right"></i><a href="http://tbttt.org" target="_blank">Sign-Up for our Email Newsletter</a></li>
 					<p class="hidden-xs">
-						<a href="tel:#">813-555-5555</a>
+						<a href="tel:#">PH: 813-555-5555</a>
 					</p>
 					<p>
-						1234 Elm St. Tampa, FL
+						15906 Mapledale Blvd.<br />
+						Tampa, FL 33624
 					</p>
 					<a class="visible-xs button gold" href="#">Tap to Call Us</a>
+			</div><!-- .site-info -->
+			<div class="ph col-3-12">
+				<h6>Calendar</h6>
+					<p>calendar here</p>
 			</div><!-- .site-info -->
         </div><!-- grid --> 
         
