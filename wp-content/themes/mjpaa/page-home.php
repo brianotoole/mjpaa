@@ -9,6 +9,7 @@ get_header(); ?>
   <div class="img" style="background: url('<?php the_field('fadeshow_img1'); ?>') 50% center no-repeat;background-size:cover;"></div> 
   <div class="img" style="background: url('<?php the_field('fadeshow_img2'); ?>') 50% center no-repeat;background-size:cover;"></div> 
   <div class="img" style="background: url('<?php the_field('fadeshow_img3'); ?>') 50% center no-repeat;background-size:cover;"></div> 
+  <div class="img" style="background: url('<?php the_field('fadeshow_img4'); ?>') 50% center no-repeat;background-size:cover;"></div> 
     <div class="intro row" id="contain">
      	  <div class="col-sm-12">                   
             <h4 class="hidden-xs">"When the arts enter a child's world, magic happens."</h4>
@@ -54,7 +55,7 @@ get_header(); ?>
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Dance &amp; Classical Ballet of Tampa</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p></p>
 				</div><!--/.col-->
 			  </div></a><!--/.service-->
 			  <hr class="visible-xs" />
@@ -72,7 +73,7 @@ get_header(); ?>
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Acting &amp; Theater</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p></p>
 				</div><!--/.col-->
 			  </div></a><!--/.service-->
 			  <hr class="visible-xs" />
@@ -90,7 +91,7 @@ get_header(); ?>
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Music, Instruments &amp; Voice</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p></p>
 				</div><!--/.col-->
 			  </div></a><!--/.service-->
 			  <hr class="visible-xs" />
@@ -108,7 +109,7 @@ get_header(); ?>
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Acrobatics</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p></p>
 				</div><!--/.col-->
 			  </div></a><!--/.service-->
 			  

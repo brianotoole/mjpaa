@@ -484,9 +484,9 @@ body.home {
 	-ms-transition: transform 0.3s;
 }
 .site-header.fixed .site-logo {
-	 -webkit-transform: scale(0.5) translateY(-55px);
-    -ms-transform: scale(0.5) translateY(-55px);
-    transform: scale(0.5) translateY(-55px);
+	 -webkit-transform: scale(0.5) translateY(-75px);
+    -ms-transform: scale(0.5) translateY(-75px);
+    transform: scale(0.5) translateY(-75px);
 }
 .site-header.fixed .main-navigation ul {
 	margin-top: 0;
@@ -686,10 +686,10 @@ Homepage
          height: 100%;
          z-index: 1;
          visibility: hidden;
-         animation: fadeShow 15s infinite; 
-         -webkit-animation: fadeShow 15s infinite; 
-         -moz-animation: fadeShow 15s infinite; 
-         -o-animation: fadeShow 15s infinite; 
+         animation: fadeShow 20s infinite; 
+         -webkit-animation: fadeShow 20s infinite; 
+         -moz-animation: fadeShow 20s infinite; 
+         -o-animation: fadeShow 20s infinite; 
          animation-timing-function: ease-out;
          -webkit-animation-timing-function: ease-out;
          -moz-animation-timing-function: ease-out;
@@ -712,7 +712,13 @@ Homepage
 	    	 -webkit-animation-delay: 10s;
 	    	 -moz-animation-delay: 10s;
 	    	 -o-animation-delay: 10s; 
-	    }   
+	    }  
+	    &:nth-child(4) {
+	         animation-delay: 15s;
+	    	 -webkit-animation-delay: 15s;
+	    	 -moz-animation-delay: 15s;
+	    	 -o-animation-delay: 15s; 
+	    } 
 	}
     
     &:before {
@@ -879,7 +885,7 @@ Homepage
 		z-index: 100;
 		
 		&.sidebar-higher { //move sidebar up higher on about page
-			margin: -150px 0 -40px 0;
+			margin: -140px 0 -40px 0;
 			min-height: auto;
 		}
 		
@@ -888,7 +894,7 @@ Homepage
 		    -moz-box-sizing: content-box;
 		    box-sizing: content-box;
 		    background-color: $maroon;
-		    content: "";
+		    content: '';
 		    position: absolute;
 		    top: -1px;
 		    left: -1px;
@@ -972,7 +978,7 @@ Homepage
 			font-size: 0.9em;
 			li {
 				&:before {
-					content: '\f00c';
+					content: '\f006';
 					font-family: fontAwesome;
 					color: $maroon;
 					font-size: 0.85em;
