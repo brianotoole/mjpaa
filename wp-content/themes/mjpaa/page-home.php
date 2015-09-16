@@ -133,9 +133,9 @@ get_header(); ?>
 			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/events">View</a>
 
 			<p class="hidden-xs">Visit</p>
-			<p class="visible-xs">Our Latest News</p>
-			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/events">Recent News</a>
-			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/events">View</a>
+			<p class="visible-xs">Our Alumni Spotlight</p>
+			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/about/#alumni">Our Alumni Spotlight</a>
+			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/#alumni">View</a>
 			  
 			<p class="hidden-xs">Visit</p>
 			<p class="visible-xs">Our Birthday Parties</p>
