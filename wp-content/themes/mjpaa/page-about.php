@@ -105,7 +105,7 @@ get_header(); ?>
 								$loop->the_post(); ?>
 									<div class="col-sm-2">
 									  <a href="<?php the_permalink() ?>">
-									    <img class="faculty" src="<?php the_field('faculty_img'); ?>" />
+									    <img class="faculty" src="<?php the_field('faculty_img'); ?>" width="100%" height="auto" />
 									    <h6><?php the_title(); ?></h6>
 									    <p class="title"><?php the_field('faculty_position'); ?></p>
 									    <p class="hidden-xs view">Read Full Bio</p>

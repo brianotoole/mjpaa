@@ -55,7 +55,7 @@ get_header(); ?>
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Dance &amp; Classical Ballet of Tampa</h5>
-					<p></p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
 			  </div></a><!--/.service-->
 			  <hr class="visible-xs" />
@@ -73,7 +73,7 @@ get_header(); ?>
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Acting &amp; Theater</h5>
-					<p></p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
 			  </div></a><!--/.service-->
 			  <hr class="visible-xs" />
@@ -91,7 +91,7 @@ get_header(); ?>
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Music, Instruments &amp; Voice</h5>
-					<p></p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
 			  </div></a><!--/.service-->
 			  <hr class="visible-xs" />
@@ -109,7 +109,7 @@ get_header(); ?>
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Acrobatics</h5>
-					<p></p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div><!--/.col-->
 			  </div></a><!--/.service-->
 			  
@@ -165,13 +165,13 @@ get_header(); ?>
 	<div class="intro row" id="contain">
 		<div class="col-sm-12 images">
 		  <div class="stack rotated-left">
-	        	<img src="http://placeimg.com/290/292/nature">
+	        	<img src="<?php the_field('memories_img1'); ?>">
 	      </div>
 	      <div class="stack rotated-middle">
-	        	<img src="http://placeimg.com/290/292/people">
+	        	<img src="<?php the_field('memories_img2'); ?>">
 	      </div>
 	      <div class="stack rotated-right">
-	        	<img src="http://placeimg.com/290/292/art">
+	        	<img src="<?php the_field('memories_img3'); ?>">
 	      </div>
 		</div>
 		<h3>Why Choose Us?</h3>

@@ -150,6 +150,28 @@
 		padding: 60px 0 30px;
 	}
 	
+	.stack {
+		&.rotated-right {
+			&:before {
+				transform: rotate(-8deg);
+				-webkit-transform: rotate(-8deg);
+				-moz-transform: rotate(-8deg);
+				-ms-transform: rotate(-8deg);
+				background: $black;
+			}
+			&:after {
+				transform: rotate(-4deg);
+				-webkit-transform: rotate(-4deg);
+				-moz-transform: rotate(-4deg);
+				-ms-transform: rotate(-4deg);
+				background: white;
+			}
+			img {
+				max-width: 85%;
+			}
+		}
+	}
+	
 }
 
 
