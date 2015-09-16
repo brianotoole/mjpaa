@@ -98,6 +98,18 @@ $('label').click(function (e) {
    });
 });
 
+/**
+ * reset any iFrame within any bootstrap modal (when the modal is closed)
+ */
+$(function(){
+  $("body").on('hidden.bs.modal', function (e) {
+    var $iframes = $(e.target).find("iframe");
+    $iframes.each(function(index, iframe){
+      $(iframe).attr("src", $(iframe).attr("src"));
+    });
+  });
+});
+
 
 /*
  * jPushMenu.js, 1.1.1
