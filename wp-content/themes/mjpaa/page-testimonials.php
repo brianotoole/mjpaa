@@ -10,7 +10,7 @@ get_header(); ?>
        <?php if( get_field('interior_callout') ): ?> 
 		<p><?php the_field('interior_callout'); ?></p>
 		<?php endif ; ?>
-       <a href="#" class="button transparent" id="learn">Click to View</a>
+       <a href="#" class="button transparent" id="learn">Click to Read Testimonials</a>
   </article>
 </div>
 <div class="cover-bottom">
@@ -39,7 +39,8 @@ get_header(); ?>
 						while ( $loop->have_posts() ) {
 							$loop->the_post(); ?>
 							
-					        <h4><i class="fa fa-quote-left"></i> <?php the_field('testimonial_quote'); ?> - <span> <?php the_field('testimonial_client'); ?></span></h4><hr />
+					        <p><i class="fa fa-quote-left"></i> <?php the_field('testimonial_quote'); ?> <br /><span><strong>- Testimonial from:</strong> <?php the_field('testimonial_client'); ?></span></p><hr />
+					        
 					
 					<?php } 
 					} else {
@@ -67,12 +68,12 @@ get_header(); ?>
 <section class="alumni-images">
 	<div class="intro row" id="contain">
 		<div class="col-sm-12">
-			<h4><i class="fa fa-trophy"></i> Currently one of the Federation of Dance Competition's Top 25 schools in the Southeast Region</h4><hr />
+			<h6><i class="fa fa-trophy"></i> Currently one of the Federation of Dance Competition's Top 25 schools in the Southeast Region</h6><hr />
 			
-			<h4><i class="fa fa-trophy"></i> FDC People's Choice Award Winner, power ranked with the World Dance Championship Series</h4><hr />
-			<h4><i class="fa fa-trophy"></i> Victory Cup Winner and FDC Studio of Excellence</h4><hr />
-			<h4><i class="fa fa-trophy"></i> Voted one of the Top 50 Dance Schools in the country by Dance Spirit Magazine</h4><hr />
-			<h4><i class="fa fa-trophy"></i> GOLD Winner of Best of North Tampa</h4>
+			<h6><i class="fa fa-trophy"></i> FDC People's Choice Award Winner, power ranked with the World Dance Championship Series</h6><hr />
+			<h6><i class="fa fa-trophy"></i> Victory Cup Winner and FDC Studio of Excellence</h6><hr />
+			<h6><i class="fa fa-trophy"></i> Voted one of the Top 50 Dance Schools in the country by Dance Spirit Magazine</h6><hr />
+			<h6><i class="fa fa-trophy"></i> GOLD Winner of Best of North Tampa</h6>
 		</div>
 	</div><!--/.intro-->
 </section><!--/.memories-images-->

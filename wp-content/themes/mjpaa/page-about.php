@@ -142,7 +142,7 @@ get_header(); ?>
 		
 		  <div class="col-sm-3">
 		    <img class="faculty" src="<?php bloginfo('stylesheet_directory'); ?>/img/maryjosfacility1.jpg" />
-		    <img class="faculty" src="<?php bloginfo('stylesheet_directory'); ?>/img/maryjosfacility2.jpg" />
+		    <img class="faculty" src="<?php bloginfo('stylesheet_directory'); ?>/img/maryjosfacility3.jpg" />
 		    <img class="faculty" src="<?php bloginfo('stylesheet_directory'); ?>/img/maryjosfacility2.jpg" />
 		  </div><!--/.col-->
 		  <div class="col-sm-9">
@@ -167,7 +167,7 @@ get_header(); ?>
 		</div><!--/.col-->
 		<div class="clearfix"></div><hr />
 
-		<div class="col-sm-12 text-center">
+		<div class="col-sm-12 text-center" id="rental">
 			<h3>Interested in Renting for Your Private Event?</h3>
 			<p>Whatever you need, we have the flexibility to accommodate you!</p>
 			<a class="underline" href="<?php bloginfo('url'); ?>/contact">Contact us for rental information</a>
