@@ -6,7 +6,7 @@
 	<div class="testimonials">
 	  <div class="footer-contact">
 		<div class="grid row">
-			<div class="col-sm-12 no-padding">
+			<div class="col-sm-12">
 				<?php get_template_part( 'part', 'testimonials' ); ?>
 			</div>
 		</div><!--/.grid -->
@@ -18,14 +18,14 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	
 		<div class="footer-top grid grid-pad">
-			<div class="award col-3-12">
+			<div class="award col-sm-3">
 				<h6>Academy Hours</h6>
 				<p>- Victory Cup Winner </p>
 				<p>- Best of N. Tampa, 2014</p>
 				<p>- FDC Studio of Excellence</p>
 				<p></p>
 			</div><!-- .site-info -->
-			<div class="links col-3-12">
+			<div class="links col-sm-3">
 				<h6>Links</h6>
 				<ul>
 					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/events">News</a></li>
@@ -36,7 +36,7 @@
 					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/about">Birthday Parties</a></li>
 				</ul>
 			</div><!-- .site-info -->
-			<div class="family col-3-12">
+			<div class="family col-sm-3">
 				<h6>Stay in Touch</h6>
 				<ul>
 					<li><i class="fa fa-chevron-right"></i><a href="http://tbttt.org" target="_blank">Sign-Up for our Email Newsletter</a></li>
@@ -49,17 +49,17 @@
 					</p>
 					<a class="visible-xs button gold" href="#">Tap to Call Us</a>
 			</div><!-- .site-info -->
-			<div class="ph col-3-12">
+			<div class="ph col-sm-3">
 				<h6>Calendar</h6>
 					<p>calendar here</p>
 			</div><!-- .site-info -->
         </div><!-- grid --> 
         
     	<div class="footer-bottom grid grid-pad">
-			<div class="site-info col-12-6">
+			<div class="site-info col-sm-6">
 				&copy; <?php echo date('Y'); ?> MJPAA.com | <a id="top" href="#"> Back To Top</a>
 			</div><!-- .site-info -->
-			<div class="social-media col-6-12">
+			<div class="social-media col-sm-6">
 				<ul>
 					<a href="" target="_blank">
 						<li><i class="fa fa-facebook"></i></li>

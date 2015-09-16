@@ -13,7 +13,7 @@ get_header(); ?>
 		<div class="col-sm-12 no-padding">
 			  <h1 class="section-title"><?php the_title(); ?></h1>
 			<?php if( get_field('interior_callout') ): ?> 
-			  <p><?php the_field('interior_callout'); ?></p>
+			  <div class="interior-callout"><?php the_field('interior_callout'); ?></div>
 			<?php endif ; ?>
 		</div><!--/.col-->
 	</div><!--/.intro-->

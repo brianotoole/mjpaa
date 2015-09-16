@@ -191,7 +191,7 @@ textarea {
     display: inline-block;
     margin: 20px 0;
     padding: 9px 25px;
-    min-width: 160px;
+    min-width: 260px;
     text-align: center;
     font-size: 1.1em;
     font-weight: normal;
@@ -365,6 +365,7 @@ Top-Bar, Header, & Navigation
 		margin-right: 25px;
 		
 		ul {
+		    margin: 0;
 			list-style: none;
 		
 			li, li a, li a:visited {
@@ -1083,6 +1084,10 @@ body.home .latest-news p {
     
     .intro {
 	    background: transparent;
+	}
+	
+	.interior-callout {
+		font-size: 0.85em;
 	}
 	
 	.section-title {

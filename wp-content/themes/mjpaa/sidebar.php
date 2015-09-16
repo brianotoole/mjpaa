@@ -42,27 +42,27 @@
 		  <p>
 				<?php $programs = get_the_terms( $post->ID , 'program-dance-upper' );
 					foreach ( $programs as $program ) {		
-					echo "&nbsp;$program->name"; }
+					echo " $program->name"; }
 				?>
 				<?php $programs = get_the_terms( $post->ID , 'program-dance-children' );
 					foreach ( $programs as $program ) {		
-					echo "&nbsp;$program->name"; }
+					echo " $program->name"; }
 				?>
 				<?php $programs = get_the_terms( $post->ID , 'program-acting' );
 					foreach ( $programs as $program ) {		
-					echo "&nbsp;$program->name"; }
+					echo " $program->name"; }
 				?>
 				<?php $programs = get_the_terms( $post->ID , 'program-music' );
 					foreach ( $programs as $program ) {		
-					echo "&nbsp;$program->name"; }
+					echo " $program->name"; }
 				?>
 				<?php $programs = get_the_terms( $post->ID , 'program-voice' );
 					foreach ( $programs as $program ) {		
-					echo "&nbsp;$program->name"; }
+					echo " $program->name"; }
 				?>
 				<?php $programs = get_the_terms( $post->ID , 'program-acrobatics' );
 					foreach ( $programs as $program ) {		
-					echo "&nbsp;$program->name"; }
+					echo " $program->name"; }
 				?>
 		<p>
 	  <h5 class="program">Session</h5>

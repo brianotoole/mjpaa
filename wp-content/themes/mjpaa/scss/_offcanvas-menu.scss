@@ -38,11 +38,11 @@
 	&:after {
 		content: '\f101';
 		font-family: fontAwesome;
-		font-size: 0.9em;
+		font-size: 1em;
 		position: absolute;
 		right: 20px;
 		margin-top: 5px;
-		color: rgba($gray,0.25);
+		color: $maroon;
 	}
 	&:hover, &:focus {
 		background: darken($lightgray,5%);

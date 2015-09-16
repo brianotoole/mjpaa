@@ -16,6 +16,7 @@ get_header(); ?>
 		  <?php get_sidebar(); ?>
 		</div><!--/.col-->
 		
+		<div class="pad-fix">
 		<div class="col-sm-8 pull-left no-padding quotes">
 			<h2 class="section-title animate fadeIn">Our Mission</h2> 
 			<div class="mission" id="mission">
@@ -36,6 +37,7 @@ get_header(); ?>
 			  <p>**** NEED content</p>
 			</div><!--/.vision-->
 		</div><!--/.col-->
+		
 	</div><!--/.intro-->
 </section><!--/.history-->
 
