@@ -5,11 +5,9 @@ Template Name: Page - UM, Fullwidth, Large video
 get_header(); ?> 
             
 <div class="video-overlay">
-  <article>
+  <!--<article>
   		<h4>Universal Movement Performing Arts Company</h4>
-       <p>Universal Movement holds auditions for the company on an annual basis.</p>
-       <a class="button transparent" id="modal-btn" data-toggle="modal" href="#full-width">Click to Watch Full Video</a>
-  </article>
+  </article>-->
 </div>
 <video class="sqs-html5-video" poster="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaa_screenshot.jpg" id="heroVideo" autoplay muted loop>
   <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/um.webm" type="video/webm">
@@ -35,23 +33,27 @@ get_header(); ?>
   </div>
 </div>
 
-	<div class="page-about default">
+	<!--<div class="page-about default">
 	<section class="history">
 		<div class="intro row" id="contain">
 			<div class="col-sm-12 no-padding">
-			<blockquote><strong><h2>"When the arts enter a child's world magic happens."</h2></strong>
-			</div><!--/.col-->
-		</div><!--/.intro-->
-	</section><!--/.history-->
+				<a class="button primary" id="modal-btn" data-toggle="modal" href="#full-width">Watch our UM Teams in Action</a>
+			</div>
+		</div>
+	</section>-->
 	
 	<section class="about">
 		<div class="intro row" id="contain">
-			<div class="col-sm-12">
+			<div class="col-sm-8">
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="entry-content">
 						<?php the_content(); ?>
 					</div>
 				<?php endwhile; // end of the loop. ?>
+			</div><!--/.col-->
+			
+			<div class="col-sm-4 latest-news">
+				<?php get_sidebar(); ?>
 			</div><!--/.col-->
 		</div><!--/.intro-->
 	</section><!--/.about-->

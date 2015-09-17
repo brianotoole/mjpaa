@@ -216,6 +216,7 @@ textarea {
 	background: $maroon;
 	color: white;
 	border: none;
+	text-decoration: none;
 	&:hover, &:focus {
 		background: darken($maroon,7%);
 		color: darken(white,7%);
@@ -1529,6 +1530,13 @@ Default Sidebar
 .sidebar {
 	width: 100%;
 	margin: 0;
+	
+	.button {
+		font-size: 0.85em;
+		+ .button {
+			margin-top: 0;
+		}
+	}
 	
 	.widget-title {
 		margin: 0;
