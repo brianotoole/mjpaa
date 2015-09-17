@@ -33,14 +33,13 @@ get_header(); ?>
 			    <a class="button mobile" href="#">I need class information</a>
 			    <a class="button mobile" href="#">I need contact information</a>
 			    <a class="button mobile" href="#">I need directions</a>
-			    <a class="button mobile" href="#content">I'm not sure. Let me browse.</a>
+			    <a class="button mobile" href="#browse">I'm not sure. Let me browse.</a>
 			  </div>
 			
-			<h4 class="visible-xs section-title">MJPAA Offers a Complete Performing Arts Curriculum</h4>
-			<h6 class="visible-xs section-title">Our program includes the following:</h6>
+			<h4 class="visible-xs latest-title">MJPAA offers a complete Performing Arts Curriculum. <br />Our programs include - </h4>
 			</div><!--/.mobile-pad-->
 			
-			<div class="program-titles">
+			<div class="program-titles" id="browse">
 				
 			<div class="service hidden-xs">
 			  	<div class="col-sm-2">
@@ -189,7 +188,7 @@ get_header(); ?>
 	
 		<div class="col-sm-12">
 			<h3>Ready to Discover the Difference?</h3>
-			<a class="button gold" href="<?php bloginfo('url'); ?>/wp-content/uploads/2015/09/Class-Withdrawl-Form_2015-2016.pdf" target="_blank">Try a Free Trial Class Now</a>
+			<a class="button gold" href="<?php bloginfo('url'); ?>/wp-content/uploads/2015/09/Admittance-Form.pdf" target="_blank">Try a Free Trial Class Now</a>
 		</div>
 		
 	</div><!-- grid -->

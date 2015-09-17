@@ -16,7 +16,7 @@ get_header(); ?>
 				<span class="position"><?php the_field('faculty_position'); ?></span>
 								
 				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category() ) :?>
-				  <span>Published on: <em><?php echo get_the_date( 'l, F j' ); ?></em></span>
+				  <div class="interior-callout"><?php the_field('interior_callout'); ?></div>
 				<?php endif; ?>
 				
 				<?php if ( is_singular( 'post' ) && in_category( 'event' ) ) :?>
