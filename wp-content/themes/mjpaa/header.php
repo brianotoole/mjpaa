@@ -75,7 +75,7 @@
 <?php elseif (has_post_thumbnail($post->ID) ): //if featured img is uploaded... ?>
   <?php $featuredImg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $featuredImg = $featuredImg[0]; ?>  
   <header class="entry-header" style="background: url('<?php echo $featuredImg; ?>') center center no-repeat; background-size:cover;"></header>
-<?php elseif (is_front_page() || is_page_template('page-um-video.php') || is_page_template('page-testimonials.php') || is_page_template('page-fullwidth-largehero')): ?>
+<?php elseif (is_front_page() || is_page_template('page-um-video.php') || is_page_template('page-testimonials.php') || is_page_template('page-fullwidth-largehero.php')): ?>
 <?php else : //all conditions are false; show default ?>	
  <header class="entry-header"></header>
 <?php endif; ?> 
