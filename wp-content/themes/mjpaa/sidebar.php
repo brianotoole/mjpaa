@@ -33,9 +33,9 @@
 	
 	  <?php if ( is_singular( 'class' ) ): //if is class ?>		
 	   <div class="class-single">
+	   
 	  	 <h5 class="cost">Cost</h5>
 	  	 <h6><i class="fa fa-usd"></i><?php the_field('class_cost'); ?></h6>
-	    </div>
 	  
 	  <h5 class="program">Program</h5>
 		  <p>
@@ -95,6 +95,6 @@
 	       <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/general-info/uniform-requirements/">Class Uniform</a>
 
 	  <?php endif ; ?>
-		</div>
+		</div><!--.class-single-->
 	  
 	</div><!--/#secondary .sidebar--> 
