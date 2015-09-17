@@ -4,9 +4,6 @@
  */
 get_header(); ?>
         
-	<header class="entry-header">
-    </header><!-- .entry-header -->
-    
    	<div class="grid">
 			<div id="primary" class="col-9-12">
 				<main id="main" class="site-main" role="main">

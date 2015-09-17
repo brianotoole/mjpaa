@@ -6,9 +6,6 @@
  */
 get_header(); ?>
 
-	<header class="entry-header">
-	</header><!-- .entry-header -->
-
 	<div class="page-about default">
 	<section class="history">
 		<div class="intro row" id="contain">

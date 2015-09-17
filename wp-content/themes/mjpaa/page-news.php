@@ -3,12 +3,8 @@
 Template Name: Page - News & Events
  */
 get_header(); ?> 
-            
-	<header class="entry-header">
-	</header><!-- .entry-header -->
 
 	<div class="grid">
-	
 		<div id="primary" class="col-9-12 pull-right">
 			<main id="main" class="site-main entry-content" role="main">
 
@@ -23,7 +19,6 @@ get_header(); ?>
 
 			<?php endwhile; // end of the loop. ?>
 			</div><!--/.class-list-->
-
 			</main><!-- #main -->
 		</div><!-- #primary -->
 		

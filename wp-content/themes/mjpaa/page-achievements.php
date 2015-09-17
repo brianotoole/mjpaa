@@ -4,8 +4,6 @@ Template Name: Page - Achievements
  */
 get_header(); ?> 
             
-	<header class="entry-header">
-	</header><!-- .entry-header -->
 
 <div class="page-about sidebar-right">
 <section class="history">

@@ -4,8 +4,6 @@ Template Name: Page - Faculty profile
  */
 get_header(); ?> 
             
-	<header class="entry-header">
-	</header><!-- .entry-header -->
 
 	<div class="grid">
 	

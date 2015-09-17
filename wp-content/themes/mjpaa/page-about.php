@@ -4,9 +4,7 @@ Template Name: Page - About
  */
 get_header(); ?> 
             
-	<header class="entry-header">
-	</header><!-- .entry-header -->
-	<?php while ( have_posts() ) : the_post(); ?>
+<?php while ( have_posts() ) : the_post(); ?>
 
 <div class="page-about about">
 <section class="history">
@@ -190,6 +188,6 @@ get_header(); ?>
 
 
 </div><!--/.page-about-->
-	<?php endwhile; // end of the loop. ?>
-	<?php get_footer(); ?>
+<?php endwhile; // end of the loop. ?>
+<?php get_footer(); ?>
 	

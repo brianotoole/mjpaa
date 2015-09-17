@@ -70,14 +70,16 @@
 	
 	
 <!--Header Conditions-->
-<?php if( get_field('classes_featureimg') ): //if custom field photo is added... ?> 
+<?php if (get_field('classes_featureimg') ): //if custom field photo is added... ?> 
   <header class="entry-header" style="background: url('<?php the_field('classes_featureimg'); ?>') center center no-repeat; background-size:cover;"></header>
-<?php elseif(has_post_thumbnail( $post->ID ) ): //if featured img is uploaded... ?>
+<?php elseif (has_post_thumbnail($post->ID) ): //if featured img is uploaded... ?>
   <?php $featuredImg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $featuredImg = $featuredImg[0]; ?>  
   <header class="entry-header" style="background: url('<?php echo $featuredImg; ?>') center center no-repeat; background-size:cover;"></header>
-<?php elseif(has_post_thumbnail( $post->ID ) == 0): //if featured img NOT uploaded... ?>
-<?php elseif (is_front_page() ): //nothing ?>
-<?php else : //all conditions are false; show default ?>	
-  <header class="entry-header"></header>
-<?php endif; ?>
+<?php elseif (is_front_page() || is_page('universal-movement') || is_page('testimonials')): ?>
 
+<?php else : //all conditions are false; show default ?>	
+ <header class="entry-header"></header>
+<?php endif; ?> 
+
+
+ 

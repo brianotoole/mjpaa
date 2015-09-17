@@ -1,8 +1,6 @@
 <?php
 get_header(); ?> 
-            
-	<header class="entry-header">
-	</header><!-- .entry-header -->
+           
 
 	<div class="grid">
 	<?php get_sidebar(); ?>
