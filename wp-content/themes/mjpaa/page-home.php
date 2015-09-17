@@ -91,7 +91,7 @@ get_header(); ?>
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Music, Instruments &amp; Voice</h5>
-					<p>Classes are offered in voice and music. Private instrumental instruction are available in Piano, Guitar and Saxophone. Private and semi-private lessons are available in voice.</p>
+					<p>Classes and private lessons are offered in voice and music for ages 5-adult. Private instrumental instruction are available in Piano, Guitar and Saxophone. Private and semi-private lessons are available in voice.</p>
 				</div><!--/.col-->
 			  </div></a><!--/.service-->
 			  <hr class="visible-xs" />
