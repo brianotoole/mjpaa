@@ -30,14 +30,13 @@
 			<?php endif; ?>
 		</span>-->
 	  <?php endif ; ?>	
-			
-	  <?php if ( is_singular( 'class' ) && get_field('class_cost') ): //class cost ?>		
+	
+	  <?php if ( is_singular( 'class' ) ): //if is class ?>		
+	   <div class="class-single">
 	  	 <h5 class="cost">Cost</h5>
-	  	 <p><?php the_field('class_cost'); ?></p>
+	  	 <h6><i class="fa fa-usd"></i><?php the_field('class_cost'); ?></h6>
 	    </div>
-	  <?php endif ; ?>
 	  
-	  <?php if ( is_singular( 'class' ) ): //if is class ?>	
 	  <h5 class="program">Program</h5>
 		  <p>
 				<?php $programs = get_the_terms( $post->ID , 'program-dance-upper' );
@@ -65,8 +64,8 @@
 					echo " $program->name"; }
 				?>
 		<p>
-	  <h5 class="program">Session</h5>
-	      <p>
+	  <h5 class="session">Session</h5>
+	      <h6>
 		 	 <em><?php $sessions = get_the_terms( $post->ID , 'session' );
 					foreach ( $sessions as $session ) {		
 					  if(count($session) > 1) {
@@ -76,9 +75,9 @@
 						 }
 					} ?>
 			  </em>
-			</p>
-		<h5 class="program">Grade Level</h5>
-	      <p>
+			</h6>
+		<h5 class="grade">Grade Level</h5>
+	      <h6>
 		 	 <em><?php $grades = get_the_terms( $post->ID , 'grade' );
 					foreach ( $grades as $grade ) {		
 					  if(count($grades) > 1) {
@@ -88,13 +87,14 @@
 						 }
 					} ?>
 			  </em>
-			</p>
+			</h6>
+	       <a class="hidden-xs button primary" href="<?php bloginfo('url'); ?>/about/#faculty">Our Faculty</a>
+	       <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/#faculty">Our Faculty</a>
+	 
+	       <a class="hidden-xs button primary" href="<?php bloginfo('url'); ?>/general-info/uniform-requirements/">Class Uniform</a>
+	       <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/general-info/uniform-requirements/">Class Uniform</a>
 
-	  <a class="hidden-xs button primary" href="<?php bloginfo('url'); ?>/about/#faculty">Our Faculty</a>
-	  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/#faculty">Our Faculty</a>
-	  
-	  <a class="hidden-xs button primary" href="<?php bloginfo('url'); ?>/general-info/uniform-requirements/">Class Uniform</a>
-	  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/general-info/uniform-requirements/">Class Uniform</a>
 	  <?php endif ; ?>
+		</div>
 	  
 	</div><!--/#secondary .sidebar--> 

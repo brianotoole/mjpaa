@@ -55,7 +55,7 @@ get_header(); ?>
 				</div><!--/.col-->
 				<div class="col-sm-10">
 					<h5>Dance &amp; Classical Ballet of Tampa</h5>
-					<p>Classes are offered in a wide variety of styles and disciplines. The dance program consists of children's division, recreational dance, upper division, intensive training program and adult classes. Placement and advancement in the program is based on each individual student. The Classical Ballet of Tampa is our upper division ballet training program. Students of the Classical Ballet of Tampa have been recognized with awards and scholarships at numerous competitions, workshops, and universities throughout the United States. </p>
+					<p>Classes are offered in a wide variety of styles and disciplines. The dance program consists of children's division, recreational dance, upper division, intensive training program and adult classes. The Classical Ballet of Tampa is our upper division ballet training program. Students of the Classical Ballet of Tampa have been recognized with awards and scholarships at numerous competitions, workshops, and universities throughout the United States. </p>
 				</div><!--/.col-->
 			  </div></a><!--/.service-->
 			  <hr class="visible-xs" />
@@ -128,18 +128,18 @@ get_header(); ?>
 	<div class="intro row" id="contain">
 		<div class="col-sm-3 visit">
 			<p class="hidden-xs">Visit</p>
-			<p class="visible-xs">Our Latest News</p>
+			<p class="visible-xs">Recent News</p>
 			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/events">Recent News</a>
 			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/events">View</a>
 
 			<p class="hidden-xs">Visit</p>
-			<p class="visible-xs">Our Alumni Spotlight</p>
-			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/about/#alumni">Our Alumni Spotlight</a>
-			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/#alumni">View</a>
+			<p class="visible-xs">Performances</p>
+			  <a class="hidden-xs" href="<?php bloginfo('url'); ?>/events">Performances</a>
+			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/events">View</a>
 			  
 			<p class="hidden-xs">Visit</p>
-			<p class="visible-xs">Our Birthday Parties</p>
-			  <a class="hidden-xs no-border" href="<?php bloginfo('url'); ?>/birthday-parties">Our Birthday Parties</a>
+			<p class="visible-xs">Birthday Parties</p>
+			  <a class="hidden-xs no-border" href="<?php bloginfo('url'); ?>/general-info/birthday-parties">Birthday Parties</a>
 			  <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/birthday-parties">View</a>
 		</div><!--/.col-->
 		<div class="col-sm-9 quotes b-left">

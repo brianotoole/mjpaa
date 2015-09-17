@@ -1632,12 +1632,16 @@ img.alumni {
 }
 .class-single {
 	h5 {
-		margin: 25px 0 20px;
-	    padding: 15px 0 15px;
+		margin: 20px 0;
+	    padding: 15px 0;
 		font-weight: 600;
 		text-transform: uppercase;
+		color: $maroon;
 	    border-top: 2px solid $lightgray;
 	    border-bottom: 2px solid $lightgray;
+	}
+	h6 {
+		font-size: 1em;
 	}
 	span {
 		font-weight: 400;
@@ -1650,7 +1654,7 @@ img.alumni {
 			font-family: fontAwesome;
 			font-size: 0.85em;
 			vertical-align: middle;
-			top: -3px;
+			top: 0px;
 			padding-right: 5px;
 			position: relative;
 			color: $maroon;
@@ -1662,7 +1666,7 @@ img.alumni {
 			font-family: fontAwesome;
 			font-size: 0.85em;
 			vertical-align: middle;
-			top: -3px;
+			top: 1px;
 			padding-right: 5px;
 			position: relative;
 			color: $maroon;
@@ -1670,11 +1674,47 @@ img.alumni {
 	}
 	.program {
 		 &:before {
-		 	content: '\f044';
+		 	content: '\f084';
 			font-family: fontAwesome;
 			font-size: 0.85em;
 			vertical-align: middle;
-			top: -3px;
+			top: -2px;
+			padding-right: 5px;
+			position: relative;
+			color: $maroon;
+		 }
+	}
+	.grade {
+		 &:before {
+		 	content: '\f19d';
+			font-family: fontAwesome;
+			font-size: 0.85em;
+			vertical-align: middle;
+			top: 1px;
+			padding-right: 5px;
+			position: relative;
+			color: $maroon;
+		 }
+	}
+	.session {
+		 &:before {
+		 	content: '\f017';
+			font-family: fontAwesome;
+			font-size: 0.85em;
+			vertical-align: middle;
+			top: 0px;
+			padding-right: 5px;
+			position: relative;
+			color: $maroon;
+		 }
+	}
+	.links {
+		 &:before {
+		 	content: '\f0c1';
+			font-family: fontAwesome;
+			font-size: 0.85em;
+			vertical-align: middle;
+			top: 0px;
 			padding-right: 5px;
 			position: relative;
 			color: $maroon;
