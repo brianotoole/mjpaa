@@ -3,9 +3,7 @@
 Default interior page
  */
 get_header(); ?> 
-            
-	<header class="entry-header">
-	</header><!-- .entry-header -->
+
 
 	<div class="page-about default">
 	<section class="history">

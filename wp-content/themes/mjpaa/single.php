@@ -3,10 +3,9 @@
  * The template for displaying all single posts.
  *
  */
-get_header(); ?> 
+get_header(); ?>
 
-	<header class="entry-header">
-	</header><!-- .entry-header -->
+	
 	<?php while ( have_posts() ) : the_post(); ?>
 	
 	<div class="page-about faculty">
