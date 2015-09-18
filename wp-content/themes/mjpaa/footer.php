@@ -61,16 +61,16 @@
 			</div><!-- .site-info -->
 			<div class="social-media col-sm-6">
 				<ul>
-					<a href="" target="_blank">
+					<a href="https://www.facebook.com/MaryJosPerformingArtsAcademy?fref=ts" target="_blank">
 						<li><i class="fa fa-facebook"></i></li>
 					</a>
-					<a href="" target="_blank">
+					<a href="https://twitter.com/MJPAA" target="_blank">
 						<li><i class="fa fa-twitter"></i></li>
 					</a>
-					<a href="" target="_blank">
+					<a href="https://instagram.com/mjpaa_tampa/" target="_blank">
 						<li><i class="fa fa-instagram"></i></li>
 					</a>
-					<a href="" target="_blank">
+					<a href="https://www.youtube.com/maryjostampa" target="_blank">
 						<li><i class="fa fa-youtube"></i></li>
 					</a>
 				</ul>
