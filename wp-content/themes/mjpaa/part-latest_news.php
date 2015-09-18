@@ -15,7 +15,7 @@
 <?php endwhile; 
  wp_reset_postdata();
  else : ?>
-<p><?php _e( 'There are no news articles at this time.' ); ?></p>
+<p><?php _e( 'There are no recent updates at this time.' ); ?></p>
 <?php endif; ?>
  
 <?php 
@@ -23,8 +23,8 @@
   $published_posts = $count_posts->publish;
     if( $published_posts >= 3 ) { //if there are 3 or more published posts, show view more link
         echo '<div class="col-sm-12 text-center no-padding">';
-        echo '<a href="' . get_option('home') . '/news" class="hidden-xs view more">' . 'View More News &amp; Events' . '</a>';
-        echo '<a href="' . get_option('home') . '/news" class="visible-xs button mobile">' . 'View More News &amp; Events' . '</a>';
+        echo '<a href="' . get_option('home') . '/events" class="hidden-xs view more">' . 'View More News &amp; Events' . '</a>';
+        echo '<a href="' . get_option('home') . '/events" class="visible-xs button mobile">' . 'View More News &amp; Events' . '</a>';
         echo '</div>'; 
     }
 ?>
