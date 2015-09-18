@@ -9,13 +9,9 @@ get_header(); ?>
 <div class="page-about about">
 <section class="history">
 	<div class="intro row" id="contain">
-	
-		<div class="col-sm-4 pull-right latest-news sidebar-higher">
-		  <?php get_sidebar(); ?>
-		</div><!--/.col-->
-		
+
 		<div class="pad-fix">
-		<div class="col-sm-8 pull-left no-padding quotes">
+		<div class="col-sm-8  no-padding quotes">
 			<h2 class="section-title animate fadeIn">Our Mission</h2> 
 			<div class="mission" id="mission">
 			  <p>
@@ -34,6 +30,10 @@ get_header(); ?>
 			  <h2 class="section-title">Our Vision</h2> 
 			  <p>**** NEED content</p>
 			</div><!--/.vision-->
+		</div><!--/.col-->
+		
+		<div class="col-sm-4 latest-news sidebar-higher">
+		  <?php get_sidebar(); ?>
 		</div><!--/.col-->
 		
 	</div><!--/.intro-->
