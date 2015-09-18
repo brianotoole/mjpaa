@@ -36,6 +36,7 @@ get_header(); ?>
 			    <a class="button mobile" href="#browse">I'm not sure. Let me browse.</a>
 			  </div>
 			
+			<div class="visible-xs mobile-margin"></div>
 			<h4 class="visible-xs latest-title">MJPAA offers a complete Performing Arts Curriculum. <br />Our programs include - </h4>
 			</div><!--/.mobile-pad-->
 			
