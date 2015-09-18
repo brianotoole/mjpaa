@@ -4,23 +4,29 @@ Template Name: Page - Fullwidth
  * 
  */
 get_header(); ?> 
+
+<div class="page-about full-width">
+<section class="history">
+	<div class="intro row" id="contain">
+		<div class="col-sm-12 no-padding">
+			  <h1 class="section-title"><?php the_title(); ?></h1>
+			<?php if( get_field('interior_callout') ): ?> 
+			  <div class="interior-callout"><?php the_field('interior_callout'); ?></div>
+			<?php endif ; ?>
+		</div><!--/.col-->
+	</div><!--/.intro-->
+</section><!--/.history-->
         
-	<div class="grid">
-		<div id="primary" class="content-area col-1-1">
-			<main id="main" class="site-main" role="main">
-
+<section class="about">
+	<div class="intro row" id="contain">
+		<div class="col-sm-12">
 			<?php while ( have_posts() ) : the_post(); ?>
-				
-				<?php get_template_part( 'content', 'page' ); ?>
-				
-				<?php if (is_page('events')) { ?>
-				  <?php get_template_part( 'part', 'events' ); ?>
-				<?php } else { ?>
-				<?php } ?>
-
+				<div class="entry-content">
+					<?php the_content(); ?>
+				</div>
 			<?php endwhile; // end of the loop. ?>
-
-			</main><!-- #main -->
-		</div><!-- #primary -->
-	</div><!-- grid -->
+		</div><!--/.col-->
+	</div><!--/.intro-->
+</section><!--/.about-->
+</div><!--/.page-about-->
 <?php get_footer(); ?>
