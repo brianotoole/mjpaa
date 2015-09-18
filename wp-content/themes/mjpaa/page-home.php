@@ -28,11 +28,11 @@ get_header(); ?>
 			<div class="mobile-pad">
 			  <h4 class="visible-xs latest-title text-center">How can we help you?</h4> 
 			  <div class="service visbile-xs hidden-sm hidden-md hidden-lg">
-			    <a class="button mobile" href="#">I need general information</a>
-			   <a class="button mobile" href="#">What is MJPAA?</a>
-			    <a class="button mobile" href="#">I need class information</a>
-			    <a class="button mobile" href="#">I need contact information</a>
-			    <a class="button mobile" href="#">I need directions</a>
+			    <a class="button mobile" href="<?php bloginfo('url'); ?>/general-info">I need general information</a>
+			   <a class="button mobile" href="<?php bloginfo('url'); ?>/about/#history">What is MJPAA?</a>
+			    <a class="button mobile" href="<?php bloginfo('url'); ?>/about/classes">I need class information</a>
+			    <a class="button mobile" href="<?php bloginfo('url'); ?>/contact">I need contact information</a>
+			    <a class="button mobile" href="<?php bloginfo('url'); ?>/contact">I need directions</a>
 			    <a class="button mobile" href="#browse">I'm not sure. Let me browse.</a>
 			  </div>
 			

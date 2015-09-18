@@ -52,34 +52,28 @@ get_header(); ?>
 				<h3 class="section-title">Our Faculty &amp; Staff</h3> 
 				
 					  <div class="admin">
-						<h5>Administration Staff</h5>
+						<h5>Administration:</h5>
 						 <div class="col-sm-2">
-						   <i class="fa fa-user"></i>
 						   <h6>Name</h6>
 						   <p class="title">Account Department</p>
 						 </div><hr class="visible-xs" />
 						 <div class="col-sm-2">
-						   <i class="fa fa-user"></i>
 						    <h6>Name</h6>
 							<p class="title">Asst. to the Director</p>
 						 </div><hr class="visible-xs" />
 						 <div class="col-sm-2">
-						   <i class="fa fa-user"></i>
 						    <h6>Name</h6>
 							<p class="title">Director</p>
 						 </div><hr class="visible-xs" />
 						 <div class="col-sm-2">
-						   <i class="fa fa-user"></i>
 						    <h6>Name</h6>
 							<p class="title">Client Specialists</p>
 						 </div><hr class="visible-xs" />
 						 <div class="col-sm-2">
-						   <i class="fa fa-user"></i>
 						    <h6>Name</h6>
 							<p class="title">Costume Mistress</p>
 						 </div><hr class="visible-xs" />
 						 <div class="col-sm-2">
-						   <i class="fa fa-user"></i>
 						    <h6>Name</h6>
 							<p class="title">Fund Development</p>
 						 </div><hr class="visible-xs" />
@@ -87,7 +81,7 @@ get_header(); ?>
 				
 			
 				<div class="program-titles">
-				  <h5>Faculty</h5>
+				  <h5>Faculty:</h5>
 					<?php
 						// WP_Query arguments for faculty custom post type...
 						$args = array (

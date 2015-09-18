@@ -54,7 +54,7 @@ get_header(); ?>
 				</div><!-- #primary -->
 			</div><!--/.col-->
 			<div class="col-sm-4 latest-news">
-				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category() ) :?>
+				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category( 'performances' ) ) :?>
 					<h4 class="latest-title">News &amp; Events</h4>
 					<?php get_template_part( 'part', 'latest_news' ); ?>
 				<?php endif ; ?>
@@ -102,7 +102,7 @@ get_header(); ?>
 				<p>To register for this class, click the button below.</p>
 				<?php if ( is_singular( 'class' ) && get_field('class_registration_link') ) {  ?>	
 				  <a class="button gold" href="<?php the_field('class_registration_link'); ?>" target="_blank">Register Now</a>
-				<?php } else if ( is_singular( 'post' ) && in_category('event') && get_field('event_registration_link') ) {   ?>	
+				<?php } else if (get_field('event_registration_link') ) {   ?>	
 				  <a class="button gold" href="<?php the_field('event_registration_link'); ?>" target="_blank">Register Now</a>
 				<?php } else {  ?>
 				<?php } ?>

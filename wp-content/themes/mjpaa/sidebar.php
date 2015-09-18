@@ -12,7 +12,7 @@
 	  <?php dynamic_sidebar( 'sidebar-1' ); ?>
 	  
 	  <!-- Event Single Sidebar -->
-	  <?php if ( is_singular( 'post' ) && in_category( 'event' ) && get_field('event_registration_link') ) :?>
+	  <?php if ( is_singular( 'post' ) && in_category( 'event', 'performances' ) && get_field('event_registration_link') ) :?>
 	    <a href="<?php the_field('event_registration_link'); ?>" class="button register" target="_blank"><li>Register</li></a>
 	  <?php endif ; ?>
 	  
