@@ -2,7 +2,7 @@
 // WP_Query arguments for linking from homepage to taxonomy archives for all classes: Dance & Classical Ballet
 if (is_page ('236') ) {
 // get all terms in the taxonomy
-$terms = get_terms( 'program-dance' ); 
+$terms = get_terms( 'program-dance-upper', 'program-dance-childrens' ); 
 // convert array of term objects to array of term IDs
 $term_ids = wp_list_pluck( $terms, 'term_id' );
 
@@ -12,7 +12,7 @@ $term_ids = wp_list_pluck( $terms, 'term_id' );
 		'posts_per_page' => -1,
 		'tax_query'     => array(
 	                    array(
-	                        'taxonomy'  => 'program-dance',
+	                        'taxonomy'  => 'program-dance-upper', 'program-dance-childrens',
 							'field' => 'term_id',
 							'terms' => $term_ids,
 	                    )

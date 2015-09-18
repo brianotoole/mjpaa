@@ -103,7 +103,7 @@ get_header(); ?>
 						if ( $loop->have_posts() ) {
 							while ( $loop->have_posts() ) {
 								$loop->the_post(); ?>
-									<div class="col-sm-2">
+									<div class="col-1-6" style="margin: 0 17px;">
 									  <a href="<?php the_permalink() ?>">
 									    <img class="faculty" src="<?php the_field('faculty_img'); ?>" width="100%" height="auto" />
 									    <h6><?php the_title(); ?></h6>

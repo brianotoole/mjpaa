@@ -1608,10 +1608,12 @@ Interior Page Template: Faculty & Alumni single
 		color: $maroon;
 		font-weight: 600;
 	}
+
 }
 
 img.faculty,
 img.alumni {
+	height: auto;
 	border: 2px solid $lightgray;
     padding: 2px;
     background: white;

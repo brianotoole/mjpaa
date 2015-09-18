@@ -1,6 +1,10 @@
 /* Media Queries ----------------------------------------------------------- */
 @media screen and (min-width: 1600px) {
 	.memories-images .intro {max-width: 50%;}
+	img.faculty,
+	img.alumni {
+		height: 300px!important;
+	}
 }
 
 @media screen and (min-width: 1350px) {
@@ -9,6 +13,10 @@
 @media screen and (min-width: 1275px) {
 	.stack img {
 		max-width: 250px;
+	}
+	img.faculty,
+	img.alumni {
+		height: 250px;
 	}
 }//end
 
@@ -206,6 +214,10 @@
 			}
 		}
 	}
+	img.faculty,
+	img.alumni {
+		height: 226px;
+	}
 	
 }
 
@@ -347,6 +359,10 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		.view {
 			text-align: center;
 		}
+	}
+	img.faculty,
+	img.alumni {
+		height: auto;
 	}
 	#primary {
 		width: 100%;
