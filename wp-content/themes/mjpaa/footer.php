@@ -33,7 +33,7 @@
 					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/contact">Contact US Requests</a></li>
 					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/events">Events</a></li>
 					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/about">About Us</a></li>
-					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/about">Birthday Parties</a></li>
+					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/general-info/birthday-parties">Birthday Parties</a></li>
 				</ul>
 			</div><!-- .site-info -->
 			<div class="family col-sm-3">

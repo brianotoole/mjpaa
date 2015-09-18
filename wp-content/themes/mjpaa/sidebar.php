@@ -38,7 +38,7 @@
 	  	 <h6><i class="fa fa-usd"></i><?php the_field('class_cost'); ?></h6>
 	  
 	  <h5 class="program">Program</h5>
-		  <p>
+		  <h6>
 				<?php $programs = get_the_terms( $post->ID , 'program-dance-upper' );
 					foreach ( $programs as $program ) {		
 					echo " $program->name"; }
@@ -63,7 +63,7 @@
 					foreach ( $programs as $program ) {		
 					echo " $program->name"; }
 				?>
-		<p>
+		<h6>
 	  <h5 class="session">Session</h5>
 	      <h6>
 		 	 <em><?php $sessions = get_the_terms( $post->ID , 'session' );

@@ -32,7 +32,7 @@ get_header(); ?>
 			   <a class="button mobile" href="<?php bloginfo('url'); ?>/about/#history">What is MJPAA?</a>
 			    <a class="button mobile" href="<?php bloginfo('url'); ?>/about/classes">I need class information</a>
 			    <a class="button mobile" href="<?php bloginfo('url'); ?>/contact">I need contact information</a>
-			    <a class="button mobile" href="<?php bloginfo('url'); ?>/contact">I need directions</a>
+			    <a class="button mobile" href="https://www.google.com/maps/dir//15906+Mapledale+Blvd,+Tampa,+FL+33624/@28.098403,-82.505447,14z/data=!4m13!1m4!3m3!1s0x88c2bf63a0c73e1f:0x316ea2b6a463d054!2s15906+Mapledale+Blvd,+Tampa,+FL+33624!3b1!4m7!1m0!1m5!1m1!1s0x88c2bf63a0c73e1f:0x316ea2b6a463d054!2m2!1d-82.504962!2d28.098768?hl=en" target="_blank">I need directions</a>
 			    <a class="button mobile" href="#browse">I'm not sure. Let me browse.</a>
 			  </div>
 			
@@ -176,11 +176,18 @@ get_header(); ?>
 	      <div class="col-sm-2"></div>
 
 		</div>
-		<h3>Why Choose Us?</h3>
-		<h5 class="breakout">First line of text goes here</h5>
-		<p>And so on and so forth. Blah blah blah choose us.</p>
 	</div><!--/.intro-->
 </section><!--/.memories-images-->
+
+<section class="why">
+	<div class="intro row" id="contain">
+		<div class="col-sm-12 why">
+		  <h3>Why Choose Us?</h3>
+		  <h5 class="breakout">First line of text goes here</h5>
+		  <p>And so on and so forth. Blah blah blah choose us.</p>
+		</div><!--/.why-->
+	</div>
+</section>
 
 
 

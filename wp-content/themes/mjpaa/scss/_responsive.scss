@@ -240,7 +240,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		background: none;
 		border: none;
 		color: white;
-		padding: 25px 20px;
+		padding: 30px 10px;
 		text-align: right;
 		text-transform: capitalize;
 		&:hover, &:focus {
@@ -255,7 +255,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		height: 110px;
 		background: $maroon;
 		color: $smoke;
-		font-size: 1.3em;
+		font-size: 1.2em;
 		text-align: left;
 		border-radius: 0;
 		&:after {
@@ -435,6 +435,12 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	.page-about .history .section-title { 
 		margin: 0 0 15px;
 		padding: 0 20px;
+		&.news { 
+			margin: 0 0 15px;
+			padding: 0 20px;
+			font-size: 1.25em;
+			text-align: left;
+		}
 	}
 	.history .quotes {
 		padding-left: 0;
@@ -527,6 +533,21 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	.results-total .button {
 		margin: 20px auto;
 	}
+	.class-single {
+		h6 {
+			font-size: 0.8em;
+			line-height: 1;
+			&:last-of-type {
+				margin-bottom: 30px;
+				
+			}
+		}
+    }
+    .memories {
+	    .section-title {
+		    margin-top: 60px;
+	    }
+    }
 	.site-footer {
 		ul {
 			margin: 40px 0 0;

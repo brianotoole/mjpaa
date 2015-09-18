@@ -12,7 +12,7 @@ get_header(); ?>
 	<section class="history">
 		<div class="intro row" id="contain">
 			<div class="col-sm-12 no-padding">
-				<h1 class="section-title"><?php the_title(); ?></h1> 
+				<h1 class="section-title news"><?php the_title(); ?></h1> 
 				<span class="position"><?php the_field('faculty_position'); ?></span>
 								
 				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category() ) :?>
