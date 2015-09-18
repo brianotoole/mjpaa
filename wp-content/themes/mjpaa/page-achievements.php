@@ -56,7 +56,7 @@ get_header(); ?>
 						if ( $loop->have_posts() ) {
 							while ( $loop->have_posts() ) {
 								$loop->the_post(); ?>
-									<div class="col-sm-3">
+									<div class="col-sm-2">
 									    <img class="alumni" src="<?php the_field('alumni_headshot'); ?>" />
 									    <h6><?php the_title(); ?></h6>
 									    <p class="title"><?php the_excerpt(); ?></p>

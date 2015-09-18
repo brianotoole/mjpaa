@@ -1619,6 +1619,27 @@ img.alumni {
     background: white;
     margin: 20px 0 0;
 }
+//about us faculty page col temporary bugfixes; added class .outer
+@media screen and (min-width: 1600px) {
+    .outer {
+        min-height: 420px;
+    }
+}
+@media screen and (min-width: 1275px) and (max-width: 1600px) {
+    .outer {
+        min-height: 375px;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1275px) {
+    .outer {
+        min-height: 325px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .outer {
+        min-height: auto;
+    }
+}
 .latest-news {
 	a li, li a {
 		display: block;

@@ -103,13 +103,15 @@ get_header(); ?>
 						if ( $loop->have_posts() ) {
 							while ( $loop->have_posts() ) {
 								$loop->the_post(); ?>
-									<div class="col-1-6" style="margin: 0 17px;">
+									<div class="col-xs-12 col-sm-2 outer">
 									  <a href="<?php the_permalink() ?>">
-									    <img class="faculty" src="<?php the_field('faculty_img'); ?>" width="100%" height="auto" />
-									    <h6><?php the_title(); ?></h6>
-									    <p class="title"><?php the_field('faculty_position'); ?></p>
-									    <p class="hidden-xs view">Read Full Bio</p>
-									    <a class="visible-xs button mobile">Read Full Bio</p>
+									    <img class="faculty" src="<?php the_field('faculty_img'); ?>" />
+									    <div class="meta">
+									      <h6><?php the_title(); ?></h6>
+									      <p class="title"><?php the_field('faculty_position'); ?></p>
+									      <p class="hidden-xs view">Read Full Bio</p>
+									      <a class="visible-xs button mobile">Read Full Bio</a>
+									    </div>
 									  </a>
 									</div><hr class="visible-xs" />
 										
