@@ -299,10 +299,12 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	}
 	body.home .site-header,
 	.site-header {
+		position: fixed;
 		padding: 0 20px;
 		top: 0;
 	    height: 110px;
 	    background: $maroon;
+	    z-index: 4001;
 	}
 	
 	
@@ -454,6 +456,9 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	.history .quotes {
 		padding-left: 0;
 	}
+	#faculty {
+		padding: 0 20px;
+	}
 	
 	/* sidebars */
 	.about .latest-news {
@@ -470,6 +475,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		
 		&.sidebar-higher {
 			margin: 0 auto;
+			padding: 0;
 			&:before {
 				background-color: transparent;
 			}
