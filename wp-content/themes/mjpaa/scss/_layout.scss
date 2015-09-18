@@ -1176,6 +1176,13 @@ body.home .latest-news p {
 	
 }//.memories
 
+//alumni template
+.alumni-images {
+	
+	.intro {
+		max-width: 88%;
+	}
+}
 
 //section.memories
 .memories-images { 
@@ -1189,7 +1196,7 @@ body.home .latest-news p {
     .intro {
 	    background: transparent;
 		text-align: center;
-		max-width: 61%;
+		max-width: 100%;
 	}
 	
 	.images {
@@ -1198,14 +1205,7 @@ body.home .latest-news p {
 		img {
 			margin: 0 -7px;
 		}
-	}
-//alumni template
-.alumni-images {
-	
-	.intro {
-		max-width: 88%;
-	}
-}	
+	}	
 	
 }//.memories-images
 
@@ -1213,7 +1213,7 @@ body.home .latest-news p {
 .stack { 
 	float: left; 
 	position: relative; 
-	margin: 0 7px;
+	margin: 0 40px;
 	z-index: 10; 
 	img {
 		max-width: 200px; 

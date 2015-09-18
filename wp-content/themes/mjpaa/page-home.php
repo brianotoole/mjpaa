@@ -163,15 +163,18 @@ get_header(); ?>
 <section class="memories-images">
 	<div class="intro row" id="contain">
 		<div class="col-sm-12 images">
-		  <div class="stack rotated-left">
+		  <div class="col-sm-2"></div>
+		  <div class="col-sm-2 stack rotated-left">
 	        	<img src="<?php the_field('memories_img1'); ?>">
 	      </div>
-	      <div class="stack rotated-middle">
+	      <div class="col-sm-2 stack rotated-middle">
 	        	<img src="<?php the_field('memories_img2'); ?>">
 	      </div>
-	      <div class="stack rotated-right">
+	      <div class="col-sm-2 stack rotated-right">
 	        	<img src="<?php the_field('memories_img3'); ?>">
 	      </div>
+	      <div class="col-sm-2"></div>
+
 		</div>
 		<h3>Why Choose Us?</h3>
 		<h5 class="breakout">First line of text goes here</h5>

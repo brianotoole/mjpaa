@@ -1,10 +1,8 @@
 /* Media Queries ----------------------------------------------------------- */
 @media screen and (min-width: 1600px) {
-	.memories-images .intro {max-width: 50%;}
 }
 
 @media screen and (min-width: 1350px) {
-	.memories-images .intro {max-width: 63%;}
 }
 @media screen and (min-width: 1275px) {
 	.stack img {
@@ -25,7 +23,6 @@
 			}
 		}
 	}
-	.memories-images .intro {max-width: 60%;}
 	
 }//end
 
@@ -48,7 +45,6 @@
 			max-width: 235px;
 		}
 	}
-	.memories-images .intro {max-width: 58%;}
 
 }//end
 
@@ -202,7 +198,7 @@
 				background: white;
 			}
 			img {
-				max-width: 85%;
+				max-width: 205px;
 			}
 		}
 	}
