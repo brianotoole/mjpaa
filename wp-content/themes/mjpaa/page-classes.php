@@ -9,7 +9,7 @@ get_header(); ?>
 			<main id="main" class="site-main entry-content" role="main">
 
 			<div class="results-total">
-			    <h3 class="animate fadeIn">Search for Classes</h3>
+			    <h3 class="animate fadeIn">Classes</h3>
 			</div>
 
 			<div class="class-list">
