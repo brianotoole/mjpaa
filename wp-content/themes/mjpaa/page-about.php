@@ -164,7 +164,7 @@ get_header(); ?>
 			</ul>
 		   </div>
 		   <div class="col-sm-1 video-tour">
-		   <video width="480" height="390" style="width:480px;height:390px;" controls>
+		   <video width="380" height="325" style="width:380px;height:325px;" controls>
 			  <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaatour.mp4" type="video/mp4">
 			  <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaatour.ogg" type="video/ogg">
 		  </video>
