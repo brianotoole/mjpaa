@@ -150,6 +150,7 @@ get_header(); ?>
 
 		   <p>The black box theatre can seat up to 200 spectators and is an ideal performance venue for small dance performances, theatrical productions and talent showcases. 40 par-can stage lights are pre-installed and ready to be used, and additional lighting and audio equipment can be put in place for more elaborate shows.</p>
 		   <hr />
+		   <div class="col-sm-6">
 		   <h3>Our facility includes:</h3>
 		     <ul>
 			   <li>7-spacious dance studios with sprung floors for injury prevention.</li>
@@ -161,6 +162,13 @@ get_header(); ?>
 			   <li>Student lockers available.</li>
 		       <li>Video monitors for a distraction free learning environment.</li>
 			</ul>
+		   </div>
+		   <div class="col-sm-1 video-tour">
+		   <video width="480" height="390" style="width:480px;height:390px;" controls>
+			  <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaatour.mp4" type="video/mp4">
+			  <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaatour.ogg" type="video/ogg">
+		  </video>
+		</div>
 	  	  </div><!--/.col-->
 		</div><!--/.col-->
 		<div class="clearfix"></div><hr />
