@@ -54,31 +54,23 @@ get_header(); ?>
 				<h3 class="section-title">Our Faculty &amp; Staff</h3> 
 				
 					  <div class="admin">
-						<h5>Administration:</h5>
-						 <div class="col-sm-2">
-						   <h6>Name</h6>
-						   <p class="title">Account Department</p>
-						 </div><hr class="visible-xs" />
-						 <div class="col-sm-2">
-						    <h6>Name</h6>
-							<p class="title">Asst. to the Director</p>
-						 </div><hr class="visible-xs" />
-						 <div class="col-sm-2">
-						    <h6>Name</h6>
-							<p class="title">Director</p>
-						 </div><hr class="visible-xs" />
-						 <div class="col-sm-2">
-						    <h6>Name</h6>
-							<p class="title">Client Specialists</p>
-						 </div><hr class="visible-xs" />
-						 <div class="col-sm-2">
-						    <h6>Name</h6>
-							<p class="title">Costume Mistress</p>
-						 </div><hr class="visible-xs" />
-						 <div class="col-sm-2">
-						    <h6>Name</h6>
-							<p class="title">Fund Development</p>
-						 </div><hr class="visible-xs" />
+						<h5>Business Administration Department:</h5>
+						 <div class="col-sm-4">
+						   <h6>- Bev Menard, Accountant</h6>
+						   <p class="title"><a href="tel:813-969-0240 ext. 226"> 813-969-0240 ext. 226</a></p>
+						   <h6>- Tammi Godinez, Director of Admissions</h6>
+						   <p class="title"><a href="813-969-0240 ext. 231"> 813-969-0240 ext. 231</a></p>
+						   <h6>- Kristin Scanio, Assistant to the Director</h6>
+						   <p class="title"><a href="813-969-0240 ext. 223"> 813-969-0240 ext. 223</a></p>
+						   <h6>- Melinda Yates, Director of Customer Relations</h6>
+						   <p class="title"><a href="813-969-0240 ext. 232"> 813-969-0240 ext. 232</a></p>
+						   <h6>- Lindsey Brangaccio, Client Specialist</h6>
+						   <h6>- Pam Matthews, Client Specialist</h6>
+						   <h6>- Sean McDonald, Client Specialist</h6>
+						 </div><!--/.col-->
+						 <div class="col-sm-7 col-sm-offset-1">
+						   <img src="http://placeimg.com/640/480/people" />
+						 </div><!--/.col-->
 					  </div><!--/.admin-->
 				
 			
