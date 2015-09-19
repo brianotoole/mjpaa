@@ -322,6 +322,14 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	body.page-template-page-home .about {
 		margin-top: 110px;
 	}
+	body.page-template-page-um-video,
+	body.page-template-page-fullwidth-largehero,
+	body.page-template-page-testimonials {
+		.site-header {
+			height: 110px;
+			background: $maroon;
+		}
+	}
 	.entry-header {
 		margin-top: 110px;
 		border-bottom: 1px solid $gray;
