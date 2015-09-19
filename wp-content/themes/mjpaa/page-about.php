@@ -16,7 +16,7 @@ get_header(); ?>
 		<div class="col-sm-4 latest-news sidebar-higher pull-right">
 		  <?php get_sidebar(); ?>
 		</div><!--/.col-->
-		<div class="col-sm-8 no-padding quotes">
+		<div class="col-sm-8 no-padding">
 			<h2 class="section-title animate fadeIn">Our Mission</h2> 
 			<div class="mission" id="mission">
 			  <p>
@@ -31,7 +31,7 @@ get_header(); ?>
 				</ul>
 			  </p>
 			</div><hr /><!--/.mission-->
-			<div class="vision" id="vision">
+			<div class="mission" id="vision">
 			  <h2 class="section-title">Our Vision</h2> 
 			  <p>**** NEED content</p>
 			</div><!--/.vision-->
@@ -106,7 +106,7 @@ get_header(); ?>
 									      <h6><?php the_title(); ?></h6>
 									      <p class="title"><?php the_field('faculty_position'); ?></p>
 									      <p class="hidden-xs view">Read Full Bio</p>
-									      <a class="visible-xs button mobile">Read Full Bio</a>
+									      <a class="visible-xs button mobile" href="<?php the_permalink() ?>">Read Full Bio</a>
 									    </div>
 									  </a>
 									</div><hr class="visible-xs" />

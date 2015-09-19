@@ -452,6 +452,9 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 			font-size: 1.25em;
 			text-align: left;
 		}
+		~ .mission {
+			padding: 0 20px 5px;
+		}
 	}
 	.history .quotes {
 		padding-left: 0;
