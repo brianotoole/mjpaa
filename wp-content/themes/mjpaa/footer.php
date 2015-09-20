@@ -18,14 +18,14 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	
 		<div class="footer-top grid grid-pad">
-			<div class="award col-sm-3">
+			<div class="award col-sm-4">
 				<h6>Academy Hours</h6>
 				<p>- Victory Cup Winner </p>
 				<p>- Best of N. Tampa, 2014</p>
 				<p>- FDC Studio of Excellence</p>
 				<p></p>
 			</div><!-- .site-info -->
-			<div class="links col-sm-3">
+			<div class="links col-sm-4">
 				<h6>Links</h6>
 				<ul>
 					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/events">News</a></li>
@@ -36,10 +36,10 @@
 					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/general-info/birthday-parties">Birthday Parties</a></li>
 				</ul>
 			</div><!-- .site-info -->
-			<div class="family col-sm-3">
+			<div class="family col-sm-4">
 				<h6>Stay in Touch</h6>
 				<ul>
-					<li><i class="fa fa-chevron-right"></i><a href="http://tbttt.org" target="_blank">Sign-Up for our Email Newsletter</a></li>
+					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/general-info/newsletter">Sign-Up for our Email Newsletter</a></li>
 					<p class="hidden-xs">
 						<a href="tel:#">PH: 813-555-5555</a>
 					</p>
@@ -49,10 +49,10 @@
 					</p>
 					<a class="visible-xs button gold" href="#">Tap to Call Us</a>
 			</div><!-- .site-info -->
-			<div class="ph col-sm-3">
+			<!--<div class="ph col-sm-3">
 				<h6>Calendar</h6>
 					<p>calendar here</p>
-			</div><!-- .site-info -->
+			</div><!-- .col-->
         </div><!-- grid --> 
         
     	<div class="footer-bottom grid grid-pad">
