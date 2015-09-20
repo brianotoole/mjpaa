@@ -2095,25 +2095,16 @@ Footer
 				}
 			}
 		}
-	}
-	
-	.footer-bottom {
-		border-top: 2px solid rgba($gray,0.2);
-		padding: 30px 0 0;
-		margin: 30px auto 0;
-		
-		.site-info {
-			color: #717171;
-		}
-		
-		.social-media {
-			float: right;
-			text-align: right;
+	  .social-media {
 			li {
-				padding: 0 12px;
+				padding: 0 25px;
 				display: inline-block;
+				&.no-pad {
+					padding-left: 0;
+				}
+				
 				i {
-					font-size: 1.75em;
+					font-size: 2.25em;
 					color: $gold;
 					transition: 0.5s ease;
 					-moz-transition: 0.5s ease;
@@ -2125,6 +2116,17 @@ Footer
 				}
 			}
 		}
+	}
+	
+	.footer-bottom {
+		border-top: 2px solid rgba($gray,0.2);
+		padding: 30px 0 0;
+		margin: 30px auto;
+		
+		.site-info {
+			color: #717171;
+		}
+		
 	}//.footer-bottom
 	
 	em {

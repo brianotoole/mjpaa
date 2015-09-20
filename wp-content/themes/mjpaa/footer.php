@@ -48,6 +48,22 @@
 						Tampa, FL 33624
 					</p>
 					<a class="visible-xs button gold" href="#">Tap to Call Us</a>
+					<div class="social-media">
+						<ul>
+							<a href="https://www.facebook.com/MaryJosPerformingArtsAcademy?fref=ts" target="_blank">
+								<li class="no-pad"><i class="fa fa-facebook"></i></li>
+							</a>
+							<a href="https://twitter.com/MJPAA" target="_blank">
+								<li><i class="fa fa-twitter"></i></li>
+							</a>
+							<a href="https://instagram.com/mjpaa_tampa/" target="_blank">
+								<li><i class="fa fa-instagram"></i></li>
+							</a>
+							<a href="https://www.youtube.com/maryjostampa" target="_blank">
+								<li><i class="fa fa-youtube"></i></li>
+							</a>
+						</ul>
+				    </div><!-- .social-media -->
 			</div><!-- .site-info -->
 			<!--<div class="ph col-sm-3">
 				<h6>Calendar</h6>
@@ -56,25 +72,10 @@
         </div><!-- grid --> 
         
     	<div class="footer-bottom grid grid-pad">
-			<div class="site-info col-sm-6">
+			<div class="site-info col-sm-12">
 				&copy; <?php echo date('Y'); ?> MJPAA.com | <a id="top" href="#"> Back To Top</a>
 			</div><!-- .site-info -->
-			<div class="social-media col-sm-6">
-				<ul>
-					<a href="https://www.facebook.com/MaryJosPerformingArtsAcademy?fref=ts" target="_blank">
-						<li><i class="fa fa-facebook"></i></li>
-					</a>
-					<a href="https://twitter.com/MJPAA" target="_blank">
-						<li><i class="fa fa-twitter"></i></li>
-					</a>
-					<a href="https://instagram.com/mjpaa_tampa/" target="_blank">
-						<li><i class="fa fa-instagram"></i></li>
-					</a>
-					<a href="https://www.youtube.com/maryjostampa" target="_blank">
-						<li><i class="fa fa-youtube"></i></li>
-					</a>
-				</ul>
-			</div><!-- .site-info -->
+		
         </div><!-- grid --> 
 	</footer><!-- #colophon -->
 
