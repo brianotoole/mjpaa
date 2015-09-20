@@ -33,17 +33,14 @@
 	
 	  <?php if ( is_singular( 'class' ) ): //if is class ?>		
 	   <div class="class-single">
-	   
-	  	 <h5 class="cost">Cost</h5>
-	  	 <h6><i class="fa fa-usd"></i><?php the_field('class_cost'); ?></h6>
-	  
+	 
 	  <h5 class="program">Program</h5>
 		  <h6>
 				<?php $programs = get_the_terms( $post->ID , 'program-dance-upper' );
 					foreach ( $programs as $program ) {		
 					echo " $program->name"; }
 				?>
-				<?php $programs = get_the_terms( $post->ID , 'program-dance-children' );
+				<?php $programs = get_the_terms( $post->ID , 'program-dance-childrens' );
 					foreach ( $programs as $program ) {		
 					echo " $program->name"; }
 				?>
@@ -88,6 +85,10 @@
 					} ?>
 			  </em>
 			</h6>
+			
+		<h5 class="cost">Cost</h5>
+	  	 <h6><i class="fa fa-usd"></i><?php the_field('class_cost'); ?></h6>
+	  	 
 	       <a class="hidden-xs button primary" href="<?php bloginfo('url'); ?>/about/#faculty">Our Faculty</a>
 	       <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/#faculty">Our Faculty</a>
 	 

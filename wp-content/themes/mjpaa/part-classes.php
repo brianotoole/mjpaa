@@ -112,7 +112,6 @@ if ( $loop->have_posts() ) {
 				</div><!--/.col-->
 				<div class="col-sm-8 descrip">
 				  <h3 class="class-title"><?php the_title(); ?></h3>
-				  <p class="date"><?php the_field('class_start_date'); ?> - <?php the_field('class_end_date'); ?></p>  
 				  <p><?php mjpaa_excerpt('mjpaa_excerpt_length','mjpaa_view_more_class'); ?></p>
 				</div><!--/.col-->
 			</a>

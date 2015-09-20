@@ -15,11 +15,11 @@ get_header(); ?>
 				<h1 class="section-title news"><?php the_title(); ?></h1> 
 				<span class="position"><?php the_field('faculty_position'); ?></span>
 								
-				<?php if ( is_singular() ) :?>
+				<?php if ( is_singular('post') ) :?>
 				  <div class="interior-callout"><?php the_field('interior_callout'); ?></div>
 				<?php endif; ?>
 				
-				<?php if ( is_singular() ) :?>
+				<?php if ( is_singular('post') ) :?>
 				  <p><strong>Event Date:</strong> <?php the_field('event_start_date'); ?>
 				    <?php if( get_field('event_end_date') ): //if end date is entered... ?>
 				    - <?php the_field('event_end_date'); ?>
@@ -49,6 +49,9 @@ get_header(); ?>
 					  		</div>
 						<?php endif ; //close if is single post_type 'facutly' ?>
 					    <?php the_content(); ?> 
+					    <?php if ( is_singular() && get_field('class_code_indivlink') ) :?>
+						  <br /><?php the_field('class_code_indivlink'); ?>
+						<?php endif; ?>
 					  </div>
 					</main><!-- #main -->
 				</div><!-- #primary -->
