@@ -228,7 +228,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	.sb-search {
 		width: 100%;
 		margin: 0;
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 		height: 50px;
 		line-height: 50px;
 		padding-right: 0;
@@ -322,6 +322,14 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	body.page-template-page-home .about {
 		margin-top: 110px;
 	}
+	body.page-template-page-um-video,
+	body.page-template-page-fullwidth-largehero,
+	body.page-template-page-testimonials {
+		.site-header {
+			height: 110px;
+			background: $maroon;
+		}
+	}
 	.entry-header {
 		margin-top: 110px;
 		border-bottom: 1px solid $gray;
@@ -358,6 +366,9 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 
 	#primary {
 		width: 100%;
+	}
+	.left-20 {
+		margin: 0;
 	}
 	
 	.class-list .thumbnail.default {
@@ -454,8 +465,12 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	.history .quotes {
 		padding-left: 0;
 	}
-	#faculty {
-		padding: 0 20px;
+	#faculty,
+	.faculty,
+	.alumni {
+		.position {
+			padding: 0 20px;
+		}
 	}
 	
 	/* sidebars */
