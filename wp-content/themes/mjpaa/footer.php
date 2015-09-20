@@ -19,11 +19,12 @@
 	
 		<div class="footer-top grid grid-pad">
 			<div class="award col-sm-4">
-				<h6>Academy Hours</h6>
-				<p>- Victory Cup Winner </p>
-				<p>- Best of N. Tampa, 2014</p>
-				<p>- FDC Studio of Excellence</p>
-				<p></p>
+				<h6>Hours of Operation</h6>
+				<p><strong>Academy Hours:</strong><br />
+				  <em> Mon-Fri: &nbsp; 10am-8:30pm<br />
+				   Sat: &nbsp;9am-2pm</em></p><br />
+				<p><strong>Business Hours:</strong><br />
+				   <em>Mon-Fri: &nbsp;9am-5pm</em></p>
 			</div><!-- .site-info -->
 			<div class="links col-sm-4">
 				<h6>Links</h6>
@@ -41,13 +42,14 @@
 				<ul>
 					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/general-info/newsletter">Sign-Up for our Email Newsletter</a></li>
 					<p class="hidden-xs">
-						<a href="tel:#">PH: 813-555-5555</a>
+						<a href="tel:813-969-0240">PH: 813-969-0240</a><br />
+						FAX: 813-960-2117
 					</p>
 					<p>
 						15906 Mapledale Blvd.<br />
 						Tampa, FL 33624
 					</p>
-					<a class="visible-xs button gold" href="#">Tap to Call Us</a>
+					<a class="visible-xs button gold" href="tel:813-969-0240">Tap to Call Us</a>
 					<div class="social-media">
 						<ul>
 							<a href="https://www.facebook.com/MaryJosPerformingArtsAcademy?fref=ts" target="_blank">

@@ -68,8 +68,8 @@ get_header(); ?>
 						   <h6>- Pam Matthews, Client Specialist</h6>
 						   <h6>- Sean McDonald, Client Specialist</h6>
 						 </div><!--/.col-->
-						 <div class="col-sm-7 col-sm-offset-1">
-						   <img src="http://placeimg.com/640/480/people" />
+						 <div class="col-sm-7 col-sm-offset-1 faculty" style="margin-top:-80px;">
+						   <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/09/AR-150619348.jpg" />
 						 </div><!--/.col-->
 					  </div><!--/.admin-->
 				
@@ -80,7 +80,7 @@ get_header(); ?>
 						// WP_Query arguments for faculty custom post type...
 						$args = array (
 							'post_type'	     => array( 'faculty' ),
-							'orderby' 		 => 'menu_order',
+							'orderby' 		 => 'title',
 							'order'			 => 'ASC',
 							'posts_per_page' => -1
 						);
