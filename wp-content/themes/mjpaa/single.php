@@ -15,11 +15,11 @@ get_header(); ?>
 				<h1 class="section-title news"><?php the_title(); ?></h1> 
 				<span class="position"><?php the_field('faculty_position'); ?></span>
 								
-				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category() ) :?>
+				<?php if ( is_singular() ) :?>
 				  <div class="interior-callout"><?php the_field('interior_callout'); ?></div>
 				<?php endif; ?>
 				
-				<?php if ( is_singular( 'post' ) && in_category( 'event' ) || in_category( 'performances' ) ) :?>
+				<?php if ( is_singular() ) :?>
 				  <p><strong>Event Date:</strong> <?php the_field('event_start_date'); ?>
 				    <?php if( get_field('event_end_date') ): //if end date is entered... ?>
 				    - <?php the_field('event_end_date'); ?>
@@ -94,12 +94,12 @@ get_header(); ?>
 
 	
 
-	<?php if ( is_singular( 'class' ) && get_field('class_registration_link') || is_singular('post') && in_category('event') && get_field('event_registration_link') ): //registration link ?>
+	<?php if ( is_singular( 'class' ) && get_field('class_registration_link') || is_singular() && get_field('event_registration_link') ): //registration link ?>
 	<div class="footer-contact overlay">
 		<div class="grid grid-pad row">
 			<div class="col-sm-12">
 				<h3>Sign up for: <strong><?php the_title(); ?></strong></h3>
-				<p>To register for this class, click the button below.</p>
+				<p>To register, click the button below.</p>
 				<?php if ( is_singular( 'class' ) && get_field('class_registration_link') ) {  ?>	
 				  <a class="button gold" href="<?php the_field('class_registration_link'); ?>" target="_blank">Register Now</a>
 				<?php } else if (get_field('event_registration_link') ) {   ?>	
