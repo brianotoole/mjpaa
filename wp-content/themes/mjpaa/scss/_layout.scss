@@ -2051,7 +2051,7 @@ Footer
 	.footer-top, 
 	.footer-bottom {
 		background: $black;
-		text-align: left;
+		text-align: center;
 	}
 	
 	.footer-top {
@@ -2064,14 +2064,14 @@ Footer
 			font-size: 0.8em;
 		}
 		ul {
-			text-align: left;
+			text-align: center;
 		    margin: 5px 0;
 			li {
 				font-size: 0.8em;
 				line-height: 1.5em;
 				margin: 0 0 0.8em;
 				position: relative;
-				text-align: left;
+				text-align: center;
 				a {
 					transition: 0.5s ease;
 					-moz-transition: 0.5s ease;
