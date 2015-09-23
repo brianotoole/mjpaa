@@ -247,7 +247,7 @@ function customize_output($results , $arg, $id, $getdata ){
 				  <?php if( get_field('class_start_date') ): ?>
 				  <p class="date"><?php the_field('class_start_date'); ?> - <?php the_field('class_end_date'); ?></p>  
 				  <?php else: //is "post" not "class" ?>
-				  <p class="date"><span class="cat-title"><?php global $post; $category = get_the_category($post->ID); echo $category[0]->name; ?></span> <?php echo get_the_date( '/ l, F j' ); ?>
+				  <p class="date"><span class="cat-title"><?php global $post; $category = get_the_category($post->ID); echo $category[0]->name; ?></span>
 				  <?php endif; ?>
 				  <p><?php mjpaa_excerpt('mjpaa_excerpt_length','mjpaa_view_more_class'); ?></p>
 				</div><!--/.col-->

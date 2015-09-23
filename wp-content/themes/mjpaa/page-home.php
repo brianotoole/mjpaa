@@ -184,8 +184,7 @@ get_header(); ?>
 	<div class="intro row" id="contain">
 		<div class="col-sm-12 why">
 		  <h3>Why Choose Us?</h3>
-		  <h5 class="breakout">First line of text goes here</h5>
-		  <p>And so on and so forth. Blah blah blah choose us.</p>
+		  <h6 class="breakout">We offer a complete performing arts curriculum with extensive classes in Dance, Acting, Voice and Music. Each program has a variety of levels and culminates in performances to share the student’s progression. Students who train at our Academy have the capability of becoming a triple threat performer, excelling in dance, acting and voice. </h6>
 		</div><!--/.why-->
 	</div>
 </section>

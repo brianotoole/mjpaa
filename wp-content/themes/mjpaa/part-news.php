@@ -24,7 +24,7 @@ if ( $loop->have_posts() ) {
 				</div><!--/.col-->
 				<div class="col-sm-8 descrip">
 				  <h3 class="class-title"><?php the_title(); ?></h3>
-				  <p class="date"><span class="cat-title"><?php global $post; $category = get_the_category($post->ID); echo $category[0]->name; ?></span> <?php echo get_the_date( '/ F j, Y' ); ?></p>  
+				  <p class="date"><span class="cat-title"><?php global $post; $category = get_the_category($post->ID); echo $category[0]->name; ?></span> <?php the_field('event_start_date'); ?></p>  
 				  <p><?php mjpaa_excerpt('mjpaa_excerpt_length','mjpaa_view_more_news'); ?></p>
 				</div><!--/.col-->
 			</a>
