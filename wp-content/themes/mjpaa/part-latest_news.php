@@ -3,7 +3,7 @@
  
 <div class="col-sm-12 descrip">
   <h5 class="news-title"><?php the_title(); ?></h5>
-    <p class="date"><span class="cat-title"><?php global $post; $category = get_the_category($post->ID); echo $category[0]->name; ?></span> <?php echo get_the_date( '/ F j, Y' ); ?>
+    <p class="date"><span class="cat-title"><?php global $post; $category = get_the_category($post->ID); echo $category[0]->name; ?></span> <?php the_field('event_start_date'); ?>
     </p>  
 	<?php mjpaa_excerpt('mjpaa_excerpt_length','mjpaa_view_more_latest_news'); ?>
 	  <a class="hidden-xs view" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a>

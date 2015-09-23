@@ -68,7 +68,7 @@ get_header(); ?>
 						   <h6>- Pam Matthews, Client Specialist</h6>
 						   <h6>- Sean McDonald, Client Specialist</h6>
 						 </div><!--/.col-->
-						 <div class="col-sm-6 col-sm-offset-2 faculty" style="margin-top:-80px;">
+						 <div class="col-sm-6 col-sm-offset-2 faculty" style="margin-top:-30px;">
 						   <img src="<?php bloginfo('stylesheet_directory'); ?>/img/about_img.jpg" />
 						 </div><!--/.col-->
 					  </div><!--/.admin-->
