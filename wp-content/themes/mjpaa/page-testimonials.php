@@ -14,8 +14,7 @@ get_header(); ?>
   </article>
 </div>
 <div class="cover-bottom">
-  <header class="entry-header">
-  </header><!-- .entry-header -->
+<header class="entry-header" style="background: url('<?php bloginfo('stylesheet_directory'); ?>/img/testimonialshero.jpg') center center no-repeat; background-size:cover;"></header>
 </div>
 
 
