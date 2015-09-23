@@ -75,14 +75,21 @@
 			</h6>
 		<h5 class="grade">Grade Level</h5>
 	      <h6>
-		 	 <em><?php $grades = get_the_terms( $post->ID , 'grade' );
-					foreach ( $grades as $grade ) {		
-					  if(count($grades) > 1) {
-					  	echo "$grade->name, "; 
-					  } else {
-						  echo $grade->name;
-						 }
-					} ?>
+		 	 <em>
+		 	 <?php 
+				$grades = get_the_terms( $post->ID , 'grade' );
+				$i = 0;
+				$len = count($grades); 
+					        
+				foreach ( $grades as $grade ) {	
+					if ($i !== $len - 1) {
+						echo "$grade->name, "; 
+					} else {
+						echo "$grade->name"; 
+					}
+				$i++;
+				
+				} ?>
 			  </em>
 			</h6>
 			
