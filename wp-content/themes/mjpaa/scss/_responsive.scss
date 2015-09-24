@@ -218,7 +218,7 @@ h2 { font-size: 28px; line-height: 36px; }
 h3 { font-size: 22px; line-height: 32px; }
 h4 { font-size: 18px; line-height: 28px; }
 h5 { font-size: 18px; line-height: 24px; }
-h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: uppercase; }
+h6 { font-size: 16px; line-height: 20px; }
 .button, button, input[type="button"], input[type="reset"], input[type="submit"] { display: block; width: 100%; }
 
 	.site-logo img {
@@ -580,6 +580,12 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	    
     }
 	.site-footer {
+	
+		.footer-top {
+			.social-media li i {
+				font-size: 2em;
+			}
+		}
 
 		ul {
 			margin: 40px 0 0;
@@ -608,7 +614,10 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 				}
 			}
 		}
-	}
+img.faculty {
+	max-width: 200px;
+}
+}
 	
 @media screen and (max-width: 480px) { 
 	.hero h2 {font-size:1.75em;}

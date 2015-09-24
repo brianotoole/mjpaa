@@ -42,7 +42,7 @@ get_header(); ?>
 			
 			<div class="program-titles" id="browse">
 				
-			<div class="service hidden-xs">
+			<div class="service">
 			  	<div class="col-sm-2">
 					 <div class="hidden-xs ih-item circle"><a href="<?php bloginfo('url'); ?>/classes/dance-classical-ballet-of-tampa">
 				        <div class="spinner"></div>

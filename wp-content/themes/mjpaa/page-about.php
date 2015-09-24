@@ -20,20 +20,24 @@ get_header(); ?>
 			<h2 class="section-title animate fadeIn">Our Mission</h2> 
 			<div class="mission" id="mission">
 			  <p>
-				<ul>
-				  <li>To provide the highest quality teaching staff and academy environment.</li>
-				  <li>To provide proper technical instruction in all curriculum offerings.</li>
-				  <li>To provide the technical instruction necessary for anyone desiring a professional career.</li>
-				  <li>To provide a variety of performing opportunities for students to utilize their artistic achievements.</li>
-				  <li>To promote lifelong learning skills, fitness awareness, and positive self-attitude and self-image.</li>
-				  <li>To promote a professional and disciplined attitude in class, rehearsal and performance.</li>
-				  <li>To teach the value of all aspects of the arts, incorporating a fun experience.</li>
-				</ul>
+				  To educate, empower and inspire students of all ages and abilities in a safe, stimulating environment. To create a safe haven where students can explore their creativity, develop self-confidence, overcome fears and explore various pathways to express their inner selves. To provide our students the vehicle to find their inner voice and learn life lessons that will help mold them into successful young adults. To share our passion for the arts and make a difference in this world one child at a time!
 			  </p>
 			</div><hr /><!--/.mission-->
 			<div class="mission" id="vision">
 			  <h2 class="section-title">Our Vision</h2> 
-			  <p>**** NEED content</p>
+			  <ul>
+			  	<li>To offer a place where all artistic disciplines can be explored; allowing students to discover their own creative preference and style.</li>
+			  	<li>To provide the highest quality teaching staff and academy environment. </li>
+			  	<li>To educate to our fullest potential utilizing the proper technical instruction in all curriculum offerings.</li>
+			  	<li>To hold true to the history of the performing arts as passed down from generation to generation while incorporating the new teachings of today’s vibrant dance styles.</li>
+			  	<li>To help students develop the self-confidence necessary to find their inner voice and succeed in a competitive society. </li>
+			  	<li>To create a safe, nurturing environment where all students can learn at their own pace regardless of their age or abilities.</li>
+			  	<li>To provide a faculty that is knowledgeable and willing to utilize various teaching techniques so that each individual can soar. </li>
+			  	<li>To offer a variety of performing opportunities for students to incorporate their artistic achievements. </li>
+			  	<li>To instill lifelong learning skills. </li>
+			  	<li>To promote a professional and disciplined attitude in class, rehearsal and performance that will contribute to each student’s overall work ethics.</li>
+			  	<li>To teach the value of all aspects of the arts, incorporating a fun experience and memories to last a lifetime. </li>
+			  <ul>
 			</div><!--/.vision-->
 		</div><!--/.col-->
 		
@@ -46,9 +50,9 @@ get_header(); ?>
 		<div class="col-sm-12" id="faculty">
 		  <div class="our-history" id="history">
 			  <h2 class="section-title">Our History</h2> 
-				<p>For over 35 years, Mary Jo's Performing Arts Academy (MJPAA) has been a leader in the bay area specializing in Dance, Acting, Voice and Musical Theater education. Our students not only receive an education of excellence, but develop friendships and a lifetime appreciation of the arts. The Academy began in 1978 as Mary Jo's Dance Studio and has grown to include all the performing arts disciplines. Under the tutelage of Artistic Director, Mary Jo Scanio, it is noted on a national level for superior training in the performing arts, and was named one of the top 50 dance schools in the United States in 2004 by Dance Spirit Magazine. Since then, it has continued to remain on the honor roll of Outstanding Dance Schools from 2005 to the present. Currently, the Academy is one of the Federations of Dance Competition's Top 25 schools in the Southeast Region, 2011 FDC People's Choice Award Winner and power ranked with the World Dance Championship Series!</p><br />
-				<p>The Academy is the home of <a href="http://tbttt.org" target="_blank">The Tampa Bay Triple Threat Theatre</a>, <a href="<?php bloginfo('url'); ?>/universal-movement">The Universal Movement Performing Arts Company</a> and the Classical Ballet of Tampa. There are a variety of disciplines and levels provided for all ages from recreational to those wanting to pursue the arts as a career. In addition, we have a Competitive Team, Performance Team and Youth Theatre. The faculty is comprised of caring highly trained instructors who hold professional degrees and certification to teach in their specific disciplines. They represent years of professional performing careers that enhances and develops our programs and curriculum. All have had extensive teaching experience and are continually increasing their knowledge through training workshops, clinics and conventions.</p><br />
-				<p>MJPAA is dedicated to providing the tools and life lessons necessary for students to effectively perform and compete in the national marketplace. It is our goal to provide excellence in performing arts education while instilling in each individual the confidence and self-esteem necessary to succeed in any field they choose. The physical, mental and emotional discipline and enjoyment derived by studying the arts are unmatched by any other athletic endeavor!</p><br />
+				<p>For over 35 years, Mary Jo's Performing Arts Academy (MJPAA) has been a leader in the Tampa bay area specializing in Dance, Acting, Voice and Music education. Our distinctive combination of performing arts curricula and professional compassionate faculty provides students an edifying experience while developing friendships and a lifelong appreciation of the arts. Under the tutelage of Artistic Director Mary Jo Scanio, the Academy has grown to incorporate education in all areas of the performing arts and has emerged today as one of the finest training facilities in the southeast region. MJPAA was named one of the top 50 dance schools in the United States in 2004 by Dance Spirit Magazine. Since then, it has continued to remain on the honor roll of Outstanding Dance Schools from 2005 to the present. </p><br />
+				<p>The Academy is the home of <a href="http://tbttt.org" target="_blank">The Tampa Bay Triple Threat Theatre</a>, <a href="<?php bloginfo('url'); ?>/universal-movement">The Universal Movement Performing Arts Company</a> and the Classical Ballet of Tampa. There are a variety of disciplines and levels provided for all ages from recreational to those wanting to pursue the arts as a career. Opportunities for our students to showcase their talents throughout the year is abundant and ranges from Ballet and Musical Theater Productions to community outreach presentations and events. </p><br />
+				<p>MJPAA is founded on the belief that arts education is character education, instilling the discipline, self confidence, creativity and life lessons necessary for students to succeed in any path they choose. The Academy has been home to over 1000's of aspiring artists, many who are currently enjoying careers in the performing arts as entertainers, choreographers and educators. However, you will also find many more of our former students who through the discipline of arts education are soaring in science, technology liberal arts, and most importantly, Life! </p><br />
 			</div><hr /><!--/.our-history-->
 			
 				<h3 class="section-title">Our Faculty &amp; Staff</h3> 
@@ -68,7 +72,10 @@ get_header(); ?>
 						   <h6>- Pam Matthews, Client Specialist</h6>
 						   <h6>- Sean McDonald, Client Specialist</h6>
 						 </div><!--/.col-->
-						 <div class="col-sm-6 col-sm-offset-2 faculty" style="margin-top:-30px;">
+						 <div class="hidden-xs col-sm-6 col-sm-offset-2 faculty" style="margin-top:-30px;">
+						   <img src="<?php bloginfo('stylesheet_directory'); ?>/img/about_img.jpg" />
+						 </div>
+						 <div class="visible-xs col-sm-6 col-sm-offset-2 faculty" style="margin-top:30px;">
 						   <img src="<?php bloginfo('stylesheet_directory'); ?>/img/about_img.jpg" />
 						 </div><!--/.col-->
 					  </div><!--/.admin-->
@@ -156,7 +163,11 @@ get_header(); ?>
 			</ul>
 		   </div>
 		   <div class="col-sm-1 video-tour">
-		   <video width="380" height="325" style="width:380px;height:325px;" controls>
+		   <video class="hidden-xs" width="380" height="325" style="width:380px;height:325px;" controls>
+			  <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaatour.mp4" type="video/mp4">
+			  <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaatour.ogg" type="video/ogg">
+		  </video>
+		  <video class="visible-xs" width="100%" height="425" style="width:380px;height:325px;" controls>
 			  <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaatour.mp4" type="video/mp4">
 			  <source src="<?php bloginfo('stylesheet_directory'); ?>/img/video/mjpaatour.ogg" type="video/ogg">
 		  </video>
