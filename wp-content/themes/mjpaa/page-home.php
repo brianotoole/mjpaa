@@ -46,7 +46,7 @@ get_header(); ?>
 			  	<div class="col-sm-2">
 					 <div class="hidden-xs ih-item circle"><a href="<?php bloginfo('url'); ?>/classes/dance-classical-ballet-of-tampa">
 				        <div class="spinner"></div>
-						   <div class="img"><img src="http://placeimg.com/100/100/nature" alt="img"></div>
+						   <div class="img"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/circle1.jpg" alt="Dance and Classical Ballet of Tampa, MJPAA"></div>
 				        <div class="info">
 				          <div class="info-back">
 				             <p>-View Classes-</p>
@@ -64,7 +64,7 @@ get_header(); ?>
 			  	<div class="col-sm-2">
 					 <div class="hidden-xs ih-item circle"><a href="<?php bloginfo('url'); ?>/classes/acting-theater">
 				        <div class="spinner"></div>
-						  <div class="img"><img src="http://placeimg.com/100/100/people" alt="img"></div>
+						  <div class="img"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/circle2.jpg" alt="Acting and Theater Tampa, MJPAA"></div>
 				        <div class="info">
 				          <div class="info-back">
 				             <p>-View Classes-</p>
@@ -82,7 +82,7 @@ get_header(); ?>
 			  	<div class="col-sm-2">
 					 <div class="hidden-xs ih-item circle"><a href="<?php bloginfo('url'); ?>/classes/music-instruments-voice">
 				        <div class="spinner"></div>
-						  <div class="img"><img src="http://placeimg.com/100/100/tech" alt="img"></div>
+						  <div class="img"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/circle3.jpg" alt="img"></div>
 				        <div class="info">
 				          <div class="info-back">
 				             <p>-View Classes-</p>
@@ -100,7 +100,7 @@ get_header(); ?>
 			  	<div class="col-sm-2">
 					 <div class="hidden-xs ih-item circle"><a href="<?php bloginfo('url'); ?>/classes/acrobatics">
 				        <div class="spinner"></div>
-						  <div class="img"><img src="http://placeimg.com/100/100/animals" alt="img"></div>
+						  <div class="img"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/circle4.jpg" alt="img"></div>
 				        <div class="info">
 				          <div class="info-back">
 				            <p>-View Classes-</p>
@@ -184,7 +184,7 @@ get_header(); ?>
 	<div class="intro row" id="contain">
 		<div class="col-sm-12 why">
 		  <h3>Why Choose Us?</h3>
-		  <h6>We offer a complete performing arts curriculum with extensive classes in Dance, Acting, Voice and Music. Each program has a variety of levels and culminates in performances to share the student’s progression. Students who train at our Academy have the capability of becoming a triple threat performer, excelling in dance, acting and voice. </h6>
+		  <h6>We offer a complete performing arts curriculum with extensive classes in Dance, Acting, Voice and Music. Each program has a variety of levels and culminates in performances to share the student’s progression. Students who train at our Academy have the capability of becoming a triple threat performer, excelling in dance, acting and voice.</h6>
 		</div><!--/.why-->
 	</div>
 </section>
