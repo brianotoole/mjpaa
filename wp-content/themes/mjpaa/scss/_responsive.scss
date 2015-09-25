@@ -295,7 +295,7 @@ h6 { font-size: 16px; line-height: 20px; }
 	body.home .site-header,
 	.site-header {
 		position: fixed;
-		padding: 0 20px;
+		padding: 0 10px;
 		top: 0;
 	    height: 110px;
 	    background: $maroon;
@@ -398,6 +398,9 @@ h6 { font-size: 16px; line-height: 20px; }
 			margin: 0;
 		}
 
+	}
+	img.thumbnail {
+		max-width: 250px;
 	}
 	.mobile-pad {
 		padding: 0 10px;
