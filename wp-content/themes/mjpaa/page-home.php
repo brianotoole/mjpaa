@@ -198,7 +198,7 @@ get_header(); ?>
 	
 		<div class="col-sm-12">
 			<h3>Ready to Discover the Difference?</h3>
-			<a class="button gold" href="<?php bloginfo('url'); ?>/wp-content/uploads/2015/09/Admittance-Form.pdf" target="_blank">Try a Free Trial Class Now</a>
+			<a class="button gold" href="<?php bloginfo('url'); ?>/general-info/trial">Try a Free Trial Class Now</a>
 		</div>
 		
 	</div><!-- grid -->
