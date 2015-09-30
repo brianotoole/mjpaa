@@ -1,4 +1,4 @@
-<?php $query = new WP_Query( 'posts_per_page=3' ); //latest news on homepage: only show 3 recent posts ?>
+<?php $query = new WP_Query( 'posts_per_page=4' ); //latest news on homepage: only show 3 recent posts ?>
 <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
  
 <div class="col-sm-12 descrip">
