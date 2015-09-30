@@ -35,6 +35,7 @@
 					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/events">Events</a></li>
 					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/about">About Us</a></li>
 					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/general-info/birthday-parties">Birthday Parties</a></li>
+					<li><i class="fa fa-chevron-right"></i><a href="http://tbttt.org" target="_blank">Tampa Bay Triple Threat Theatre</a></li>
 				</ul>
 			</div><!-- .site-info -->
 			<div class="family col-sm-4">
