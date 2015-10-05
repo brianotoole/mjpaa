@@ -1,7 +1,13 @@
 /* Media Queries ----------------------------------------------------------- */
+@media screen and (min-width: 2100px) {
+	.outer {
+		min-height: 550px!important;
+	}
+}
+
 @media screen and (min-width: 1900px) {
 	.outer {
-		min-height: 530px;
+		min-height: 530px!important;
 	}
 }
 @media screen and (min-width: 1600px) {
