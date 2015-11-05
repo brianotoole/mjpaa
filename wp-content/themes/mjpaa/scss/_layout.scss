@@ -1541,6 +1541,10 @@ Interior Page Defaults
 /*--------------------------------------------------------------
 Default Sidebar
 --------------------------------------------------------------*/
+body.single-class .widget-title {
+	border-bottom: none;
+}
+
 .sidebar {
 	width: 100%;
 	margin: 0;
