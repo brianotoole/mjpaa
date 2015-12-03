@@ -12,8 +12,8 @@
 	  <?php dynamic_sidebar( 'sidebar-1' ); ?>
 	  
 	  <!-- Event Single Sidebar -->
-	  <?php if ( is_singular() && get_field('event_registration_link') ) :?>
-	    <a href="<?php the_field('event_registration_link'); ?>" class="button register" target="_blank"><li>Register</li></a>
+	  <?php if ( is_singular() && get_field('event_button_text') ) :?>
+	    <a href="<?php the_field('event_registration_link'); ?>" class="button register" target="_blank"><li><?php the_field('event_button_text'); ?></li></a>
 	  <?php endif ; ?>
 	  
 	  <!-- Class Single Sidebar -->
@@ -87,7 +87,8 @@
 					} else {
 						echo "$grade->name"; 
 					}
-				$i++;
+				 
+				 $i++;
 				
 				} ?>
 			  </em>
