@@ -57,7 +57,7 @@ get_header(); ?>
 				</div><!-- #primary -->
 			</div><!--/.col-->
 			<div class="col-sm-4 latest-news">
-				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category( 'performances' ) ) :?>
+				<?php if ( is_singular( 'post' ) && in_category( 'news' ) ) :?>
 					<h4 class="latest-title">News &amp; Events</h4>
 					<?php get_template_part( 'part', 'latest_news' ); ?>
 				<?php endif ; ?>
