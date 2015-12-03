@@ -11,8 +11,8 @@
 	<div id="secondary" class="sidebar widget-area col-3-12" role="complementary">
 	  <?php dynamic_sidebar( 'sidebar-1' ); ?>
 	  
-	  <!-- Event Single Sidebar -->
-	  <?php if ( is_singular() && get_field('event_button_text') ) :?>
+	  <!-- Event & Performances Single Sidebar -->
+	  <?php if ( is_singular('post') && get_field('event_button_text') ) :?>
 	    <a href="<?php the_field('event_registration_link'); ?>" class="button register" target="_blank"><li><?php the_field('event_button_text'); ?></li></a>
 	  <?php endif ; ?>
 	  
