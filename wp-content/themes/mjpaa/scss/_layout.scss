@@ -284,9 +284,9 @@ textarea {
 }
 /*button for mobile with arrow*/
 .button.mobile {
-	background: darken($smoke,5%);
+	background: white;
 	color: $black;
-	border: 1px solid rgba($gray,0.25);
+	border: 2px solid rgba($gray,0.25);
 	text-align: left;
 	font-size: 0.9em;
 	text-transform: capitalize;
@@ -993,9 +993,9 @@ Homepage
 				&:before {
 					content: '\f005';
 					font-family: fontAwesome;
-					color: $gold;
-					font-size: 0.85em;
-					padding-right: 7px;
+					color: $maroon;
+					font-size: 0.7em;
+					padding-right: 5px;
 				}
 			}
 		}
@@ -1451,8 +1451,8 @@ About page template
 				&:before {
 					content: '\f00c';
 					font-family: fontAwesome;
-					font-size: 0.85em;
-					padding-right: 7px;
+					font-size: 0.7em;
+					padding-right: 5px;
 					color: $maroon;
 				}
 			}

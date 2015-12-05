@@ -434,6 +434,9 @@ h6 { font-size: 16px; line-height: 20px; }
 			font-size: 0.9em;
 		}
 	}
+	body.page-template-page-about .about .program-titles {
+		padding: 0 10px;
+	}
 	.entry-content {
 		padding: 0 10px;
 	}
@@ -522,9 +525,9 @@ h6 { font-size: 16px; line-height: 20px; }
 			margin-bottom: -30px;
 		}
 		a li, li a {
-			background: darken($smoke,5%);
+			background: white;
 			color: $black;
-			border: 1px solid rgba($gray,0.25);
+			border: 2px solid rgba($gray,0.25);
 			text-align: left;
 			font-size: 0.9em;
 			text-transform: capitalize;
@@ -549,6 +552,14 @@ h6 { font-size: 16px; line-height: 20px; }
 		}	
 
 	}
+	
+	.button.register {
+		background: inherit;
+		&:hover, &:focus {
+			background: transparent;
+		}
+	}
+	
 	.sidebar {
 		padding: 0;
 		.widget-title {

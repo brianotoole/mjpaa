@@ -1,8 +1,9 @@
 /* General styles for all menus */
 .cbp-spmenu {
-	background: $lightgray;
+	background: $black;
 	position: fixed;
 	box-shadow: 0 0 7px rgba($gray,0.5);
+	transition: width 0.3s ease;
 	input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
 		padding: 20px;
 	}
@@ -31,7 +32,7 @@
 
 .cbp-spmenu a {
 	display: block;
-	color: $black;
+	color: $smoke;
 	font-family: $font-heading;
 	font-size: 1.1em;
 	font-weight: 400;
@@ -42,11 +43,10 @@
 		position: absolute;
 		right: 20px;
 		margin-top: 2px;
-		color: $maroon;
+		color: $smoke;
 	}
 	&:hover, &:focus {
-		background: darken($lightgray,5%);
-		color: black;
+		color: white;
 	}
 }
 
@@ -107,7 +107,8 @@
 .cbp-spmenu-right.cbp-spmenu-open {
 	width: 100%; /*full-width menu*/
 	right: 0px;
-	overflow-x: scroll;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 /* Horizontal menu that slides from the top or bottom */
