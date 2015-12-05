@@ -7,7 +7,7 @@
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/favicon.ico" type="image/ico">
 <?php wp_head(); ?>
 </head>
