@@ -194,9 +194,20 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 21076,
+		"initialSize": 6900,
 		"inputAbbreviatedPath": "\/img\/circle3.jpg",
 		"outputAbbreviatedPath": "\/img\/circle3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/circle3_old.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21076,
+		"inputAbbreviatedPath": "\/img\/circle3_old.jpg",
+		"outputAbbreviatedPath": "\/img\/circle3_old.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

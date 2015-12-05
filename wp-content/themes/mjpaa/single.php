@@ -19,7 +19,7 @@ get_header(); ?>
 				  <div class="interior-callout"><?php the_field('interior_callout'); ?></div>
 				<?php endif; ?>
 				
-				<?php if ( is_singular('post') ) :?>
+				<?php if ( is_singular('post') && ! in_category( array( '1' ) )  ) : //all but news ?>
 				    <p class="pad-fix"><strong>Event Date:</strong> <?php the_field('event_start_date'); ?>
 				    <?php if( get_field('event_end_date') ): //if end date is entered... ?>
 				    - <?php the_field('event_end_date'); ?>
