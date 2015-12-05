@@ -85,6 +85,8 @@
 </div><!-- #page --> 
 
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script type='text/javascript' src='<?php bloginfo('stylesheet_directory'); ?>/js/instantclick.js'></script>
+<script data-no-instant>InstantClick.init();</script>
 <?php wp_footer(); ?>
 <script>
 //init top-bar search
