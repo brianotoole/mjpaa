@@ -199,4 +199,29 @@ get_header(); ?>
 </div><!--/.page-about-->
 <?php endwhile; // end of the loop. ?>
 <?php get_footer(); ?>
-	
+
+<script>
+$(function() {
+    var $sidebar   = $("#secondary"),
+    	$sidebarHeight	= 825,
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topMargin = 25;
+
+$window.scroll(function() {
+
+    if ($window.scrollTop() > offset.top && $window.scrollTop() <= $sidebarHeight && $(window).width() >= 899) { //not on mobile
+        $sidebar.stop().animate({
+            marginTop: $window.scrollTop() - offset.top + topMargin
+        }, 400);
+        
+    } else {
+        $sidebar.stop().animate({
+            marginTop: 0
+        }, 400);
+    }
+    
+});
+
+});
+</script>
