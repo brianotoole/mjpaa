@@ -884,7 +884,7 @@ Homepage
 	}//.service
 	
 	.latest-news {
-		min-height: 900px;
+		min-height: auto;
 		margin: -100px 0 0 0;
 		padding: 40px 54px 72px;
 		background: white;
@@ -895,7 +895,7 @@ Homepage
 		
 		&.sidebar-higher { //move sidebar up higher on about page
 			margin: -140px 0 -40px 0;
-			min-height: auto;
+			min-height: 1150px;
 		}
 		
 		&:before { //border above
