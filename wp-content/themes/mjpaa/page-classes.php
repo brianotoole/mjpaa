@@ -28,6 +28,7 @@ get_header(); ?>
 	<div id="secondary" class="classes-sidebar widget-area col-3-12 pull-left" role="complementary">
 		<h3 class="page-title animate fadeIn">Find Classes</h3>
 		<p class="info">Select an option below to filter classes.</p>
+		<a class="clear-results" value="Refresh Page" onClick="window.location.reload()" href="" title="Click to Selected Class Filtering Options">Clear / reset options</a>
 		  <?php echo do_shortcode('[ULWPQSF id=49 formtitle="0" button="0" text_position="bottom"]'); ?>
 	</div><!-- .sidebar --> 
 

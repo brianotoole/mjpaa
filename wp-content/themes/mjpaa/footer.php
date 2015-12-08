@@ -85,25 +85,24 @@
 </div><!-- #page --> 
 
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-<script type='text/javascript' src='<?php bloginfo('stylesheet_directory'); ?>/js/instantclick.js'></script>
-<script data-no-instant>InstantClick.init();</script>
 <?php wp_footer(); ?>
 <script>
-//init top-bar search
+// Init top-bar search
 new UISearch( document.getElementById( 'sb-search' ) );
-//video modal
+// Video modal
 jQuery("#modal-btn").click(function(){
   $("#umVideo").modal('show');
 });
 </script>
-<script type="text/javascript">// <![CDATA[
+<script type="text/javascript">
+// Google Analytics
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-64721160-1', 'auto');
   ga('send', 'pageview');
-// ]]></script>
+</script>
 </body>
 </html>

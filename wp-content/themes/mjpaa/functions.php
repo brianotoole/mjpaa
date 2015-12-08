@@ -213,7 +213,7 @@ function customize_output($results , $arg, $id, $getdata ){
 				<h5><?php echo $numberOfQueries; ?> result found:</h5>
 				
 			<?}elseif ($numberOfQueries == 0){?>
-				<h5>No results found.</h5>
+				<h5>No results found. <a class="clear-results" value="Refresh Page" onClick="window.location.reload()" href="" title="Click to Selected Class Filtering Options">Click here to clear / reset options.</a></h5>
 			    <a class="button transparent border" href="<?php bloginfo('url'); ?>/classes/help">Need Help Finding a Class?</a>
 				
 			<?}else{?>

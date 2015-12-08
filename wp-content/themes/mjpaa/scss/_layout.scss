@@ -884,7 +884,7 @@ Homepage
 	}//.service
 	
 	.latest-news {
-		min-height: 900px;
+		min-height: 930px;
 		margin: -100px 0 0 0;
 		padding: 40px 54px 72px;
 		background: white;
@@ -1817,6 +1817,17 @@ Interior Page Template: Classes / Class Search
 	p.info {
 		font-size: 0.85em;
 		margin-bottom: 2px;
+	}
+	
+	.clear-results {
+		display: block;
+		margin-bottom: 20px;
+		text-decoration: underline;
+		font-size: 0.9em;
+		color: $maroon;
+		&:hover {
+			color: darken($maroon, 7%);
+		}
 	}
 	
 	select,input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
