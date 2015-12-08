@@ -85,6 +85,7 @@
 </div><!-- #page --> 
 
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
 <?php wp_footer(); ?>
 <script>
 // Init top-bar search
@@ -103,6 +104,8 @@ jQuery("#modal-btn").click(function(){
 
   ga('create', 'UA-64721160-1', 'auto');
   ga('send', 'pageview');
+  
+
 </script>
 </body>
 </html>
