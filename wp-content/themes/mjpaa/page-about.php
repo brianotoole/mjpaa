@@ -17,7 +17,7 @@ get_header(); ?>
 		  <?php get_sidebar(); ?>
 		</div><!--/.col-->
 		<div class="col-sm-8 no-padding">
-			<h2 class="section-title animate fadeIn">Our Mission</h2> 
+			<h2 class="section-title">Our Mission</h2> 
 			<div class="mission" id="mission">
 			  <p>
 				  To educate, empower and inspire students of all ages and abilities in a safe, stimulating environment. To create a safe haven where students can explore their creativity, develop self-confidence, overcome fears and explore various pathways to express their inner selves. To provide our students the vehicle to find their inner voice and learn life lessons that will help mold them into successful young adults. To share our passion for the arts and make a difference in this world one child at a time!
