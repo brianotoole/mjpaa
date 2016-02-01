@@ -339,6 +339,15 @@ textarea {
 	}
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    margin-bottom: 1em;
+    border-bottom: 2px solid $lightgray;
+    margin: 1em auto 1.5em auto;
+    max-width: 97%;
+}
+
 /*--------------------------------------------------------------
 Top-Bar, Header, & Navigation
 --------------------------------------------------------------*/
@@ -1512,6 +1521,20 @@ Interior Page Defaults
 	a {
 		text-decoration: underline;
 		color: maroon;
+	}
+}
+
+.testimonial,
+.alumni-images {
+	hr {
+        border-bottom: 2px solid $lightgray;
+        margin: 1.5em 0;
+        height: 0;
+        background-color: transparent;
+	}
+	i {
+		padding-right: 0.25em;
+		color: darken($lightgray,7%);
 	}
 }
 .hentry {

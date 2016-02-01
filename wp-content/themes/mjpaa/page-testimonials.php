@@ -22,7 +22,7 @@ get_header(); ?>
 	<div class="intro row" id="contain">
 		<div class="col-sm-12">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<div class="entry-content">
+				<div class="entry-content testimonial">
 					<?php
 					//testimonials, display all "testimonial" post_type
 					$args = array( 
