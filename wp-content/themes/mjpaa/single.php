@@ -19,7 +19,7 @@ get_header(); ?>
 				  <div class="interior-callout"><?php the_field('interior_callout'); ?></div>
 				<?php endif; ?>
 				
-				<?php if ( is_singular('post') && ! in_category( array( '1' ) )  ) : //all but news ?>
+				<?php if ( is_singular('post') && ! in_category( array( '1', '188' ) )  ) : //all but news & blog ?>
 				    <p class="pad-fix"><strong>Event Date:</strong> <?php the_field('event_start_date'); ?>
 				    <?php if( get_field('event_end_date') ): //if end date is entered... ?>
 				    - <?php the_field('event_end_date'); ?>
@@ -57,7 +57,7 @@ get_header(); ?>
 				</div><!-- #primary -->
 			</div><!--/.col-->
 			<div class="col-sm-4 latest-news">
-				<?php if ( is_singular( 'post' ) && in_category( 'news' ) ) :?>
+				<?php if ( is_singular( 'post' ) && in_category( 'news' ) || in_category ( 'blog' ) ) :?>
 					<h4 class="latest-title">News &amp; Events</h4>
 					<?php get_template_part( 'part', 'latest_news' ); ?>
 				<?php endif ; ?>
