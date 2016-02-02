@@ -29,6 +29,8 @@
 			<div class="links col-sm-4">
 				<h6>Links</h6>
 				<ul>
+				    <li><i class="fa fa-chevron-right"></i><a href="https://app.jackrabbitclass.com/portal/ppLogin.asp?id=505581">Customer Login</a></li>
+				    <li><i class="fa fa-chevron-right"></i><a href="https://app.jackrabbitclass.com/reg.asp?id=505581">New Student Registration</a></li>
 					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/events">News</a></li>
 					<li><i class="fa fa-chevron-right"></i><a href="https://www.google.com/maps/dir/28.0169633,-82.495373/15906+Mapledale+Blvd,+Tampa,+FL+33624/@28.0574974,-82.5354055,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88c2bf63a0c73e1f:0x316ea2b6a463d054!2m2!1d-82.504962!2d28.098768" target="_blank">Directions</a></li>
 					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/contact">Contact Us</a></li>
