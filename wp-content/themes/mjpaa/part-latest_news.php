@@ -1,5 +1,28 @@
-<?php $query = new WP_Query( 'posts_per_page=4' ); //latest news on homepage: only show 3 recent posts ?>
-<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+<?php
+/**
+ Get posts IN ONLY 'News' & 'Events' category slug
+ Only show 4 posts
+ If more than 4 posts are available, display "view more button"
+*/
+
+$args = array (
+  'post_type' => 'post',
+    'tax_query' => array(
+        'relation' => 'AND',
+        array(
+            'taxonomy' => 'category',
+            'field' => 'slug',
+            'terms' => array( 'event', 'news'),
+            'operator' => 'IN'
+        ),
+  'order'		   => 'DESC',
+  'posts_per_page' => 4, 
+  )
+);
+
+$query = new WP_Query($args); 
+  if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); 
+?>
  
 <div class="col-sm-12 descrip">
   <h5 class="news-title"><?php the_title(); ?></h5>
