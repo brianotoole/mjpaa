@@ -2,7 +2,7 @@
 /**
  Get posts IN ONLY 'News' & 'Events' category slug
  Only show 4 posts
- If more than 4 posts are available, display "view more button"
+ If more than 4 posts are PUBLISHED, display "view more button"
 */
 
 $args = array (
@@ -17,6 +17,7 @@ $args = array (
         ),
   'order'		   => 'DESC',
   'posts_per_page' => 4, 
+  'post_status' => 'publish'
   )
 );
 
