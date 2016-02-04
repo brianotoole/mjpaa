@@ -414,3 +414,87 @@ if ( typeof define === 'function' && define.amd ) {
 	window.UISearch = UISearch;
 
 } )( window );
+
+
+
+/*
+ Send message to Slack
+*/
+
+
+	var radios = document.querySelectorAll('.wpcf7-radio input[type="radio"]');
+	
+	// when a radio input changes checked state
+	for (var i = 0; i < radios.length; i++) {
+		radios[i].addEventListener('change', showConditionalForm);
+	}
+	
+	// Give all initially hidden elements "not-applicable" value to pass validation
+	var initialHiddenElements = document.getElementsByClassName('hidden');
+	
+	for (var j = 0; j < initialHiddenElements.length; j++) {
+		var inputHidden = initialHiddenElements[j].querySelector('textarea, input');
+		inputHidden.value = "not-applicable";
+		inputHidden.tabIndex = -1;
+	}
+
+
+var payload = {
+	"text": "New Contact Form Submission via MJPAA.com",
+	"token": "xoxp-3598109530-3750486977-12183423939-49e4786b2e",
+	"attachments": [
+	
+		{
+			"pretext": "Sent by: mjpaa.com",
+			"fallback": "via <http://mjpaa.com/contact>",
+			"color": "#DA1F26",
+			"mrkdwn_in": ["pretext"],
+	
+			"fields": []
+		}
+		
+	]
+};
+
+
+function setFormData() {
+    payload.attachments[0].pretext = "Name: " + document.querySelector('input[name="your-name"]').value + "\n" + "Email: <mailto:" + document.querySelector('input[name="your-email"]').value + "|" + document.querySelector('input[name="your-email"]').value + ">" + "\n" + "Message: " + document.querySelector('textarea[name="your-message"]').value;
+	
+	}
+
+function sendPayloadToSlack() {
+	var URL = 'https://hooks.slack.com/services/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';
+	var data = JSON.stringify(payload);
+	
+	var xhr = new XMLHttpRequest();
+	
+	if (!xhr) {
+		alert('Giving up :( Cannot create an XMLHTTP instance');
+		return false;
+	}
+	
+	function xhrSuccess() {
+		console.log(xhr.responseText);
+	}
+	
+	function xhrError() {
+		console.log(xhr.responseText);
+	}
+
+	xhr.addEventListener('load', xhrSuccess);
+	xhr.addEventListener('error', xhrError);
+	xhr.addEventListener('abort', function(){alert("aborted :(");});
+	
+	xhr.open('POST', URL);
+/*
+	xhr.setRequestHeader('Content-Type', 'application/json');
+	xhr.setRequestHeader('Content-Length', data.length);
+*/
+	xhr.send(data);
+}
+
+function collectAndSend() {	
+	//serializeFormData();
+	setFormData();
+	sendPayloadToSlack();
+}
