@@ -440,7 +440,7 @@ if ( typeof define === 'function' && define.amd ) {
 
 
 var payload = {
-	"text": "New Contact Form Submission via MJPAA.com",
+	"text": "New Contact Form Submission via Website",
 	"token": "xoxp-3598109530-3750486977-12183423939-49e4786b2e",
 	"attachments": [
 	
