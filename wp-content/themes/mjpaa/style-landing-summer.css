@@ -5057,6 +5057,26 @@ Section - Quote
   padding: 20px 0; }
 
 /*--------------------------------------------------------------
+Section - Classes
+--------------------------------------------------------------*/
+.landing-classes {
+  background-color: #E5E5E5; }
+  .landing-classes .title {
+    color: #555; }
+  .landing-classes .has-emblem {
+    border-color: white; }
+  .landing-classes .emblem {
+    background: #E5E5E5; }
+    .landing-classes .emblem img {
+      border-color: white; }
+  .landing-classes .summer-list {
+    margin: 0 0 20px; }
+    .landing-classes .summer-list span {
+      display: block;
+      font-size: 0.85em;
+      color: #307cbd; }
+
+/*--------------------------------------------------------------
 Section - Call Out
 --------------------------------------------------------------*/
 .landing-callout {
