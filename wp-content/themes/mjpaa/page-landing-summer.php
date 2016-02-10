@@ -27,7 +27,7 @@ Template Name: Landing, Summer
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png">
       </a>
       <ul class="menu">
-        <a class="" href="#">Visit MJPAA.com</a>
+        <a class="visit" href="<?php bloginfo('siteurl'); ?>">Visit MJPAA.com</a>
       </ul>
     </div>
   </nav>
@@ -36,7 +36,7 @@ Template Name: Landing, Summer
 <section class="landing-hero clipped">
   <div class="contain center">
     <h1 class="title">Sweet Summer Time.</h1>
-    <h4><span>It's that time of the year again at MJPAA.<br />Register for classes today!</span></h4>
+    <h5><span>Schools out. Summer has just begun.<br />Register for classes today.</span></h5>
     <a href="" class="button border new">I am a New Student</a>
     <a href="" class="button border current">I am a Current Student</a>
   </div>
@@ -47,7 +47,7 @@ Template Name: Landing, Summer
 
 <section class="landing-intro">
   <div class="contain center padded">
-    <h2 class="title has-emblem">Our Summer Program offers</h2>
+    <h2 class="title has-emblem">Our Summer curriculum</h2>
       <div class="emblem">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-courses.png">
       </div>
@@ -58,13 +58,30 @@ Template Name: Landing, Summer
           <ul class="course-list">
 			<li class="clearfix">
 			  <div class="course pull-left">
-			    <img src="https://cdn.messagebird.com/frontend-assets/images/illustrations/icons/sms-gateway.svg">
+			    <i class="fa fa-check"></i>
 			  </div>
-			Dance &amp; Classical Ballet
+			Dance
 			</li>
 			<li class="clearfix">
 			  <div class="course pull-left">
-			    <img src="https://cdn.messagebird.com/frontend-assets/images/illustrations/icons/sms-gateway.svg">
+			    <i class="fa fa-check"></i>
+			  </div>
+			Classical Ballet
+			</li>
+		  </ul><!--/.course-list-->
+        </div><!--/.col-->
+        
+        <div class="col-sm-4">
+          <ul class="course-list">
+			<li class="clearfix">
+			  <div class="course pull-left">
+			    <i class="fa fa-check"></i>
+			  </div>
+			Music, Instruments &amp; Voice
+			</li>
+			<li class="clearfix">
+			  <div class="course pull-left">
+			    <i class="fa fa-check"></i>
 			  </div>
 			Acting &amp; Theater
 			</li>
@@ -75,32 +92,15 @@ Template Name: Landing, Summer
           <ul class="course-list">
 			<li class="clearfix">
 			  <div class="course pull-left">
-			    <img src="https://cdn.messagebird.com/frontend-assets/images/illustrations/icons/sms-gateway.svg">
-			  </div>
-			Music, Instruments &amp; Voice
-			</li>
-			<li class="clearfix">
-			  <div class="course pull-left">
-			    <img src="https://cdn.messagebird.com/frontend-assets/images/illustrations/icons/sms-gateway.svg">
+			    <i class="fa fa-check"></i>
 			  </div>
 			Acrobatics
 			</li>
-		  </ul><!--/.course-list-->
-        </div><!--/.col-->
-        
-        <div class="col-sm-4">
-          <ul class="course-list">
 			<li class="clearfix">
 			  <div class="course pull-left">
-			    <img src="https://cdn.messagebird.com/frontend-assets/images/illustrations/icons/sms-gateway.svg">
+			    <i class="fa fa-check"></i>
 			  </div>
-			Classical Ballet
-			</li>
-			<li class="clearfix">
-			  <div class="course pull-left">
-			    <img src="https://cdn.messagebird.com/frontend-assets/images/illustrations/icons/sms-gateway.svg">
-			  </div>
-			And many others!
+			... and more!
 			</li>
 		  </ul><!--/.course-list-->
         </div><!--/.col-->
