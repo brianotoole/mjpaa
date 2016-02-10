@@ -7,23 +7,23 @@ Template Name: Landing, Summer
 <!DOCTYPE html>
 <html>
 <head>
-<title>Summer</title>
+<title>Summer Registration at MJPAA</title>
     <meta charset="utf-8">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="dance tampa, summer dance tampa, tampa dance classes summer, tampa fl dance lessons, performing arts tampa, tampa summer camps, summer dance camps, summer activities tampa">
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicon.png">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lustria:100,400|Lato,300,400" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style-landing-summer.css">
+
 </head>
 <body>
 
 <header>
   <nav class="landing-nav">
     <div class="contain">
-      <a href="/" class="logo" rel="logo">
+      <a href="<?php bloginfo('siteurl'); ?>" class="logo" rel="logo" title="MJPAA">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png">
       </a>
       <ul class="menu">
@@ -35,8 +35,8 @@ Template Name: Landing, Summer
 
 <section class="landing-hero clipped">
   <div class="contain center">
-    <h1 class="title">Sweet Summer Time.</h1>
-    <h5><span>Schools out. Summer has just begun.<br />Register for classes today.</span></h5>
+    <h1 class="title">Summer is Coming</h1>
+    <h4>Don't miss out on our early bird Summer Registration Discounts.<br />Register for classes today.</span></h4>
     <a href="" class="button border new">I am a New Student</a>
     <a href="" class="button border current">I am a Current Student</a>
   </div>

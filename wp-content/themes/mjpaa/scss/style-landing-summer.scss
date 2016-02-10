@@ -1,27 +1,88 @@
 /*--------------------------------------------------------------
-Summer Landing Page Styles
+Summer Landing Page
 --------------------------------------------------------------*/
+
+// Brand colors
+$maroon: #5D0101; //mjpaa red
+$smoke: #fbfbfb;
+$lightgray: #eaeaea; //mostly for borders
+$gray: #555;
+$hr: #eaeaea;
+$black: #1F1F1F;
+$gold: #AE8648;
+
+// Summer branding colors
+$lightblue: #4e95d2; 
+$darkblue: darken($lightblue,10%);
+$yellow: #ffe153;
+$border-color: #e6e6e6;
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|100,400,500,700');
+
+$font-heading: 'PT Sans', sans-serif, Arial;
+$font-body: 'PT Serif', serif, Helvetica;
+
+// Vendors
+@import "vendor/reset";
+@import "vendor/bootstrap.grid";
+@import "vendor/font-awesome";
+
+// Layout
+@import "layout";
+
+
 /*--------------------------------------------------------------
 Base
 --------------------------------------------------------------*/
-$lightblue: #4e95d2; 
-$darkblue: darken($lightblue,10%);
-$yellow: #FFEA86;
-$border-color: #e6e6e6;
-
 html {
 	font-size: 16px;
 }
 body {
 	font-weight: 300;
 	font-size: 100%;
+	font-family: $font-body;
 	@media (max-width: 800px) {
 		font-size: 90%;
 	}
 }
 h1,h2,h3,h4,h5,h6 {
 	font-weight: 100;
-	font-family: 'Lustria';
+	font-family: $font-heading
+}
+a {}
+img,
+a img {
+	max-width: 100%;
+	height: auto;
+}
+.button {
+	&.border {
+		background-color: $yellow;
+		border: none;
+		border-bottom: 4px solid darken($yellow,25%);
+		color: $gray;
+		font-size: 1.1em;
+		font-weight: 300;
+		text-transform: none;
+		min-width: 220px;
+		margin-bottom: 0;
+		margin-left: 7.5px;
+		margin-right: 7.5px;
+		&:hover {
+			background-color: darken($yellow,10%);
+			border-color: darken($yellow,35%); //+ 10% from non-hover
+			color: darken($gray,10%);
+		}
+		@media (max-width: 800px) {
+			margin-left: 0;
+			margin-right: 0;
+			width: 100%;
+		}
+	}
+	span {
+		font-weight: 100;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -165,34 +226,6 @@ Hero
 	}	
 }
 
-.button {
-	&.border {
-		background-color: transparent;
-		border: 2px solid $yellow;
-		color: white;
-		font-size: 1em;
-		font-weight: 100;
-		text-transform: none;
-		min-width: 220px;
-		margin-bottom: 0;
-		margin-left: 5px;
-		margin-right: 5px;
-		&:hover {
-			background-color: $yellow;
-			border-color: white;
-			color: #29a6db;
-		}
-		@media (max-width: 800px) {
-			margin-left: 0;
-			margin-right: 0;
-			width: 100%;
-		}
-	}
-	span {
-		font-weight: 100;
-	}
-}
-
 /*.page-scroll {
     position: absolute;
     width: 23px;
@@ -241,12 +274,8 @@ Section - Intro
 
 .course-list {
     list-style: none;
-    margin: 30px 0 0;
+    margin: 0 auto;
     padding: 0;
-    
-    @media (max-width: 800px) {
-	    margin: 0;
-    }
     
     li {
 	  text-align: left;  
@@ -287,8 +316,11 @@ Section - Memories
   max-width: 100%;
   
   .padded {
-  	  padding: 0px 0 90px;
+  	  padding: 0 0 90px;
 	  max-width: 100%;
+	  @media (max-width: 900px) {
+	  	padding-bottom: 30px;
+	  }
   }
   
   .stack:before, .stack:after {
@@ -296,6 +328,15 @@ Section - Memories
     @media (max-width: 500px) {
 	    display: none;
     }
+  }
+  .stack.rotated-left img {
+      transform: rotate(0deg);  
+  }
+  .stack.rotated-right img {
+	  transform: rotate(0deg);
+	  @media (min-width: 900px) {
+	  	margin-top: -17px;
+	  }
   }
   
 }
