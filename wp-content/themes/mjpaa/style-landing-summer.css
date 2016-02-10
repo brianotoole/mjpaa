@@ -4864,7 +4864,7 @@ Major Classes
 .emblem {
   height: 28px;
   width: 28px;
-  background: #307cbd;
+  background: #1999c7;
   margin: 0 auto;
   padding: 1px;
   position: relative;
@@ -4881,8 +4881,7 @@ header {
   min-width: 320px;
   position: absolute;
   z-index: 1002;
-  top: 0;
-  border-bottom: 1px solid rgba(230, 230, 230, 0.25); }
+  top: 0; }
 
 .landing-nav {
   position: relative;
@@ -4944,8 +4943,8 @@ Hero
   min-height: 600px;
   padding-top: 90px;
   color: white;
-  background-image: -webkit-linear-gradient(45deg, #4e95d2 0%, #307cbd 50%, #307cbd 100%);
-  background-image: linear-gradient(45deg, #4e95d2 0%, #307cbd 50%, #307cbd 100%);
+  background-image: -webkit-linear-gradient(45deg, #2EB5E5 0%, #1999c7 50%, #1999c7 100%);
+  background-image: linear-gradient(45deg, #2EB5E5 0%, #1999c7 50%, #1999c7 100%);
   overflow: hidden; }
   .landing-hero .contain {
     width: 60%;
@@ -5060,7 +5059,7 @@ Section - Quote
 Section - Call Out
 --------------------------------------------------------------*/
 .landing-callout {
-  background-color: #307cbd; }
+  background-color: #1999c7; }
 
 /*--------------------------------------------------------------
 Animations
@@ -5079,3 +5078,151 @@ Animations
   100% {
     -webkit-transform: translateY(18px);
             transform: translateY(18px); } }
+.triangle {
+  border: 50px solid #BBCD77;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  width: 0;
+  height: 0;
+  display: inline-block;
+  position: absolute;
+  bottom: 0; }
+
+.triangle.one {
+  border-bottom-color: #a8bf52; }
+
+.triangle.two {
+  border-width: 120px;
+  left: 50px;
+  border-bottom-color: #cedb9c;
+  z-index: 1; }
+
+.triangle.three {
+  border-width: 100px;
+  left: 150px; }
+
+.triangle.four {
+  left: 200px; }
+
+.triangle.five {
+  left: 300px;
+  border-bottom-color: #a8bf52; }
+
+.sun {
+  position: absolute;
+  top: 10px;
+  right: 225px;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #CEDB9C;
+  opacity: 0.9;
+  box-shadow: 0px 0px 40px 16px #BBCD77;
+  overflow: hidden; }
+
+.ray_box {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70px;
+  -webkit-animation: sunRays 120s linear infinite;
+          animation: sunRays 120s linear infinite; }
+
+.ray {
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+  margin-left: 10px;
+  border-radius: 80% 80% 0 0;
+  position: absolute;
+  opacity: 0.1; }
+
+.ray1 {
+  height: 170px;
+  width: 30px;
+  -webkit-transform: rotate(180deg);
+  top: -175px;
+  left: 15px; }
+
+.ray2 {
+  height: 100px;
+  width: 8px;
+  -webkit-transform: rotate(220deg);
+  top: -90px;
+  left: 75px; }
+
+.ray3 {
+  height: 170px;
+  width: 50px;
+  -webkit-transform: rotate(250deg);
+  top: -80px;
+  left: 100px; }
+
+.ray4 {
+  height: 120px;
+  width: 14px;
+  -webkit-transform: rotate(305deg);
+  top: 30px;
+  left: 100px; }
+
+.ray5 {
+  height: 140px;
+  width: 30px;
+  -webkit-transform: rotate(-15deg);
+  top: 60px;
+  left: 40px; }
+
+.ray6 {
+  height: 90px;
+  width: 50px;
+  -webkit-transform: rotate(30deg);
+  top: 60px;
+  left: -40px; }
+
+.ray7 {
+  height: 180px;
+  width: 10px;
+  -webkit-transform: rotate(70deg);
+  top: -35px;
+  left: -40px; }
+
+.ray8 {
+  height: 120px;
+  width: 30px;
+  -webkit-transform: rotate(100deg);
+  top: -45px;
+  left: -90px; }
+
+.ray9 {
+  height: 80px;
+  width: 10px;
+  -webkit-transform: rotate(120deg);
+  top: -65px;
+  left: -60px; }
+
+.ray10 {
+  height: 190px;
+  width: 23px;
+  -webkit-transform: rotate(150deg);
+  top: -185px;
+  left: -60px; }
+
+@-webkit-keyframes sunRays {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes sunRays {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }

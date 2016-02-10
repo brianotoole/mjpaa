@@ -26,14 +26,34 @@ Template Name: Landing, Summer
       <a href="<?php bloginfo('siteurl'); ?>" class="logo" rel="logo" title="MJPAA">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png">
       </a>
-      <ul class="menu">
+      <!--<ul class="menu">
         <a class="visit" href="<?php bloginfo('siteurl'); ?>">Visit MJPAA.com</a>
-      </ul>
+      </ul>-->
     </div>
   </nav>
+<div class="sun">
+    <div class="ray_box">
+        <div class="ray ray1"></div>
+        <div class="ray ray2"></div>
+        <div class="ray ray3"></div>
+        <div class="ray ray4"></div>
+        <div class="ray ray5"></div>
+        <div class="ray ray6"></div>
+        <div class="ray ray7"></div>
+        <div class="ray ray8"></div>
+        <div class="ray ray9"></div>
+        <div class="ray ray10"></div>
+    </div>
+</div>
 </header>
 
 <section class="landing-hero clipped">
+
+<div class="triangle one"></div>
+<div class="triangle two"></div>
+<div class="triangle three"></div>
+<div class="triangle four"></div>
+<div class="triangle five"></div>
   <div class="contain center">
     <h1 class="title">Summer is Coming</h1>
     <h4>Don't miss out on our early bird Summer Registration Discounts.<br />Register for classes today.</span></h4>
