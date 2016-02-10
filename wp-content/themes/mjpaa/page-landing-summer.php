@@ -32,19 +32,62 @@ Template Name: Landing, Summer
     </div>
   </nav>
 <div class="sun">
-    <div class="ray_box">
-        <div class="ray ray1"></div>
-        <div class="ray ray2"></div>
-        <div class="ray ray3"></div>
-        <div class="ray ray4"></div>
-        <div class="ray ray5"></div>
-        <div class="ray ray6"></div>
-        <div class="ray ray7"></div>
-        <div class="ray ray8"></div>
-        <div class="ray ray9"></div>
-        <div class="ray ray10"></div>
+            <div class="sun-face">
+                <div class="sun-hlight"></div>
+
+            </div>
+            <div class="sun-anime">
+            <div class="sun-ball"></div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+        </div>
     </div>
-</div>
 </header>
 
 <section class="landing-hero clipped">
