@@ -138,59 +138,6 @@ Template Name: Landing, Summer
   </div>
 </section>
 
-<section class="landing-classes">
-  <div class="contain center padded">
-    <h2 class="title has-emblem">Summer Class List</h2>
-      <div class="emblem">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-other.png">
-      </div> 
-      
- <?php
-
-// Arguments
-$args = array (
-  'post_type' => 'class',
-    'tax_query' => array(
-        'relation' => 'AND',
-        array(
-            'taxonomy' => 'session',
-            'field' => 'slug',
-            'terms' => array( 'summer-camps', 'summer-classes'),
-            'operator' => 'IN'
-        ),
-  'order'		   => 'DESC',
-  'posts_per_page' => 4, 
-  'post_status' => 'publish'
-  )
-);
-// The Query
-$loop = new WP_Query( $args );
-
-// The Loop
-if ( $loop->have_posts() ) {
-	while ( $loop->have_posts() ) {
-		$loop->the_post(); ?>
-
-  <div class="col-sm-3 summer-list">
-    <h6 class="class-title">
-      <a href="<?php the_permalink(); ?>">
-        <?php the_title(); ?>
-        <span>View Class <i class="fa fa-caret-right"></i></span>
-      </a>
-    </h6>
-  </div>
-
-
-<?php } 
-} else {
-	// no posts found
-}
-// Restore original Post Data
-wp_reset_postdata();
-?>     
-  </div>
-</section>
-
 <section class="landing-callout">
   <div class="contain center padded">
     <h2 class="title has-emblem">Ready to Get Started</h2>
