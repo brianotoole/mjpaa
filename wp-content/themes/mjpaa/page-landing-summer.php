@@ -106,10 +106,10 @@ Template Name: Landing, Summer
 		<div class="col-sm-12 images">
 		  <div class="col-sm-2"></div>
 		  <div class="col-sm-2 stack rotated-left">
-	        	<img src="http://mjpaa.com/wp-content/uploads/2015/08/memories1.jpg">
+	        	<img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-left.jpg">
 	      </div>
 	      <div class="col-sm-2 stack rotated-middle">
-	        	<img src="http://mjpaa.com/wp-content/uploads/2015/08/memories2.jpg">
+	        	<img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-middle.jpg">
 	      </div>
 	      <div class="col-sm-2 stack rotated-right">
 	        	<img src="http://mjpaa.com/wp-content/uploads/2015/08/memories3.jpg">
@@ -122,7 +122,7 @@ Template Name: Landing, Summer
 
 <section class="landing-intro camps">
   <div class="contain center padded">
-    <h2 class="title has-emblem">Summer Camps &amp; Workshops</h2>
+    <h3 class="title has-emblem">Summer Camps &amp; Workshops</h3>
       <div class="emblem">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-courses.png">
       </div>
@@ -151,7 +151,7 @@ $query = new WP_Query($args);
 <div class="classes-wrapper">
   <div class="class">
     <a href="<?php the_permalink() ?>">
-      <h5><?php the_title(); ?></h5>
+      <h6><?php the_title(); ?></h6>
 	</a>
 	<a href="<?php the_permalink() ?>">
 	  <p>View Class <i class="fa fa-angle-double-right"></i></p>
@@ -170,7 +170,7 @@ $query = new WP_Query($args);
 
 <section class="landing-intro classes">
   <div class="contain center padded">
-    <h2 class="title has-emblem">Summer Classes</h2>
+    <h3 class="title has-emblem">Summer Classes</h3>
       <div class="emblem">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-courses.png">
       </div>
@@ -199,7 +199,7 @@ $query = new WP_Query($args);
 <div class="classes-wrapper">
   <div class="class">
     <a href="<?php the_permalink() ?>">
-      <h5><?php the_title(); ?></h5>
+      <h6><?php the_title(); ?></h6>
 	</a>
 	<a href="<?php the_permalink() ?>">
 	  <p>View Class <i class="fa fa-angle-double-right"></i></p>
@@ -224,14 +224,13 @@ $query = new WP_Query($args);
 
 <section class="landing-callout">
   <div class="contain center padded">
-    <h2 class="title has-emblem">Ready to Get Started</h2>
+    <h3 class="title has-emblem">Ready to Discover the Difference this Summer?</h3>
       <div class="emblem">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-courses.png">
       </div>
     
     <div class="buttons">
-      <a href="" class="button border l">Find Summer Classes</a>
-      <a href="" class="button border r">Register Now</a>
+      <a href="https://app.jackrabbitclass.com/reg.asp?id=505581" class="button border" target="_blank">Register Now</a>
     </div>
     
   </div>
@@ -252,6 +251,18 @@ $(window).scroll(function() {
 
 });
 </script>
+
+<footer class="landing">
+  <div class="contain">
+    <ul class="left">
+    	<li><a href="https://www.facebook.com/MaryJosPerformingArtsAcademy/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+    	<li><a href="https://twitter.com/mjpaa" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+    	<li><a href="https://www.instagram.com/mjpaa_tampa/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+    	<li class="r"><a href="">Summer FAQs</a></li>
+    	<li class=""><a href="">Summer Uniform</a></li>
+    </ul>
+  </div><!--/.contain-->
+</footer>
 
 </body>
 </html>

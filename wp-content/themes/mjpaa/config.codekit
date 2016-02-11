@@ -375,6 +375,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/summer-left.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26072,
+		"inputAbbreviatedPath": "\/img\/summer-left.jpg",
+		"outputAbbreviatedPath": "\/img\/summer-left.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/summer-middle.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26405,
+		"inputAbbreviatedPath": "\/img\/summer-middle.jpg",
+		"outputAbbreviatedPath": "\/img\/summer-middle.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/testimonialshero.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
