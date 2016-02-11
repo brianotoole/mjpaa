@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 Summer Landing Page
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|100,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Lato|100,400,500,700");
 /*--------------------------------------------------------------
 Reset
 --------------------------------------------------------------*/
@@ -2656,7 +2656,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "PT Sans", sans-serif, Arial; }
+  font-family: "Merriweather", serif, Arial; }
 
 h1 {
   font-size: 42px;
@@ -2697,7 +2697,7 @@ select,
 textarea {
   color: #1F1F1F;
   font-weight: 400;
-  font-family: "PT Serif", serif, Helvetica;
+  font-family: "Lato", Helvetica, Arial;
   font-size: 16.25px;
   line-height: 1.8; }
 
@@ -3029,7 +3029,7 @@ Top-Bar, Header, & Navigation
         margin-right: auto;
         padding-right: 25px;
         vertical-align: middle;
-        font-family: "PT Sans", sans-serif, Arial;
+        font-family: "Merriweather", serif, Arial;
         font-size: 0.9em;
         font-weight: 300;
         color: #fbfbfb; }
@@ -3244,7 +3244,7 @@ Menus
   display: block;
   float: left;
   width: 100%;
-  font-family: "PT Sans", sans-serif, Arial; }
+  font-family: "Merriweather", serif, Arial; }
   .main-navigation ul {
     list-style: none;
     margin-top: 70px;
@@ -3342,7 +3342,7 @@ Menus
 .cbp-spmenu a {
   display: block;
   color: #fbfbfb;
-  font-family: "PT Sans", sans-serif, Arial;
+  font-family: "Merriweather", serif, Arial;
   font-size: 1.1em;
   font-weight: 400; }
   .cbp-spmenu a:after {
@@ -3810,7 +3810,7 @@ body.page-template-page-testimonials .page-about section.history {
     z-index: 5; }
     .video-overlay article p,
     .cover-top article p {
-      font-family: "PT Serif", serif, Helvetica;
+      font-family: "Lato", Helvetica, Arial;
       color: white;
       font-style: normal;
       font-size: 1.1em;
@@ -4786,14 +4786,14 @@ html {
 body {
   font-weight: 300;
   font-size: 100%;
-  font-family: "PT Serif", serif, Helvetica; }
+  font-family: "Lato", Helvetica, Arial; }
   @media (max-width: 800px) {
     body {
       font-size: 90%; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
-  font-family: "PT Sans", sans-serif, Arial; }
+  font-family: "Merriweather", serif, Arial; }
 
 img,
 a img {
@@ -4805,13 +4805,14 @@ a img {
   border: none;
   border-bottom: 4px solid #d3ae00;
   color: #555;
-  font-size: 1.1em;
+  font-size: 1.05em;
   font-weight: 300;
   text-transform: none;
   min-width: 220px;
   margin-bottom: 0;
   margin-left: 7.5px;
-  margin-right: 7.5px; }
+  margin-right: 7.5px;
+  z-index: 1000; }
   .button.border:hover {
     background-color: #ffd820;
     border-color: #a08400;
@@ -4829,7 +4830,7 @@ Major Classes
 --------------------------------------------------------------*/
 .contain {
   height: 100%;
-  max-width: 1100px;
+  max-width: 1270px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 40px;
@@ -4879,15 +4880,27 @@ Header
 header {
   width: 100%;
   min-width: 320px;
-  position: absolute;
-  z-index: 1002;
+  position: fixed;
+  z-index: 1004;
   top: 0; }
+  @media (max-width: 800px) {
+    header {
+      position: absolute;
+      overflow: hidden; } }
 
 .landing-nav {
   position: relative;
-  height: 90px;
+  height: 130px;
   background-color: transparent;
-  color: white; }
+  color: white;
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s; }
+  @media (max-width: 800px) {
+    .landing-nav {
+      height: 100%; } }
   .landing-nav .contain {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4903,22 +4916,45 @@ header {
             align-items: center; }
     @media (max-width: 800px) {
       .landing-nav .contain {
-        -webkit-justify-content: space-around;
-            -ms-flex-pack: distribute;
-                justify-content: space-around; } }
-    @media (max-width: 500px) {
-      .landing-nav .contain {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
-                flex-direction: column; } }
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+  .landing-nav.fixed {
+    position: fixed;
+    background: #13779a;
+    width: 100%;
+    height: 90px;
+    top: 20px;
+    -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+            transform: translateY(-20px);
+    -webkit-transition: -webkit-transform 0.3s;
+            transition: transform 0.3s;
+    border-bottom: 1px solid rgba(230, 230, 230, 0.25); }
+    .landing-nav.fixed .logo {
+      width: 200px;
+      -webkit-transform: translateY(4px);
+          -ms-transform: translateY(4px);
+              transform: translateY(4px); }
   .landing-nav .logo {
-    width: 200px;
-    padding-top: 18px; }
+    max-width: 100%;
+    width: auto;
+    margin-top: 10px;
+    -webkit-transform: scale(1) translateY(0);
+        -ms-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transition: -webkit-transform 0.3s;
+            transition: transform 0.3s; }
     @media (max-width: 500px) {
       .landing-nav .logo {
-        padding-top: 9px; } }
+        width: 200px;
+        margin-top: 9px; } }
   .landing-nav .menu {
     list-style: none;
     margin: 0;
@@ -4926,57 +4962,44 @@ header {
     white-space: nowrap; }
     .landing-nav .menu a {
       color: white;
-      font-weight: 100;
-      font-style: italic; }
+      font-family: "Merriweather", serif, Arial;
+      font-weight: 400;
+      padding-right: 20px;
+      text-transform: uppercase; }
       .landing-nav .menu a:hover {
         text-decoration: underline; }
-    @media (max-width: 500px) {
-      .landing-nav .menu .visit {
-        display: none; } }
+      @media (max-width: 500px) {
+        .landing-nav .menu a {
+          padding-left: 20px; } }
 
 /*--------------------------------------------------------------
 Hero
 --------------------------------------------------------------*/
 .landing-hero {
   position: relative;
-  max-height: 690px;
-  min-height: 600px;
-  padding-top: 90px;
+  height: 500px;
+  padding-top: 110px;
   color: white;
   background-image: -webkit-linear-gradient(45deg, #2EB5E5 0%, #1999c7 50%, #1999c7 100%);
   background-image: linear-gradient(45deg, #2EB5E5 0%, #1999c7 50%, #1999c7 100%);
   overflow: hidden; }
+  @media (max-width: 800px) {
+    .landing-hero {
+      height: 600px; } }
   .landing-hero .contain {
     width: 60%;
-    margin: 130px auto 0; }
+    margin: 70px auto 0; }
     @media (max-width: 800px) {
       .landing-hero .contain {
         width: 100%;
         margin: 90px auto 20px; } }
 
-/*.page-scroll {
-    position: absolute;
-    width: 23px;
-    height: 40px;
-    border: 2px solid white;
-    border-radius: 25px;
-    bottom: 15px;
-    left: 50%;
-    margin-left: -11px;
-    opacity: .3;
-    
-    i {
-		color: white;
-		font-size: 12px;
-		padding: 4px;
-		animation: scrollDown 1.5s infinite cubic-bezier(.1,.1,.3,1) 2s;
-    }
-}*/
 /*--------------------------------------------------------------
 Section - Intro
 --------------------------------------------------------------*/
 .landing-intro .padded {
-  padding: 90px 0 60px; }
+  padding: 90px 0 60px;
+  max-width: 100%; }
 .landing-intro .title {
   color: #555; }
 .landing-intro .has-emblem {
@@ -4985,37 +5008,51 @@ Section - Intro
   background: white; }
   .landing-intro .emblem img {
     border-color: #e6e6e6; }
-
-.course-list {
-  list-style: none;
-  margin: 0 auto;
+.landing-intro .classes-wrapper {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: wrap;
+      -ms-flex-flow: wrap;
+          flex-flow: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
   padding: 0; }
-  .course-list li {
-    text-align: left;
-    white-space: normal;
-    font-weight: 100;
-    line-height: 45px;
-    color: #2481d7;
-    display: block;
-    clear: both;
+  .landing-intro .classes-wrapper .class {
+    width: 300px;
+    margin: 20px;
+    padding: 5px; }
+  .landing-intro .classes-wrapper span {
+    display: block; }
+  .landing-intro .classes-wrapper h5 {
+    color: #1999c7;
     text-decoration: none; }
+  .landing-intro .classes-wrapper p {
+    color: #2EB5E5; }
+  .landing-intro .classes-wrapper i {
+    color: #2EB5E5; }
 
-.course {
-  width: 60px;
-  height: 37px;
-  margin: 0 auto 7px;
-  position: relative;
-  border-radius: 50%;
-  -webkit-transition: 0.2s;
-          transition: 0.2s; }
-  .course.pull-left {
-    margin-right: 15px; }
-  .course i {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 35%;
-    left: 55%; }
+/*--------------------------------------------------------------
+Section - Intro - Camps
+--------------------------------------------------------------*/
+.landing-intro {
+  border-bottom: 1px solid #e6e6e6; }
+  .landing-intro.camps .padded {
+    padding-bottom: 30px; }
+
+/*--------------------------------------------------------------
+Section - Intro - Classes
+--------------------------------------------------------------*/
+.landing-intro.classes .padded {
+  padding-top: 45px; }
 
 /*--------------------------------------------------------------
 Section - Memories
@@ -5024,7 +5061,7 @@ Section - Memories
   background-color: white;
   max-width: 100%; }
   .landing-memories .padded {
-    padding: 0 0 90px;
+    padding: 60px 0 0;
     max-width: 100%; }
     @media (max-width: 900px) {
       .landing-memories .padded {
@@ -5064,55 +5101,6 @@ Section - Call Out
 /*--------------------------------------------------------------
 Animations
 --------------------------------------------------------------*/
-@-webkit-keyframes scrollDown {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  100% {
-    -webkit-transform: translateY(18px);
-            transform: translateY(18px); } }
-@keyframes scrollDown {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  100% {
-    -webkit-transform: translateY(18px);
-            transform: translateY(18px); } }
-.triangle {
-  border: 50px solid #BBCD77;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  width: 0;
-  height: 0;
-  display: inline-block;
-  position: absolute;
-  bottom: 0; }
-
-.triangle.one {
-  border-bottom-color: #a8bf52;
-  right: 200px;
-  border-width: 60px; }
-
-.triangle.two {
-  border-width: 120px;
-  left: 50px;
-  border-bottom-color: #cedb9c;
-  z-index: 1; }
-
-.triangle.three {
-  border-width: 100px;
-  left: 150px; }
-
-.triangle.four {
-  left: 238px;
-  border-width: 75px;
-  border-bottom-color: #cedb9c; }
-
-.triangle.five {
-  right: 260px;
-  border-bottom-color: #cedb9c; }
-
 /* sun */
 @-webkit-keyframes sunrolling {
   0% {
@@ -5132,9 +5120,12 @@ Animations
   position: absolute;
   width: 175px;
   height: 175px;
-  right: 175px;
-  top: -130px;
+  right: -90px;
+  top: -90px;
   opacity: 0.8; }
+  @media (max-width: 800px) {
+    .sun {
+      display: none; } }
 
 .sun-face {
   position: absolute;
@@ -5238,7 +5229,7 @@ Animations
   width: 0.35em;
   height: 0.35em;
   opacity: 0.8;
-  background: #fcf0a3;
+  background: #ffe153;
   border-radius: 0.35em; }
 
 .sun-anime {
@@ -5251,10 +5242,10 @@ Animations
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  background: #ffcf11;
-  background-image: -webkit-radial-gradient(circle, #ffdf05, #ffdf05);
-  background-image: radial-gradient(circle, #ffdf05, #ffdf05);
-  box-shadow: 0 0 100px #ffdf05; }
+  background: #ffe153;
+  background-image: -webkit-radial-gradient(circle, #ffe153, #ffe153);
+  background-image: radial-gradient(circle, #ffe153, #ffe153);
+  box-shadow: 0 0 100px #ffe153; }
 
 .sun-light {
   position: absolute;
@@ -5271,7 +5262,7 @@ Animations
   width: 100%;
   height: 12%;
   /* 100*30/100=18.75 */
-  background: #fed65b; }
+  background: #D3AE00; }
 
 .sun-light s {
   top: auto;

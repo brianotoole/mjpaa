@@ -18,10 +18,10 @@ $yellow: #ffe153;
 $border-color: #e6e6e6;
 
 // Typography
-@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|100,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Lato|100,400,500,700');
 
-$font-heading: 'PT Sans', sans-serif, Arial;
-$font-body: 'PT Serif', serif, Helvetica;
+$font-heading: 'Merriweather', serif, Arial;
+$font-body: 'Lato', Helvetica, Arial;
 
 // Vendors
 @import "vendor/reset";
@@ -50,7 +50,6 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 100;
 	font-family: $font-heading
 }
-a {}
 img,
 a img {
 	max-width: 100%;
@@ -62,13 +61,14 @@ a img {
 		border: none;
 		border-bottom: 4px solid darken($yellow,25%);
 		color: $gray;
-		font-size: 1.1em;
+		font-size: 1.05em;
 		font-weight: 300;
 		text-transform: none;
 		min-width: 220px;
 		margin-bottom: 0;
 		margin-left: 7.5px;
 		margin-right: 7.5px;
+		z-index: 1000;
 		&:hover {
 			background-color: darken($yellow,10%);
 			border-color: darken($yellow,35%); //+ 10% from non-hover
@@ -90,7 +90,7 @@ Major Classes
 --------------------------------------------------------------*/
 .contain {
     height: 100%;
-    max-width: 1100px;
+    max-width: 1270px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 40px;
@@ -146,18 +146,29 @@ Header
 header {
 	width: 100%;
     min-width: 320px;
-    position: absolute;
-    z-index: 1002;
+    position: fixed;
+    z-index: 1004;
     top: 0;	
-    //border-bottom: 1px solid rgba($border-color,0.25);
+    
+    @media (max-width: 800px) { 
+        position: absolute;
+        overflow: hidden;
+    }
 }
 
 
 .landing-nav {
 	position: relative;
-	height: 90px;
+	height: 130px;
 	background-color: transparent;
 	color: white;
+	transform: translateY(0px);
+	transition: transform 0.3s;
+	
+	@media (max-width: 800px) { 
+		height: 100%;
+	}	
+	
 	
 	.contain {
 		display: flex;
@@ -165,19 +176,43 @@ header {
         align-items: center;
         
         @media (max-width: 800px) {
-        	justify-content: space-around;
+        	flex-direction: column;
+        	justify-content: center;
         }
         @media (max-width: 500px) {
-        	flex-direction: column;
+
         }
 	}
 	
+	&.fixed {
+		position: fixed;
+		background: darken($darkblue,10%);
+		width: 100%;
+		height: 90px;
+		top: 20px;
+		transform: translateY(-20px);
+		transition: transform 0.3s;
+		border-bottom: 1px solid rgba($border-color,0.25);
+		
+		.logo { //small logo on scroll
+			width: 200px;
+			transform: translateY(4px);
+		}
+
+	}
+	
 	.logo {
-		width: 200px;
-		padding-top: 18px;
+		max-width: 100%;
+		width: auto;
+		margin-top: 10px;
+		transform: scale(1) translateY(0);
+		transition: transform 0.3s;
+		
 		@media (max-width: 500px) {
-			padding-top: 9px;
+			width: 200px;
+			margin-top: 9px;
 		}	
+		
 	}
 	
 	.menu {
@@ -188,20 +223,22 @@ header {
 		
 		a {
 			color: white;
-			font-weight: 100;
-			font-style: italic;
+			font-family: $font-heading;
+			font-weight: 400;
+			padding-right: 20px;
+			text-transform: uppercase;
 			&:hover {
 				text-decoration: underline;
 			}
-		}
-		.visit {
+			
 			@media (max-width: 500px) {
-				display: none;
+				padding-left: 20px;
 			}
-		}
 
-	}
-	
+		}
+		
+
+	}	
 }
 
 /*--------------------------------------------------------------
@@ -209,43 +246,25 @@ Hero
 --------------------------------------------------------------*/
 .landing-hero {
 	position: relative;
-    max-height: 690px;
-    min-height: 600px;
-    padding-top: 90px;
+    height: 500px;
+    padding-top: 110px;
     color: white;
 	background-image: linear-gradient(45deg,$lightblue 0%,$darkblue 50%,$darkblue 100%);
     overflow: hidden;
     
+    @media (max-width: 800px) {
+        height: 600px;
+	}
+    
 	.contain {
 		width: 60%;
-		margin: 130px auto 0;
+		margin: 70px auto 0;
 		@media (max-width: 800px) {
 			width: 100%;
 			margin: 90px auto 20px;
 		}
 	}	
 }
-
-/*.page-scroll {
-    position: absolute;
-    width: 23px;
-    height: 40px;
-    border: 2px solid white;
-    border-radius: 25px;
-    bottom: 15px;
-    left: 50%;
-    margin-left: -11px;
-    opacity: .3;
-    
-    i {
-		color: white;
-		font-size: 12px;
-		padding: 4px;
-		animation: scrollDown 1.5s infinite cubic-bezier(.1,.1,.3,1) 2s;
-    }
-}*/
-
-
 
 /*--------------------------------------------------------------
 Section - Intro
@@ -254,6 +273,7 @@ Section - Intro
 	
 	.padded {
 		padding: 90px 0 60px;
+		max-width: 100%;
 	}
 	
 	.title {
@@ -270,41 +290,67 @@ Section - Intro
 		}
 	}
 	
+	.classes-wrapper {
+		display: inline-flex;
+		flex-flow: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		
+		.class {
+			//flex: 1 33%;
+		    width: 300px;
+		    margin: 20px;
+		    padding: 5px;
+		}
+	
+		span {
+			display: block;
+		}
+		
+		h5 {
+			color: $darkblue;
+			text-decoration: none;
+			
+		}
+		
+		p {
+			color: $lightblue;
+		}
+		
+		i {
+			color: $lightblue;
+		}
+	}
+	
 }
 
-.course-list {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    
-    li {
-	  text-align: left;  
-	  white-space: normal;
-	  font-weight: 100;
-      line-height: 45px;
-      color: #2481d7;
-	  display: block;
-	  clear: both;
-	  text-decoration: none;
-    }
+/*--------------------------------------------------------------
+Section - Intro - Camps
+--------------------------------------------------------------*/
+.landing-intro {
+	border-bottom: 1px solid $border-color;
+
+	&.camps  {
+		.padded {
+			padding-bottom: 30px;
+		}
+		
+	}
 }
-.course {
-    width: 60px;
-    height: 37px;
-    margin: 0 auto 7px;
-    position: relative;
-    border-radius: 50%;
-    transition: 0.2s;
-    &.pull-left {
-		margin-right: 15px;
-    }
-    i {
-    	position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 35%;
-		left: 55%;
-    }
+
+
+/*--------------------------------------------------------------
+Section - Intro - Classes
+--------------------------------------------------------------*/
+.landing-intro {
+
+	&.classes  {
+		.padded {
+			padding-top: 45px;
+		}
+	}
 }
 
 /*--------------------------------------------------------------
@@ -316,7 +362,7 @@ Section - Memories
   max-width: 100%;
   
   .padded {
-  	  padding: 0 0 90px;
+  	  padding: 60px 0 0;
 	  max-width: 100%;
 	  @media (max-width: 900px) {
 	  	padding-bottom: 30px;
@@ -365,51 +411,6 @@ Section - Call Out
 /*--------------------------------------------------------------
 Animations
 --------------------------------------------------------------*/
-@keyframes scrollDown {
-  0% { transform:translateY(0) }
-  100% { transform:translateY(18px) }
-}
-
-.triangle {
-  border: 50px solid #BBCD77;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  width: 0;
-  height: 0;
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-}
-
-.triangle.one {
-  border-bottom-color: #a8bf52;
-  right: 200px;
-  border-width: 60px;
-}
-
-.triangle.two {
-  border-width: 120px;
-  left: 50px;
-  border-bottom-color: #cedb9c;
-  z-index: 1;
-}
-
-.triangle.three {
-  border-width: 100px;
-  left: 150px;
-}
-
-.triangle.four {
-  left: 238px;
-  border-width: 75px;
-  border-bottom-color: #cedb9c;
-}
-
-.triangle.five {
-  right: 260px;
-  border-bottom-color: #cedb9c;
-}
 /* sun */
 @keyframes sunrolling {
   0% { transform:rotate(0deg); }
@@ -420,9 +421,12 @@ Animations
 	position: absolute;
 	width: 175px;
 	height: 175px;
-	right: 175px;
-	top: -130px;
+	right: -90px;
+	top: -90px;
 	opacity: 0.8;
+	@media (max-width: 800px) {
+        display: none;
+	}
 }
     .sun-face {
         position: absolute;
@@ -524,7 +528,7 @@ Animations
             width: 0.35em;
             height: 0.35em;
             opacity: 0.8;
-            background: #fcf0a3;
+            background: $yellow;
             border-radius: 0.35em;
         }
     .sun-anime {
@@ -536,9 +540,9 @@ Animations
         width: 100%;
         height: 100%;
         border-radius: 100%;
-        background: #ffcf11;
-        background-image: radial-gradient(circle, #ffdf05, #ffdf05);
-        box-shadow: 0 0 100px #ffdf05;
+        background: $yellow;
+        background-image: radial-gradient(circle, $yellow, $yellow);
+        box-shadow: 0 0 100px $yellow;
     }
     .sun-light {
         position: absolute;
@@ -554,7 +558,7 @@ Animations
         left: 0;
         width: 100%;
         height: 12%;/* 100*30/100=18.75 */
-        background: #fed65b;
+        background: #D3AE00;
     }
     .sun-light s{
         top: auto;
