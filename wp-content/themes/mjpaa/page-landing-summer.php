@@ -33,7 +33,7 @@ Template Name: Landing, Summer
     </div>
   </nav>
 </header>
-
+<div class="bg-hero-wrap">
 <section class="landing-hero clipped">
 <div class="sun">
             <div class="sun-face">
@@ -99,25 +99,22 @@ Template Name: Landing, Summer
     <a href="" class="button border r">View Summer Brochure</a>
   </div>
 </section>
+</div>
 
 <section class="landing-memories">
   <div class="contain center padded">
-	<div class="row">
-		<div class="col-sm-12 images">
-		  <div class="col-sm-2"></div>
-		  <div class="col-sm-2 stack rotated-left">
-	        	<img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-left.jpg">
-	      </div>
-	      <div class="col-sm-2 stack rotated-middle">
-	        	<img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-middle.jpg">
-	      </div>
-	      <div class="col-sm-2 stack rotated-right">
-	        	<img src="http://mjpaa.com/wp-content/uploads/2015/08/memories3.jpg">
-	      </div>
-	      <div class="col-sm-2"></div>
-		</div>
-	</div>
-  </div>
+    <div class="images-wrapper">
+	  <div class="image">
+	    <img src="http://mjpaa.com/wp-content/uploads/2015/08/memories3.jpg">
+	  </div>
+	  <div class="image">
+	    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-left.jpg">
+	   </div>
+	   <div class="image">
+	     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-middle.jpg">
+	   </div>
+    </div><!--/.images-wrapper-->
+  </div><!--/.contain-->
 </section>
 
 <section class="landing-intro camps">

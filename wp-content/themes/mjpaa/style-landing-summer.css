@@ -4784,6 +4784,7 @@ html {
   font-size: 16px; }
 
 body {
+  background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/geometry.png");
   font-weight: 300;
   font-size: 100%;
   font-family: "Lato", Helvetica, Arial; }
@@ -4866,7 +4867,7 @@ Major Classes
   height: 28px;
   width: 28px;
   background: #1999c7;
-  margin: 0 auto;
+  margin: 3px auto;
   padding: 1px;
   position: relative;
   top: -34px; }
@@ -4994,20 +4995,49 @@ Hero
         width: 100%;
         margin: 90px auto 20px; } }
 
+.bg-hero-wrap {
+  background-color: #FAFAFA; }
+
+/*--------------------------------------------------------------
+Section - Memories
+--------------------------------------------------------------*/
+.landing-memories {
+  max-width: 100%; }
+  .landing-memories .padded {
+    padding: 30px 0;
+    max-width: 80%; }
+    @media (max-width: 900px) {
+      .landing-memories .padded {
+        padding-bottom: 30px;
+        max-width: 100%; } }
+  .landing-memories .images-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding: 0; }
+    .landing-memories .images-wrapper .image {
+      position: relative;
+      padding: 0;
+      margin: 10px 30px;
+      background: white;
+      border: 10px solid #f5f5f5;
+      box-shadow: 0px 3px 8px rgba(34, 34, 34, 0.3); }
+
 /*--------------------------------------------------------------
 Section - Intro
 --------------------------------------------------------------*/
 .landing-intro .padded {
-  padding: 90px 0 60px;
-  max-width: 100%; }
-.landing-intro .title {
-  color: #555; }
-.landing-intro .has-emblem {
-  border-color: #e6e6e6; }
-.landing-intro .emblem {
-  background: white; }
-  .landing-intro .emblem img {
-    border-color: #e6e6e6; }
+  padding: 30px 0 60px;
+  max-width: 80%; }
 .landing-intro .classes-wrapper {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5027,68 +5057,52 @@ Section - Intro
   margin: 0;
   padding: 0; }
   .landing-intro .classes-wrapper .class {
-    width: 300px;
-    margin: 20px;
+    width: 275px;
+    margin: 10px 5px;
     padding: 5px; }
   .landing-intro .classes-wrapper span {
     display: block; }
   .landing-intro .classes-wrapper h6 {
-    color: #555;
+    color: #1F1F1F;
     text-decoration: none; }
   .landing-intro .classes-wrapper p {
-    color: #2EB5E5; }
-  .landing-intro .classes-wrapper i {
-    color: #2EB5E5; }
+    text-decoration: underline; }
 
 /*--------------------------------------------------------------
 Section - Intro - Camps
 --------------------------------------------------------------*/
 .landing-intro {
-  border-bottom: 1px solid #e6e6e6; }
-  .landing-intro.camps .padded {
-    padding-bottom: 30px; }
+  border-top: 2px solid #e6e6e6; }
+  .landing-intro.camps {
+    background: white; }
+    .landing-intro.camps .padded {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+    .landing-intro.camps .emblem {
+      background-color: white; }
+  .landing-intro .title {
+    color: #1F1F1F; }
 
 /*--------------------------------------------------------------
 Section - Intro - Classes
 --------------------------------------------------------------*/
-.landing-intro.classes .padded {
-  padding-top: 45px; }
-
-/*--------------------------------------------------------------
-Section - Memories
---------------------------------------------------------------*/
-.landing-memories {
-  background-color: white;
-  max-width: 100%; }
-  .landing-memories .padded {
-    padding: 60px 0 0;
-    max-width: 100%; }
-    @media (max-width: 900px) {
-      .landing-memories .padded {
-        padding-bottom: 30px; } }
-  .landing-memories .stack:before, .landing-memories .stack:after {
-    border-color: whitesmoke; }
-    @media (max-width: 500px) {
-      .landing-memories .stack:before, .landing-memories .stack:after {
-        display: none; } }
-  .landing-memories .stack.rotated-left img {
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  .landing-memories .stack.rotated-right img {
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg); }
-    @media (min-width: 900px) {
-      .landing-memories .stack.rotated-right img {
-        margin-top: -17px; } }
+.landing-intro.classes {
+  background-color: #fafafa; }
+.landing-intro .title {
+  color: #1F1F1F; }
+.landing-intro .has-emblem {
+  border-color: #e6e6e6; }
+.landing-intro .emblem {
+  background: #fafafa; }
+  .landing-intro .emblem img {
+    border-color: #e6e6e6; }
 
 /*--------------------------------------------------------------
 Section - Quote
 --------------------------------------------------------------*/
 .landing-quote {
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #e6e6e6;
+  background-color: white;
+  border-top: 2px solid #e6e6e6;
   padding: 20px 0; }
 
 /*--------------------------------------------------------------

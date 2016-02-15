@@ -34,3 +34,9 @@ get_header(); ?>
 
 	</div><!-- grid -->
 	<?php get_footer(); ?>
+<script>
+//move college label after gr 9
+//var college = $("label:contains('College')"),
+//    nine = $("label:contains('Grade 9')");
+//   $(nine).after(college);
+</script>

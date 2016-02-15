@@ -39,6 +39,7 @@ html {
 	font-size: 16px;
 }
 body {
+	background: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/geometry.png');
 	font-weight: 300;
 	font-size: 100%;
 	font-family: $font-body;
@@ -130,7 +131,7 @@ Major Classes
 		height: 28px;
 	    width: 28px;
 	    background: $darkblue; //section color
-	    margin: 0 auto;
+	    margin: 3px auto;
 	    padding: 1px;
 	    position: relative;
 	    top: -34px;
@@ -263,8 +264,48 @@ Hero
 			width: 100%;
 			margin: 90px auto 20px;
 		}
-	}	
+	}		
 }
+.bg-hero-wrap {
+  background-color: #FAFAFA;
+}
+
+/*--------------------------------------------------------------
+Section - Memories
+--------------------------------------------------------------*/
+
+.landing-memories {
+  max-width: 100%;
+  
+  .padded {
+  	  padding: 30px 0;
+	  max-width: 80%;
+	  @media (max-width: 900px) {
+	  	padding-bottom: 30px;
+	  	max-width: 100%;
+	  }
+  }
+  
+  .images-wrapper {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  margin: 0;
+	  padding: 0;  
+	  
+	  .image {
+	      position: relative;
+		  padding: 0;
+		  margin: 10px 30px;
+		  background: white;
+		  border: 10px solid #f5f5f5;
+		  box-shadow: 0px 3px 8px rgba(34, 34, 34, 0.3);
+	  }
+  }
+  
+  
+}
+
 
 /*--------------------------------------------------------------
 Section - Intro
@@ -272,22 +313,8 @@ Section - Intro
 .landing-intro {
 	
 	.padded {
-		padding: 90px 0 60px;
-		max-width: 100%;
-	}
-	
-	.title {
-		color: $gray;
-	}
-	
-	.has-emblem {
-		border-color: $border-color;
-	}
-	.emblem {
-		background: white; //same as section bg-color
-		img {
-			border-color: $border-color;
-		}
+		padding: 30px 0 60px;
+		max-width: 80%;
 	}
 	
 	.classes-wrapper {
@@ -300,8 +327,8 @@ Section - Intro
 		
 		.class {
 			//flex: 1 33%;
-		    width: 300px;
-		    margin: 20px;
+		    width: 275px;
+		    margin: 10px 5px;
 		    padding: 5px;
 		}
 	
@@ -310,18 +337,15 @@ Section - Intro
 		}
 		
 		h6 {
-			color: $gray;
+			color: $black;
 			text-decoration: none;
 			
 		}
 		
 		p {
-			color: $lightblue;
+			text-decoration: underline;
 		}
 		
-		i {
-			color: $lightblue;
-		}
 	}
 	
 }
@@ -330,14 +354,26 @@ Section - Intro
 Section - Intro - Camps
 --------------------------------------------------------------*/
 .landing-intro {
-	border-bottom: 1px solid $border-color;
+	border-top: 2px solid $border-color;
 
 	&.camps  {
+		background: white;
+		
 		.padded {
+			padding-top: 30px;
 			padding-bottom: 30px;
 		}
 		
+		.emblem {
+			background-color: white;
+		}
+		
 	}
+	
+	.title {
+		color: $black;
+	}
+
 }
 
 
@@ -347,53 +383,30 @@ Section - Intro - Classes
 .landing-intro {
 
 	&.classes  {
-		.padded {
-			padding-top: 45px;
+		background-color: darken(white,2%);
+	}
+	
+	.title {
+		color: $black;
+	}
+	
+	.has-emblem {
+		border-color: $border-color;
+	}
+	.emblem {
+		background: darken(white,2%); //same as section bg-color
+		img {
+			border-color: $border-color;
 		}
 	}
 }
 
 /*--------------------------------------------------------------
-Section - Memories
---------------------------------------------------------------*/
-
-.landing-memories {
-  background-color: white;
-  max-width: 100%;
-  
-  .padded {
-  	  padding: 60px 0 0;
-	  max-width: 100%;
-	  @media (max-width: 900px) {
-	  	padding-bottom: 30px;
-	  }
-  }
-  
-  .stack:before, .stack:after {
-    border-color: darken(white,4%);
-    @media (max-width: 500px) {
-	    display: none;
-    }
-  }
-  .stack.rotated-left img {
-      transform: rotate(0deg);  
-  }
-  .stack.rotated-right img {
-	  transform: rotate(0deg);
-	  @media (min-width: 900px) {
-	  	margin-top: -17px;
-	  }
-  }
-  
-}
-
-
-/*--------------------------------------------------------------
 Section - Quote
 --------------------------------------------------------------*/
 .landing-quote {
-	background-color: #f5f5f5;
-	border-bottom: 1px solid $border-color;
+	background-color: white;
+	border-top: 2px solid $border-color;
 	padding: 20px 0;
 }
 

@@ -4,7 +4,16 @@ if(!class_exists('uwpqsfront')){
   
   function output_formtaxo_fields($type,$exc,$hide,$taxname,$taxlabel,$taxall,$opt,$c,$defaultclass,$formid,$divclass){
 		$eid = explode(",", $exc);
-		$args = array('hide_empty'=>$hide,'exclude'=>$eid );	
+		$args = array(
+			'hide_empty'=>$hide,
+			'exclude'=>$eid,
+			'orderby'=>'slug', //order by slug
+			'order'=>'ASC'
+		);
+				
+		
+		
+		
 		$taxoargs = apply_filters('uwpqsf_taxonomy_arg',$args,$taxname,$formid);
         	$terms = get_terms($taxname,$taxoargs);
  	    $count = count($terms);
