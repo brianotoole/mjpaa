@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 Summer Landing Page
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Merriweather|Lato|100,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web|PT+Sans|100,400,500,700");
 /*--------------------------------------------------------------
 Reset
 --------------------------------------------------------------*/
@@ -1156,31 +1156,26 @@ h6 {
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
   transform: rotate(270deg); }
 
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
   -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
   -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
   transform: scale(1, -1); }
 
 :root .fa-rotate-90, :root .fa-rotate-180, :root .fa-rotate-270, :root .fa-flip-horizontal, :root .fa-flip-vertical {
@@ -2656,7 +2651,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Merriweather", serif, Arial; }
+  font-family: "Titillium Web", serif, Arial; }
 
 h1 {
   font-size: 42px;
@@ -2697,7 +2692,7 @@ select,
 textarea {
   color: #1F1F1F;
   font-weight: 400;
-  font-family: "Lato", Helvetica, Arial;
+  font-family: "PT Sans", Helvetica, Arial;
   font-size: 16.25px;
   line-height: 1.8; }
 
@@ -3029,7 +3024,7 @@ Top-Bar, Header, & Navigation
         margin-right: auto;
         padding-right: 25px;
         vertical-align: middle;
-        font-family: "Merriweather", serif, Arial;
+        font-family: "Titillium Web", serif, Arial;
         font-size: 0.9em;
         font-weight: 300;
         color: #fbfbfb; }
@@ -3044,7 +3039,9 @@ Top-Bar, Header, & Navigation
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
     -webkit-transition: -webkit-transform 0.3s;
-            transition: transform 0.3s; }
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
 
 body.home .site-header {
   background: transparent;
@@ -3066,8 +3063,11 @@ body.home .site-header.fixed {
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
-  transition: transform 0.3s;
   -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: transform 0.3s;
   -moz-transition: transform 0.3s;
   -ms-transition: transform 0.3s; }
   .site-header .intro {
@@ -3083,8 +3083,10 @@ body.home .site-header.fixed {
   -moz-transform: scale(1) translateY(20px);
   -ms-transform: scale(1) translateY(20px);
   -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: transform 0.3s;
   -moz-transition: transform 0.3s;
   -ms-transition: transform 0.3s; }
 
@@ -3109,14 +3111,16 @@ body.home .site-header.fixed {
   -webkit-transform: translateY(-20px);
   -moz-transform: translateY(-20px);
   -ms-transform: translateY(-20px);
-  transition: transform 0.3s;
   -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: transform 0.3s;
   -moz-transition: transform 0.3s;
   -ms-transition: transform 0.3s; }
 
 .site-header.fixed .site-logo {
   -webkit-transform: scale(0.5) translateY(-75px);
-  -ms-transform: scale(0.5) translateY(-75px);
   transform: scale(0.5) translateY(-75px); }
 
 .site-header.fixed .main-navigation ul {
@@ -3244,7 +3248,7 @@ Menus
   display: block;
   float: left;
   width: 100%;
-  font-family: "Merriweather", serif, Arial; }
+  font-family: "Titillium Web", serif, Arial; }
   .main-navigation ul {
     list-style: none;
     margin-top: 70px;
@@ -3317,7 +3321,7 @@ Menus
   position: fixed;
   box-shadow: 0 0 7px rgba(85, 85, 85, 0.5);
   -webkit-transition: width 0.2s ease;
-          transition: width 0.2s ease; }
+  transition: width 0.2s ease; }
   .cbp-spmenu input[type="text"], .cbp-spmenu input[type="email"], .cbp-spmenu input[type="url"], .cbp-spmenu input[type="password"], .cbp-spmenu input[type="search"] {
     padding: 20px; }
 
@@ -3342,7 +3346,7 @@ Menus
 .cbp-spmenu a {
   display: block;
   color: #fbfbfb;
-  font-family: "Merriweather", serif, Arial;
+  font-family: "Titillium Web", serif, Arial;
   font-size: 1.1em;
   font-weight: 400; }
   .cbp-spmenu a:after {
@@ -3802,7 +3806,6 @@ body.page-template-page-testimonials .page-about section.history {
     position: relative;
     top: 90%;
     -webkit-transform: translateY(-90%);
-    -ms-transform: translateY(-90%);
     transform: translateY(-90%);
     color: white;
     text-align: center;
@@ -3810,7 +3813,7 @@ body.page-template-page-testimonials .page-about section.history {
     z-index: 5; }
     .video-overlay article p,
     .cover-top article p {
-      font-family: "Lato", Helvetica, Arial;
+      font-family: "PT Sans", Helvetica, Arial;
       color: white;
       font-style: normal;
       font-size: 1.1em;
@@ -3974,28 +3977,22 @@ body.home .latest-news p {
   -ms-transform: rotate(10deg); }
 .stack.rotated-left:before {
   -webkit-transform-origin: bottom left;
-  -ms-transform-origin: bottom left;
-      transform-origin: bottom left;
+  transform-origin: bottom left;
   -webkit-transform: rotate(-6deg);
-  -ms-transform: rotate(-6deg);
-      transform: rotate(-6deg); }
+  transform: rotate(-6deg); }
 .stack.rotated-left:after {
   -webkit-transform-origin: bottom left;
-  -ms-transform-origin: bottom left;
-      transform-origin: bottom left;
+  transform-origin: bottom left;
   -webkit-transform: rotate(-4deg);
-  -ms-transform: rotate(-4deg);
-      transform: rotate(-4deg); }
+  transform: rotate(-4deg); }
 
 /*2nd, middle */
 .stack.rotated-middle:before {
   -webkit-transform: rotate(2deg);
-  -ms-transform: rotate(2deg);
-      transform: rotate(2deg); }
+  transform: rotate(2deg); }
 .stack.rotated-middle:after {
   -webkit-transform: rotate(4deg);
-  -ms-transform: rotate(4deg);
-      transform: rotate(4deg); }
+  transform: rotate(4deg); }
 
 /*3rd, right */
 .stack.rotated-right img {
@@ -4005,18 +4002,14 @@ body.home .latest-news p {
   -ms-transform: rotate(-10deg); }
 .stack.rotated-right:before {
   -webkit-transform-origin: bottom left;
-  -ms-transform-origin: bottom left;
-      transform-origin: bottom left;
+  transform-origin: bottom left;
   -webkit-transform: rotate(2deg);
-  -ms-transform: rotate(2deg);
-      transform: rotate(2deg); }
+  transform: rotate(2deg); }
 .stack.rotated-right:after {
   -webkit-transform-origin: bottom left;
-  -ms-transform-origin: bottom left;
-      transform-origin: bottom left;
+  transform-origin: bottom left;
   -webkit-transform: rotate(4deg);
-  -ms-transform: rotate(4deg);
-      transform: rotate(4deg); }
+  transform: rotate(4deg); }
 
 /*responsive*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -4784,17 +4777,16 @@ html {
   font-size: 16px; }
 
 body {
-  background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/geometry.png");
   font-weight: 300;
   font-size: 100%;
-  font-family: "Lato", Helvetica, Arial; }
+  font-family: "PT Sans", Helvetica, Arial; }
   @media (max-width: 800px) {
     body {
       font-size: 90%; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
-  font-family: "Merriweather", serif, Arial; }
+  font-family: "Titillium Web", serif, Arial; }
 
 img,
 a img {
@@ -4860,13 +4852,13 @@ Major Classes
   border-color: #e6e6e6;
   border-width: 0 0 1px;
   border-style: solid;
-  padding: 0 30px 50px;
+  padding: 0 30px 30px;
   display: inline-block; }
 
 .emblem {
   height: 28px;
   width: 28px;
-  background: #1999c7;
+  background: #175f92;
   margin: 3px auto;
   padding: 1px;
   position: relative;
@@ -4895,10 +4887,11 @@ header {
   background-color: transparent;
   color: white;
   -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
           transform: translateY(0px);
   -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s; }
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s; }
   @media (max-width: 800px) {
     .landing-nav {
       height: 100%; } }
@@ -4928,30 +4921,31 @@ header {
                 justify-content: center; } }
   .landing-nav.fixed {
     position: fixed;
-    background: #13779a;
+    background: #145481;
     width: 100%;
     height: 90px;
     top: 20px;
     -webkit-transform: translateY(-20px);
-        -ms-transform: translateY(-20px);
             transform: translateY(-20px);
     -webkit-transition: -webkit-transform 0.3s;
-            transition: transform 0.3s;
-    border-bottom: 1px solid #127091; }
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    border-bottom: 1px solid #0e3d5d; }
     .landing-nav.fixed .logo {
       width: 200px;
       -webkit-transform: translateY(4px);
-          -ms-transform: translateY(4px);
               transform: translateY(4px); }
   .landing-nav .logo {
     max-width: 100%;
     width: auto;
     margin-top: 10px;
     -webkit-transform: scale(1) translateY(0);
-        -ms-transform: scale(1) translateY(0);
             transform: scale(1) translateY(0);
     -webkit-transition: -webkit-transform 0.3s;
-            transition: transform 0.3s; }
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
     @media (max-width: 500px) {
       .landing-nav .logo {
         width: 200px;
@@ -4963,7 +4957,7 @@ header {
     white-space: nowrap; }
     .landing-nav .menu a {
       color: white;
-      font-family: "Merriweather", serif, Arial;
+      font-family: "Titillium Web", serif, Arial;
       font-weight: 400;
       padding-right: 20px;
       text-transform: uppercase; }
@@ -4981,8 +4975,7 @@ Hero
   height: 500px;
   padding-top: 110px;
   color: white;
-  background-image: -webkit-linear-gradient(45deg, #2EB5E5 0%, #1999c7 50%, #1999c7 100%);
-  background-image: linear-gradient(45deg, #2EB5E5 0%, #1999c7 50%, #1999c7 100%);
+  background: #18659B;
   overflow: hidden; }
   @media (max-width: 800px) {
     .landing-hero {
@@ -4996,47 +4989,45 @@ Hero
         margin: 90px auto 20px; } }
 
 .bg-hero-wrap {
-  background-color: #FAFAFA; }
+  background-color: white; }
 
 /*--------------------------------------------------------------
 Section - Memories
 --------------------------------------------------------------*/
 .landing-memories {
-  max-width: 100%; }
-  .landing-memories .padded {
-    padding: 30px 0;
-    max-width: 80%; }
-    @media (max-width: 900px) {
-      .landing-memories .padded {
-        padding-bottom: 30px;
-        max-width: 100%; } }
+  max-width: 100%;
+  background: #000; }
   .landing-memories .images-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0;
+    margin: 0 auto -34px;
     padding: 0; }
     .landing-memories .images-wrapper .image {
       position: relative;
       padding: 0;
-      margin: 10px 30px;
-      background: white;
-      border: 10px solid #f5f5f5;
-      box-shadow: 0px 3px 8px rgba(34, 34, 34, 0.3); }
+      margin: 0; }
+      .landing-memories .images-wrapper .image:first-child {
+        padding-left: 0; }
+      .landing-memories .images-wrapper .image:last-child {
+        padding-right: 0; }
+      .landing-memories .images-wrapper .image img {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); }
 
 /*--------------------------------------------------------------
 Section - Intro
 --------------------------------------------------------------*/
 .landing-intro .padded {
-  padding: 30px 0 60px;
+  padding: 60px 0;
   max-width: 80%; }
 .landing-intro .classes-wrapper {
   display: -webkit-inline-box;
@@ -5071,17 +5062,15 @@ Section - Intro
 /*--------------------------------------------------------------
 Section - Intro - Camps
 --------------------------------------------------------------*/
-.landing-intro {
-  border-top: 2px solid #e6e6e6; }
-  .landing-intro.camps {
-    background: white; }
-    .landing-intro.camps .padded {
-      padding-top: 30px;
-      padding-bottom: 30px; }
-    .landing-intro.camps .emblem {
-      background-color: white; }
-  .landing-intro .title {
-    color: #1F1F1F; }
+.landing-intro.camps {
+  background: white; }
+  .landing-intro.camps .padded {
+    padding-top: 60px;
+    padding-bottom: 30px; }
+  .landing-intro.camps .emblem {
+    background-color: white; }
+.landing-intro .title {
+  color: #1F1F1F; }
 
 /*--------------------------------------------------------------
 Section - Intro - Classes
@@ -5102,20 +5091,20 @@ Section - Quote
 --------------------------------------------------------------*/
 .landing-quote {
   background-color: white;
-  border-top: 2px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
   padding: 20px 0; }
 
 /*--------------------------------------------------------------
 Section - Call Out
 --------------------------------------------------------------*/
 .landing-callout {
-  background-color: #1999c7; }
+  background-color: #175f92; }
 
 /*--------------------------------------------------------------
 Footer
 --------------------------------------------------------------*/
 footer.landing {
-  background-color: #13779a; }
+  background-color: #155989; }
   footer.landing ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -5225,7 +5214,6 @@ Animations
   background: #ffdf05;
   content: '';
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg); }
 
 .sun-reye {
@@ -5325,45 +5313,36 @@ Animations
 
 .sun-light:nth-child(10n+2) {
   -webkit-transform: rotate(18deg);
-      -ms-transform: rotate(18deg);
           transform: rotate(18deg); }
 
 .sun-light:nth-child(10n+3) {
   -webkit-transform: rotate(36deg);
-      -ms-transform: rotate(36deg);
           transform: rotate(36deg); }
 
 .sun-light:nth-child(10n+4) {
   -webkit-transform: rotate(54deg);
-      -ms-transform: rotate(54deg);
           transform: rotate(54deg); }
 
 .sun-light:nth-child(10n+5) {
   -webkit-transform: rotate(72deg);
-      -ms-transform: rotate(72deg);
           transform: rotate(72deg); }
 
 .sun-light:nth-child(10n+6) {
   -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
           transform: rotate(90deg); }
 
 .sun-light:nth-child(10n+7) {
   -webkit-transform: rotate(108deg);
-      -ms-transform: rotate(108deg);
           transform: rotate(108deg); }
 
 .sun-light:nth-child(10n+8) {
   -webkit-transform: rotate(126deg);
-      -ms-transform: rotate(126deg);
           transform: rotate(126deg); }
 
 .sun-light:nth-child(10n+9) {
   -webkit-transform: rotate(144deg);
-      -ms-transform: rotate(144deg);
           transform: rotate(144deg); }
 
 .sun-light:nth-child(10n+10) {
   -webkit-transform: rotate(162deg);
-      -ms-transform: rotate(162deg);
           transform: rotate(162deg); }

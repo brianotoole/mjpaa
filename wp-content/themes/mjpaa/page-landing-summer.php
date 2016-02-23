@@ -101,22 +101,6 @@ Template Name: Landing, Summer
 </section>
 </div>
 
-<section class="landing-memories">
-  <div class="contain center padded">
-    <div class="images-wrapper">
-	  <div class="image">
-	    <img src="http://mjpaa.com/wp-content/uploads/2015/08/memories3.jpg">
-	  </div>
-	  <div class="image">
-	    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-left.jpg">
-	   </div>
-	   <div class="image">
-	     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-middle.jpg">
-	   </div>
-    </div><!--/.images-wrapper-->
-  </div><!--/.contain-->
-</section>
-
 <section class="landing-intro camps">
   <div class="contain center padded">
     <h3 class="title has-emblem">Summer Camps &amp; Workshops</h3>
@@ -163,6 +147,21 @@ $query = new WP_Query($args);
 <?php endif; ?>      
 
   </div><!--/.contain-->
+</section>
+
+<section class="landing-memories">
+    <div class="images-wrapper">
+	  <div class="image">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-middle.jpg">
+	  </div>
+	  <div class="image">
+	    <img src="http://mjpaa.com/wp-content/uploads/2015/08/memories3.jpg">
+	   </div>
+	   <div class="image">
+	     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-middle.jpg">
+	   </div>
+
+    </div><!--/.images-wrapper-->
 </section>
 
 <section class="landing-intro classes">
