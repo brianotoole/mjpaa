@@ -4998,7 +4998,7 @@ Section - Memories
 --------------------------------------------------------------*/
 .landing-memories {
   max-width: 100%;
-  background: #000; }
+  background: #222; }
   .landing-memories .images-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -5013,21 +5013,36 @@ Section - Memories
             justify-content: center;
     margin: 0 auto -34px;
     padding: 0; }
+    @media (max-width: 800px) {
+      .landing-memories .images-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: 0 auto; } }
     .landing-memories .images-wrapper .image {
       position: relative;
       padding: 0;
-      margin: 0; }
+      margin: -25px 0 0px;
+      width: 250px; }
+      @media (max-width: 800px) {
+        .landing-memories .images-wrapper .image {
+          margin: 0 auto;
+          width: 50%; } }
       .landing-memories .images-wrapper .image:first-child {
         padding-left: 0; }
       .landing-memories .images-wrapper .image:last-child {
         padding-right: 0; }
       .landing-memories .images-wrapper .image img {
         height: 250px;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-        clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); }
+        -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+        clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%); }
         @media (max-width: 800px) {
           .landing-memories .images-wrapper .image img {
-            height: auto; } }
+            height: auto;
+            clip-path: none;
+            -webkit-clip-path: none; } }
 
 /*--------------------------------------------------------------
 Section - Intro
@@ -5054,7 +5069,7 @@ Section - Intro
   margin: 0;
   padding: 0; }
   .landing-intro .classes-wrapper .class {
-    width: 275px;
+    width: 200px;
     margin: 10px 5px;
     padding: 5px; }
   .landing-intro .classes-wrapper span {
@@ -5069,7 +5084,7 @@ Section - Intro
 Section - Intro - Camps
 --------------------------------------------------------------*/
 .landing-intro.camps {
-  background: white; }
+  background-color: white; }
   .landing-intro.camps .padded {
     padding-top: 60px;
     padding-bottom: 30px; }
@@ -5082,7 +5097,7 @@ Section - Intro - Camps
 Section - Intro - Classes
 --------------------------------------------------------------*/
 .landing-intro.classes {
-  background-color: #fafafa; }
+  background-color: white; }
 .landing-intro .title {
   color: #1F1F1F; }
 .landing-intro .has-emblem {
@@ -5096,7 +5111,7 @@ Section - Intro - Classes
 Section - Quote
 --------------------------------------------------------------*/
 .landing-quote {
-  background-color: white;
+  background-color: #fafafa;
   border-top: 1px solid #e6e6e6;
   padding: 20px 0; }
 
@@ -5133,8 +5148,11 @@ footer.landing {
       color: white; }
       footer.landing ul a:hover {
         text-decoration: underline; }
-    footer.landing ul i:hover {
-      text-decoration: none; }
+    footer.landing ul i {
+      font-size: 1.5em;
+      vertical-align: bottom; }
+      footer.landing ul i:hover {
+        text-decoration: none; }
     footer.landing ul .r {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
@@ -5144,9 +5162,11 @@ footer.landing {
       @media (max-width: 500px) {
         footer.landing ul .r {
           -webkit-box-flex: 1;
-          -webkit-flex: 1 auto;
-              -ms-flex: 1 auto;
-                  flex: 1 auto; } }
+          -webkit-flex: 1 100%;
+              -ms-flex: 1 100%;
+                  flex: 1 100%;
+          margin-top: 1.5em;
+          text-align: center; } }
 
 /*--------------------------------------------------------------
 Animations

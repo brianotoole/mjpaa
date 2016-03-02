@@ -138,6 +138,8 @@ $query = new WP_Query($args);
 	</a>
 	<a href="<?php the_permalink() ?>">
 	  <p>View Camp <i class="fa fa-angle-double-right"></i></p>
+	  <br class="visible-xs" />
+	  <hr class="visible-xs" />
 	</a>
   </div><!--/.class-->
 </div><!--/.class-wrapper-->
@@ -154,7 +156,7 @@ $query = new WP_Query($args);
 <section class="landing-memories">
     <div class="images-wrapper">
 	  <div class="image">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-left.jpg">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-left-2.jpg">
 	  </div>
 	  <div class="image">
 	    <img src="http://mjpaa.com/wp-content/uploads/2015/08/memories3.jpg">
@@ -201,6 +203,8 @@ $query = new WP_Query($args);
 	</a>
 	<a href="<?php the_permalink() ?>">
 	  <p>View Class <i class="fa fa-angle-double-right"></i></p>
+	  <br class="visible-xs" />
+	  <hr class="visible-xs" />
 	</a>
   </div><!--/.class-->
 </div><!--/.class-wrapper-->

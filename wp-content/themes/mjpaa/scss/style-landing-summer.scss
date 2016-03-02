@@ -278,7 +278,7 @@ Section - Memories
 
 .landing-memories {
   max-width: 100%;
-  background: #000;
+  background: #222;
  
   
   
@@ -288,11 +288,20 @@ Section - Memories
 	  justify-content: center;
 	  margin: 0 auto -34px;
 	  padding: 0;  
+	  @media (max-width: 800px) {
+	      flex-direction: column;
+	      margin: 0 auto;
+	  }
 	  
 	  .image {
 	      position: relative;
 		  padding: 0;
-		  margin: 0;
+		  margin: -25px 0 0px;
+		  width: 250px;
+		  @media (max-width: 800px) {
+		  	margin: 0 auto;
+		  	width: 50%;
+		  }
 		  &:first-child {
 			  padding-left: 0;
 		  }
@@ -301,10 +310,14 @@ Section - Memories
 		  }
 		  img {
 		  	  height: 250px;
-			  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-			  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-			  @media (max-width:800px) {
+			  //-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+			  //clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+			  -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+			  clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+			  @media (max-width: 800px) {
 				  height: auto;
+				  clip-path: none;
+				  -webkit-clip-path: none;
 			  }
 		  }
 	  }
@@ -334,7 +347,7 @@ Section - Intro
 		
 		.class {
 			//flex: 1 33%;
-		    width: 275px;
+		    width: 200px;
 		    margin: 10px 5px;
 		    padding: 5px;
 		}
@@ -364,7 +377,7 @@ Section - Intro - Camps
 	//border-top: 2px solid $border-color;
 
 	&.camps  {
-		background: white;
+		background-color: white;
 		
 		.padded {
 			padding-top: 60px;
@@ -390,7 +403,7 @@ Section - Intro - Classes
 .landing-intro {
 
 	&.classes  {
-		background-color: darken(white,2%);
+		background-color: white
 	}
 	
 	.title {
@@ -412,7 +425,8 @@ Section - Intro - Classes
 Section - Quote
 --------------------------------------------------------------*/
 .landing-quote {
-	background-color: white;
+	background-color: darken(white,2%);
+
 	border-top: 1px solid $border-color;
 	padding: 20px 0;
 }
@@ -452,6 +466,8 @@ footer.landing {
 			}
 		}
 		i {
+		font-size: 1.5em;
+		vertical-align: bottom;
 			&:hover {
 				text-decoration: none;
 			}
@@ -461,7 +477,9 @@ footer.landing {
 			text-align: right;
 			
 			@media (max-width: 500px) {
-	        	flex: 1 auto;
+	        	flex: 1 100%;
+	        	margin-top: 1.5em;
+	        	text-align: center;
 			}
 		}
 		
