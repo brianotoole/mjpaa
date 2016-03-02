@@ -154,13 +154,13 @@ $query = new WP_Query($args);
 <section class="landing-memories">
     <div class="images-wrapper">
 	  <div class="image">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-middle.jpg">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-left.jpg">
 	  </div>
 	  <div class="image">
 	    <img src="http://mjpaa.com/wp-content/uploads/2015/08/memories3.jpg">
 	   </div>
 	   <div class="image">
-	     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-middle.jpg">
+	     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/summer-hands.jpg">
 	   </div>
 
     </div><!--/.images-wrapper-->
@@ -216,7 +216,7 @@ $query = new WP_Query($args);
 
 <section class="landing-quote">
   <div class="contain center not-padded">
-    <i></i> "When the arts enter a child's world, magic happens." <em>- Mary Jo Scanio, Founder</em>
+    <i></i>"When the arts enter a child's world, magic happens." <em>- Mary Jo Scanio, Founder</em>
   </div>
 </section>
 

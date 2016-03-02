@@ -375,11 +375,33 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/summer-hands.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51586,
+		"inputAbbreviatedPath": "\/img\/summer-hands.jpg",
+		"outputAbbreviatedPath": "\/img\/summer-hands.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/summer-left-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53983,
+		"inputAbbreviatedPath": "\/img\/summer-left-2.jpg",
+		"outputAbbreviatedPath": "\/img\/summer-left-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/summer-left.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 26072,
+		"initialSize": 71838,
 		"inputAbbreviatedPath": "\/img\/summer-left.jpg",
 		"outputAbbreviatedPath": "\/img\/summer-left.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -393,6 +415,17 @@
 		"initialSize": 26405,
 		"inputAbbreviatedPath": "\/img\/summer-middle.jpg",
 		"outputAbbreviatedPath": "\/img\/summer-middle.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/summer-right.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 104651,
+		"inputAbbreviatedPath": "\/img\/summer-right.jpg",
+		"outputAbbreviatedPath": "\/img\/summer-right.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

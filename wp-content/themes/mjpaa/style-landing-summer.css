@@ -4976,7 +4976,7 @@ Hero
   color: white;
   background: #18659B;
   overflow: hidden; }
-  @media (max-width: 800px) {
+  @media (max-width: 940px) {
     .landing-hero {
       height: 700px; } }
   @media (max-width: 700px) {
@@ -5022,8 +5022,12 @@ Section - Memories
       .landing-memories .images-wrapper .image:last-child {
         padding-right: 0; }
       .landing-memories .images-wrapper .image img {
+        height: 250px;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
         clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); }
+        @media (max-width: 800px) {
+          .landing-memories .images-wrapper .image img {
+            height: auto; } }
 
 /*--------------------------------------------------------------
 Section - Intro
