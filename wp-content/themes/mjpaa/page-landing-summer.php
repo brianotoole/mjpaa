@@ -93,10 +93,12 @@ Template Name: Landing, Summer
         </div>
     </div><!--/.sun-->
   <div class="contain center">
-    <h2 class="title">Discover the Difference</h2>
-    <h6>Don't miss out on our early bird Summer Registration Discounts.<br />Register for classes today.</span></h6>
-    <a href="" class="button border r">Find Summer Classes</a>
-    <a href="" class="button border r">View Summer Brochure</a>
+    <h2 class="title">Summer Camps &amp; Classes</h2>
+    <h6>Don't miss out on our early bird Summer Registration Discounts.<br />Register for camps &amp; classes today!</span></h6>
+    <a href="<?php bloginfo('url'); ?>/summer-faqs/" class="button border r">Summer Brochure</a>
+    <a href="#" class="button border r">Camps &amp; Classes</a><br />
+    <a href="<?php bloginfo('url'); ?>/summer-uniform/" class="button border r">Summer Uniform</a>
+    <a href="<?php bloginfo('url'); ?>/summer-faqs/" class="button border r">Summer FAQs</a>
   </div>
 </section>
 </div>
@@ -132,10 +134,10 @@ $query = new WP_Query($args);
 <div class="classes-wrapper">
   <div class="class">
     <a href="<?php the_permalink() ?>">
-      <h6><?php the_title(); ?></h6>
+      <h6><?php the_field('class_title_summer'); ?></h6>
 	</a>
 	<a href="<?php the_permalink() ?>">
-	  <p>View Class <i class="fa fa-angle-double-right"></i></p>
+	  <p>View Camp <i class="fa fa-angle-double-right"></i></p>
 	</a>
   </div><!--/.class-->
 </div><!--/.class-wrapper-->
@@ -254,7 +256,7 @@ $(window).scroll(function() {
     	<li><a href="https://www.facebook.com/MaryJosPerformingArtsAcademy/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
     	<li><a href="https://twitter.com/mjpaa" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
     	<li><a href="https://www.instagram.com/mjpaa_tampa/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-    	<li class="r"><a href="<?php bloginfo('url'); ?>/general-info/summer-faqs/">Summer FAQs</a></li>
+    	<li class="r"><a href="<?php bloginfo('url'); ?>/summer-faqs/">Summer FAQs</a></li>
     	<li class=""><a href="<?php bloginfo('url'); ?>/summer-uniform/">Summer Uniform</a></li>
     </ul>
   </div><!--/.contain-->
