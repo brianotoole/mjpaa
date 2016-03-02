@@ -73,7 +73,7 @@
 					} ?>
 			  </em>
 			</h6>
-		<h5 class="grade">Grade Level</h5>
+		<h5 class="grade">Age/Grade Level</h5>
 	      <h6>
 		 	 <em>
 		 	 <?php 
@@ -99,9 +99,16 @@
 	  	 
 	       <a class="hidden-xs button primary" href="<?php bloginfo('url'); ?>/about/#faculty">Our Faculty</a>
 	       <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/#faculty">Our Faculty</a>
-	 
-	       <a class="hidden-xs button primary" href="<?php bloginfo('url'); ?>/general-info/uniform-requirements/">Class Uniform</a>
-	       <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/general-info/uniform-requirements/">Class Uniform</a>
+
+
+	       <?php if ( has_term('summer', 'session') ) { //if summer session show summer uniform button ?>
+	        <a class="hidden-xs button primary" href="<?php bloginfo('url'); ?>/summer-uniform/">Summer Uniform</a>
+	        <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/summer-uniform/">Summer Uniform</a>
+	       <?php } else { //else show general uniform button ?>
+	        <a class="hidden-xs button primary" href="<?php bloginfo('url'); ?>/general-info/uniform-requirements/">Class Uniform</a>
+	        <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/general-info/uniform-requirements/">Class Uniform</a>
+	       <?php } //end if is summer ?>  
+	
 
 	  <?php endif ; ?>
 		</div><!--.class-single-->
