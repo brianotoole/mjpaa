@@ -35,7 +35,7 @@ textarea {
 	font-size: 16.25px;
 	line-height: 1.8;
 }
-textarea { height: 200px; }
+textarea { height: 200px;}
 a {
 	color: $black;
 	-webkit-transition: all 300ms ease-in-out;
@@ -61,7 +61,7 @@ textarea {
 	font-size: 100%; /* Corrects font size not being inherited in all browsers */
 	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
-	line-height: 38px;
+	line-height: 1.5em;
     font-size: 1em;
 }
 
@@ -1697,7 +1697,6 @@ img.alumni {
 	    border-bottom: 2px solid $lightgray;
 	}
 	h6 {
-		font-size: 1em;
 		line-height: 1.5em;
 		text-transform: capitalize;
 	}

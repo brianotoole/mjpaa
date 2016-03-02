@@ -101,7 +101,7 @@
 	       <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/about/#faculty">Our Faculty</a>
 
 
-	       <?php if ( has_term('summer', 'session') ) { //if summer session show summer uniform button ?>
+	       <?php if ( has_term('summer-classes', 'session') || has_term('summer-camps', 'session') ) { //if summer session show summer uniform button ?>
 	        <a class="hidden-xs button primary" href="<?php bloginfo('url'); ?>/summer-uniform/">Summer Uniform</a>
 	        <a class="visible-xs button mobile" href="<?php bloginfo('url'); ?>/summer-uniform/">Summer Uniform</a>
 	       <?php } else { //else show general uniform button ?>

@@ -254,8 +254,8 @@ $(window).scroll(function() {
     	<li><a href="https://www.facebook.com/MaryJosPerformingArtsAcademy/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
     	<li><a href="https://twitter.com/mjpaa" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
     	<li><a href="https://www.instagram.com/mjpaa_tampa/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-    	<li class="r"><a href="">Summer FAQs</a></li>
-    	<li class=""><a href="">Summer Uniform</a></li>
+    	<li class="r"><a href="<?php bloginfo('url'); ?>/general-info/summer-faqs/">Summer FAQs</a></li>
+    	<li class=""><a href="<?php bloginfo('url'); ?>/summer-uniform/">Summer Uniform</a></li>
     </ul>
   </div><!--/.contain-->
 </footer>
