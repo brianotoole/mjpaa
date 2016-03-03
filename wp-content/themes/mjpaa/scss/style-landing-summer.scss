@@ -338,12 +338,13 @@ Section - Intro
 	}
 	
 	.classes-wrapper {
+        display: inline-block;
 		margin: 0;
 		padding: 0;
 		
-		.item {
-			//float: left;
-		    //width: 275px;
+		.group {
+		    float: left;
+		    width: 25%;
 		    //margin: 0px auto 5px;
 		    //padding: 5px;
 		    text-align: left;

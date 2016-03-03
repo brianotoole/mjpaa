@@ -5051,9 +5051,12 @@ Section - Intro
   padding: 60px 0;
   max-width: 80%; }
 .landing-intro .classes-wrapper {
+  display: inline-block;
   margin: 0;
   padding: 0; }
-  .landing-intro .classes-wrapper .item {
+  .landing-intro .classes-wrapper .group {
+    float: left;
+    width: 25%;
     text-align: left; }
   .landing-intro .classes-wrapper span {
     display: block; }

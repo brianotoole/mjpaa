@@ -109,8 +109,20 @@ Template Name: Landing, Summer
       <div class="emblem">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-courses.png">
       </div>
-
-	  <?php get_template_part( 'part', 'landing-summer-loops' ); //4 loops by 'class_group' ?>
+      <div class="classes-wrapper">
+        <ul class="group col-1">
+	      <?php get_template_part( 'part', 'landing-summer-group1' ); ?>
+        </ul>
+        <ul class="group col-2">
+	      <?php get_template_part( 'part', 'landing-summer-group2' ); ?>
+        </ul>
+        <ul class="group col-3">
+	      <?php get_template_part( 'part', 'landing-summer-group3' ); ?>
+        </ul>
+        <ul class="group col-4">
+	      <?php get_template_part( 'part', 'landing-summer-group4' ); ?>
+        </ul>
+      </div>
 
   </div><!--/.contain-->
 </section>
