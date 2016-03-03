@@ -338,18 +338,15 @@ Section - Intro
 	}
 	
 	.classes-wrapper {
-		display: inline-flex;
-		flex-flow: wrap;
-		justify-content: center;
-		align-items: center;
 		margin: 0;
 		padding: 0;
 		
-		.class {
-			//flex: 1 33%;
-		    width: 200px;
-		    margin: 10px 5px;
-		    padding: 5px;
+		.item {
+			//float: left;
+		    //width: 275px;
+		    //margin: 0px auto 5px;
+		    //padding: 5px;
+		    text-align: left;
 		}
 	
 		span {

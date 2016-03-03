@@ -109,47 +109,8 @@ Template Name: Landing, Summer
       <div class="emblem">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-courses.png">
       </div>
-      
-<?php
-// get all summer classes
-$args = array (
-  'post_type' => 'class',
-    'tax_query' => array(
-        'relation' => 'AND',
-        array(
-            'taxonomy' => 'session',
-            'field' => 'slug',
-            'terms' => array( 'summer-camps'),
-            'operator' => 'IN'
-        ),
-  'order'		   => 'DESC',
-  'posts_per_page' => -1, 
-  'post_status' => 'publish'
-  )
-);
-// the loop
-$query = new WP_Query($args); 
-  if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); 
-?>
-<div class="classes-wrapper">
-  <div class="class">
-    <a href="<?php the_permalink() ?>">
-      <h6><?php the_field('class_title_summer'); ?></h6>
-      <span><i class="fa fa-angle-double-right"></i></span>
-	</a>
-	<a href="<?php the_permalink() ?>">
-	  <p>View Camp <i class="fa fa-angle-double-right"></i></p>
-	  <br class="visible-xs" />
-	  <hr class="visible-xs" />
-	</a>
-  </div><!--/.class-->
-</div><!--/.class-wrapper-->
 
-<?php endwhile; 
- wp_reset_postdata();
- else : ?>
-<p><?php _e( 'There are no classes posted at this time. Please check back later.' ); ?></p>
-<?php endif; ?>      
+	  <?php get_template_part( 'part', 'landing-summer-loops' ); //4 loops by 'class_group' ?>
 
   </div><!--/.contain-->
 </section>
