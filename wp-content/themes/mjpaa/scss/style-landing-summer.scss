@@ -15,6 +15,8 @@ $gold: #AE8648;
 $lightblue: #18659B; 
 $darkblue: darken($lightblue,2%);
 $yellow: #ffe153;
+$green: #4CAF50;
+$red: #C62828;
 $border-color: #e6e6e6;
 
 // Typography
@@ -333,8 +335,9 @@ Section - Intro
 .landing-intro {
 	
 	.padded {
+		margin-bottom: 30px;
 		padding: 60px 0;
-		max-width: 80%;
+		max-width: 95%;
 	}
 	
 	.classes-wrapper {
@@ -344,25 +347,59 @@ Section - Intro
 		
 		.group {
 		    float: left;
-		    width: 25%;
-		    //margin: 0px auto 5px;
-		    //padding: 5px;
+		    width: 275px;
+		    margin: 0;
+		    padding: 5px;
 		    text-align: left;
+		    @media (max-width: 1170px) {
+		    	width: 250px;
+		    }
+		    @media (max-width: 800px) {
+			    width: 100%;
+			    margin-bottom: 15px;
+		    }
 		}
+		
+		li {
+			list-style: none;
+			font-size: 0.9em;
+			background-color: rgba(0, 0, 0, 0.05);
+			padding: 5px 5px 5px 20px;
+			border: 1px solid $border-color;
+			box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
+			margin-bottom: 5px;
+			width: 100%;
+			box-sizing: border-box;
+			cursor: pointer;
+			border-radius: 3px;
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.2);
+			}
 	
-		span {
-			display: block;
 		}
-		
-		h6 {
-			color: $black;
-			text-decoration: none;
-			
+		.group {
+			&.one {
+				li {
+			background-image: linear-gradient( 90deg, $yellow 10px, $yellow 10px, $yellow 11px, rgba(0, 0, 0, 0) 11px);
+				}
+			}
+			&.two {
+				li {
+			background-image: linear-gradient( 90deg, $green 10px, $green 10px, $green 11px, rgba(0, 0, 0, 0) 11px);
+				}
+			}
+			&.three {
+				li {
+			background-image: linear-gradient( 90deg, $lightblue 10px, $lightblue 10px, $lightblue 11px, rgba(0, 0, 0, 0) 11px);
+				}
+			}
+			&.four {
+				li {
+			background-image: linear-gradient( 90deg, $red 10px, $red 10px, $red 11px, rgba(0, 0, 0, 0) 11px);
+				}
+			}
 		}
-		
-		p {
-			text-decoration: underline;
-		}
+
 		
 	}
 	

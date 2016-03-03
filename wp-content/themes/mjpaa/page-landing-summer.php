@@ -109,18 +109,19 @@ Template Name: Landing, Summer
       <div class="emblem">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-courses.png">
       </div>
+      <p>Below camps/workshops are grouped by XYZ. Click an item to view registration information.</p><br />
       <div class="classes-wrapper">
-        <ul class="group col-1">
-	      <?php get_template_part( 'part', 'landing-summer-group1' ); ?>
+        <ul class="group one">
+	      <?php get_template_part( 'part', 'landing-summer-camps-group1' ); ?>
         </ul>
-        <ul class="group col-2">
-	      <?php get_template_part( 'part', 'landing-summer-group2' ); ?>
+        <ul class="group two">
+	      <?php get_template_part( 'part', 'landing-summer-camps-group2' ); ?>
         </ul>
-        <ul class="group col-3">
-	      <?php get_template_part( 'part', 'landing-summer-group3' ); ?>
+        <ul class="group three">
+	      <?php get_template_part( 'part', 'landing-summer-camps-group3' ); ?>
         </ul>
-        <ul class="group col-4">
-	      <?php get_template_part( 'part', 'landing-summer-group4' ); ?>
+        <ul class="group four">
+	      <?php get_template_part( 'part', 'landing-summer-camps-group4' ); ?>
         </ul>
       </div>
 
@@ -148,46 +149,21 @@ Template Name: Landing, Summer
       <div class="emblem">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-courses.png">
       </div>
-      
-<?php
-// get all summer classes
-$args = array (
-  'post_type' => 'class',
-    'tax_query' => array(
-        'relation' => 'AND',
-        array(
-            'taxonomy' => 'session',
-            'field' => 'slug',
-            'terms' => array( 'summer-classes'),
-            'operator' => 'IN'
-        ),
-  'order'		   => 'DESC',
-  'posts_per_page' => -1, 
-  'post_status' => 'publish'
-  )
-);
-// the loop
-$query = new WP_Query($args); 
-  if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); 
-?>
-<div class="classes-wrapper">
-  <div class="class">
-    <a href="<?php the_permalink() ?>">
-      <h6><?php the_title(); ?></h6>
-	</a>
-	<a href="<?php the_permalink() ?>">
-	  <p>View Class <i class="fa fa-angle-double-right"></i></p>
-	  <br class="visible-xs" />
-	  <hr class="visible-xs" />
-	</a>
-  </div><!--/.class-->
-</div><!--/.class-wrapper-->
-
-<?php endwhile; 
- wp_reset_postdata();
- else : ?>
-<p><?php _e( 'There are no classes posted at this time. Please check back later.' ); ?></p>
-<?php endif; ?>      
+      <p>Below classes are grouped by XYZ. Click an item to view registration information.</p><br />
+      <div class="classes-wrapper">
+        <ul class="group one">
+	      <?php get_template_part( 'part', 'landing-summer-classes-group1' ); ?>
+        </ul>
+        <ul class="group two">
+	      <?php get_template_part( 'part', 'landing-summer-classes-group2' ); ?>
+        </ul>
+        <ul class="group three">
+	      <?php get_template_part( 'part', 'landing-summer-classes-group3' ); ?>
+        </ul>
+        <ul class="group four">
+	      <?php get_template_part( 'part', 'landing-summer-classes-group4' ); ?>
+        </ul>
+      </div>    
 
   </div><!--/.contain-->
 </section>

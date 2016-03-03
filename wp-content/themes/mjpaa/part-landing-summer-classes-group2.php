@@ -1,12 +1,12 @@
 <?php
-// GroupFour args
-$groupFour = array (
+// groupTwo args
+$groupTwo = array (
   'post_type' => 'class',
   'orderby'   => 'title',
-  'order'     => 'ASC',
+  'order'     => 'DESC',
   'meta_query' => array(array(
   			'key' => 'class_group',
-            'value' => '4', //change this
+            'value' => '1', //change this
             'compare' => 'LIKE'
         )
     ),
@@ -15,21 +15,19 @@ $groupFour = array (
        array(
            'taxonomy' => 'session',
            'field'    => 'slug',
-           'terms'	  => array( 'summer-camps'),
+           'terms'	  => array( 'summer-classes'),
         ),
   )
   
 );
 
-$query = new WP_Query($groupOne); 
+$query = new WP_Query($groupTwo); 
 if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-<li><a href="<?php the_permalink() ?>"><?php the_field('class_title_summer'); ?></a>
-  <span><a href="<?php the_permalink() ?>">View Camp <i class="fa fa-angle-double-right"></i></a></span>
-</li>
+<li><a href="<?php the_permalink() ?>" title="Click to View"><?php the_field('class_title_summer'); ?></a></li>
 
 <?php endwhile; 
  wp_reset_postdata();
  wp_reset_query();
  else :
- endif; ?>  
+ endif; ?> 
