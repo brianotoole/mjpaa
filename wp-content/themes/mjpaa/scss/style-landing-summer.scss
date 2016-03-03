@@ -414,7 +414,7 @@ Section - Intro - Classes
 		border-color: $border-color;
 	}
 	.emblem {
-		background: darken(white,2%); //same as section bg-color
+		background: white; //same as section bg-color
 		img {
 			border-color: $border-color;
 		}

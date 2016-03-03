@@ -7,9 +7,9 @@ Template Name: Landing, Summer
 <!DOCTYPE html>
 <html>
 <head>
-<title>Summer Registration at MJPAA</title>
+<title>Summer 2016 Registration at MJPAA</title>
     <meta charset="utf-8">
-    <meta name="keywords" content="dance tampa, summer dance tampa, tampa dance classes summer, tampa fl dance lessons, performing arts tampa, tampa summer camps, summer dance camps, summer activities tampa">
+    <meta name="keywords" content="dance tampa, mjpaa summer, mjpaa summer 2016, mary jos summer registration, summer dance tampa, tampa dance classes summer, tampa fl dance lessons, performing arts tampa, tampa summer camps, summer dance camps, summer activities tampa">
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -135,6 +135,7 @@ $query = new WP_Query($args);
   <div class="class">
     <a href="<?php the_permalink() ?>">
       <h6><?php the_field('class_title_summer'); ?></h6>
+      <span><i class="fa fa-angle-double-right"></i></span>
 	</a>
 	<a href="<?php the_permalink() ?>">
 	  <p>View Camp <i class="fa fa-angle-double-right"></i></p>
