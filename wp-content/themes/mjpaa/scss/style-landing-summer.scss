@@ -210,12 +210,18 @@ header {
 		transform: scale(1) translateY(0);
 		transition: transform 0.3s;
 		
+		@media (max-width: 800px) {
+			margin-bottom: -25px;
+		}
+				
 		@media (max-width: 500px) {
 			width: 200px;
 			margin-top: 9px;
+			margin-bottom: 0;
 		}	
 		
 	}
+
 	
 	.menu {
 		list-style: none;
@@ -291,7 +297,6 @@ Section - Memories
 	  margin: 0 auto -34px;
 	  padding: 0;  
 	  @media (max-width: 800px) {
-	      flex-direction: column;
 	      margin: 0 auto;
 	  }
 	  
@@ -480,11 +485,12 @@ Footer
 --------------------------------------------------------------*/
 footer.landing {
 	background-color: darken($darkblue,2%);
+	color: white;
 	
 	ul {
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-around;
+		justify-content: center;
 		margin: 0;
 		padding: 15px 0 10px;
 		list-style: none;
@@ -518,8 +524,27 @@ footer.landing {
 			}
 		}
 		
-		
+		&.center {
+			justify-content: center;
+			border-top: 1px solid rgba($border-color,0.1);
+			
+			li {
+				
+				&:after {
+					content: ' -';
+					margin-left: 12px;
+					@media (max-width: 700px) {
+						display: none;
+					}
+				}
+				&:last-child:after {
+					content: '';
+				}
+			}
+		}
+
 	}
+	
 	
 }
 

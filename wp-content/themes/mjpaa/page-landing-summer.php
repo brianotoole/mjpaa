@@ -210,10 +210,18 @@ $(window).scroll(function() {
     	<li><a href="https://www.facebook.com/MaryJosPerformingArtsAcademy/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
     	<li><a href="https://twitter.com/mjpaa" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
     	<li><a href="https://www.instagram.com/mjpaa_tampa/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+    	<li><a href="https://www.youtube.com/user/MaryJosTampa" target="_blank"><i class="fa fa-youtube"></i></a></li>
     	<li class="r"><a href="<?php bloginfo('url'); ?>/summer-faqs/">Summer FAQs</a></li>
     	<li class=""><a href="<?php bloginfo('url'); ?>/summer-uniform/">Summer Uniform</a></li>
     </ul>
   </div><!--/.contain-->
+  <div class="contain footer-bottom">
+    <ul class="center">
+      <li>PH: <a href="tel:813-969-0240">813-969-0240</a></li>
+      <li>FAX: 813-960-2117</li>
+      <li>15906 Mapledale Blvd Tampa, FL 33624</li>
+    </ul>
+  </div>
 </footer>
 
 </body>

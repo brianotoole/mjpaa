@@ -4945,10 +4945,14 @@ header {
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s; }
+    @media (max-width: 800px) {
+      .landing-nav .logo {
+        margin-bottom: -25px; } }
     @media (max-width: 500px) {
       .landing-nav .logo {
         width: 200px;
-        margin-top: 9px; } }
+        margin-top: 9px;
+        margin-bottom: 0; } }
   .landing-nav .menu {
     list-style: none;
     margin: 0;
@@ -5015,11 +5019,6 @@ Section - Memories
     padding: 0; }
     @media (max-width: 800px) {
       .landing-memories .images-wrapper {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
         margin: 0 auto; } }
     .landing-memories .images-wrapper .image {
       position: relative;
@@ -5140,7 +5139,8 @@ Section - Call Out
 Footer
 --------------------------------------------------------------*/
 footer.landing {
-  background-color: #155989; }
+  background-color: #155989;
+  color: white; }
   footer.landing ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -5149,9 +5149,10 @@ footer.landing {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0;
     padding: 15px 0 10px;
     list-style: none;
@@ -5182,6 +5183,20 @@ footer.landing {
                   flex: 1 100%;
           margin-top: 1.5em;
           text-align: center; } }
+    footer.landing ul.center {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      border-top: 1px solid rgba(230, 230, 230, 0.1); }
+      footer.landing ul.center li:after {
+        content: ' -';
+        margin-left: 12px; }
+        @media (max-width: 700px) {
+          footer.landing ul.center li:after {
+            display: none; } }
+      footer.landing ul.center li:last-child:after {
+        content: ''; }
 
 /*--------------------------------------------------------------
 Animations
