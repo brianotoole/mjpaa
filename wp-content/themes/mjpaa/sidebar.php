@@ -77,20 +77,27 @@
 	      <h6>
 		 	 <em>
 		 	 <?php 
-				$grades = get_the_terms( $post->ID , 'grade' );
-				$i = 0;
-				$len = count($grades); 
-					        
-				foreach ( $grades as $grade ) {	
-					if ($i !== $len - 1) {
+		 	 //the 'get_terms' function cannot retrieve an array of taxonomy arguments for ordering
+		 	 $grades = get_the_terms( $post->ID , 'grade' );
+		 	     //define comparison function to compare numerical values of the 'slug' field (can be changed)
+			 	 function slug_compare( $a, $b ) {
+				   return $a->slug - $b->slug;
+				 } 
+				 // sort array using PHPs usort
+				 usort($grades, "slug_compare");
+				 // now when looping through $grades array, it will be in the order defined in the assigned fields
+				 
+				 $i = 0;
+				 $len = count($grades); 
+				 foreach ( $grades as $grade ) {	
+					if ($i !== $len - 1) { 
 						echo "$grade->name, "; 
 					} else {
 						echo "$grade->name"; 
 					}
-				 
 				 $i++;
-				
-				} ?>
+				}
+		 	  ?>
 			  </em>
 			</h6>
 			

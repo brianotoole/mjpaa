@@ -9,17 +9,15 @@ Template Name: Landing, Summer
 <head>
 <title>Summer 2016 Registration at MJPAA</title>
     <meta charset="utf-8">
-    <meta name="keywords" content="dance tampa, mjpaa summer, mjpaa summer 2016, mary jos summer registration, summer dance tampa, tampa dance classes summer, tampa fl dance lessons, performing arts tampa, tampa summer camps, summer dance camps, summer activities tampa">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="keywords" content="dance tampa, mjpaa summer, mjpaa summer 2016, mary jos summer registration, summer dance tampa, tampa dance classes summer, tampa fl dance lessons, performing arts tampa, tampa summer camps, summer dance camps, summer activities tampa, summer dance camps tampa, mary jos performing arts academy">
+    <meta name="description" content="Summer 2016 classes, workshops, and camps at Tampa's Mary Jos Performing Arts Academy. Register today.">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="icon" href="<?php bloginfo('stylesheet_directory') ?>/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="<?php bloginfo('stylesheet_directory') ?>/img/favicon.ico">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style-landing-summer.css">
 
 </head>
 <body>
-
 <header>
   <nav class="landing-nav">
     <div class="contain">
@@ -109,7 +107,7 @@ Template Name: Landing, Summer
       <div class="emblem">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-courses.png">
       </div>
-      <p>Click a camp/workshop below to view registration information.</p><br />
+      <p>Click a Camp/Workshop below to view registration information.</p><br />
       <div class="classes-wrapper">
         <ul class="group one">
 	      <?php get_template_part( 'part', 'landing-summer-camps-group1' ); ?>
@@ -151,7 +149,7 @@ Template Name: Landing, Summer
       <div class="emblem">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-courses.png">
       </div>
-      <p>Click a class below to view registration information.</p><br />
+      <p>Click a Class below to view registration information.</p><br />
       <div class="classes-wrapper">
         <ul class="group one">
 	      <?php get_template_part( 'part', 'landing-summer-classes-group1' ); ?>
@@ -205,7 +203,16 @@ $(window).scroll(function() {
 
 });
 </script>
+<script type="text/javascript">
+// Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-64721160-1', 'auto');
+  ga('send', 'pageview');
+</script>
 <footer class="landing">
   <div class="contain">
     <ul class="left">
