@@ -2,11 +2,11 @@
 // groupTwo args
 $groupTwo = array (
   'post_type' => 'class',
-  'orderby'   => 'title',
-  'order'     => 'DESC',
+  'orderby'   => 'date',
+  'order'     => 'ASC',
   'meta_query' => array(array(
   			'key' => 'class_group',
-            'value' => '1', //change this
+            'value' => '2', //change this
             'compare' => 'LIKE'
         )
     ),

@@ -95,21 +95,21 @@ Template Name: Landing, Summer
   <div class="contain center">
     <h2 class="title">Summer Camps &amp; Classes</h2>
     <h6>Don't miss out on our early bird Summer Registration Discounts.<br />Register for camps &amp; classes today!</span></h6>
-    <a href="<?php bloginfo('url'); ?>/summer-faqs/" class="button border r">Summer Brochure</a>
-    <a href="#" class="button border r">Camps &amp; Classes</a><br />
+    <a href="http://mjpaa.com/wp-content/uploads/2016/03/2016Summer.pdf" target="_blank" class="button border r">Summer Brochure</a>
+    <a href="#camps" class="button border r">Camps &amp; Classes</a><br />
     <a href="<?php bloginfo('url'); ?>/summer-uniform/" class="button border r">Summer Uniform</a>
     <a href="<?php bloginfo('url'); ?>/summer-faqs/" class="button border r">Summer FAQs</a>
   </div>
 </section>
 </div>
 
-<section class="landing-intro camps">
+<section class="landing-intro camps" id="camps">
   <div class="contain center padded">
     <h3 class="title has-emblem">Summer Camps &amp; Workshops</h3>
       <div class="emblem">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-courses.png">
       </div>
-      <p>Below camps/workshops are grouped by XYZ. Click an item to view registration information.</p><br />
+      <p>Click a camp/workshop below to view registration information.</p><br />
       <div class="classes-wrapper">
         <ul class="group one">
 	      <?php get_template_part( 'part', 'landing-summer-camps-group1' ); ?>
@@ -124,6 +124,8 @@ Template Name: Landing, Summer
 	      <?php get_template_part( 'part', 'landing-summer-camps-group4' ); ?>
         </ul>
       </div>
+      <div clas="clearfix"></div>
+      <a href="<?php bloginfo('url'); ?>/class/camp-care-care" class="button border">Camps/Workshops Before &amp; After Care</a>
 
   </div><!--/.contain-->
 </section>
@@ -149,7 +151,7 @@ Template Name: Landing, Summer
       <div class="emblem">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-courses.png">
       </div>
-      <p>Below classes are grouped by XYZ. Click an item to view registration information.</p><br />
+      <p>Click a class below to view registration information.</p><br />
       <div class="classes-wrapper">
         <ul class="group one">
 	      <?php get_template_part( 'part', 'landing-summer-classes-group1' ); ?>
@@ -217,8 +219,9 @@ $(window).scroll(function() {
   </div><!--/.contain-->
   <div class="contain footer-bottom">
     <ul class="center">
-      <li>PH: <a href="tel:813-969-0240">813-969-0240</a></li>
-      <li>FAX: 813-960-2117</li>
+      <li class="hidden-xs">PH: <a href="tel:813-969-0240">813-969-0240</a></li>
+      <li class="visible-xs"><i class="fa fa-phone"></i> <a href="tel:813-969-0240">Tap to Call Us</a></li>
+      <li class="hidden-xs">FAX: 813-960-2117</li>
       <li>15906 Mapledale Blvd Tampa, FL 33624</li>
     </ul>
   </div>
