@@ -15,7 +15,6 @@ Template Name: Landing, Summer
     <link rel="icon" href="<?php bloginfo('stylesheet_directory') ?>/img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="<?php bloginfo('stylesheet_directory') ?>/img/favicon.ico">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style-landing-summer.css">
-
 </head>
 <body>
 <header>
@@ -93,7 +92,7 @@ Template Name: Landing, Summer
   <div class="contain center">
     <h2 class="title">Summer Camps &amp; Classes</h2>
     <h6>Don't miss out on our early bird Summer Registration Discounts.<br />Register for camps &amp; classes today!</span></h6>
-    <a href="http://mjpaa.com/wp-content/uploads/2016/03/2016Summer.pdf" target="_blank" class="button border r">Summer Brochure</a>
+    <a href="http://mjpaa.com/wp-content/uploads/2016/03/MJPAA_Summer2016_Brochure.pdf" target="_blank" class="button border r">Summer Brochure</a>
     <a href="#camps" class="button border r">Camps &amp; Classes</a><br />
     <a href="<?php bloginfo('url'); ?>/summer-uniform/" class="button border r">Summer Uniform</a>
     <a href="<?php bloginfo('url'); ?>/summer-faqs/" class="button border r">Summer FAQs</a>
