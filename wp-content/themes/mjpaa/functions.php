@@ -69,12 +69,13 @@ add_action( 'after_setup_theme', 'mjpaa_setup' );
 /**
  * Load Google Fonts.
  */
-function load_fonts() {
-            wp_register_style('googleFonts', 'https://fonts.googleapis.com/css?family=Merriweather|Lato:200,300,400,700', array(), '1.0');
-            wp_enqueue_style( 'googleFonts');
-        }
+//function load_fonts() {
+//            wp_register_style('googleFonts', 'https://fonts.googleapis.com/css?family=Merriweather|Lato:200,300,400,700', array(), '1.0');
+//            wp_enqueue_style( 'googleFonts');
+//        }
     
-    add_action('wp_print_styles', 'load_fonts');
+//    add_action('wp_print_styles', 'load_fonts');
+
 
 /**
  * Register widget area.

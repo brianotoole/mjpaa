@@ -343,23 +343,24 @@ Section - Intro
 	.padded {
 		margin-bottom: 40px;
 		padding: 60px 0;
-		max-width: 95%;
+		max-width: 85%;
+		@media (max-width: 800px) {
+			max-width: 95%;
+		}
 	}
 	
 	.classes-wrapper {
-        display: inline-block;
+        display: block;
 		margin: 0;
 		padding: 0;
 		
 		.group {
-		    float: left;
-		    width: 275px;
+		    //float: left;
+		    //width: 275px;
 		    margin: 0;
 		    padding: 5px;
 		    text-align: left;
-		    @media (max-width: 1170px) {
-		    	width: 250px;
-		    }
+
 		    @media (max-width: 800px) {
 			    width: 100%;
 			    margin-bottom: 15px;

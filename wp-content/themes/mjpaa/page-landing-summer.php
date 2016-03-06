@@ -10,7 +10,7 @@ Template Name: Landing, Summer
 <title>Summer 2016 Registration at MJPAA</title>
     <meta charset="utf-8">
     <meta name="keywords" content="dance tampa, mjpaa summer, mjpaa summer 2016, mary jos summer registration, summer dance tampa, tampa dance classes summer, tampa fl dance lessons, performing arts tampa, tampa summer camps, summer dance camps, summer activities tampa, summer dance camps tampa, mary jos performing arts academy">
-    <meta name="description" content="Summer 2016 classes, workshops, and camps at Tampa's Mary Jos Performing Arts Academy. Register today.">
+    <meta name="description" content="Summer 2016 dance classes, workshops, and camps in Tampa, FL at Mary Jos Performing Arts Academy. Register today.">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" href="<?php bloginfo('stylesheet_directory') ?>/img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="<?php bloginfo('stylesheet_directory') ?>/img/favicon.ico">
@@ -107,17 +107,17 @@ Template Name: Landing, Summer
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-courses.png">
       </div>
       <p>Click a Camp/Workshop below to view registration information.</p><br />
-      <div class="classes-wrapper">
-        <ul class="group one">
+      <div class="row classes-wrapper">
+        <ul class="col-sm-3 col-xs-6 group one">
 	      <?php get_template_part( 'part', 'landing-summer-camps-group1' ); ?>
         </ul>
-        <ul class="group two">
+        <ul class="col-sm-3 col-xs-6 group two">
 	      <?php get_template_part( 'part', 'landing-summer-camps-group2' ); ?>
         </ul>
-        <ul class="group three">
+        <ul class="col-sm-3 col-xs-6 group three">
 	      <?php get_template_part( 'part', 'landing-summer-camps-group3' ); ?>
         </ul>
-        <ul class="group four">
+        <ul class="col-sm-3 col-xs-6 group four">
 	      <?php get_template_part( 'part', 'landing-summer-camps-group4' ); ?>
         </ul>
       </div>
@@ -149,17 +149,17 @@ Template Name: Landing, Summer
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icon-courses.png">
       </div>
       <p>Click a Class below to view registration information.</p><br />
-      <div class="classes-wrapper">
-        <ul class="group one">
+      <div class="row classes-wrapper">
+        <ul class="col-sm-3 col-xs-6 group one">
 	      <?php get_template_part( 'part', 'landing-summer-classes-group1' ); ?>
         </ul>
-        <ul class="group two">
+        <ul class="col-sm-3 col-xs-6 group two">
 	      <?php get_template_part( 'part', 'landing-summer-classes-group2' ); ?>
         </ul>
-        <ul class="group three">
+        <ul class="col-sm-3 col-xs-6 group three">
 	      <?php get_template_part( 'part', 'landing-summer-classes-group3' ); ?>
         </ul>
-        <ul class="group four">
+        <ul class="col-sm-3 col-xs-6 group four">
 	      <?php get_template_part( 'part', 'landing-summer-classes-group4' ); ?>
         </ul>
       </div>    
