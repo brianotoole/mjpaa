@@ -1690,13 +1690,14 @@ img.alumni {
 	h5 {
 		margin: 20px 0;
 	    padding: 10px 0;
-		font-weight: 600;
+		font-weight: 400;
 		text-transform: uppercase;
 		color: $maroon;
 	    border-top: 2px solid $lightgray;
 	    border-bottom: 2px solid $lightgray;
 	}
 	h6 {
+		font-family: $font-body;
 		line-height: 1.5em;
 		text-transform: capitalize;
 	}
@@ -1709,72 +1710,72 @@ img.alumni {
 		&:before {
 		 	content: '\f073';
 			font-family: fontAwesome;
-			font-size: 0.85em;
-			vertical-align: middle;
-			top: 0px;
+			font-size: 0.75em;
+			vertical-align: text-top;
+			top: 1px;
 			padding-right: 5px;
 			position: relative;
-			color: $maroon;
+			color: rgba($gold,0.75);
 		}
 	}
 	.cost {
 		 &:before {
 		 	content: '\f155';
 			font-family: fontAwesome;
-			font-size: 0.85em;
-			vertical-align: middle;
+			font-size: 0.75em;
+			vertical-align: text-top;
 			top: 1px;
 			padding-right: 5px;
 			position: relative;
-			color: $maroon;
+			color: rgba($gold,0.75);
 		 }
 	}
 	.program {
 		 &:before {
 		 	content: '\f084';
 			font-family: fontAwesome;
-			font-size: 0.85em;
-			vertical-align: middle;
-			top: -2px;
+			font-size: 0.75em;
+			vertical-align: text-top;
+			top: 1px;
 			padding-right: 5px;
 			position: relative;
-			color: $maroon;
+			color: rgba($gold,0.75);
 		 }
 	}
 	.grade {
 		 &:before {
 		 	content: '\f19d';
 			font-family: fontAwesome;
-			font-size: 0.85em;
-			vertical-align: middle;
+			font-size: 0.75em;
+			vertical-align: text-top;
 			top: 1px;
 			padding-right: 5px;
 			position: relative;
-			color: $maroon;
+			color: rgba($gold,0.75);
 		 }
 	}
 	.session {
 		 &:before {
 		 	content: '\f017';
 			font-family: fontAwesome;
-			font-size: 0.85em;
-			vertical-align: middle;
-			top: 0px;
+			font-size: 0.75em;
+			vertical-align: text-top;
+			top: 1px;
 			padding-right: 5px;
 			position: relative;
-			color: $maroon;
+			color: rgba($gold,0.75);
 		 }
 	}
 	.links {
 		 &:before {
 		 	content: '\f0c1';
 			font-family: fontAwesome;
-			font-size: 0.85em;
-			vertical-align: middle;
-			top: 0px;
+			font-size: 0.75em;
+			vertical-align: text-top;
+			top: 1px;
 			padding-right: 5px;
 			position: relative;
-			color: $maroon;
+			color: rgba($gold,0.75);
 		 }
 	}
 }
@@ -2070,6 +2071,24 @@ Footer
 	color: white;
 	text-align: center;
 	
+	.col-xs-6 { //had to hack to fix, needs cleaned up
+		@media (max-width: 800px) {
+			width: 50%;
+			float: left;
+			text-align: left;
+			h6.links {
+				text-align: right;
+			}
+		}
+	}
+	.col-xs-12 {
+		@media (max-width: 800px) {
+			width: 100%;
+			float: left;
+			padding-top: 20px;
+		}
+	}
+	
 	ul {
 		list-style: none;
 	}
@@ -2098,6 +2117,10 @@ Footer
 				margin: 0 0 0.8em;
 				position: relative;
 				text-align: center;
+				@media (max-width: 800px) {
+					text-align: right;
+					&.email {text-align: center;}
+				}
 				a {
 					transition: 0.5s ease;
 					-moz-transition: 0.5s ease;
@@ -2115,6 +2138,9 @@ Footer
 					color: $gold;
 					position: absolute;
 					top: 3px;
+					@media (max-width: 800px) {
+						display: none;
+					}
 				}
 			}
 		}

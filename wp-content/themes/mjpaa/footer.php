@@ -18,7 +18,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	
 		<div class="footer-top grid grid-pad">
-			<div class="award col-sm-4">
+			<div class="award col-xs-6 col-sm-4">
 				<h6>Hours of Operation</h6>
 				<p><strong>Academy Hours:</strong><br />
 				  <em> Mon-Fri: &nbsp; 10am-8:30pm<br />
@@ -26,8 +26,8 @@
 				<p><strong>Business Hours:</strong><br />
 				   <em>Mon-Fri: &nbsp;9am-5pm</em></p>
 			</div><!-- .site-info -->
-			<div class="links col-sm-4">
-				<h6>Links</h6>
+			<div class="links col-xs-6 col-sm-4">
+				<h6 class="links">Links</h6>
 				<ul>
 				    <li><i class="fa fa-chevron-right"></i><a href="https://app.jackrabbitclass.com/portal/ppLogin.asp?id=505581">Customer Login</a></li>
 				    <li><i class="fa fa-chevron-right"></i><a href="https://app.jackrabbitclass.com/reg.asp?id=505581">New Student Registration</a></li>
@@ -40,10 +40,10 @@
 					<li><i class="fa fa-chevron-right"></i><a href="http://tbttt.org" target="_blank">Tampa Bay Triple Threat Theatre</a></li>
 				</ul>
 			</div><!-- .site-info -->
-			<div class="family col-sm-4">
+			<div class="col-xs-12 col-sm-4 stay-in-touch">
 				<h6>Stay in Touch</h6>
 				<ul>
-					<li><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/general-info/newsletter">Sign-Up for our Email Newsletter</a></li>
+					<li class="email"><i class="fa fa-chevron-right"></i><a href="<?php bloginfo('url'); ?>/general-info/newsletter">Sign-Up for our Email Newsletter</a></li>
 					<p class="hidden-xs">
 						<a href="tel:813-969-0240">PH: 813-969-0240</a><br />
 						FAX: 813-960-2117
