@@ -163,6 +163,9 @@ Template Name: Landing, Summer
 	      <?php get_template_part( 'part', 'landing-summer-classes-group4' ); ?>
         </ul>
       </div>    
+      
+      <div clas="clearfix"></div>
+      <a href="<?php bloginfo('url'); ?>/class/summer-music-privates" class="button border">Summer Music Privates</a>
 
   </div><!--/.contain-->
 </section>
