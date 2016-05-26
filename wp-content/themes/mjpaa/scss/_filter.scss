@@ -6,7 +6,7 @@
 .uform_title{font-weight:bold!important;text-align:center;margin:auto 0 auto 0}
 .uwpqsf_class{width:100%;margin-bottom:5px;clear:both}
 /*label for each field*/
-.uwpqsf_class > span[class*='taxolabel-'], .uwpqsf_class > span[class*='cmflabel-']{float:left;padding:5px;font-weight:bold !important;clear:both;width:100%}
+.uwpqsf_class > span[class*='taxolabel-'], .uwpqsf_class > span[class*='cmflabel-']{float:left;padding:5px;clear:both;width:100%}
 /*dropdown*/
 .uwpqsf_class select {width:98%;margin-left:1%;margin-right:1%}
 
@@ -18,15 +18,15 @@
 /*search button*/
 .uwpqsf_submit{text-align:center;margin-bottom:15px;}
 /*keyword search label*/
-.uwpqsf_class-keyword{padding:5px;font-weight:bold !important;}
+.uwpqsf_class-keyword{padding:5px;font-weight:400;}
 /*text input for keyword*/
 input#uwpqsf_id_key{width:97%;margin-left:1%;margin-right:1%}
 
 /*Pagination*/
 .uwpqsfpagi{text-align:center;margin-top:15px;margin-bottom:15px;clear:both;width:100%}
 
-a.upagievent{padding-left: 12px; padding-right: 12px; height: 25px; line-height: 25px; display: inline-block; 
-	text-align: center; 
+a.upagievent{padding-left: 12px; padding-right: 12px; height: 25px; line-height: 25px; display: inline-block;
+	text-align: center;
 	}
-span.upagicurrent{padding-left: 12px; padding-right: 12px; height: 25px; line-height: 25px; display: inline-block; 
+span.upagicurrent{padding-left: 12px; padding-right: 12px; height: 25px; line-height: 25px; display: inline-block;
 	text-align: center;color:#000}
